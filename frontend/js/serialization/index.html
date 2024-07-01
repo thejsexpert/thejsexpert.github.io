@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/json/intro/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/serialization/">
       
       
-        <link rel="prev" href="../../api-response-object/">
+        <link rel="prev" href="../object/">
       
       
-        <link rel="next" href="../../../react/core/intro/">
+        <link rel="next" href="../api-response-object/">
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>Intro - My Docs</title>
+        <title>Serialization - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -48,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -64,7 +64,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#datatypes-in-json" class="md-skip">
+        <a href="#serialization" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Intro
+              Serialization
             
           </span>
         </div>
@@ -140,7 +140,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -160,7 +160,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+        <a href="../intro/" class="md-tabs__link">
           
   
   JS
@@ -178,7 +178,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../react/core/intro/" class="md-tabs__link">
+        <a href="../../react/core/intro/" class="md-tabs__link">
           
   
   React
@@ -196,7 +196,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../react/package/intro/" class="md-tabs__link">
+        <a href="../../react/package/intro/" class="md-tabs__link">
           
   
   Package
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../interview/react/" class="md-tabs__link">
+        <a href="../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -268,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../codesnap/" class="md-tabs__link">
+        <a href="../../../codesnap/" class="md-tabs__link">
           
   
   Code Snap
@@ -307,7 +307,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -365,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -505,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -526,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../object/" class="md-nav__link">
+      <a href="../object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -544,10 +544,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../serialization/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Serialization
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -556,6 +576,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serialization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serialization Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-serialization-and-transmission" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of Serialization and Transmission
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example of Serialization and Transmission">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-serialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Serialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialized-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serialized JSON:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Request:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deserialization-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deserialization (JavaScript):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -568,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-response-object/" class="md-nav__link">
+      <a href="../api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -586,8 +704,6 @@
                 
   
   
-    
-  
   
   
     
@@ -597,11 +713,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -615,7 +731,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             JSON
@@ -626,28 +742,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Intro
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,33 +754,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#datatypes-in-json" class="md-nav__link">
-    <span class="md-ellipsis">
-      Datatypes in JSON
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -748,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/intro/" class="md-nav__link">
+      <a href="../../react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -807,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../react/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -828,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../react/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -849,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../react/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -870,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../react/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -891,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../react/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -912,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/antipattern/" class="md-nav__link">
+      <a href="../../react/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -933,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/misc/" class="md-nav__link">
+      <a href="../../react/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1000,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-technique/" class="md-nav__link">
+      <a href="../../react/core/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1021,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../react/core/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1042,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../react/core/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1063,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useCallback/" class="md-nav__link">
+      <a href="../../react/core/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useRef/" class="md-nav__link">
+      <a href="../../react/core/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1105,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/react-context-api/" class="md-nav__link">
+      <a href="../../react/core/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1126,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/react-router/" class="md-nav__link">
+      <a href="../../react/core/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1147,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../react/core/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1168,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/guides/" class="md-nav__link">
+      <a href="../../react/core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1235,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/router/intro/" class="md-nav__link">
+      <a href="../../react/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1264,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/slides/" class="md-nav__link">
+      <a href="../../react/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1285,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/guides/" class="md-nav__link">
+      <a href="../../react/core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1351,7 +1422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/intro/" class="md-nav__link">
+      <a href="../../react/package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1410,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/" class="md-nav__link">
+      <a href="../../react/package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1431,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../react/package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1452,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form/" class="md-nav__link">
+      <a href="../../react/package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1473,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../react/package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1540,7 +1611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../react/package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1607,7 +1678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../react/package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1681,7 +1752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/intro/" class="md-nav__link">
+      <a href="../../state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1740,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1761,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk-guide/" class="md-nav__link">
+      <a href="../../state-management/redux/rtk-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1782,7 +1853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/" class="md-nav__link">
+      <a href="../../state-management/redux/redux-middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1849,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../state-management/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1870,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../state-management/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1891,7 +1962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../state-management/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1958,7 +2029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2025,7 +2096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2099,7 +2170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2120,7 +2191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2186,7 +2257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/react/" class="md-nav__link">
+      <a href="../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2207,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2273,7 +2344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../codesnap/" class="md-nav__link">
+      <a href="../../../codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2311,6 +2382,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2319,9 +2392,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#datatypes-in-json" class="md-nav__link">
+  <a href="#question" class="md-nav__link">
     <span class="md-ellipsis">
-      Datatypes in JSON
+      Question
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serialization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serialization Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-serialization-and-transmission" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of Serialization and Transmission
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example of Serialization and Transmission">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json-serialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON Serialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialized-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serialized JSON:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Request:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deserialization-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deserialization (JavaScript):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
@@ -2342,30 +2484,88 @@
                   
 
 
-  <h1>Intro</h1>
-
-<div><p>JSON or JavaScript Object Notation is a very popular <mark>data interchange format</mark>. It was developed by Douglas Crockford. JSON is text-based, lightweight, and a human-readable format for data exchange between clients and servers. JSON is derived from JavaScript and bears a close resemblance to JavaScript objects, but it is not dependent on JavaScript. JSON is language-independent, and support for the JSON data format is available in all the popular languages, some of which are C#, PHP, Java, C++, Python, and Ruby.</p>
+<div><h1 id="serialization">Serialization</h1>
+<h2 id="question">Question</h2>
 <blockquote>
-<p>JSON is a format and not a language.</p>
+<p>why do we need to serailize to tranfer in http protocal? why does we can't transfers the direct object. what is the reason?"</p>
 </blockquote>
-<p>JSON can be used in web applications for data transfer. Prior to JSON, XML was considered to be the chosen data interchange format. </p>
-<h2 id="datatypes-in-json">Datatypes in JSON</h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>JSON supports six datatypes: </p>
+<p>Serialization is necessary to transfer objects over the HTTP protocol because HTTP is a text-based protocol that only understands text or binary data formats. Directly transferring an object as it exists in memory is not feasible due to several reasons:</p>
+<details class="note">
+<summary>Reasons for Serialization</summary>
 <ol>
-<li>strings, </li>
-<li>numbers, </li>
-<li>Booleans, </li>
-<li>arrays, </li>
-<li>objects, &amp; </li>
-<li>null.</li>
+<li>
+<p><strong>Incompatibility with HTTP Protocol</strong>: HTTP is designed to transfer data in text (ASCII or UTF-8) or binary format, not in the complex memory structures that objects are represented as within a running program.</p>
+</li>
+<li>
+<p><strong>Language and Platform Independence</strong>: Serialization transforms objects into a standardized format that can be understood across different programming languages and platforms. Without serialization, the internal memory representation of an object in one language (e.g., Python) might not be understandable by another language (e.g., JavaScript).</p>
+</li>
+<li>
+<p><strong>Security</strong>: Directly transferring raw memory data could expose sensitive information and increase the risk of security vulnerabilities. Serialization allows control over what data is included and how it is represented, enhancing security.</p>
+</li>
+<li>
+<p><strong>Data Integrity and Structure</strong>: Serialization ensures that the data structure is preserved and can be accurately reconstructed. It converts complex objects into a structured format (like JSON or XML) that maintains the relationships between data fields.</p>
+</li>
+<li>
+<p><strong>Efficiency and Performance</strong>: Serialized data can be optimized for transmission. Formats like JSON and Protocol Buffers are designed to be lightweight and efficient, reducing the amount of data transferred and improving performance.</p>
+</li>
 </ol>
+</details>
+<details class="note">
+<summary>Why Direct Transfer of Objects is Not Feasible</summary>
+<ol>
+<li>
+<p><strong>Memory Representation</strong>: Objects in memory contain pointers, memory addresses, and other metadata that are specific to the runtime environment. This low-level information is not meaningful outside the context of that environment.</p>
+</li>
+<li>
+<p><strong>Endianness and Architecture Differences</strong>: Computers may have different endianness (byte order) and architecture (<code>32-bit</code> <mark>vs.</mark> <code>64-bit</code>), leading to differences in how data is stored in memory. Serialization abstracts these differences.</p>
+</li>
+<li>
+<p><strong>Complex Object Graphs</strong>: Objects often reference other objects, creating complex graphs of interconnected data. Direct transfer would require duplicating the entire memory structure, which is impractical and error-prone.</p>
+</li>
+</ol>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<h2 id="serialization-process">Serialization Process</h2>
+<ol>
+<li>
+<p><strong>Conversion to Text or Binary Format</strong>: The object is converted into a format like <code>JSON</code>, <code>XML</code>, or <code>Protocol Buffers</code>. This format represents the object's data in a standardized way.</p>
+</li>
+<li>
+<p><strong>Transmission Over HTTP</strong>: The serialized data is included in the HTTP request or response body, allowing it to be transmitted over the network.</p>
+</li>
+<li>
+<p><strong>Deserialization</strong>: On the receiving end, the data is converted back into an object, reconstructing the original data structure.</p>
+</li>
+</ol>
+<h2 id="example-of-serialization-and-transmission">Example of Serialization and Transmission</h2>
+<h3 id="json-serialization">JSON Serialization</h3>
+<div class="language-python highlight"><span class="filename">Original Object (Python):</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">user</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">"isMember"</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="serialized-json">Serialized JSON:</h3>
+<div class="language-json highlight"><span class="filename">json</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">"isMember"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="http-request">HTTP Request:</h3>
+<div class="language-http highlight"><span class="filename">http</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">POST</span> <span class="nn">/api/users</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">example.com</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">"isMember"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="deserialization-javascript">Deserialization (JavaScript):</h3>
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="s1">'{"name": "Alice", "age": 30, "isMember": true}'</span><span class="p">);</span>
+</span></code></pre></div>
 </div>
-<hr>
-<ul>
-<li><a href="#">JavaScript and JSON Essentials by Sai Srinivas Sriparasa: 2013 Packt Publishing</a></li>
-</ul></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>Serialization is essential for transferring objects over the HTTP protocol because it converts objects into a text or binary format that is compatible with HTTP, ensures language and platform independence, and maintains data integrity and security. Direct transfer of objects is not feasible due to the complexity of memory representations and the need for standardized data formats.</p></div>
 
 
 
@@ -2401,7 +2601,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../api-response-object/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Response Object">
+          <a href="../object/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Object">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2411,20 +2611,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Response Object
+                Object
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../react/core/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+          <a href="../api-response-object/" class="md-footer__link md-footer__link--next" aria-label="Next: Response Object">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Response Object
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2479,10 +2679,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

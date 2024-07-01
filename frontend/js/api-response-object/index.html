@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/intro/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/api-response-object/">
       
       
-        <link rel="prev" href="../../../blog/archive/2024/">
+        <link rel="prev" href="../serialization/">
       
       
-        <link rel="next" href="../object/">
+        <link rel="next" href="../json/intro/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Intro - My Docs</title>
+        <title>Response Object - My Docs</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fp-and-other-programming-paradigms" class="md-skip">
+        <a href="#fetching-api-data-in-javascript" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Intro
+              Response Object
             
           </span>
         </div>
@@ -160,7 +160,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../intro/" class="md-tabs__link">
           
   
   JS
@@ -502,28 +502,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Intro
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,42 +514,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fp-and-other-programming-paradigms" class="md-nav__link">
-    <span class="md-ellipsis">
-      FP and other programming paradigms
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -619,10 +565,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../api-response-object/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Response Object
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -631,6 +595,123 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fetching-api-data-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fetching API Data in JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-of-fetching-and-parsing-json-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process of Fetching and Parsing JSON Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example in JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clarification-on-json-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clarification on JSON Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-json-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of JSON Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-reponse-api-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      what is reponse API object
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2326,18 +2407,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fp-and-other-programming-paradigms" class="md-nav__link">
+  <a href="#fetching-api-data-in-javascript" class="md-nav__link">
     <span class="md-ellipsis">
-      FP and other programming paradigms
+      Fetching API Data in JavaScript
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-of-fetching-and-parsing-json-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process of Fetching and Parsing JSON Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example in JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clarification-on-json-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clarification on JSON Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-json-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of JSON Response
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-reponse-api-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      what is reponse API object
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
     </span>
   </a>
   
@@ -2358,25 +2520,307 @@
                   
 
 
-  <h1>Intro</h1>
+  <h1>Response Object</h1>
 
-<div><div class="admonition tip">
-<p class="admonition-title">What’s in a name?</p>
-<p>The name JavaScript was chosen to take advantage of the popularity of Java – just as a marketing ploy! Its first name was <strong><em>Mocha</em></strong>, then, <strong><em>LiveScript</em></strong>, and only then <strong><em>JavaScript</em></strong>.</p>
-</div>
-<h2 id="fp-and-other-programming-paradigms">FP and other programming paradigms</h2>
-<p>Programming paradigms classify programming languages according to their features. </p>
-<p>However, some languages may be classified into multiple paradigms – as is the case of JavaScript itself!</p>
-<p><mark>A primary division</mark> is <strong>imperative</strong> versus <strong>declarative</strong> languages. In the former, developers must instruct the machine on how to do its work, step by step. </p>
-<p>Programming may be <strong>procedural</strong> (if instructions are grouped into procedures) or <strong>object-oriented</strong> (if instructions are grouped with a related state).</p>
-<p>In declarative languages, in opposition, developers just declare properties that the sought result must satisfy, but not how to calculate it. Declarative languages may be logic-based (based on logic rules and constraints), reactive (based on data and event streams), or functional (based on the application and combination of functions). </p>
-<p>In a sense, we could say that imperative languages focus on how, while declarative languages focus on what.</p>
-<p>JavaScript is multi-paradigm: it’s imperative (both procedural and object-oriented) but also allows declarative programming, both functional (like almost everything in this book! In particular, we will devote Chapter 5, Programming Declaratively, to this topic) and reactive (we’ll see reactive FP in Chapter 11, Implementing Design Patterns).</p>
-<hr>
-<h2 id="reference">Reference</h2>
+<div><details class="abstract">
+<summary>when we fetch the api endpoint, the reponse data is in which format do we get? object or string</summary>
+<p>When you fetch data from an API endpoint, <mark>the response data is typically received as a <code>string</code></mark>. This string needs to be parsed into an object to be usable within your application.</p>
+<h2 id="fetching-api-data-in-javascript">Fetching API Data in JavaScript</h2>
+<p>When using the <code>fetch</code> API in JavaScript, the response is received as a raw stream of data, which is then processed into a string and parsed as needed. Here's the process:</p>
+<ol>
+<li>Fetching the Data:</li>
+</ol>
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Parses the response as JSON</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w">  </span><span class="c1">// The data is now a JavaScript object</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">})</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
+</span></code></pre></div>
+<p>In this example, the <code>response.json()</code> <mark>method</mark> is called on the response object. This method reads the response stream to completion and parses it as JSON. The result is a JavaScript object.</p>
+<details class="example">
+<summary>Response Data Formats</summary>
+<ol>
+<li>
+<p>JSON (Most Common)</p>
 <ul>
-<li><a href="https://www.amazon.com/Mastering-JavaScript-Functional-Programming-maintainable/dp/1804610135">Mastering JavaScript Functional Programming Third Edition by Federico Kereki</a></li>
-</ul></div>
+<li><strong>Received as</strong>: String</li>
+<li><strong>Parsed to</strong>: JavaScript object</li>
+<li><strong>Example</strong>:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Converts JSON string to JavaScript object</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Text</p>
+<ul>
+<li><strong>Received as</strong>: String</li>
+<li><strong>Example</strong>:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/text'</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">text</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as plain text</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Blob (Binary Large Object)</p>
+<ul>
+<li><strong>Received as</strong>: Binary data</li>
+<li><strong>Example</strong>:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/image'</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">blob</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as binary data (Blob)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">blob</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">blob</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>FormData</p>
+<ul>
+<li><strong>Received as</strong>: Form data</li>
+<li><strong>Example</strong>:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/formdata'</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">formData</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as FormData</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">formData</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formData</span><span class="p">);</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>ArrayBuffer</p>
+<ul>
+<li><strong>Received as</strong>: Binary data</li>
+<li><strong>Example</strong>:</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/binary'</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">arrayBuffer</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as ArrayBuffer</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">buffer</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">buffer</span><span class="p">);</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>When fetching data from an API endpoint, the response is initially received as a string or binary data. For JSON responses, which are most common, the string is parsed into a JavaScript object using the <code>response.json()</code> method. Other methods like <code>response.text()</code>, <code>response.blob()</code>, <code>response.formData()</code>, and <code>response.arrayBuffer()</code> are used to handle different types of response data. The parsed data can then be used within your application as needed.</p>
+</details>
+</details>
+<hr>
+<details>
+<summary>Is the json response format is <code>object</code> or <code>string</code> ?</summary>
+<p>When you receive a JSON response from an API, the data is initially received as a string. This string represents the JSON data. To work with this data as a JavaScript object, you need to parse the JSON string into an object.</p>
+<blockquote>
+<p>Here's a detailed explanation:</p>
+</blockquote>
+<h2 id="process-of-fetching-and-parsing-json-data">Process of Fetching and Parsing JSON Data</h2>
+<ol>
+<li>
+<p>Fetching the Data:</p>
+<p>When you use the fetch API to make a request, the response body is a readable stream. This stream needs to be read to obtain the actual data.</p>
+</li>
+<li>
+<p>Response as JSON:</p>
+<p>The <code>response.json()</code> method reads the response stream to completion and parses the text as JSON. This method returns a promise that resolves with the result of parsing the body text as JSON.</p>
+</li>
+</ol>
+<hr>
+<h2 id="example-in-javascript">Example in JavaScript</h2>
+<ol>
+<li>
+<p>Fetching and Parsing JSON Data:</p>
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Parses the response text as JSON</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w">  </span><span class="c1">// 'data' is now a JavaScript object</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">})</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
+</span></code></pre></div>
+</li>
+</ol>
+<blockquote>
+<p>In this example:</p>
+</blockquote>
+<ul>
+<li><code>fetch('https://api.example.com/data')</code> sends a request to the API.</li>
+<li><code>response.json()</code> reads the response stream and parses it as JSON, converting it from a string to a JavaScript object.</li>
+<li>The resulting <mark>data</mark> is a JavaScript object that can be used in your code.</li>
+</ul>
+<h2 id="clarification-on-json-response">Clarification on JSON Response</h2>
+<ul>
+<li>Initial Format: When the JSON response is received from the API, it is in string format.</li>
+<li>After Parsing: The JSON string is parsed into a JavaScript object using response.json().</li>
+</ul>
+<h2 id="example-of-json-response">Example of JSON Response</h2>
+<ol>
+<li>
+<p>Raw JSON Response (String):</p>
+<div class="language-json highlight"><span class="filename">json</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">"isMember"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Parsed JavaScript Object:</p>
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="nx">isMember</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+</ol>
+<h2 id="summary_1">Summary</h2>
+<p>While JSON responses from an API are initially received as strings, they are typically parsed into JavaScript objects using methods like <code>response.json()</code>. This parsing process is necessary to convert the string representation of the JSON data into a format (JavaScript object) that can be easily manipulated in your code.</p>
+</details>
+<hr>
+<details class="tip">
+<summary>so what is the difference between <code>.json()</code> method and <code>JSON.parse</code> when to use. is it the same</summary>
+<p>The <code>.json()</code> method and <code>JSON.parse()</code> serve similar purposes but are used in different contexts. Here's a breakdown of the differences and when to use each:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1"><code>.json()</code> Method</label><label for="__tabbed_1_2">JSON.parse()</label><label for="__tabbed_1_3">Key Differences</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong>Context</strong>: Used with the <code>fetch</code> API to read and parse the response body as JSON.</li>
+<li><strong>Functionality</strong>: The <code>.json()</code> method is called on a Response object. It reads the response stream to completion and parses it as JSON.</li>
+<li><strong>Return Value</strong>: Returns a promise that resolves with the result of parsing the response body text as JSON.</li>
+<li><strong>Usage</strong>: Use <code>.json()</code> when dealing with the response from a fetch request.</li>
+</ul>
+<h2 id="example">Example</h2>
+<div class="language-js highlight"><span class="filename">JavaScript</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads and parses response body as JSON</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w">  </span><span class="c1">// 'data' is now a JavaScript object</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">})</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Context</strong>: Used to parse a JSON string into a JavaScript object.</li>
+<li><strong>Functionality</strong>: <code>JSON.parse()</code> takes a JSON string and parses it to produce a JavaScript object.</li>
+<li><strong>Return Value</strong>: Returns a JavaScript object.</li>
+<li><strong>Usage</strong>: Use <code>JSON.parse()</code> when you have a JSON string (e.g., stored in a variable) and need to convert it to a JavaScript object.</li>
+</ul>
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">jsonString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'{"name": "Alice", "age": 30, "isMember": true}'</span><span class="p">;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsonString</span><span class="p">);</span><span class="w">  </span><span class="c1">// Parses JSON string into JavaScript object</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span><span class="w">  </span><span class="c1">// Output: Alice</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block"></div>
+</div>
+</div>
+<ol>
+<li>
+<p>Source of Data:</p>
+<ul>
+<li><code>.json()</code>: Used directly on the Response object returned by the fetch API to handle the response stream.</li>
+<li><code>JSON.parse()</code>: Used on a JSON string that you already have (e.g., from a variable, local storage, etc.).</li>
+</ul>
+</li>
+<li>
+<p>Return Type:</p>
+<ul>
+<li><code>.json()</code>: Returns a promise that resolves with the parsed JavaScript object.</li>
+<li><code>JSON.parse()</code>: Directly returns the parsed JavaScript object.</li>
+</ul>
+</li>
+<li>
+<p>Common Usage:</p>
+<ul>
+<li><code>.json()</code>: Commonly used in asynchronous operations involving fetching data from APIs.</li>
+<li><code>JSON.parse()</code>: Used whenever you have a JSON string and need to convert it to a JavaScript object, irrespective of how you obtained the string.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="summary_2">Summary</h2>
+<ul>
+<li>Use <code>.json()</code>: When handling responses from fetch API requests to read and parse the JSON response.</li>
+<li>Use <code>JSON.parse()</code>: When you have a JSON string and need to convert it to a JavaScript object in other contexts.</li>
+</ul>
+<p>Both methods are essential for working with JSON data, but they are applied in different scenarios to achieve similar results: converting JSON-formatted data into JavaScript objects.</p>
+</details>
+<hr>
+<h2 id="what-is-reponse-api-object">what is reponse API object</h2>
+<p>The Response object in the Fetch API represents the response to a request. It contains information about the response, including the status code, status text, headers, and the body of the response. This object is returned as a promise when a fetch request is made.</p>
+<div class="admonition tip">
+<p class="admonition-title">Key Properties and Methods of the Response Object</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><input id="__tabbed_2_4" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Properties</label><label for="__tabbed_2_2">Methods</label><label for="__tabbed_2_3">Example</label><label for="__tabbed_2_4">Explanation</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong>type</strong>: Indicates the type of the response (e.g., "basic", "cors", "error", "opaque").</li>
+<li><strong>url</strong>: The URL of the response.</li>
+<li><strong>redirected</strong>: Indicates whether the response is the result of a redirect.</li>
+<li><strong>status</strong>: The status code of the response (e.g., 200 for a successful request).</li>
+<li><strong>statusText</strong>: The status message corresponding to the status code (e.g., "OK" for status 200).</li>
+<li><strong>ok</strong>: A boolean indicating whether the response was successful (status in the range 200-299).</li>
+<li><strong>headers</strong>: The <code>Headers</code> object associated with the response.</li>
+<li><strong>body</strong>: A <code>ReadableStream</code> of the body contents.</li>
+<li><strong>bodyUsed</strong>: A boolean indicating whether the body has been read.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>arrayBuffer()</strong>: Reads the response body and returns it as a promise that resolves with an ArrayBuffer.</li>
+<li><strong>blob()</strong>: Reads the response body and returns it as a promise that resolves with a Blob.</li>
+<li><strong>formData()</strong>: Reads the response body and returns it as a promise that resolves with FormData.</li>
+<li><strong>json()</strong>: Reads the response body and parses it as JSON, returning a promise that resolves with a JavaScript object.</li>
+<li><strong>text()</strong>: Reads the response body and returns it as a promise that resolves with a string.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="c1">// Check if the request was successful</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="sb">`HTTP error! status: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="c1">// Access response properties</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span><span class="w">      </span><span class="c1">// e.g., 200</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">statusText</span><span class="p">);</span><span class="w">  </span><span class="c1">// e.g., "OK"</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'Content-Type'</span><span class="p">));</span><span class="w">  </span><span class="c1">// e.g., "application/json"</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="c1">// Read and parse the response body</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span><span class="w">  </span><span class="c1">// Returns a promise that resolves with the JSON-parsed body</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="p">})</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">    </span><span class="c1">// 'data' is now a JavaScript object</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="p">})</span>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Fetch error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="p">});</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><code>fetch('https://api.example.com/data')</code>: Initiates a request to the specified URL and returns a promise that resolves to a Response object.</li>
+<li><code>response.ok</code>: Checks if the response status code indicates a successful request.</li>
+<li><code>response.status</code>: Accesses the status code of the response.</li>
+<li><code>response.statusText</code>: Accesses the status text of the response.</li>
+<li><code>response.headers.get('Content-Type')</code>: Accesses the Content-Type header of the response.</li>
+<li><code>response.json()</code>: Reads and parses the response body as JSON, returning a promise that resolves to a JavaScript object.</li>
+<li>Handling the parsed data: The parsed JSON data is logged to the console.</li>
+<li>Error handling: Catches and logs any errors that occur during the fetch or parsing process.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="summary_3">Summary</h2>
+<p>The Response object in the Fetch API encapsulates the response to a request, providing access to the status, headers, and body of the response. You use various methods like <code>.json()</code>, <code>.text()</code>, and others to read and parse the response body, converting it into a usable format such as a JavaScript object or string. This process is essential for working with API responses in web development.</p>
+</div></div>
 
 
 
@@ -2412,7 +2856,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../../blog/archive/2024/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2024">
+          <a href="../serialization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Serialization">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2422,20 +2866,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                2024
+                Serialization
               </div>
             </div>
           </a>
         
         
           
-          <a href="../object/" class="md-footer__link md-footer__link--next" aria-label="Next: Object">
+          <a href="../json/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Object
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
