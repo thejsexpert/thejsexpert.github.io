@@ -51,32 +51,52 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/api-response-object/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thejsexpert.github.io/frontend/js/intro/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/maps-and-sets/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/core/api-response-object/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/object/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/core/array/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/serialization/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/core/control-statement/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/spread-vs-rest-operator/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/core/data-types/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/core/maps-and-sets/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/core/object/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/core/serialization/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/core/spread-vs-rest-operator/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/core/topic/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
