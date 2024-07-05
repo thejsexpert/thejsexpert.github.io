@@ -566,6 +566,69 @@
   
   
     <li class="md-nav__item">
+      <a href="../prototype/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prototype
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object-prototype/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Prototype
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../array-prototype/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Array Prototype
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../object/" class="md-nav__link">
         
   
@@ -713,6 +776,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -755,6 +827,27 @@
   
   <span class="md-ellipsis">
     Control Statement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../high-order-function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    High Order Function
   </span>
   
 
@@ -2649,6 +2742,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2764,7 +2866,121 @@
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">));</span><span class="w"> </span><span class="c1">// 2, 4, 6, 8, 10</span>
 </span></code></pre></div>
-</details></div>
+</details>
+<hr>
+<details open="open">
+<summary>is array an object in javascript</summary>
+<p><strong>In JavaScript</strong>, arrays are a <mark>type of object</mark>. Specifically, they are a specialized type of object designed to store indexed collections of data. Arrays in JavaScript can hold various types of data (such as <code>numbers</code>, <code>strings</code>, <code>objects</code>, or even other <code>arrays</code>) and provide methods for manipulating those data elements.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">myArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span><span class="w"> </span><span class="c1">// An array of numbers</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myArray</span><span class="p">);</span><span class="w"> </span><span class="c1">// Outputs: object</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">myArray</span><span class="p">));</span><span class="w"> </span><span class="c1">// Outputs: true</span>
+</span></code></pre></div>
+<p>Even though <code>typeof myArray</code> returns "object", you can use <strong>Array.isArray()</strong> <mark>to specifically check if a variable is an array</mark>. Arrays have additional properties and methods compared to regular objects, such as length for the number of elements and methods like <code>push</code>, <code>pop</code>, <code>forEach</code>, etc., for array manipulation.</p>
+</details>
+<hr>
+<details class="abstract" open="open">
+<summary>what do you mean by type of object. is it exactly object? what is it? if it is an object then why do we need isArray</summary>
+<p><strong>In JavaScript</strong>, the <code>typeof</code> <mark>operator</mark> can return several values, including "object" for objects and arrays. However, arrays are a specialized type of object with additional features and behaviors tailored specifically for handling ordered collections of data.</p>
+<p>Here's why <code>Array.isArray()</code> is useful:</p>
+<ul>
+<li>
+<p><strong>Clarity</strong>: Arrays and objects are both considered "object" types by <code>typeof</code>, so <strong>Array.isArray()</strong> provides a clear and specific way to determine if a variable is an array.</p>
+</li>
+<li>
+<p><strong>Behavior</strong>: Arrays in JavaScript have specialized methods and properties (length, push, pop, etc.) that make them distinct from regular objects. Using <strong>Array.isArray()</strong> ensures that you are working with an array and can safely use array-specific methods without encountering unexpected behavior.</p>
+</li>
+<li>
+<p><strong>Compatibility</strong>: In older versions of JavaScript, before <strong>Array.isArray()</strong> was introduced in ECMAScript 5 (2009), checking if an object was an array was less straightforward. <strong>Array.isArray()</strong> provides a reliable cross-browser way to perform this check.</p>
+</li>
+</ul>
+<p>Here’s an example of how you might use <mark>Array.isArray()</mark>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">myArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">myObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">'value'</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">myArray</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">myObject</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">// Using typeof</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myArray</span><span class="p">);</span><span class="w"> </span><span class="c1">// "object"</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myObject</span><span class="p">);</span><span class="w"> </span><span class="c1">// "object"</span>
+</span></code></pre></div>
+<p>So, while arrays are objects in JavaScript, <strong>Array.isArray()</strong> <mark>is necessary to distinguish arrays from other types of objects</mark> and ensure correct behavior when working with arrays.</p>
+</details>
+<hr>
+<details class="example" open="open">
+<summary>so why do we need array object type and Array.isArray()</summary>
+<p>The distinction between arrays and regular objects in JavaScript, as well as the use of Array.isArray(), serves several important purposes:</p>
+<ol>
+<li>
+<p><strong>Specialized Functionality</strong>:</p>
+<p>Arrays are specialized objects designed specifically for storing ordered collections of data. They come with built-in methods (push, pop, forEach, etc.) that make it easy to manipulate and iterate over their elements. This specialization allows for efficient handling of sequential data, which is common in programming tasks.</p>
+</li>
+<li>
+<p><strong>Type Checking</strong>:</p>
+<p>JavaScript's typeof operator returns "object" for both arrays and regular objects. However, arrays have distinct behavior and capabilities compared to generic objects. Array.isArray() provides a reliable way to specifically check if a variable is an array, ensuring that you can safely use array-specific methods without encountering errors or unexpected behavior.</p>
+</li>
+<li>
+<p><strong>Compatibility</strong>:</p>
+<p>Prior to the introduction of Array.isArray() in ECMAScript 5 (2009), developers often used less reliable methods to check if an object was an array (such as checking for the presence of array-specific methods like push). Array.isArray() provides a standardized and cross-browser-compatible approach to this check.</p>
+</li>
+<li>
+<p><strong>Code Readability</strong>:</p>
+<p>Explicitly using Array.isArray() improves the readability and maintainability of your code. It clearly communicates your intention to check whether a variable is an array, making the code easier to understand for other developers who may work with or maintain it in the future.</p>
+</li>
+</ol>
+<p>In essence, while arrays are objects in JavaScript, they have specialized features that distinguish them from regular objects. Array.isArray() is a utility function that ensures clarity, reliability, and compatibility when working with arrays, helping developers write more robust and understandable code.</p>
+</details>
+<hr>
+<h2 id="example">Example</h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Certainly! Here are basic and advanced examples demonstrating the usage of <code>Array.isArray()</code> in JavaScript:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Basic Example</label><label for="__tabbed_1_2">Advanced Example</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// Basic example</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">arr</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="kd">let</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'John'</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">obj</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
+</span></code></pre></div>
+<p>In this basic example:</p>
+<ul>
+<li>Array.isArray(arr) returns true because arr is an array.</li>
+<li>Array.isArray(obj) returns false because obj is a plain object, not an array.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">processArray</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">input</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">        </span><span class="nx">input</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">item</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">));</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Input is not an array."</span><span class="p">);</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">}</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="kd">let</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="kd">let</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'Jane'</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="nx">processArray</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span><span class="w"> </span><span class="c1">// Outputs: 1, 2, 3</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nx">processArray</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span><span class="w"> </span><span class="c1">// Outputs: "Input is not an array."</span>
+</span></code></pre></div>
+<p>In this advanced example:</p>
+<ul>
+<li>The <code>processArray</code> function takes <code>input</code> as a parameter.</li>
+<li>Inside the function, <code>Array.isArray(input)</code> checks if <code>input</code> is an array.</li>
+<li>If <code>input</code> is an array, it iterates over its elements using <code>forEach</code>.</li>
+<li>If <code>input</code> is not an array, it outputs a message indicating that it's not an array.</li>
+</ul>
+<p>These examples illustrate how <code>Array.isArray()</code> can be used to safely and reliably determine whether a variable is an array before performing operations specific to arrays. This helps prevent errors and ensures that your code behaves as expected in different scenarios.</p>
+</div>
+</div>
+</div>
+</div></div>
 
 
 
