@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/blog/2024/05/16/application-structure-for-reactjs/</loc>
+         <lastmod>2024-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/blog/2024/01/22/how-to-check-the-react-version-in-your-project/</loc>
          <lastmod>2024-07-08</lastmod>
          <changefreq>daily</changefreq>
