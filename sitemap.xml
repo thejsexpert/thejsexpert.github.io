@@ -2,372 +2,372 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://thejsexpert.github.io/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/codesnap/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/tags/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/16/application-structure-for-reactjs/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/01/22/how-to-check-the-react-version-in-your-project/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/11/checking-nodejs-versions-in-react-projects/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/12/handling-json-parsing-errors-in-javascript-a-practical-approach/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/13/history-api/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/04/01/understanding-javascript-array-methods-mutating-vs-non-mutating/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/15/javascript-arrow-functions/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/14/prettier-formatter-for-visual-studio-code/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/01/18/react-router-v6-guide/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/10/understanding-the-difference-between-response-object-and-parsed-data-object/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/01/29/understanding-the-impact-of-the-return-statement-in-javascripts-map-function/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/04/23/formsetfieldsvalue-vs-defaultvalue-in-react/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/api-response-object/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/array-prototype/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/array/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/control-statement/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/data-types/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/high-order-function/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/maps-and-sets/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/object-prototype/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/object/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/prototype/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/serialization/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/spread-vs-rest-operator/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/topic/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/json/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/slides/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/guides/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/migrating-cra-vite/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/react-context-api/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/react-router/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/useCallback/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/useEffect-cleanup/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/useEffect-technique-used/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/useEffect-technique/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/core/useRef/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/package/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/package/antd/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/package/antd/antd-form-validator/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/package/antd/antd-form/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/package/antd/controlled-components/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/package/lodash/debounce/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/package/tinymce/tinymce/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/antipattern/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/compound-pattern/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/container-presentational-patterns/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/function-as-child/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/hoc-pattern/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/misc/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/react-pattern-intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/router/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/mobx/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/recoil/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/redux-middleware/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk-guide/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux-middleware/intro/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux-middleware/redux-saga/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux-middleware/redux-thunk/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/typescript-compiler/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/typescript-installation/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/codesnap/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/react/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/page/2/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/2/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/tags/</loc>
-         <lastmod>2024-07-08</lastmod>
+         <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
