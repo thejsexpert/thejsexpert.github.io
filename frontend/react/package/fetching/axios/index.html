@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/core/object-prototype/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/package/fetching/axios/">
       
       
-        <link rel="prev" href="../prototype/">
+        <link rel="prev" href="../intro/">
       
       
-        <link rel="next" href="../array-prototype/">
+        <link rel="next" href="../../../../state-management/intro/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>Object Prototype - My Docs</title>
+        <title>Axios - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -61,7 +61,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#objectprototype" class="md-skip">
+        <a href="#axios" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Object Prototype
+              Axios
             
           </span>
         </div>
@@ -137,10 +137,46 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+        <a href="../../../../../blog/" class="md-tabs__link">
           
   
   Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../js/intro/" class="md-tabs__link">
+          
+  
+  JS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../core/intro/" class="md-tabs__link">
+          
+  
+  React
 
         </a>
       </li>
@@ -160,42 +196,6 @@
         <a href="../../intro/" class="md-tabs__link">
           
   
-  JS
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../react/core/intro/" class="md-tabs__link">
-          
-  
-  React
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../react/package/intro/" class="md-tabs__link">
-          
-  
   Package
 
         </a>
@@ -211,7 +211,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../../../state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -229,7 +229,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -247,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../interview/react/" class="md-tabs__link">
+        <a href="../../../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -265,7 +265,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../codesnap/" class="md-tabs__link">
+        <a href="../../../../../codesnap/" class="md-tabs__link">
           
   
   Code Snap
@@ -304,7 +304,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -362,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+      <a href="../../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -423,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -456,28 +456,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -488,7 +483,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             JS
@@ -502,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../../../js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,8 +515,6 @@
                 
   
   
-    
-  
   
   
     
@@ -531,11 +524,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -549,7 +542,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             CORE
@@ -563,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototype/" class="md-nav__link">
+      <a href="../../../../js/core/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -581,30 +574,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Object Prototype
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../js/core/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,71 +586,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Object.prototype?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-properties-and-methods-from-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Properties and Methods from Object.prototype
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prototype-chain-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prototype Chain Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customizing-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing Object.prototype
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -690,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../array-prototype/" class="md-nav__link">
+      <a href="../../../../js/core/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -711,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object/" class="md-nav__link">
+      <a href="../../../../js/core/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../array/" class="md-nav__link">
+      <a href="../../../../js/core/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -753,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-types/" class="md-nav__link">
+      <a href="../../../../js/core/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -774,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../control-statement/" class="md-nav__link">
+      <a href="../../../../js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../high-order-function/" class="md-nav__link">
+      <a href="../../../../js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../serialization/" class="md-nav__link">
+      <a href="../../../../js/core/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -837,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-response-object/" class="md-nav__link">
+      <a href="../../../../js/core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -858,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../../js/core/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -879,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maps-and-sets/" class="md-nav__link">
+      <a href="../../../../js/core/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -900,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../topic/" class="md-nav__link">
+      <a href="../../../../js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -967,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../json/intro/" class="md-nav__link">
+      <a href="../../../../js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1034,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/es6/" class="md-nav__link">
+      <a href="../../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1108,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/intro/" class="md-nav__link">
+      <a href="../../../core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1188,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1209,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1230,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1251,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1272,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1293,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/misc/" class="md-nav__link">
+      <a href="../../../pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1360,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-technique/" class="md-nav__link">
+      <a href="../../../core/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1381,7 +1289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../core/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1402,7 +1310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../core/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1423,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useCallback/" class="md-nav__link">
+      <a href="../../../core/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1444,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useRef/" class="md-nav__link">
+      <a href="../../../core/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1465,7 +1373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/react-context-api/" class="md-nav__link">
+      <a href="../../../core/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1486,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/react-router/" class="md-nav__link">
+      <a href="../../../core/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1507,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../core/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1528,7 +1436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/guides/" class="md-nav__link">
+      <a href="../../../core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1595,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/router/intro/" class="md-nav__link">
+      <a href="../../../router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/slides/" class="md-nav__link">
+      <a href="../../../slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1645,7 +1553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/guides/" class="md-nav__link">
+      <a href="../../../core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1670,23 +1578,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1697,7 +1610,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Package
@@ -1711,7 +1624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1770,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/" class="md-nav__link">
+      <a href="../../antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1791,7 +1704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1812,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form/" class="md-nav__link">
+      <a href="../../antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1833,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1900,7 +1813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1967,7 +1880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1993,6 +1906,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2002,11 +1917,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
         
           
           <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
@@ -2020,7 +1935,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Fetching
@@ -2034,7 +1949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/fetching/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2052,10 +1967,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../react/package/fetching/axios/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Axios
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2064,6 +1997,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#axios" class="md-nav__link">
+    <span class="md-ellipsis">
+      axios
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2129,7 +2089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/intro/" class="md-nav__link">
+      <a href="../../../../state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2188,7 +2148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2209,7 +2169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk-guide/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2230,7 +2190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/" class="md-nav__link">
+      <a href="../../../../state-management/redux/redux-middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2297,7 +2257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2318,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../../state-management/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2339,7 +2299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../../state-management/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2406,7 +2366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../../state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2473,7 +2433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../../state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2547,7 +2507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2568,7 +2528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2634,7 +2594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/react/" class="md-nav__link">
+      <a href="../../../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2655,7 +2615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2721,7 +2681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../codesnap/" class="md-nav__link">
+      <a href="../../../../../codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2759,8 +2719,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2769,45 +2727,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-objectprototype" class="md-nav__link">
+  <a href="#axios" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Object.prototype?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-properties-and-methods-from-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Properties and Methods from Object.prototype
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prototype-chain-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prototype Chain Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customizing-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing Object.prototype
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
+      axios
     </span>
   </a>
   
@@ -2828,100 +2750,9 @@
                   
 
 
-<div><h1 id="objectprototype">Object.prototype</h1>
-<p>In JavaScript, <strong>Object.prototype</strong> is the <mark>prototype object from which all other objects inherit their properties and methods</mark>, unless explicitly specified otherwise. It is the top of the prototype chain, meaning that any object created using a constructor function or an object literal will have Object.prototype in its prototype chain.</p>
-<h2 id="what-is-objectprototype">What is Object.prototype?</h2>
-<ul>
-<li>
-<p><strong>Prototype Chain</strong>:</p>
-<p>In JavaScript, objects can have a prototype, which is another object from which they inherit properties. The prototype of an object is accessible through the <code>__proto__</code> property (or <code>[[Prototype]]</code> in more formal terms).</p>
-</li>
-<li>
-<p><strong>Inheritance</strong>:</p>
-<p><code>Object.prototype</code> is the final object in the prototype chain. It means that all properties and methods defined on <code>Object.prototype</code> are available to all other objects, unless those properties and methods are overridden further down the prototype chain.</p>
-</li>
-</ul>
-<h2 id="common-properties-and-methods-from-objectprototype">Common Properties and Methods from <code>Object.prototype</code></h2>
-<p>Object.prototype includes several methods and properties that are useful and commonly used:</p>
-<ol>
-<li>
-<p>hasOwnProperty:</p>
-<p>Checks if a property is a direct property of the object (<mark>not inherited</mark>).</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">'a'</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">'toString'</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>isPrototypeOf:</p>
-<p>Checks if an object exists in another object's prototype chain.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Person</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">();</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">isPrototypeOf</span><span class="p">(</span><span class="nx">person</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>toString:</p>
-<p>Returns a string representation of the object.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span><span class="w"> </span><span class="c1">// "[object Object]"</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>valueOf:</p>
-<p>Returns the primitive value of the specified object.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">valueOf</span><span class="p">());</span><span class="w"> </span><span class="c1">// { a: 1 }</span>
-</span></code></pre></div>
-</li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Prototype Chain Example</p>
-<h2 id="prototype-chain-example">Prototype Chain Example</h2>
-<p>To better understand <strong>Object.prototype</strong> and the <strong>prototype chain</strong>, consider the following example:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'John'</span><span class="p">,</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">greet</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello, '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">};</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1">// Create a new object that inherits from person</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">anotherPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nx">anotherPerson</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Jane'</span><span class="p">;</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nx">anotherPerson</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span><span class="w"> </span><span class="c1">// Hello, Jane</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="c1">// Check the prototype chain</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">anotherPerson</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">person</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">person</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span></code></pre></div>
-<p>In this example:</p>
-<ol>
-<li>We define an object <code>person</code> with a property <code>name</code> and a method <code>greet</code>.</li>
-<li>We create a new object <code>anotherPerson</code> that inherits from person using <strong>Object.create</strong>.</li>
-<li>The <code>anotherPerson</code> object can access properties and methods from <code>person</code> because <code>person</code> is in its prototype chain.</li>
-<li>We verify the prototype chain using <strong>Object.getPrototypeOf</strong>.</li>
-</ol>
-</div>
-<hr>
-<h2 id="customizing-objectprototype">Customizing Object.prototype</h2>
-<p>While it is possible to add properties or methods to Object.prototypeit is generally discouraged== because it can lead to unexpected behavior and conflicts in your code, especially when working with third-party libraries. Modifying Object.prototype affects all objects, which can have unintended side effects.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">customMethod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'This is a custom method.'</span><span class="p">);</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">};</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nx">obj</span><span class="p">.</span><span class="nx">customMethod</span><span class="p">();</span><span class="w"> </span><span class="c1">// This is a custom method.</span>
-</span></code></pre></div>
-<p>In this example, the <code>customMethod</code> is added to <strong>Object.prototype</strong>, making it available to all objects. However, this practice should be used with caution.</p>
-<h2 id="summary">Summary</h2>
-<ul>
-<li><strong>Object.prototype</strong> is the <mark>top-level prototype object</mark> from which all other objects inherit properties and methods.</li>
-<li>It provides several built-in methods like <code>hasOwnProperty</code>, <code>isPrototypeOf</code>, <code>toString</code>, and <code>valueOf</code>.</li>
-<li>All objects in JavaScript have <strong>Object.prototype</strong> in their prototype chain unless explicitly specified otherwise.</li>
-<li>Modifying <strong>Object.prototype</strong> is possible <mark>but generally discouraged</mark> due to the potential for unintended side effects.</li>
-</ul></div>
+  <h1>Axios</h1>
+
+<h2 id="axios">axios</h2>
 
 
 
@@ -2957,7 +2788,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../prototype/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prototype">
+          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2967,20 +2798,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Prototype
+                Intro
               </div>
             </div>
           </a>
         
         
           
-          <a href="../array-prototype/" class="md-footer__link md-footer__link--next" aria-label="Next: Array Prototype">
+          <a href="../../../../state-management/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Array Prototype
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3035,10 +2866,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
