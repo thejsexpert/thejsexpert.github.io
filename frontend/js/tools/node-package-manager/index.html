@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/nodejs-package-manager/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/tools/node-package-manager/">
       
       
-        <link rel="prev" href="../ESLint/">
+        <link rel="prev" href="../nodejs-package-manager/">
       
       
-        <link rel="next" href="../node-package-manager/">
+        <link rel="next" href="../yarn/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>nodejs package manager - My Docs</title>
+        <title>npm - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -61,7 +61,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#decision-factors" class="md-skip">
+        <a href="#using-npm-flags-effectively-when-to-use-d-s-and-more" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              nodejs package manager
+              npm
             
           </span>
         </div>
@@ -137,7 +137,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../blog/" class="md-tabs__link">
+        <a href="../../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -157,7 +157,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../intro/" class="md-tabs__link">
+        <a href="../../intro/" class="md-tabs__link">
           
   
   JS
@@ -175,7 +175,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../react/core/intro/" class="md-tabs__link">
+        <a href="../../../react/core/intro/" class="md-tabs__link">
           
   
   React
@@ -193,7 +193,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../react/package/intro/" class="md-tabs__link">
+        <a href="../../../react/package/intro/" class="md-tabs__link">
           
   
   Package
@@ -211,7 +211,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../state-management/intro/" class="md-tabs__link">
+        <a href="../../../state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -229,7 +229,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -247,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../interview/react/" class="md-tabs__link">
+        <a href="../../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -286,7 +286,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -344,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/" class="md-nav__link">
+      <a href="../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -484,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/prototype/" class="md-nav__link">
+      <a href="../../core/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -564,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/object-prototype/" class="md-nav__link">
+      <a href="../../core/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/array-prototype/" class="md-nav__link">
+      <a href="../../core/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/object/" class="md-nav__link">
+      <a href="../../core/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -627,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/array/" class="md-nav__link">
+      <a href="../../core/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/data-types/" class="md-nav__link">
+      <a href="../../core/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/control-statement/" class="md-nav__link">
+      <a href="../../core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/high-order-function/" class="md-nav__link">
+      <a href="../../core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -711,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/serialization/" class="md-nav__link">
+      <a href="../../core/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/api-response-object/" class="md-nav__link">
+      <a href="../../core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -753,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../core/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -774,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/maps-and-sets/" class="md-nav__link">
+      <a href="../../core/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/topic/" class="md-nav__link">
+      <a href="../../core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -862,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../json/intro/" class="md-nav__link">
+      <a href="../../json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -929,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ecmascript/es6/" class="md-nav__link">
+      <a href="../../ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -950,6 +950,46 @@
   
 
               
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1018,6 +1058,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../nodejs-package-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nodejs package manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1032,7 +1093,7 @@
           
   
   <span class="md-ellipsis">
-    nodejs package manager
+    npm
   </span>
   
 
@@ -1043,7 +1104,7 @@
         
   
   <span class="md-ellipsis">
-    nodejs package manager
+    npm
   </span>
   
 
@@ -1063,15 +1124,79 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#decision-factors" class="md-nav__link">
+  <a href="#using-npm-flags-effectively-when-to-use-d-s-and-more" class="md-nav__link">
     <span class="md-ellipsis">
-      Decision Factors
+      Using npm Flags Effectively: When to Use -D, -S, and More
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#deep-dive-into-packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deep Dive into package.json
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deep Dive into package.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripts-configuration-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scripts Configuration Hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package Metadata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workspaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
@@ -1079,32 +1204,16 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../node-package-manager/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    npm
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1147,6 +1256,102 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/jest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cypress/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cypress
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1204,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/intro/" class="md-nav__link">
+      <a href="../../../react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1263,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../react/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1284,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../react/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1305,7 +1510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../react/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../react/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1347,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../react/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1368,7 +1573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../react/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1389,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/pattern/misc/" class="md-nav__link">
+      <a href="../../../react/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1456,7 +1661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/useEffect-technique/" class="md-nav__link">
+      <a href="../../../react/core/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1477,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../react/core/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1498,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../react/core/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1519,7 +1724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/useCallback/" class="md-nav__link">
+      <a href="../../../react/core/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1540,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/useRef/" class="md-nav__link">
+      <a href="../../../react/core/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1561,7 +1766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/react-context-api/" class="md-nav__link">
+      <a href="../../../react/core/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1582,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/react-router/" class="md-nav__link">
+      <a href="../../../react/core/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1603,7 +1808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../react/core/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/guides/" class="md-nav__link">
+      <a href="../../../react/core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1691,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/router/intro/" class="md-nav__link">
+      <a href="../../../react/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1758,7 +1963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/passing-props/" class="md-nav__link">
+      <a href="../../../react/example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1779,7 +1984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../../../react/example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1800,7 +2005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/prop-drilling/" class="md-nav__link">
+      <a href="../../../react/example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1821,7 +2026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/children-prop/" class="md-nav__link">
+      <a href="../../../react/example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1842,7 +2047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/component-composition/" class="md-nav__link">
+      <a href="../../../react/example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1863,7 +2068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/hoc/" class="md-nav__link">
+      <a href="../../../react/example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1884,7 +2089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/render-props/" class="md-nav__link">
+      <a href="../../../react/example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1905,7 +2110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../../../react/example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1926,7 +2131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1955,7 +2160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/code-for-change/" class="md-nav__link">
+      <a href="../../../react/code-for-change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1976,7 +2181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/slides/" class="md-nav__link">
+      <a href="../../../react/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1997,7 +2202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/core/guides/" class="md-nav__link">
+      <a href="../../../react/core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2063,7 +2268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/intro/" class="md-nav__link">
+      <a href="../../../react/package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2122,7 +2327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/antd/" class="md-nav__link">
+      <a href="../../../react/package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2143,7 +2348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../react/package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2164,7 +2369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/antd/antd-form/" class="md-nav__link">
+      <a href="../../../react/package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2185,7 +2390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../../react/package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2252,7 +2457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../react/package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2319,7 +2524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../react/package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2386,7 +2591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/fetching/intro/" class="md-nav__link">
+      <a href="../../../react/package/fetching/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2407,7 +2612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../react/package/fetching/axios/" class="md-nav__link">
+      <a href="../../../react/package/fetching/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2481,7 +2686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/intro/" class="md-nav__link">
+      <a href="../../../state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2540,7 +2745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2561,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/rtk-guide/" class="md-nav__link">
+      <a href="../../../state-management/redux/rtk-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2582,7 +2787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/redux-middleware/" class="md-nav__link">
+      <a href="../../../state-management/redux/redux-middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2649,7 +2854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2670,7 +2875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../state-management/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2691,7 +2896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../state-management/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2758,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2825,7 +3030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2892,7 +3097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/middleware/" class="md-nav__link">
+      <a href="../../../state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2966,7 +3171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2987,7 +3192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3053,7 +3258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/react/" class="md-nav__link">
+      <a href="../../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3074,7 +3279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3095,7 +3300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/micro-frontend/" class="md-nav__link">
+      <a href="../../../../interview/micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3141,20 +3346,89 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#decision-factors" class="md-nav__link">
+  <a href="#using-npm-flags-effectively-when-to-use-d-s-and-more" class="md-nav__link">
     <span class="md-ellipsis">
-      Decision Factors
+      Using npm Flags Effectively: When to Use -D, -S, and More
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#deep-dive-into-packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deep Dive into package.json
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deep Dive into package.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripts-configuration-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scripts Configuration Hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package Metadata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workspaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3173,44 +3447,197 @@
                   
 
 
-  <h1>nodejs package manager</h1>
+  <h1>npm</h1>
 
-<div><div class="grid cards">
+<div><p>npm is a powerful <mark>package manager</mark> for JavaScript and Node.js, serving as the default package manager for the <code>Node.js</code> runtime environment. It includes a command-line client (npm) and an online repository (<code>npm registry</code>) for hosting and sharing JavaScript packages.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<h2 id="using-npm-flags-effectively-when-to-use-d-s-and-more">Using npm Flags Effectively: When to Use <code>-D</code>, <code>-S</code>, and More</h2>
+<ol>
+<li>
+<p><strong>-D</strong> or <strong>--save-dev</strong>:</p>
 <ul>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"></path></svg></span> <strong>npm (Node Package Manager)</strong></p>
-<hr>
-<p>Comes pre-installed with Node.js, no additional setup required.</p>
-<p><a href="../node-package-manager/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span> Reference</a></p>
+<li>Purpose: Install packages needed only for development, such as build tools, testing libraries, and linters. This means the package will be listed under the devDependencies section in the <code>package.json</code> file.</li>
+<li>Usage: Use this flag when adding development tools that aren’t needed in production.</li>
+<li>Example: <code>npm install -D jest eslint webpack</code></li>
+</ul>
 </li>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 0C5.375 0 0 5.375 0 12s5.375 12 12 12 12-5.375 12-12S18.625 0 12 0zm.768 4.105c.183 0 .363.053.525.157.125.083.287.185.755 1.154.31-.088.468-.042.551-.019.204.056.366.19.463.375.477.917.542 2.553.334 3.605-.241 1.232-.755 2.029-1.131 2.576.324.329.778.899 1.117 1.825.278.774.31 1.478.273 2.015a5.51 5.51 0 0 0 .602-.329c.593-.366 1.487-.917 2.553-.931.714-.009 1.269.445 1.353 1.103a1.23 1.23 0 0 1-.945 1.362c-.649.158-.95.278-1.821.843-1.232.797-2.539 1.242-3.012 1.39a1.686 1.686 0 0 1-.704.343c-.737.181-3.266.315-3.466.315h-.046c-.783 0-1.214-.241-1.45-.491-.658.329-1.51.19-2.122-.134a1.078 1.078 0 0 1-.58-1.153 1.243 1.243 0 0 1-.153-.195c-.162-.25-.528-.936-.454-1.946.056-.723.556-1.367.88-1.71a5.522 5.522 0 0 1 .408-2.256c.306-.727.885-1.348 1.32-1.737-.32-.537-.644-1.367-.329-2.21.227-.602.412-.936.82-1.08h-.005c.199-.074.389-.153.486-.259a3.418 3.418 0 0 1 2.298-1.103c.037-.093.079-.185.125-.283.31-.658.639-1.029 1.024-1.168a.94.94 0 0 1 .328-.06zm.006.7c-.507.016-1.001 1.519-1.001 1.519s-1.27-.204-2.266.871c-.199.218-.468.334-.746.44-.079.028-.176.023-.417.672-.371.991.625 2.094.625 2.094s-1.186.839-1.626 1.881c-.486 1.144-.338 2.261-.338 2.261s-.843.732-.899 1.487c-.051.663.139 1.2.343 1.515.227.343.51.176.51.176s-.561.653-.037.931c.477.25 1.283.394 1.71-.037.31-.31.371-1.001.486-1.283.028-.065.12.111.209.199.097.093.264.195.264.195s-.755.324-.445 1.066c.102.246.468.403 1.066.398.222-.005 2.664-.139 3.313-.296.375-.088.505-.283.505-.283s1.566-.431 2.998-1.357c.917-.598 1.293-.76 2.034-.936.612-.148.57-1.098-.241-1.084-.839.009-1.575.44-2.196.825-1.163.718-1.742.672-1.742.672l-.018-.032c-.079-.13.371-1.293-.134-2.678-.547-1.515-1.413-1.881-1.344-1.997.297-.5 1.038-1.297 1.334-2.78.176-.899.13-2.377-.269-3.151-.074-.144-.732.241-.732.241s-.616-1.371-.788-1.483a.271.271 0 0 0-.157-.046z"></path></svg></span> <strong>Yarn</strong></p>
-<hr>
-<p>Excellent support for monorepos and managing multiple packages within a single repository.</p>
-<p><a href="../yarn/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span> Reference</a></p>
+<p>No Flag or <strong>--save</strong> or <strong>-S</strong>:</p>
+<ul>
+<li>Purpose: Install packages <mark>needed for both <code>development</code> and <code>production</code></mark>, such as frameworks and libraries. This is the default behavior when you run <code>npm install</code> <mark>without any flags</mark>. It installs the package as a dependency and adds it to the dependencies section in <code>package.json</code>.</li>
+<li>Usage: Use this default behavior for core dependencies required to run your application.</li>
+<li>Example: <code>npm install react express axios</code></li>
+</ul>
 </li>
 <li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0v7.5h7.5V0zm8.25 0v7.5h7.498V0zm8.25 0v7.5H24V0zM8.25 8.25v7.5h7.498v-7.5zm8.25 0v7.5H24v-7.5zM0 16.5V24h7.5v-7.5zm8.25 0V24h7.498v-7.5zm8.25 0V24H24v-7.5z"></path></svg></span> <strong>pnpm (Performant npm)</strong></p>
+<p><strong>-g</strong> or <strong>--global</strong>:</p>
+<ul>
+<li>Purpose: Install packages globally for system-wide access, useful for CLI tools and utilities.</li>
+<li>Usage: Use this flag for tools you want to use from the command line across projects.</li>
+<li>Example: <code>npm install -g nodemon</code></li>
+</ul>
+</li>
+<li>
+<p><strong>--exact</strong> or <strong>-E</strong>:</p>
+<ul>
+<li>Purpose: Install packages with an exact version, avoiding automatic updates.</li>
+<li>Usage: Use this for version consistency in your project.</li>
+<li>Example: <code>npm install lodash@4.17.21 -E</code></li>
+</ul>
+</li>
+<li>
+<p><strong>--no-save</strong>:</p>
+<ul>
+<li>Purpose: Install a package temporarily without adding it to package.json.</li>
+<li>Usage: Use this for testing or one-time installs.</li>
+<li>Example: <code>npm install some-temporary-package --no-save</code></li>
+</ul>
+</li>
+<li>
+<p><strong>--save-optional</strong> or <strong>-O</strong>:</p>
+<ul>
+<li>Purpose: Install packages that are not essential but provide additional functionality if available.</li>
+<li>Usage: Use this for optional dependencies that enhance your project but aren't critical.</li>
+<li>Example: <code>npm install fsevents -O</code></li>
+</ul>
+</li>
+<li>
+<p><strong>--save-peer</strong>:</p>
+<ul>
+<li>Purpose: Install packages as peer dependencies, which are meant to work alongside a specific version of another package.</li>
+<li>Usage: Use this for packages that should be compatible with a specific version of a core dependency.</li>
+<li>Example: <code>npm install react@^17.0.0 -P</code></li>
+</ul>
+</li>
+</ol>
+<p>Choosing the right flag ensures that your dependencies are managed effectively, keeping your project organized and efficient.</p>
 <hr>
-<p>Uses a unique approach of symlinking packages which saves space and speeds up installations.</p>
-<p><a href="../pnpm/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span> Reference</a></p>
+<blockquote>
+<p>Summary</p>
+</blockquote>
+<ul>
+<li>Use <strong>-D</strong> for development dependencies.</li>
+<li>Use without any flag for production dependencies.</li>
+<li>Use <strong>-g</strong> for globally installed tools.</li>
+<li>Use <strong>-E</strong> for exact version installations.</li>
+<li>Use <mark>--no-save</mark> for temporary installations.</li>
+<li>Use <strong>-O</strong> for optional dependencies.</li>
+<li>Use <strong>-P</strong> for peer dependencies.</li>
+</ul>
+</details>
+<hr>
+<h2 id="deep-dive-into-packagejson">Deep Dive into <code>package.json</code></h2>
+<p>The <code>package.json</code> file is central to any <code>Node.js</code> project, serving as the manifest for your project. It defines project metadata, dependencies, scripts, and configurations. Here’s an in-depth look at the key sections and features of package.json:</p>
+<h3 id="scripts">Scripts</h3>
+<ul>
+<li>Purpose: Defines custom commands that can be run using <code>npm run &lt;script-name&gt;</code>.</li>
+<li>
+<p>Examples:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"node index.js"</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jest"</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">"build"</span><span class="p">:</span><span class="w"> </span><span class="s2">"webpack --config webpack.config.js"</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Custom Scripts: You can create scripts for various tasks like testing, building, linting, and more. Scripts can be executed with <code>npm run &lt;script-name&gt;</code>.</p>
 </li>
 </ul>
-</div>
-<hr>
-<h2 id="decision-factors">Decision Factors</h2>
-<ol>
-<li>Performance Needs: If speed and efficiency are crucial, consider Yarn or pnpm.</li>
-<li>Monorepo Management: For projects with multiple packages, Yarn or pnpm’s workspace features are beneficial.</li>
-<li>Team Familiarity: Choose the package manager that your team is most comfortable with to minimize the learning curve.</li>
-<li>Ecosystem and Tooling: Consider the compatibility of the package manager with other tools and services you use.</li>
-</ol>
-<h2 id="summary">Summary</h2>
+<h3 id="dependencies">Dependencies</h3>
 <ul>
-<li><strong>Use npm</strong> if you prefer the default, out-of-the-box solution with Node.js.</li>
-<li><strong>Use Yarn</strong> if you need faster installs, stability, and good monorepo support.</li>
-<li><strong>Use pnpm</strong> if you want the best performance and disk space efficiency, and are open to adopting newer tools.</li>
-</ul></div>
+<li>
+<p>dependencies: Packages required for the application to run in production.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">"dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">"express"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^4.17.1"</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">"axios"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^0.21.1"</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>devDependencies: Packages needed only during development (e.g., testing frameworks, build tools).</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">"devDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">"jest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^26.6.3"</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">"webpack"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^5.24.4"</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>optionalDependencies: Packages that are not essential but provide additional features if available.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">"optionalDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">"fsevents"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^1.2.13"</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>peerDependencies: Packages that your project needs to work alongside a specific version of another package.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">"peerDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nt">"react"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^17.0.2"</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="configurations">Configurations</h3>
+<ul>
+<li>
+<p>engines: Specifies which versions of Node.js and other engines your project is compatible with.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">"engines"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="nt">"node"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&gt;=12.0.0"</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>browserslist: Defines the list of browsers that your project should support, used by tools like Babel and Autoprefixer.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">"browserslist"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="s2">"&gt; 1%"</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="s2">"last 2 versions"</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="s2">"not dead"</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">]</span>
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="scripts-configuration-hooks">Scripts Configuration <code>Hooks</code></h3>
+<ul>
+<li>
+<p>pre and post Hooks: Special scripts that run before or after a specific script. For example, <code>pretest</code> runs before test, and <code>postbuild</code> runs after build.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nt">"pretest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"echo Preparing for tests..."</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jest"</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">"posttest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"echo Tests completed!"</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="package-metadata">Package Metadata</h3>
+<ul>
+<li>
+<p>main: The entry point of your project or package, usually the main file.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">"main"</span><span class="p">:</span><span class="w"> </span><span class="s2">"index.js"</span>
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="workspaces">Workspaces</h3>
+<ul>
+<li>
+<p>Purpose: Manage multiple packages within a single repository. Useful for <mark>monorepos</mark>.</p>
+</li>
+<li>
+<p>Configuration:</p>
+</li>
+</ul>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">"workspaces"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="s2">"packages/*"</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">]</span>
+</span></code></pre></div>
+<h3 id="summary">Summary</h3>
+<ul>
+<li><code>package.json</code> is crucial for defining project metadata, managing dependencies, configuring scripts, and setting up project settings.</li>
+<li>Scripts help automate development workflows.</li>
+<li>Dependencies are categorized into <code>dependencies</code>, <code>devDependencies</code>, <code>optionalDependencies</code>, and <code>peerDependencies</code> based on their role.</li>
+<li>Configurations and metadata fields help define how your project behaves and integrates with other tools.</li>
+</ul>
+<p>Mastering <code>package.json</code> allows you to effectively manage your <code>Node.js</code> projects and streamline development processes.</p></div>
 
 
 
@@ -3246,7 +3673,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../ESLint/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ESLint">
+          <a href="../nodejs-package-manager/" class="md-footer__link md-footer__link--prev" aria-label="Previous: nodejs package manager">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -3256,20 +3683,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                ESLint
+                nodejs package manager
               </div>
             </div>
           </a>
         
         
           
-          <a href="../node-package-manager/" class="md-footer__link md-footer__link--next" aria-label="Next: npm">
+          <a href="../yarn/" class="md-footer__link md-footer__link--next" aria-label="Next: yarn">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                npm
+                yarn
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -3324,10 +3751,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
