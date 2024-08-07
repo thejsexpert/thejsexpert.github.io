@@ -431,16 +431,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/state-management/redux/redux-middleware/</loc>
-         <lastmod>2024-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk-guide/</loc>
-         <lastmod>2024-08-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/reducer/example/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
@@ -456,17 +446,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/state-management/redux-middleware/intro/</loc>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/redux-middleware/intro/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/state-management/redux-middleware/redux-saga/</loc>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/redux-middleware/redux-saga/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/state-management/redux-middleware/redux-thunk/</loc>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/redux-middleware/redux-thunk/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/folder-structure/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/intro/</loc>
+         <lastmod>2024-08-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/standard-redux/intro/</loc>
          <lastmod>2024-08-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
