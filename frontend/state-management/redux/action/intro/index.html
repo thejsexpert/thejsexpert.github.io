@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/core/array-prototype/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/state-management/redux/action/intro/">
       
       
-        <link rel="prev" href="../object-prototype/">
+        <link rel="prev" href="../../rtk/folder-structure/">
       
       
-        <link rel="next" href="../object/">
+        <link rel="next" href="../../reducer/intro/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>Array Prototype - My Docs</title>
+        <title>Intro - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -61,7 +61,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#array-prototype" class="md-skip">
+        <a href="#what-is-an-action-in-redux" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Array Prototype
+              Intro
             
           </span>
         </div>
@@ -174,7 +174,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+        <a href="../../../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -188,13 +188,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../js/intro/" class="md-tabs__link">
           
   
   JS
@@ -212,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../react/core/intro/" class="md-tabs__link">
+        <a href="../../../../react/core/intro/" class="md-tabs__link">
           
   
   React
@@ -230,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../react/package/intro/" class="md-tabs__link">
+        <a href="../../../../react/package/intro/" class="md-tabs__link">
           
   
   Package
@@ -244,11 +242,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../state-management/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../intro/" class="md-tabs__link">
           
   
   State Management
@@ -266,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../interview/react/" class="md-tabs__link">
+        <a href="../../../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -323,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -381,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+      <a href="../../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,28 +475,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -507,7 +502,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             JS
@@ -521,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../../../js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,8 +534,6 @@
                 
   
   
-    
-  
   
   
     
@@ -550,11 +543,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -568,7 +561,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             CORE
@@ -582,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototype/" class="md-nav__link">
+      <a href="../../../../js/core/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -603,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-prototype/" class="md-nav__link">
+      <a href="../../../../js/core/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,30 +614,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Array Prototype
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../js/core/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -653,71 +626,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-is-the-array-prototype-important" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why is the Array Prototype Important?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-of-adding-a-custom-method-to-array-prototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example of Adding a Custom Method to Array Prototype
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#most-important-about-array" class="md-nav__link">
-    <span class="md-ellipsis">
-      Most Important about Array
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-mastering-these-functions-is-important" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why Mastering These Functions is Important:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -730,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object/" class="md-nav__link">
+      <a href="../../../../js/core/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -751,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../array/" class="md-nav__link">
+      <a href="../../../../js/core/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -772,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-types/" class="md-nav__link">
+      <a href="../../../../js/core/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -793,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../control-statement/" class="md-nav__link">
+      <a href="../../../../js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -814,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../high-order-function/" class="md-nav__link">
+      <a href="../../../../js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -835,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../serialization/" class="md-nav__link">
+      <a href="../../../../js/core/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -856,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-response-object/" class="md-nav__link">
+      <a href="../../../../js/core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../../js/core/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -898,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maps-and-sets/" class="md-nav__link">
+      <a href="../../../../js/core/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -919,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../topic/" class="md-nav__link">
+      <a href="../../../../js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -940,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js-exception-handling/" class="md-nav__link">
+      <a href="../../../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../json/intro/" class="md-nav__link">
+      <a href="../../../../js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1074,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/es6/" class="md-nav__link">
+      <a href="../../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1141,7 +1049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/vite/" class="md-nav__link">
+      <a href="../../../../js/tools/vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1162,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../../js/tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1183,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/ESLint/" class="md-nav__link">
+      <a href="../../../../js/tools/ESLint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1204,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/nodejs-package-manager/" class="md-nav__link">
+      <a href="../../../../js/tools/nodejs-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1225,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/node-package-manager/" class="md-nav__link">
+      <a href="../../../../js/tools/node-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1246,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/yarn/" class="md-nav__link">
+      <a href="../../../../js/tools/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1267,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/pnpm/" class="md-nav__link">
+      <a href="../../../../js/tools/pnpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1334,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/jest/" class="md-nav__link">
+      <a href="../../../../js/testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1355,7 +1263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/cypress/" class="md-nav__link">
+      <a href="../../../../js/testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1429,7 +1337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/intro/" class="md-nav__link">
+      <a href="../../../../react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1488,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../../react/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1509,7 +1417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../../react/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1530,7 +1438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../../react/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1551,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../../react/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1572,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../../react/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1593,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../../react/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1614,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/pattern/misc/" class="md-nav__link">
+      <a href="../../../../react/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1681,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-technique/" class="md-nav__link">
+      <a href="../../../../react/core/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1702,7 +1610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../../react/core/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1723,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../../react/core/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1744,7 +1652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useCallback/" class="md-nav__link">
+      <a href="../../../../react/core/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1765,7 +1673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/useRef/" class="md-nav__link">
+      <a href="../../../../react/core/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1786,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/react-context-api/" class="md-nav__link">
+      <a href="../../../../react/core/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1807,7 +1715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/react-router/" class="md-nav__link">
+      <a href="../../../../react/core/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1828,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../../react/core/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1849,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/guides/" class="md-nav__link">
+      <a href="../../../../react/core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1916,7 +1824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/router/intro/" class="md-nav__link">
+      <a href="../../../../react/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1983,7 +1891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/passing-props/" class="md-nav__link">
+      <a href="../../../../react/example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2004,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../../../../react/example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2025,7 +1933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/prop-drilling/" class="md-nav__link">
+      <a href="../../../../react/example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2046,7 +1954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/children-prop/" class="md-nav__link">
+      <a href="../../../../react/example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2067,7 +1975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/component-composition/" class="md-nav__link">
+      <a href="../../../../react/example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2088,7 +1996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/hoc/" class="md-nav__link">
+      <a href="../../../../react/example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2109,7 +2017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/render-props/" class="md-nav__link">
+      <a href="../../../../react/example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2130,7 +2038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../../../../react/example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2151,7 +2059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2218,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/fake-api/intro/" class="md-nav__link">
+      <a href="../../../../react/fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2285,7 +2193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/others/login/react-login/" class="md-nav__link">
+      <a href="../../../../react/others/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2352,7 +2260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/others/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../../../react/others/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2381,7 +2289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/code-for-change/" class="md-nav__link">
+      <a href="../../../../react/code-for-change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2402,7 +2310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/slides/" class="md-nav__link">
+      <a href="../../../../react/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2423,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/guides/" class="md-nav__link">
+      <a href="../../../../react/core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2489,7 +2397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/intro/" class="md-nav__link">
+      <a href="../../../../react/package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2548,7 +2456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/" class="md-nav__link">
+      <a href="../../../../react/package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2569,7 +2477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../../react/package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2590,7 +2498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form/" class="md-nav__link">
+      <a href="../../../../react/package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2611,7 +2519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../../../react/package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2678,7 +2586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../../react/package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2745,7 +2653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../../react/package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2812,7 +2720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/fetching/intro/" class="md-nav__link">
+      <a href="../../../../react/package/fetching/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2833,7 +2741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/fetching/axios/" class="md-nav__link">
+      <a href="../../../../react/package/fetching/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2866,23 +2774,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2893,7 +2806,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             State Management
@@ -2907,7 +2820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/intro/" class="md-nav__link">
+      <a href="../../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2925,6 +2838,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2934,11 +2849,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -2952,7 +2867,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
             Redux
@@ -2966,7 +2881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2987,7 +2902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/folder-structure/" class="md-nav__link">
+      <a href="../../folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3046,7 +2961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3113,7 +3028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3134,7 +3049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/folder-structure/" class="md-nav__link">
+      <a href="../../rtk/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3160,6 +3075,8 @@
                 
   
   
+    
+  
   
   
     
@@ -3169,11 +3086,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5_2_5" id="__nav_5_2_5_label" tabindex="0">
@@ -3187,7 +3104,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_2_5">
             <span class="md-nav__icon md-icon"></span>
             Action
@@ -3198,10 +3115,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../state-management/redux/action/intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -3210,6 +3145,84 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-action-in-redux" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an Action in Redux?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Creator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difference-between-plain-action-action-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference between plain action &amp; action creator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Difference between plain action & action creator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-creator_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Creator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-tricks-for-redux-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips and Tricks for Redux Actions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3268,7 +3281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/intro/" class="md-nav__link">
+      <a href="../../reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3289,7 +3302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/example/" class="md-nav__link">
+      <a href="../../reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3310,7 +3323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3331,7 +3344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3398,7 +3411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3419,7 +3432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3440,7 +3453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3515,7 +3528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3582,7 +3595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3649,7 +3662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/middleware/" class="md-nav__link">
+      <a href="../../../middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3723,7 +3736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3744,7 +3757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3810,7 +3823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/react/" class="md-nav__link">
+      <a href="../../../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3831,7 +3844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3852,7 +3865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/micro-frontend/" class="md-nav__link">
+      <a href="../../../../../interview/micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3890,8 +3903,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3900,45 +3911,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-is-the-array-prototype-important" class="md-nav__link">
+  <a href="#what-is-an-action-in-redux" class="md-nav__link">
     <span class="md-ellipsis">
-      Why is the Array Prototype Important?
+      What is an Action in Redux?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-of-adding-a-custom-method-to-array-prototype" class="md-nav__link">
+  <a href="#action-creator" class="md-nav__link">
     <span class="md-ellipsis">
-      Example of Adding a Custom Method to Array Prototype
+      Action Creator
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#difference-between-plain-action-action-creator" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      Difference between plain action &amp; action creator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Difference between plain action & action creator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#most-important-about-array" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#action-creator_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Most Important about Array
+      Action Creator
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#why-mastering-these-functions-is-important" class="md-nav__link">
+  <a href="#tips-and-tricks-for-redux-actions" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Mastering These Functions is Important:
+      Tips and Tricks for Redux Actions
     </span>
   </a>
   
@@ -3959,133 +3985,162 @@
                   
 
 
-<div><h1 id="array-prototype">Array Prototype</h1>
-<p>In JavaScript, the Array prototype is an object that contains methods and properties available to all arrays. When you create a new array, it inherits these methods and properties through its prototype chain.</p>
-<p>Here's how the prototype chain works for arrays:</p>
+  <h1>Intro</h1>
+
+<div><h2 id="what-is-an-action-in-redux">What is an Action in Redux?</h2>
+<p>In Redux, an action is a plain JavaScript object that represents an event or change that happened in the application. It is the only source of information for the store, meaning all state changes in the store are triggered by actions.</p>
+<p>An action has two key properties:</p>
 <ul>
-<li>When you create an array like <code>let myArray = [1, 2, 3];</code>, myArray inherits from <code>Array.prototype</code>.</li>
-<li><strong>Array.prototype</strong> is itself an object <mark>that inherits from</mark> <strong>Object.prototype</strong>.</li>
+<li><strong>type</strong>: A string that defines the type of action (e.g., 'ADD_TODO', 'FETCH_DATA_SUCCESS'). This is mandatory.</li>
+<li><strong>payload (optional)</strong>: An additional data object that contains the information needed to perform the action (e.g., the todo item or fetched data).</li>
 </ul>
-<h2 id="why-is-the-array-prototype-important">Why is the Array Prototype Important?</h2>
-<ul>
-<li>
-<p>Inheritance:</p>
-<p>All arrays have access to the methods defined on Array.prototype. This means you can call methods like push, pop, map, filter, etc., on any array.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">myArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mf">4</span><span class="p">);</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4]</span>
+<details class="example" open="open">
+<summary>Basic Example of an Action</summary>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Simple action to add a todo</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">addTodoAction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'ADD_TODO'</span><span class="p">,</span><span class="w">               </span><span class="c1">// Mandatory 'type' field</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">'Learn Redux'</span><span class="p">,</span><span class="w">        </span><span class="c1">// Optional 'payload' field containing data</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">};</span>
 </span></code></pre></div>
-</li>
-<li>
-<p>Extensibility:</p>
-<p>You can add custom methods to all arrays by modifying <code>Array.prototype</code>. However, this is <mark>generally discouraged in practice</mark> because it can lead to conflicts and unexpected behavior, especially in shared environments or libraries.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">};</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">myArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">.</span><span class="nx">first</span><span class="p">());</span><span class="w"> </span><span class="c1">// 1</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Efficiency:</p>
-<p>By defining methods on the prototype, JavaScript ensures that only one copy of each method exists in memory, regardless of the number of arrays you create. This is more efficient than defining the same method individually for each array instance.</p>
-</li>
-</ul>
-<h2 id="example-of-adding-a-custom-method-to-array-prototype">Example of Adding a Custom Method to Array Prototype</h2>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">];</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">};</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">myArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">.</span><span class="nx">last</span><span class="p">());</span><span class="w"> </span><span class="c1">// 4</span>
-</span></code></pre></div>
-<p>In this example:</p>
-<ul>
-<li>We add a last method to <code>Array.prototype</code>, which returns the last element of the array.</li>
-<li>All arrays now have access to this <code>last</code> method.</li>
-</ul>
-<h2 id="summary">Summary</h2>
-<ul>
-<li>
-<p><strong>Higher-order functions</strong> are functions that operate on other functions, either by taking them as arguments or by returning them. Many array methods in JavaScript are higher-order functions.</p>
-</li>
-<li>
-<p>The <strong>Array prototype</strong> is an object from which all arrays inherit their methods and properties. It allows for method sharing and efficient memory use, as well as extensibility by adding custom methods.</p>
-</li>
-</ul>
-<hr>
-<h2 id="most-important-about-array">Most Important about Array</h2>
-<p>One of the most important things to learn about arrays in JavaScript to master advanced programming is <mark>understanding</mark> and <mark>effectively utilizing</mark> <strong>higher-order functions</strong> <mark>provided by the Array prototype</mark>. These functions include methods like <code>map()</code>, <code>filter()</code>, <code>reduce()</code>, <code>forEach()</code>, <code>find()</code>, <code>some()</code>, and <code>every()</code>. Mastering these functions allows you to write concise, expressive, and efficient code for manipulating and processing arrays</p>
-<details class="success" open="open">
-<summary>Example and Explanation of Key Higher-Order Functions:</summary>
+</details>
+<p>The type field tells the Redux store what happened, and the payload field holds the data related to the action.</p>
+<details class="info" open="open">
+<summary>How Actions Work in Redux</summary>
 <ol>
-<li>
-<p>map():</p>
-<p>Creates a new array populated with the results of calling a provided function on every element in the calling array.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">doubled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">doubled</span><span class="p">);</span><span class="w"> </span><span class="c1">// [2, 4, 6, 8]</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>filter():</p>
-<p>Creates a new array with all elements that pass the test implemented by the provided function.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">evens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">evens</span><span class="p">);</span><span class="w"> </span><span class="c1">// [2, 4]</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>reduce():</p>
-<p>Executes a reducer function on each element of the array, resulting in a single output value.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">accumulator</span><span class="p">,</span><span class="w"> </span><span class="nx">currentValue</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">accumulator</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">currentValue</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>forEach():</p>
-<p>Executes a provided function once for each array element.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">));</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1">// Outputs: 1, 2, 3, 4</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>find():</p>
-<p>Returns the value of the first element in the provided array that satisfies the provided testing function.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">firstEven</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstEven</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>some():</p>
-<p>Tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">hasEven</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">some</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hasEven</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>every():</p>
-<p>Tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">];</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">allEven</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">numbers</span><span class="p">.</span><span class="nx">every</span><span class="p">(</span><span class="nx">num</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">allEven</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
-</span></code></pre></div>
-</li>
+<li><strong>Dispatch</strong>: Actions are dispatched from the UI or other parts of the app.</li>
+<li><strong>Reducer</strong>: The action is passed to the reducer, which determines how the state should change based on the action's type.</li>
+<li><strong>State Update</strong>: The store updates the state according to the reducer's instructions.</li>
 </ol>
 </details>
-<h2 id="why-mastering-these-functions-is-important">Why Mastering These Functions is Important:</h2>
+<hr>
+<h2 id="action-creator">Action Creator</h2>
+<p>An action creator is a function that returns an action. It simplifies creating actions and helps avoid manually creating action objects.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Action Creator to add a todo</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">addTodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'ADD_TODO'</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">todo</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">});</span>
+</span></code></pre></div>
+<details class="example" open="open">
+<summary>Using Action in a Component</summary>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useDispatch</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react-redux'</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">addTodo</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./actions/todoActions'</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">TodoComponent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">dispatch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useDispatch</span><span class="p">();</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleAddTodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">newTodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">'Learn Redux Basics'</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">addTodo</span><span class="p">(</span><span class="nx">newTodo</span><span class="p">));</span><span class="w"> </span><span class="c1">// Dispatching the action</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleAddTodo</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">Add</span><span class="w"> </span><span class="nx">Todo</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">};</span>
+</span></code></pre></div>
+</details>
+<details class="example" open="open">
+<summary>Simple Reducer Example</summary>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">todoReducer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">todos</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'ADD_TODO'</span><span class="o">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">                </span><span class="p">...</span><span class="nx">state</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">                </span><span class="nx">todos</span><span class="o">:</span><span class="w"> </span><span class="p">[...</span><span class="nx">state</span><span class="p">.</span><span class="nx">todos</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">todo</span><span class="p">],</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">            </span><span class="p">};</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">state</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">};</span>
+</span></code></pre></div>
+</details>
+<hr>
+<h2 id="difference-between-plain-action-action-creator">Difference between plain action &amp; action creator</h2>
+<p>In Redux, actions and action creators are related but distinct concepts:</p>
+<h3 id="action">Action</h3>
+<p>An action is a plain JavaScript object that describes a change or event in your application. It has at least one required property:</p>
 <ul>
-<li><strong>Expressiveness</strong>: They allow you to express complex operations on arrays concisely and declaratively.</li>
-<li><strong>Readability</strong>: Code written with these methods is often more readable and easier to understand, as it closely matches the high-level description of the logic.</li>
-<li><strong>Functional Programming</strong>: These methods are fundamental to functional programming techniques, which are powerful for writing clean, maintainable, and bug-resistant code.</li>
-<li><strong>Efficiency</strong>: They are optimized for performance in most JavaScript engines, making them efficient for large datasets.</li>
+<li>type: A string that specifies the action type (e.g., 'ADD_TODO').</li>
 </ul>
-<p>Understanding and mastering these higher-order functions will significantly enhance your ability to write advanced and efficient JavaScript code.</p></div>
+<p>Optionally, it can also include other properties:</p>
+<ul>
+<li>payload: Additional data needed to describe the action (e.g., the new todo item).</li>
+</ul>
+<div class="language-js highlight"><span class="filename">Example of an Action:</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// actions/todoActions.js (if you want to keep it organized)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">addTodoAction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'ADD_TODO'</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">'Learn Redux'</span><span class="p">,</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1">// Usage in component</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleAddTodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">addTodoAction</span><span class="p">);</span><span class="w"> </span><span class="c1">// Dispatch the plain action object</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">};</span>
+</span></code></pre></div>
+<h3 id="action-creator_1">Action Creator</h3>
+<p>An action creator is a function that creates and returns an action. It abstracts away the action object creation process and makes it easier to generate actions with the right structure.</p>
+<p>Action creators simplify creating actions and are useful for:</p>
+<ul>
+<li>Consistent action creation.</li>
+<li>Dynamically generating actions with specific payloads.</li>
+<li>Avoiding typos in action types.</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// actions/todoActions.js (if you want to keep it organized)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">addTodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'ADD_TODO'</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="nx">todo</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">});</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1">// Usage</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleAddTodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">newTodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">'Learn Redux'</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">addTodo</span><span class="p">(</span><span class="nx">newTodo</span><span class="p">));</span><span class="w"> </span><span class="c1">// Using action creator</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="p">};</span>
+</span></code></pre></div>
+<details class="info" open="open">
+<summary>Summary</summary>
+<ul>
+<li><strong>Action</strong>: A plain object that represents an event or change in the application. It has a <mark>type</mark> and optionally other properties like <mark>payload</mark>.</li>
+<li><strong>Action Creator</strong>: A function that returns an action object. It helps in creating actions with the right structure and potentially dynamic data.</li>
+</ul>
+</details>
+<p><mark>In practice</mark>, <strong>action creators are commonly used</strong> in Redux applications because they provide a clear and consistent way to create actions and often handle complex logic for creating action objects.</p>
+<hr>
+<h2 id="tips-and-tricks-for-redux-actions">Tips and Tricks for Redux Actions</h2>
+<ol>
+<li>
+<p>Action Types as Constants:</p>
+<ul>
+<li>
+<p>Use constants for action types to prevent typos and make refactoring easier.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">ADD_TODO</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'ADD_TODO'</span><span class="p">;</span>
+</span></code></pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p>Batched Actions:</p>
+<ul>
+<li>
+<p>Instead of dispatching multiple actions in sequence, you can batch them together.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">addTodoAndLog</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="nx">dispatch</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">        </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">addTodoAction</span><span class="p">(</span><span class="nx">todo</span><span class="p">));</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">        </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">logAction</span><span class="p">(</span><span class="nx">todo</span><span class="p">));</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">};</span>
+</span></code></pre></div>
+</li>
+</ul>
+</li>
+</ol></div>
 
 
 
@@ -4121,7 +4176,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../object-prototype/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Object Prototype">
+          <a href="../../rtk/folder-structure/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Folder Structure">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -4131,20 +4186,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Object Prototype
+                Folder Structure
               </div>
             </div>
           </a>
         
         
           
-          <a href="../object/" class="md-footer__link md-footer__link--next" aria-label="Next: Object">
+          <a href="../../reducer/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Object
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4199,10 +4254,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

@@ -446,7 +446,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/action/intro/</loc>
+         <lastmod>2024-08-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/reducer/example/</loc>
+         <lastmod>2024-08-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/redux/reducer/intro/</loc>
          <lastmod>2024-08-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
