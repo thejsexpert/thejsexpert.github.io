@@ -841,6 +841,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../js/core/js-exception-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exception Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2193,6 +2214,81 @@
   <a href="#5-drag-and-drop" class="md-nav__link">
     <span class="md-ellipsis">
       5. Drag and Drop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structure-of-hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder Structure of HOCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder Structure of HOCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basic-folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Basic Folder Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-advanced-folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Advanced Folder Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-each-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of Each Folder:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      HOCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HOCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-for-using-hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenarios for Using HOCs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-uses-of-hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Uses of HOCs
     </span>
   </a>
   
@@ -4099,6 +4195,81 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#folder-structure-of-hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder Structure of HOCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder Structure of HOCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basic-folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Basic Folder Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-advanced-folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Advanced Folder Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-each-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of Each Folder:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      HOCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HOCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-for-using-hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenarios for Using HOCs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-uses-of-hocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Uses of HOCs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5007,20 +5178,174 @@
 </details>
 <p>These examples should cover a wide range of scenarios and illustrate how HOCs can be used to enhance and reuse component functionality at different levels of complexity.</p>
 <hr>
-<p></p><div class="language-jsx highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>
+<h2 id="folder-structure-of-hocs">Folder Structure of HOCs</h2>
+<p>The folder structure for Higher-Order Components (HOCs) in a React project can vary depending on the complexity and size of your project. However, a common and organized way to structure your folders and files can look like this:</p>
+<h3 id="1-basic-folder-structure">1. Basic Folder Structure</h3>
+<p>A simple structure for a small to medium-sized project might look like this:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>src/
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>├── components/
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>│   ├── SomeComponent/
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>│   │   ├── SomeComponent.js
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>│   │   ├── SomeComponent.css
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>│   │   └── index.js
+</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>├── hocs/
+</span><span id="__span-41-8"><a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a>│   ├── withAuth.js
+</span><span id="__span-41-9"><a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a>│   └── withLogging.js
+</span><span id="__span-41-10"><a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a>├── App.js
+</span><span id="__span-41-11"><a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a>├── index.js
+</span><span id="__span-41-12"><a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a>└── ...
 </span></code></pre></div>
-<div class="language-jsx highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>
+<h3 id="2-advanced-folder-structure">2. Advanced Folder Structure</h3>
+<p>For larger projects, it might make sense to have a more detailed structure:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>src/
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>├── components/
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>│   ├── SomeComponent/
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>│   │   ├── SomeComponent.js
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>│   │   ├── SomeComponent.css
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>│   │   └── index.js
+</span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>│   └── AnotherComponent/
+</span><span id="__span-42-8"><a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a>│       ├── AnotherComponent.js
+</span><span id="__span-42-9"><a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a>│       ├── AnotherComponent.css
+</span><span id="__span-42-10"><a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a>│       └── index.js
+</span><span id="__span-42-11"><a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>├── hocs/
+</span><span id="__span-42-12"><a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a>│   ├── withAuth/
+</span><span id="__span-42-13"><a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a>│   │   ├── withAuth.js
+</span><span id="__span-42-14"><a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a>│   │   └── index.js
+</span><span id="__span-42-15"><a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a>│   ├── withLogging/
+</span><span id="__span-42-16"><a id="__codelineno-42-16" name="__codelineno-42-16" href="#__codelineno-42-16"></a>│   │   ├── withLogging.js
+</span><span id="__span-42-17"><a id="__codelineno-42-17" name="__codelineno-42-17" href="#__codelineno-42-17"></a>│   │   └── index.js
+</span><span id="__span-42-18"><a id="__codelineno-42-18" name="__codelineno-42-18" href="#__codelineno-42-18"></a>│   └── withAnotherFeature/
+</span><span id="__span-42-19"><a id="__codelineno-42-19" name="__codelineno-42-19" href="#__codelineno-42-19"></a>│       ├── withAnotherFeature.js
+</span><span id="__span-42-20"><a id="__codelineno-42-20" name="__codelineno-42-20" href="#__codelineno-42-20"></a>│       └── index.js
+</span><span id="__span-42-21"><a id="__codelineno-42-21" name="__codelineno-42-21" href="#__codelineno-42-21"></a>├── utils/
+</span><span id="__span-42-22"><a id="__codelineno-42-22" name="__codelineno-42-22" href="#__codelineno-42-22"></a>│   ├── helper1.js
+</span><span id="__span-42-23"><a id="__codelineno-42-23" name="__codelineno-42-23" href="#__codelineno-42-23"></a>│   └── helper2.js
+</span><span id="__span-42-24"><a id="__codelineno-42-24" name="__codelineno-42-24" href="#__codelineno-42-24"></a>├── hooks/
+</span><span id="__span-42-25"><a id="__codelineno-42-25" name="__codelineno-42-25" href="#__codelineno-42-25"></a>│   ├── useCustomHook.js
+</span><span id="__span-42-26"><a id="__codelineno-42-26" name="__codelineno-42-26" href="#__codelineno-42-26"></a>│   └── useAnotherHook.js
+</span><span id="__span-42-27"><a id="__codelineno-42-27" name="__codelineno-42-27" href="#__codelineno-42-27"></a>├── App.js
+</span><span id="__span-42-28"><a id="__codelineno-42-28" name="__codelineno-42-28" href="#__codelineno-42-28"></a>├── index.js
+</span><span id="__span-42-29"><a id="__codelineno-42-29" name="__codelineno-42-29" href="#__codelineno-42-29"></a>└── ...
 </span></code></pre></div>
-<div class="language-jsx highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>
-</span></code></pre></div>
-<div class="language-jsx highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>
-</span></code></pre></div>
-<div class="language-jsx highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>
-</span></code></pre></div>
-<div class="language-jsx highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>
-</span></code></pre></div>
-<div class="language-jsx highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>
-</span></code></pre></div></div>
+<h3 id="explanation-of-each-folder">Explanation of Each Folder:</h3>
+<ol>
+<li>
+<p>components/:</p>
+<ul>
+<li>Contains all your React components.</li>
+<li>Each component has its own folder which may contain its JavaScript file, CSS file, and an <code>index.js</code> for easier imports.</li>
+</ul>
+</li>
+<li>
+<p>hocs/:</p>
+<ul>
+<li>Contains all your Higher-Order Components.</li>
+<li>Each HOC can have its own folder if it consists of multiple files or just a single file if it's simple.</li>
+<li>Each HOC folder typically has an <code>index.js</code> file for easier imports.</li>
+</ul>
+</li>
+<li>
+<p>utils/:</p>
+<ul>
+<li>Contains utility functions that can be reused throughout your project.</li>
+</ul>
+</li>
+<li>
+<p>hooks/:</p>
+<ul>
+<li>Contains custom React hooks.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="hocs">HOCs</h2>
+<p>Higher-Order Components (HOCs) are a pattern in React for reusing component logic. They are functions that take a component and return a new component with added functionality. HOCs are particularly useful in various scenarios, and they are commonly used for the following purposes:</p>
+<h3 id="scenarios-for-using-hocs">Scenarios for Using HOCs</h3>
+<ol>
+<li>
+<p>Code Reuse, Logic, and Bootstrap Abstraction:</p>
+<ul>
+<li>HOCs allow you to reuse code across multiple components. This is particularly useful for logic that needs to be shared, such as fetching data, managing state, or subscribing to events.</li>
+</ul>
+</li>
+<li>
+<p>Manipulating Props:</p>
+<ul>
+<li>HOCs can manipulate the props passed to a component. This can include adding new props, modifying existing ones, or filtering out unnecessary props.</li>
+</ul>
+</li>
+<li>
+<p>Conditional Rendering:</p>
+<ul>
+<li>HOCs can be used to conditionally render components based on certain criteria, such as user authentication, feature flags, or permission levels.</li>
+</ul>
+</li>
+<li>
+<p>State Management:</p>
+<ul>
+<li>They can manage state and pass it down as props to the wrapped component. This is useful for scenarios where state management logic needs to be shared across multiple components.</li>
+</ul>
+</li>
+<li>
+<p>Handling Side Effects:</p>
+<ul>
+<li>HOCs can handle side effects like data fetching, subscriptions, or logging. This is useful for abstracting side effects out of the component, keeping them clean and focused on rendering UI.</li>
+</ul>
+</li>
+</ol>
+<h3 id="common-uses-of-hocs">Common Uses of HOCs</h3>
+<ol>
+<li>
+<p>Authentication:</p>
+<ul>
+<li>Wrapping components to ensure that only authenticated users can access certain parts of an application.</li>
+<li>Example: <code>withAuth(Component)</code></li>
+</ul>
+</li>
+<li>
+<p>Logging:</p>
+<ul>
+<li>Adding logging functionality to components for debugging or analytics.</li>
+<li>Example: <code>withLogging(Component)</code></li>
+</ul>
+</li>
+<li>
+<p>Data Fetching:</p>
+<ul>
+<li>Fetching data from an API and passing it as props to the wrapped component.</li>
+<li>Example: <code>withDataFetching(Component, apiEndpoint)</code></li>
+</ul>
+</li>
+<li>
+<p>Theming:</p>
+<ul>
+<li>Providing theme-related props to components.</li>
+<li>Example: <code>withTheme(Component)</code></li>
+</ul>
+</li>
+<li>
+<p>Error Handling:</p>
+<ul>
+<li>Wrapping components with error boundaries to catch and handle errors in a standardized way.</li>
+<li>Example: <code>withErrorBoundary(Component)</code></li>
+</ul>
+</li>
+<li>
+<p>Access Control:</p>
+<ul>
+<li>Enforcing role-based access control by conditionally rendering components based on user roles.</li>
+<li>Example: <code>withRole(Component, allowedRoles)</code></li>
+</ul>
+</li>
+<li>
+<p>Form Handling:</p>
+<ul>
+<li>Managing form state and validation logic.</li>
+<li>Example: <code>withFormHandling(Component)</code></li>
+</ul>
+</li>
+</ol>
+<hr></div>
 
 
 
