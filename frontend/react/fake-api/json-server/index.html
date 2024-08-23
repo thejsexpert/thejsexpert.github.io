@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/core/guides/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/fake-api/json-server/">
       
       
-        <link rel="prev" href="../../slides/">
+        <link rel="prev" href="../intro/">
       
       
-        <link rel="next" href="../../package/intro/">
+        <link rel="next" href="../msw/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Guides - My Docs</title>
+        <title>Use Mocking Libraries - My Docs</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#children" class="md-skip">
+        <a href="#2-use-mocking-libraries-eg-json-server-miragejs" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Guides
+              Use Mocking Libraries
             
           </span>
         </div>
@@ -212,7 +212,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../intro/" class="md-tabs__link">
+        <a href="../../core/intro/" class="md-tabs__link">
           
   
   React
@@ -1342,7 +1342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1594,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../useEffect-technique/" class="md-nav__link">
+      <a href="../../core/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1615,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../useEffect-technique-used/" class="md-nav__link">
+      <a href="../../core/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1636,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../useEffect-cleanup/" class="md-nav__link">
+      <a href="../../core/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1657,7 +1657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../useCallback/" class="md-nav__link">
+      <a href="../../core/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1678,7 +1678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../useRef/" class="md-nav__link">
+      <a href="../../core/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1699,7 +1699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-context-api/" class="md-nav__link">
+      <a href="../../core/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1720,7 +1720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-router/" class="md-nav__link">
+      <a href="../../core/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1741,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../migrating-cra-vite/" class="md-nav__link">
+      <a href="../../core/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1762,23 +1762,7 @@
   
   
     <li class="md-nav__item">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Guides
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../../core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1787,51 +1771,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#children" class="md-nav__link">
-    <span class="md-ellipsis">
-      Children
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#react-hooks-reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      React Hooks Reference
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2151,6 +2090,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2160,11 +2101,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
           
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
@@ -2178,7 +2119,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             Fake API Call
@@ -2192,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fake-api/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2210,10 +2151,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../fake-api/json-server/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Use Mocking Libraries
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2222,6 +2181,60 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2-use-mocking-libraries-eg-json-server-miragejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Use Mocking Libraries (e.g., json-server, MirageJS):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-json-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      My JSON Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2234,7 +2247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fake-api/msw/" class="md-nav__link">
+      <a href="../msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2436,28 +2449,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Guides
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../core/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2466,51 +2461,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#children" class="md-nav__link">
-    <span class="md-ellipsis">
-      Children
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#react-hooks-reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      React Hooks Reference
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3977,18 +3927,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#children" class="md-nav__link">
+  <a href="#2-use-mocking-libraries-eg-json-server-miragejs" class="md-nav__link">
     <span class="md-ellipsis">
-      Children
+      2. Use Mocking Libraries (e.g., json-server, MirageJS):
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#react-hooks-reference" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      React Hooks Reference
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-json-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      My JSON Server
     </span>
   </a>
   
@@ -4018,52 +3977,265 @@
                   
 
 
-  <h1>Guides</h1>
+  <h1>Use Mocking Libraries</h1>
 
-<div><p><a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0008.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0008.jpg" width="500px"></a>
-<a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0009.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0009.jpg" width="500px"></a>
-<a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0010.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0010.jpg" width="500px"></a>
-<a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0011.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0011.jpg" width="500px"></a>
-<a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0012.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0012.jpg" width="500px"></a>
-<a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0013.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0013.jpg" width="500px"></a>
-<a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0014.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0014.jpg" width="500px"></a>
-<a class="glightbox" href="../../../../assets/frontend/react/guides/1703490325323_page-0015.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="React Hooks" src="../../../../assets/frontend/react/guides/1703490325323_page-0015.jpg" width="500px"></a></p>
-<hr>
-<blockquote>
-<p><a href="https://www.amazon.com/React-Design-Patterns-Best-Practices/dp/1786464535">React Design Patterns and Best Practices</a> page number: 82</p>
-</blockquote>
-<p>Props are the way a parent component can pass its data down the tree to every component
-that needs it (or part of it).</p>
-<p>When a component passes some props to another component, it is called the <strong>Owner</strong>,
-irrespective of the parent-child relation between them.</p>
-<h2 id="children">Children</h2>
-<p>There is a special prop that can be passed from the owners to the components defined
-inside their render method; it is called <strong>children</strong>.</p>
-<p>In the React documentation, it is described as <code>opaque</code> because it is a property that does not
-tell anything about the value it contains.</p>
-<hr>
-<h2 id="react-hooks-reference">React Hooks Reference</h2>
+<div><h2 id="2-use-mocking-libraries-eg-json-server-miragejs">2. Use Mocking Libraries (e.g., <code>json-server</code>, <code>MirageJS</code>):</h2>
 <ul>
-<li><a href="https://blog.devgenius.io/learn-core-redux-the-easiest-way-you-can-imagine-e051d7eaa893">Learn core Redux — The easiest way you can imagine</a></li>
+<li><code>json-server</code>: A full fake REST API server that you can run locally.</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>json-server
+</span></code></pre></div>
+<details class="info" open="open">
+<summary>Steps:</summary>
+<ol>
 <li>
-<p><a href="https://blog.devgenius.io/redux-toolkit-the-cheat-sheet-for-redux-development-add5813e1e7c">Redux Toolkit — The cheat sheet for Redux development</a></p>
+<p>Install json-server:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>json-server
+</span></code></pre></div>
 </li>
 <li>
-<p><a href="https://blog.logrocket.com/react-hooks-cheat-sheet-solutions-common-problems/#uselayouteffect">React Hooks cheat sheet: Best practices with examples</a></p>
+<p>Create a <code>db.json</code> file with some mock data:</p>
+<div class="language-bash highlight"><span class="filename">json</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="s2">"users"</span>:<span class="w"> </span><span class="o">[</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="o">{</span><span class="w"> </span><span class="s2">"id"</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"John Doe"</span><span class="w"> </span><span class="o">}</span>,
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="o">{</span><span class="w"> </span><span class="s2">"id"</span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Jane Smith"</span><span class="w"> </span><span class="o">}</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="o">]</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="o">}</span>
+</span></code></pre></div>
 </li>
 <li>
-<p><a href="https://reactpatterns.js.org/blog/react-hooks-cheat-sheet">React Hooks Cheat Sheet</a></p>
+<p>Run the server:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--port<span class="w"> </span><span class="m">5000</span>
+</span></code></pre></div>
 </li>
 <li>
-<p><a href="https://sidtechtalks.medium.com/react-hooks-cheatsheet-most-commonly-used-hooks-in-reactjs-576889aa8641">React Hooks Cheatsheet — Most commonly used hooks in ReactJS</a></p>
+<p>Now, you can access your API at <code>http://localhost:5000/users</code>.</p>
+</li>
+</ol>
+</details>
+<details class="example" open="open">
+<summary>Example in Vue/React/Angular:</summary>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s2">"http://localhost:5000/users"</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+</span></code></pre></div>
+</details>
+<hr>
+<h2 id="example">Example</h2>
+<details class="abstract" open="open">
+<summary>Abstract</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">1. Basic Example</label><label for="__tabbed_1_2">2. Intermediate Example</label><label for="__tabbed_1_3">3. Advanced Example</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>This example will create a simple REST API using json-server to serve basic user data.</p>
+<details class="example" open="open">
+<summary>Steps:</summary>
+<ol>
+<li>
+<p>Install <code>json-server</code> globally (if not already installed):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>json-server
+</span></code></pre></div>
 </li>
 <li>
-<p><a href="https://www.freecodecamp.org/news/react-cheatsheet-with-real-world-examples/">The React Cheatsheet for 2021 (+ Real-World Examples)</a></p>
+<p>Create a <code>db.json</code> file:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nt">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@example.com"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jane@example.com"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
+</span></code></pre></div>
 </li>
+<li>
+<p>Run <code>json-server</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--port<span class="w"> </span><span class="m">5000</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Access the API:</p>
+<ul>
+<li><code>GET http://localhost:5000/users</code> will return the list of users.</li>
+<li><code>GET http://localhost:5000/users/1</code> will return the user with id <code>1</code>.</li>
+<li><code>POST</code>, <code>PUT</code>, <code>DELETE</code> operations will work automatically for <code>users</code>.</li>
+</ul>
+</li>
+</ol>
+<p>Result:</p>
+<ul>
+<li>Simple API with RESTful routes for basic CRUD operations.</li>
+</ul>
+</details>
+</div>
+<div class="tabbed-block">
+<p>In this example, we’ll add:</p>
+<ul>
+<li><strong>Custom Routes</strong> for more control over the API.</li>
+<li><strong>Pagination and Filtering</strong> using query parameters.</li>
+</ul>
+<details class="example" open="open">
+<summary>Steps:</summary>
+<ol>
+<li>
+<p>Create an extended <code>db.json</code> file with multiple resources:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="nt">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@example.com"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jane@example.com"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bill Gates"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bill@microsoft.com"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Elon Musk"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elon@spacex.com"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="nt">"posts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem Ipsum"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 2"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dolor Sit"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 3"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amet Consectetur"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Add a <code>routes.json</code> file to define custom routes:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="nt">"/api/users"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/users"</span><span class="p">,</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">"/api/posts"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts"</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Run <code>json-server</code> with the custom routes:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--routes<span class="w"> </span>routes.json<span class="w"> </span>--port<span class="w"> </span><span class="m">5000</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>API Features:</p>
+<ul>
+<li>Pagination: <code>GET http://localhost:5000/users?_page=1&amp;_limit=2</code> will return 2 users per page.</li>
+<li>Filtering: <code>GET http://localhost:5000/posts?userId=1</code> will return all posts for user with <code>userId=1</code>.</li>
+<li>Custom Routes: Access users via <code>GET http://localhost:5000/api/users</code>.</li>
+</ul>
+</li>
+</ol>
+<p>Result:</p>
+<ul>
+<li>More control over API routes.</li>
+<li>Added pagination and filtering for more realistic data operations.</li>
+</ul>
+</details>
+</div>
+<div class="tabbed-block">
+<p>In this example, we’ll demonstrate:</p>
+<ul>
+<li><strong>Custom Middlewares</strong> for request logging.</li>
+<li><strong>Delayed Responses</strong> to simulate network delays.</li>
+<li><strong>Advanced Relationships</strong> between resources (users and posts).</li>
+</ul>
+<details class="example" open="open">
+<summary>Steps:</summary>
+<ol>
+<li>
+<p>Create a <code>db.json</code> file with more complex relationships:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="nt">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@example.com"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jane@example.com"</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="nt">"posts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 2"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 3"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="nt">"comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nice post!"</span><span class="p">,</span><span class="w"> </span><span class="nt">"postId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Thanks for sharing!"</span><span class="p">,</span><span class="w"> </span><span class="nt">"postId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Great article"</span><span class="p">,</span><span class="w"> </span><span class="nt">"postId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Create a <code>server.js</code> file to customize the server:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">jsonServer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">'json-server'</span><span class="p">);</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jsonServer</span><span class="p">.</span><span class="nx">create</span><span class="p">();</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">router</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jsonServer</span><span class="p">.</span><span class="nx">router</span><span class="p">(</span><span class="s1">'db.json'</span><span class="p">);</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">middlewares</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jsonServer</span><span class="p">.</span><span class="nx">defaults</span><span class="p">();</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5000</span><span class="p">;</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1">// Custom middleware to log requests</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">middlewares</span><span class="p">);</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">((</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="nx">next</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`[LOG] Request: </span><span class="si">${</span><span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">    </span><span class="nx">next</span><span class="p">();</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="p">});</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="c1">// Custom route for delayed response</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="nx">server</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/api/delayed-response'</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">        </span><span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mf">200</span><span class="p">).</span><span class="nx">jsonp</span><span class="p">({</span><span class="w"> </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">"This response is delayed!"</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">3000</span><span class="p">);</span><span class="w"> </span><span class="c1">// 3-second delay</span>
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="p">});</span>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="c1">// Use default router with pagination, filters, etc.</span>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">router</span><span class="p">);</span>
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="c1">// Start server</span>
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`JSON Server is running on http://localhost:</span><span class="si">${</span><span class="nx">port</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Run the custom server:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>node<span class="w"> </span>server.js
+</span></code></pre></div>
+</li>
+<li>
+<p>API Features:</p>
+<ul>
+<li>Logging Middleware: Logs all incoming requests with their method and URL.</li>
+<li>Delayed Response: <code>GET http://localhost:5000/api/delayed-response</code> simulates a 3-second delay before responding.</li>
+<li>Relationships: <code>GET http://localhost:5000/posts?userId=1</code> will fetch posts for a specific user, and you can fetch comments for a post with <code>GET http://localhost:5000/comments?postId=1</code>.</li>
+</ul>
+</li>
+</ol>
+<p>Result:</p>
+<ul>
+<li>Advanced API with custom middlewares, delayed responses, and relationships between entities.</li>
+<li>You can simulate real-world scenarios with complex data structures.</li>
+</ul>
+</details>
+</div>
+</div>
+</div>
+</details>
+<blockquote>
+<p>Summary:</p>
+</blockquote>
+<ul>
+<li><strong>Basic Example</strong>: Simple CRUD operations using <code>json-server</code>.</li>
+<li><strong>Intermediate Example</strong>: Added custom routes, pagination, and filtering.</li>
+<li><strong>Advanced Example</strong>: Custom middlewares, delayed responses, and more complex relationships between entities.</li>
+</ul>
+<p>These progressively advanced examples help you mock an API for frontend development, simulate realistic scenarios, and add more flexibility to your workflow.</p>
+<hr>
+<h2 id="my-json-server"><a href="https://my-json-server.typicode.com/">My JSON Server</a></h2>
+<details class="tips" open="open">
+<summary>How to</summary>
+<ol>
+<li>Create a repository on GitHub (<code>&lt;your-username&gt;/&lt;your-repo&gt;</code>)</li>
+<li>Create a <code>db.json</code> file</li>
+<li>Visit <a href="#">https://my-json-server.typicode.com/<your-username>/<your-repo></your-repo></your-username></a> to access your server</li>
+</ol>
+</details>
+<p><strong>No registration</strong>. Nothing to install.</p>
+<hr>
+<ul>
+<li><a href="https://my-json-server.typicode.com/Bishow-Thapa/my-json-server">my-json-server: github</a></li>
 </ul>
 <hr>
 <h2 id="reference">Reference</h2>
-<p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7145097071912517632?utm_source=share&amp;utm_medium=member_desktop">LinkedIn React Post</a></p></div>
+<ul>
+<li><a href="https://github.com/typicode/json-server">json server: github</a></li>
+<li><a href="https://my-json-server.typicode.com/">my-json-server.typicode.com</a></li>
+</ul></div>
 
 
 
@@ -4099,7 +4271,7 @@ tell anything about the value it contains.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../slides/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Slides">
+          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -4109,20 +4281,20 @@ tell anything about the value it contains.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Slides
+                Intro
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../package/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+          <a href="../msw/" class="md-footer__link md-footer__link--next" aria-label="Next: Mock Services with Browser APIs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Mock Services with Browser APIs
               </div>
             </div>
             <div class="md-footer__button md-icon">
