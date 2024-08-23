@@ -166,6 +166,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/js/json/json5/</loc>
+         <lastmod>2024-08-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/js/testing/cypress/</loc>
          <lastmod>2024-08-23</lastmod>
          <changefreq>daily</changefreq>
