@@ -686,7 +686,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/interview/api/</loc>
+         <lastmod>2024-09-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/interview/codesnap/</loc>
+         <lastmod>2024-09-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/interview/http-response/</loc>
          <lastmod>2024-09-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
