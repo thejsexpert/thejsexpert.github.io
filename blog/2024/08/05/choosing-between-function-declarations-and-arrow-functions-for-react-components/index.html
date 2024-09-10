@@ -8,25 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/core/api-response-object/">
+        <link rel="canonical" href="https://thejsexpert.github.io/blog/2024/08/05/choosing-between-function-declarations-and-arrow-functions-for-react-components/">
       
       
-        <link rel="prev" href="../serialization/">
+        <link rel="prev" href="../../../06/04/understanding-asyncawait/">
       
       
-        <link rel="next" href="../spread-vs-rest-operator/">
       
-      
-      <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>Response Object - My Docs</title>
+        <title>Choosing Between Function Declarations and Arrow Functions for React Components - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -45,25 +43,23 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-        html.glightbox-open { overflow: initial; height: 100%; }
-        .gslide-title { margin-top: 0px; user-select: text; }
-        .gslide-desc { color: #666; user-select: text; }
-        .gslide-image img { background: white; }
-        
-            .gscrollbar-fixer { padding-right: 15px; }
-            .gdesc-inner { font-size: 0.75rem; }
-            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -75,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fetching-api-data-in-javascript" class="md-skip">
+        <a href="#choosing-between-function-declarations-and-arrow-functions-for-react-components" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +87,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -111,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Response Object
+              Choosing Between Function Declarations and Arrow Functions for React Components
             
           </span>
         </div>
@@ -172,11 +168,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -190,13 +188,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../../frontend/js/intro/" class="md-tabs__link">
           
   
   JS
@@ -214,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../react/code-for-change/" class="md-tabs__link">
+        <a href="../../../../../frontend/react/code-for-change/" class="md-tabs__link">
           
   
   React
@@ -232,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../../../../frontend/state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -250,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../../../frontend/typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -268,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../interview/react/" class="md-tabs__link">
+        <a href="../../../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -296,7 +292,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -307,7 +305,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -322,22 +320,25 @@
       
   
   
+    
   
   
-    
-    
+  
     
     
     
       
+        
+        
+      
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -351,7 +352,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -362,12 +363,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -390,11 +393,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
@@ -427,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,27 +464,23 @@
       
   
   
-    
   
   
-  
-    
-    
     
     
     
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -491,7 +491,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             JS
@@ -505,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -523,21 +523,20 @@
                 
   
   
-    
   
   
-  
     
     
     
+      
+      
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -551,7 +550,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             CORE
@@ -565,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototype/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -586,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-prototype/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../array-prototype/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -649,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../array/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,28 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-types/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data Type
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../control-statement/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -712,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -733,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../high-order-function/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -754,226 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../serialization/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Serialization
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Response Object
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Response Object
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#fetching-api-data-in-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fetching API Data in JavaScript
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#process-of-fetching-and-parsing-json-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Process of Fetching and Parsing JSON Data
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-in-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example in JavaScript
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clarification-on-json-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clarification on JSON Response
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-of-json-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example of JSON Response
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-reponse-api-object" class="md-nav__link">
-    <span class="md-ellipsis">
-      what is reponse API object
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../spread-vs-rest-operator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Spread vs Rest Operator
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../maps-and-sets/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Maps and Sets
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../closure/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -994,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js-exception-handling/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1015,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../topic/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1046,11 +805,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
@@ -1060,7 +820,7 @@
             
   
   <span class="md-ellipsis">
-    Function
+    ADVANCED
   </span>
   
 
@@ -1070,7 +830,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            Function
+            ADVANCED
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1081,7 +841,116 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/advanced/this-in-js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    this
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/advanced/serialization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serialization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/advanced/maps-and-sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maps and Sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data Types
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Data Types
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1102,7 +971,116 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/arrow-function/" class="md-nav__link">
+      <a href="../../../../../frontend/js/datatypes/data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Function
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Function
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/function/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/function/types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1123,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/arrow-example/" class="md-nav__link">
+      <a href="../../../../../frontend/js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1144,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/advanced-concept/" class="md-nav__link">
+      <a href="../../../../../frontend/js/function/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1175,31 +1153,70 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    JSON
+    ECMAScript
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
-            JSON
+            ECMAScript
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    es6
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            es6
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1210,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../json/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1231,7 +1248,233 @@
   
   
     <li class="md-nav__item">
-      <a href="../../json/json5/" class="md-nav__link">
+      <a href="../../../../../frontend/js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spread vs Rest Operator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HTTP Request
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            HTTP Request
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/fetch-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fetch API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/axios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Axios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/api-response-object/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Object
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            JSON
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/json/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1262,233 +1505,18 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ECMAScript
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            ECMAScript
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ecmascript/es6/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    es6
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Mnemonic
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            Mnemonic
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/js-functions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS Function
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/js-array/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS Array
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/js-objects/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JS Object
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/object-array-iteration-methods/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Iterating Method
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/js-object-iterating-method/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Object Iterating Method
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1499,8 +1527,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
             <span class="md-nav__icon md-icon"></span>
             Tools
           </label>
@@ -1513,7 +1541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/vite/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1534,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1555,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/ESLint/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/ESLint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1576,7 +1604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/nodejs-package-manager/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/nodejs-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1597,7 +1625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/node-package-manager/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/node-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1618,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/yarn/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1639,7 +1667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/pnpm/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/pnpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1670,31 +1698,32 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
         
           
-          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Api Related
+    Mnemonic
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
             <span class="md-nav__icon md-icon"></span>
-            Api Related
+            Mnemonic
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1705,11 +1734,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-related/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Intro
+    JS Function
   </span>
   
 
@@ -1726,11 +1755,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-related/fetch-api/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Fetch API
+    JS Array
   </span>
   
 
@@ -1747,11 +1776,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api-related/axios/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Axios
+    JS Object
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterating Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Iterating Method
   </span>
   
 
@@ -1785,20 +1856,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1823,7 +1892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/code-for-change/" class="md-nav__link">
+      <a href="../../../../../frontend/react/code-for-change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1846,11 +1915,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
@@ -1881,7 +1951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1902,7 +1972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/guides/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1925,11 +1995,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
@@ -1960,7 +2031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1981,7 +2052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2002,7 +2073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2023,7 +2094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2044,7 +2115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2065,7 +2136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2086,7 +2157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/misc/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2117,11 +2188,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4" >
@@ -2152,7 +2224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2173,7 +2245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2194,7 +2266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2215,7 +2287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useCallback/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2236,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useRef/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2257,7 +2329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/react-context-api/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2278,7 +2350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/react-router/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2299,7 +2371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2330,11 +2402,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_5" >
@@ -2365,7 +2438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/router/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2396,11 +2469,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_6" >
@@ -2431,7 +2505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2452,7 +2526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/json-server/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/fake-api/json-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2473,7 +2547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/msw/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/fake-api/msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2504,11 +2578,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_7" >
@@ -2541,11 +2616,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_7_1" >
@@ -2576,7 +2652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/auth-example/login/react-login/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/auth-example/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2607,11 +2683,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_7_2" >
@@ -2642,7 +2719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2689,11 +2766,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
@@ -2724,7 +2802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/passing-props/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2745,7 +2823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2766,7 +2844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/prop-drilling/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2787,7 +2865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/children-prop/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2808,7 +2886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/component-composition/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2829,7 +2907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/hoc/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2850,7 +2928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/render-props/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2871,7 +2949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2892,7 +2970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2923,11 +3001,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
@@ -2958,7 +3037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2979,7 +3058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/jest/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3000,7 +3079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/cypress/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3021,7 +3100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3052,11 +3131,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
@@ -3087,7 +3167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3110,11 +3190,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
@@ -3145,7 +3226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3166,7 +3247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/topic/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3187,7 +3268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3208,7 +3289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3229,7 +3310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3260,11 +3341,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
@@ -3295,7 +3377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3326,11 +3408,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4" >
@@ -3361,7 +3444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3392,11 +3475,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_5" >
@@ -3427,7 +3511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/fetching/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/fetching/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3448,7 +3532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/fetching/axios/" class="md-nav__link">
+      <a href="../../../../../frontend/react/package/fetching/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3487,11 +3571,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
@@ -3522,7 +3607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/report/bugs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3543,7 +3628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/solution/" class="md-nav__link">
+      <a href="../../../../../frontend/react/report/bugs/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3564,7 +3649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../../../../../frontend/react/report/bugs/cleanup-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3585,7 +3670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/debouncing/" class="md-nav__link">
+      <a href="../../../../../frontend/react/report/bugs/debouncing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3606,7 +3691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/master-topic/" class="md-nav__link">
+      <a href="../../../../../frontend/react/report/bugs/master-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3635,7 +3720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/slides/" class="md-nav__link">
+      <a href="../../../../../frontend/react/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3665,20 +3750,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3703,7 +3786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3726,11 +3809,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
@@ -3761,7 +3845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3782,7 +3866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/folder-structure/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3803,7 +3887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3824,7 +3908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-testing/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3847,11 +3931,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_5" >
@@ -3882,7 +3967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3913,11 +3998,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_6" >
@@ -3948,7 +4034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3969,7 +4055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/folder-structure/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/rtk/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4000,11 +4086,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_7" >
@@ -4035,7 +4122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/action/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4066,11 +4153,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_8" >
@@ -4101,7 +4189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4122,7 +4210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/example/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4143,7 +4231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4164,7 +4252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4195,11 +4283,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_9" >
@@ -4230,7 +4319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4251,7 +4340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4272,7 +4361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4311,11 +4400,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
@@ -4346,7 +4436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4377,11 +4467,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
@@ -4412,7 +4503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4443,11 +4534,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
@@ -4478,7 +4570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/middleware/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4516,20 +4608,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4554,7 +4644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../../../frontend/typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4575,7 +4665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../../../frontend/typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4605,20 +4695,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4643,7 +4731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/react/" class="md-nav__link">
+      <a href="../../../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4664,7 +4752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4685,7 +4773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/micro-frontend/" class="md-nav__link">
+      <a href="../../../../../interview/micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4706,7 +4794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/api/" class="md-nav__link">
+      <a href="../../../../../interview/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4727,7 +4815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/http-response/" class="md-nav__link">
+      <a href="../../../../../interview/http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4748,7 +4836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/http-request/" class="md-nav__link">
+      <a href="../../../../../interview/http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4769,7 +4857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../../../../../interview/asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4798,6 +4886,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -4807,6 +4897,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4815,99 +4907,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fetching-api-data-in-javascript" class="md-nav__link">
+  <a href="#1-function-declaration" class="md-nav__link">
     <span class="md-ellipsis">
-      Fetching API Data in JavaScript
+      1. Function Declaration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#2-arrow-function" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      2. Arrow Function
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#process-of-fetching-and-parsing-json-data" class="md-nav__link">
+  <a href="#which-one-to-choose" class="md-nav__link">
     <span class="md-ellipsis">
-      Process of Fetching and Parsing JSON Data
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-in-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example in JavaScript
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clarification-on-json-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clarification on JSON Response
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-of-json-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example of JSON Response
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-reponse-api-object" class="md-nav__link">
-    <span class="md-ellipsis">
-      what is reponse API object
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
+      Which One to Choose?
     </span>
   </a>
   
@@ -4922,329 +4942,212 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  <h1>Response Object</h1>
-
-<div><details class="abstract">
-<summary>when we fetch the api endpoint, the reponse data is in which format do we get? object or string</summary>
-<p>When you fetch data from an API endpoint, <mark>the response data is typically received as a <code>string</code></mark>. This string needs to be parsed into an object to be usable within your application.</p>
-<h2 id="fetching-api-data-in-javascript">Fetching API Data in JavaScript</h2>
-<p>When using the <code>fetch</code> API in JavaScript, the response is received as a raw stream of data, which is then processed into a string and parsed as needed. Here's the process:</p>
-<ol>
-<li>Fetching the Data:</li>
-</ol>
-<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Parses the response as JSON</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w">  </span><span class="c1">// The data is now a JavaScript object</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">})</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
-</span></code></pre></div>
-<p>In this example, the <code>response.json()</code> <mark>method</mark> is called on the response object. This method reads the response stream to completion and parses it as JSON. The result is a JavaScript object.</p>
-<details class="example">
-<summary>Response Data Formats</summary>
-<ol>
-<li>
-<p>JSON (Most Common)</p>
-<ul>
-<li><strong>Received as</strong>: String</li>
-<li><strong>Parsed to</strong>: JavaScript object</li>
-<li><strong>Example</strong>:</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Converts JSON string to JavaScript object</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">});</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Text</p>
-<ul>
-<li><strong>Received as</strong>: String</li>
-<li><strong>Example</strong>:</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/text'</span><span class="p">)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">text</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as plain text</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">});</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Blob (Binary Large Object)</p>
-<ul>
-<li><strong>Received as</strong>: Binary data</li>
-<li><strong>Example</strong>:</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/image'</span><span class="p">)</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">blob</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as binary data (Blob)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">blob</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">blob</span><span class="p">);</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">});</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>FormData</p>
-<ul>
-<li><strong>Received as</strong>: Form data</li>
-<li><strong>Example</strong>:</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/formdata'</span><span class="p">)</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">formData</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as FormData</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">formData</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formData</span><span class="p">);</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">});</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>ArrayBuffer</p>
-<ul>
-<li><strong>Received as</strong>: Binary data</li>
-<li><strong>Example</strong>:</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/binary'</span><span class="p">)</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">arrayBuffer</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads response as ArrayBuffer</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">buffer</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">buffer</span><span class="p">);</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">});</span>
-</span></code></pre></div>
-</li>
-</ol>
-<h2 id="summary">Summary</h2>
-<p>When fetching data from an API endpoint, the response is initially received as a string or binary data. For JSON responses, which are most common, the string is parsed into a JavaScript object using the <code>response.json()</code> method. Other methods like <code>response.text()</code>, <code>response.blob()</code>, <code>response.formData()</code>, and <code>response.arrayBuffer()</code> are used to handle different types of response data. The parsed data can then be used within your application as needed.</p>
-</details>
-</details>
-<hr>
-<details>
-<summary>Is the json response format is <code>object</code> or <code>string</code> ?</summary>
-<p>When you receive a JSON response from an API, the data is initially received as a string. This string represents the JSON data. To work with this data as a JavaScript object, you need to parse the JSON string into an object.</p>
-<blockquote>
-<p>Here's a detailed explanation:</p>
-</blockquote>
-<h2 id="process-of-fetching-and-parsing-json-data">Process of Fetching and Parsing JSON Data</h2>
-<ol>
-<li>
-<p>Fetching the Data:</p>
-<p>When you use the fetch API to make a request, the response body is a readable stream. This stream needs to be read to obtain the actual data.</p>
-</li>
-<li>
-<p>Response as JSON:</p>
-<p>The <code>response.json()</code> method reads the response stream to completion and parses the text as JSON. This method returns a promise that resolves with the result of parsing the body text as JSON.</p>
-</li>
-</ol>
-<hr>
-<h2 id="example-in-javascript">Example in JavaScript</h2>
-<ol>
-<li>
-<p>Fetching and Parsing JSON Data:</p>
-<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Parses the response text as JSON</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w">  </span><span class="c1">// 'data' is now a JavaScript object</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">})</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
-</span></code></pre></div>
-</li>
-</ol>
-<blockquote>
-<p>In this example:</p>
-</blockquote>
-<ul>
-<li><code>fetch('https://api.example.com/data')</code> sends a request to the API.</li>
-<li><code>response.json()</code> reads the response stream and parses it as JSON, converting it from a string to a JavaScript object.</li>
-<li>The resulting <mark>data</mark> is a JavaScript object that can be used in your code.</li>
-</ul>
-<h2 id="clarification-on-json-response">Clarification on JSON Response</h2>
-<ul>
-<li>Initial Format: When the JSON response is received from the API, it is in string format.</li>
-<li>After Parsing: The JSON string is parsed into a JavaScript object using response.json().</li>
-</ul>
-<h2 id="example-of-json-response">Example of JSON Response</h2>
-<ol>
-<li>
-<p>Raw JSON Response (String):</p>
-<div class="language-json highlight"><span class="filename">json</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">"isMember"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Parsed JavaScript Object:</p>
-<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="nx">isMember</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-</ol>
-<h2 id="summary_1">Summary</h2>
-<p>While JSON responses from an API are initially received as strings, they are typically parsed into JavaScript objects using methods like <code>response.json()</code>. This parsing process is necessary to convert the string representation of the JSON data into a format (JavaScript object) that can be easily manipulated in your code.</p>
-</details>
-<hr>
-<details class="tip">
-<summary>so what is the difference between <code>.json()</code> method and <code>JSON.parse</code> when to use. is it the same</summary>
-<p>The <code>.json()</code> method and <code>JSON.parse()</code> serve similar purposes but are used in different contexts. Here's a breakdown of the differences and when to use each:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1"><code>.json()</code> Method</label><label for="__tabbed_1_2">JSON.parse()</label><label for="__tabbed_1_3">Key Differences</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><strong>Context</strong>: Used with the <code>fetch</code> API to read and parse the response body as JSON.</li>
-<li><strong>Functionality</strong>: The <code>.json()</code> method is called on a Response object. It reads the response stream to completion and parses it as JSON.</li>
-<li><strong>Return Value</strong>: Returns a promise that resolves with the result of parsing the response body text as JSON.</li>
-<li><strong>Usage</strong>: Use <code>.json()</code> when dealing with the response from a fetch request.</li>
-</ul>
-<h2 id="example">Example</h2>
-<div class="language-js highlight"><span class="filename">JavaScript</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w">  </span><span class="c1">// Reads and parses response body as JSON</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w">  </span><span class="c1">// 'data' is now a JavaScript object</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">})</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><strong>Context</strong>: Used to parse a JSON string into a JavaScript object.</li>
-<li><strong>Functionality</strong>: <code>JSON.parse()</code> takes a JSON string and parses it to produce a JavaScript object.</li>
-<li><strong>Return Value</strong>: Returns a JavaScript object.</li>
-<li><strong>Usage</strong>: Use <code>JSON.parse()</code> when you have a JSON string (e.g., stored in a variable) and need to convert it to a JavaScript object.</li>
-</ul>
-<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">jsonString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'{"name": "Alice", "age": 30, "isMember": true}'</span><span class="p">;</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsonString</span><span class="p">);</span><span class="w">  </span><span class="c1">// Parses JSON string into JavaScript object</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span><span class="w">  </span><span class="c1">// Output: Alice</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block"></div>
-</div>
-</div>
-<ol>
-<li>
-<p>Source of Data:</p>
-<ul>
-<li><code>.json()</code>: Used directly on the Response object returned by the fetch API to handle the response stream.</li>
-<li><code>JSON.parse()</code>: Used on a JSON string that you already have (e.g., from a variable, local storage, etc.).</li>
-</ul>
-</li>
-<li>
-<p>Return Type:</p>
-<ul>
-<li><code>.json()</code>: Returns a promise that resolves with the parsed JavaScript object.</li>
-<li><code>JSON.parse()</code>: Directly returns the parsed JavaScript object.</li>
-</ul>
-</li>
-<li>
-<p>Common Usage:</p>
-<ul>
-<li><code>.json()</code>: Commonly used in asynchronous operations involving fetching data from APIs.</li>
-<li><code>JSON.parse()</code>: Used whenever you have a JSON string and need to convert it to a JavaScript object, irrespective of how you obtained the string.</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="summary_2">Summary</h2>
-<ul>
-<li>Use <code>.json()</code>: When handling responses from fetch API requests to read and parse the JSON response.</li>
-<li>Use <code>JSON.parse()</code>: When you have a JSON string and need to convert it to a JavaScript object in other contexts.</li>
-</ul>
-<p>Both methods are essential for working with JSON data, but they are applied in different scenarios to achieve similar results: converting JSON-formatted data into JavaScript objects.</p>
-</details>
-<hr>
-<h2 id="what-is-reponse-api-object">what is reponse API object</h2>
-<p>The Response object in the Fetch API represents the response to a request. It contains information about the response, including the status code, status text, headers, and the body of the response. This object is returned as a promise when a fetch request is made.</p>
-<div class="admonition tip">
-<p class="admonition-title">Key Properties and Methods of the Response Object</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><input id="__tabbed_2_4" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Properties</label><label for="__tabbed_2_2">Methods</label><label for="__tabbed_2_3">Example</label><label for="__tabbed_2_4">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><strong>type</strong>: Indicates the type of the response (e.g., "basic", "cors", "error", "opaque").</li>
-<li><strong>url</strong>: The URL of the response.</li>
-<li><strong>redirected</strong>: Indicates whether the response is the result of a redirect.</li>
-<li><strong>status</strong>: The status code of the response (e.g., 200 for a successful request).</li>
-<li><strong>statusText</strong>: The status message corresponding to the status code (e.g., "OK" for status 200).</li>
-<li><strong>ok</strong>: A boolean indicating whether the response was successful (status in the range 200-299).</li>
-<li><strong>headers</strong>: The <code>Headers</code> object associated with the response.</li>
-<li><strong>body</strong>: A <code>ReadableStream</code> of the body contents.</li>
-<li><strong>bodyUsed</strong>: A boolean indicating whether the body has been read.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><strong>arrayBuffer()</strong>: Reads the response body and returns it as a promise that resolves with an ArrayBuffer.</li>
-<li><strong>blob()</strong>: Reads the response body and returns it as a promise that resolves with a Blob.</li>
-<li><strong>formData()</strong>: Reads the response body and returns it as a promise that resolves with FormData.</li>
-<li><strong>json()</strong>: Reads the response body and parses it as JSON, returning a promise that resolves with a JavaScript object.</li>
-<li><strong>text()</strong>: Reads the response body and returns it as a promise that resolves with a string.</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="c1">// Check if the request was successful</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="sb">`HTTP error! status: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="c1">// Access response properties</span>
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span><span class="w">      </span><span class="c1">// e.g., 200</span>
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">statusText</span><span class="p">);</span><span class="w">  </span><span class="c1">// e.g., "OK"</span>
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'Content-Type'</span><span class="p">));</span><span class="w">  </span><span class="c1">// e.g., "application/json"</span>
-</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
-</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="c1">// Read and parse the response body</span>
-</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span><span class="w">  </span><span class="c1">// Returns a promise that resolves with the JSON-parsed body</span>
-</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="p">})</span>
-</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">    </span><span class="c1">// 'data' is now a JavaScript object</span>
-</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="p">})</span>
-</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Fetch error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
-</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="p">});</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li><code>fetch('https://api.example.com/data')</code>: Initiates a request to the specified URL and returns a promise that resolves to a Response object.</li>
-<li><code>response.ok</code>: Checks if the response status code indicates a successful request.</li>
-<li><code>response.status</code>: Accesses the status code of the response.</li>
-<li><code>response.statusText</code>: Accesses the status text of the response.</li>
-<li><code>response.headers.get('Content-Type')</code>: Accesses the Content-Type header of the response.</li>
-<li><code>response.json()</code>: Reads and parses the response body as JSON, returning a promise that resolves to a JavaScript object.</li>
-<li>Handling the parsed data: The parsed JSON data is logged to the console.</li>
-<li>Error handling: Catches and logs any errors that occur during the fetch or parsing process.</li>
-</ol>
-</div>
-</div>
-</div>
-<hr>
-<h2 id="summary_3">Summary</h2>
-<p>The Response object in the Fetch API encapsulates the response to a request, providing access to the status, headers, and body of the response. You use various methods like <code>.json()</code>, <code>.text()</code>, and others to read and parse the response body, converting it into a usable format such as a JavaScript object or string. This process is essential for working with API responses in web development.</p>
-</div></div>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/25550945" alt="Bishow Thapa">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Bishow Thapa
+                        
+                      </strong>
+                      <br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
+                        <time datetime="2024-08-05 00:00:00" class="md-ellipsis">August 5, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../../../../../tags/#antd" class="md-tag">antd</a>
+    
+  
+    
+    
+    
+      <a href="../../../../../tags/#react" class="md-tag">react</a>
+    
+  
+</nav>
+
+
+
+<div><h1 id="choosing-between-function-declarations-and-arrow-functions-for-react-components">Choosing Between Function Declarations and Arrow Functions for React Components</h1>
+<p>When defining React components, you might encounter two common patterns: <code>function declarations</code> and <code>arrow functions</code>. Both approaches are valid, but they come with different nuances</p>
+<!-- more -->
+
+<details class="info" open="open">
+<summary>Two common patterns</summary>
+<ol>
+<li>Function Declarations</li>
+<li>Arrow Functions.</li>
+</ol>
+</details>
+<hr>
+<p>Let's explore these two styles and determine which one you might want to use in your React projects.</p>
+<h2 id="1-function-declaration">1. Function Declaration</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Example</label><label for="__tabbed_1_2">Advantages</label><label for="__tabbed_1_3">Disadvantages</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">TestComponent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">TestComponent</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">TestComponent</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>
+<p><strong>Hoisting</strong>:</p>
+<p>Function declarations are hoisted, meaning they can be called before they are defined in the code. This can be useful in certain scenarios, though it’s less of a concern with modern React development.</p>
+</li>
+<li>
+<p><strong>Traditional Syntax</strong>:</p>
+<p>This style is familiar to many developers and fits well with older JavaScript codebases. It’s clear and straightforward, particularly for those accustomed to traditional function definitions.</p>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><strong><code>this</code> Binding</strong>: While this isn't a concern for functional components, traditional function declarations come with their own <code>this</code> context, which can be confusing if you're mixing class-based and functional components.</li>
+</ol>
+</div>
+</div>
+</div>
+<h2 id="2-arrow-function">2. Arrow Function</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label><label for="__tabbed_2_2">Advantages</label><label for="__tabbed_2_3">Disadvantages</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">TestComponent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="p">&lt;&gt;&lt;/&gt;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">};</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">TestComponent</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>
+<p><strong>Conciseness</strong>:</p>
+<p>Arrow functions provide a more modern and concise syntax. They’re often preferred for their brevity, which can make code easier to read and write.</p>
+</li>
+<li>
+<p><strong>Lexical <code>this</code> Binding</strong>:</p>
+<p>Arrow functions inherit <code>this</code> from their surrounding context, which avoids some common pitfalls related to <code>this</code> in traditional functions.</p>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><strong>Not Hoisted</strong>: Arrow functions are not hoisted. This means they need to be defined before they are used, which can be a minor drawback if you’re used to the flexibility of function declarations.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="which-one-to-choose">Which One to Choose?</h2>
+<p><mark>For most modern React development</mark>, <strong>arrow functions</strong> are the <mark>preferred choice</mark>. Their concise syntax, combined with lexical <code>this</code> binding, aligns well with the functional programming paradigm promoted by React. They integrate seamlessly with other modern JavaScript features and libraries, enhancing readability and maintainability.</p>
+<p>However, <strong>function declarations</strong> remain a solid option, especially in projects where consistency with existing code is crucial or where hoisting could be beneficial. They are also a good choice for developers who prefer traditional JavaScript syntax.</p>
+<p>Ultimately, the decision between the two styles may come down to personal or team preference. Both patterns are valid and can be used effectively depending on the specific needs of your project and coding style.</p>
+<hr></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -5261,10 +5164,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../serialization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Serialization">
+          <a href="../../../06/04/understanding-asyncawait/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Understanding async/await">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -5274,27 +5179,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Serialization
+                Understanding async/await
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../spread-vs-rest-operator/" class="md-footer__link md-footer__link--next" aria-label="Next: Spread vs Rest Operator">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Spread vs Rest Operator
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -5327,7 +5216,7 @@
       
     
     <a href="https://fosstodon.org/@squidfunk" target="_blank" rel="noopener me" title="fosstodon.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
     </a>
   
 </div>
@@ -5342,10 +5231,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

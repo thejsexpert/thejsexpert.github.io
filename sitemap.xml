@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/blog/2024/08/05/choosing-between-function-declarations-and-arrow-functions-for-react-components/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/27/conditional-rendering-in-react/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
@@ -171,22 +176,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/api-related/axios/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/advanced/maps-and-sets/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/api-related/fetch-api/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/advanced/serialization/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/api-related/intro/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/core/api-response-object/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/advanced/this-in-js/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -211,11 +211,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/core/data-types/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/high-order-function/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
@@ -227,11 +222,6 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/js-exception-handling/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/core/maps-and-sets/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -251,22 +241,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/core/serialization/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/core/spread-vs-rest-operator/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/topic/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/js/datatypes/data-types/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/datatypes/intro/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/js/ecmascript/es6/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/ecmascript/spread-vs-rest-operator/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -287,6 +282,31 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/intro/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/function/types/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/httprequest/api-response-object/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/httprequest/axios/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/httprequest/fetch-api/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/httprequest/intro/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -781,12 +801,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/blog/page/4/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/2/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/3/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/blog/archive/2024/page/4/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
