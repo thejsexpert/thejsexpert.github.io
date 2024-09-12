@@ -8,25 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/core/object-prototype/">
+        <link rel="canonical" href="https://thejsexpert.github.io/interview/performance-optimization/">
       
       
-        <link rel="prev" href="../prototype/">
+        <link rel="prev" href="../asynchronous-javaScript/">
       
       
-        <link rel="next" href="../array-prototype/">
       
-      
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>Object Prototype - My Docs</title>
+        <title>Performance Optimization - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -45,14 +43,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -61,7 +59,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -73,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#objectprototype" class="md-skip">
+        <a href="#1-code-optimization" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +87,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Object Prototype
+              Performance Optimization
             
           </span>
         </div>
@@ -174,7 +172,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+        <a href="../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -188,13 +186,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../frontend/js/intro/" class="md-tabs__link">
           
   
   JS
@@ -212,7 +208,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../react/react-strict-mode/" class="md-tabs__link">
+        <a href="../../frontend/react/philosophy/" class="md-tabs__link">
           
   
   React
@@ -230,7 +226,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../frontend/state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -248,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../frontend/typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -262,11 +258,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../interview/react/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../react/" class="md-tabs__link">
           
   
   Interview
@@ -305,7 +303,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -363,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -457,28 +455,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -489,7 +482,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             JS
@@ -503,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../frontend/js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,8 +514,6 @@
                 
   
   
-    
-  
   
   
     
@@ -532,28 +523,28 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    CORE
+    Essential
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
-            CORE
+            Essential
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -564,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototype/" class="md-nav__link">
+      <a href="../../frontend/js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -582,30 +573,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Object Prototype
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../frontend/js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -614,71 +585,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is Object.prototype?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-properties-and-methods-from-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Properties and Methods from Object.prototype
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prototype-chain-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prototype Chain Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customizing-objectprototype" class="md-nav__link">
-    <span class="md-ellipsis">
-      Customizing Object.prototype
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -691,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../array-prototype/" class="md-nav__link">
+      <a href="../../frontend/js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -712,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object/" class="md-nav__link">
+      <a href="../../frontend/js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -733,137 +639,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../array/" class="md-nav__link">
+      <a href="../../frontend/js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Array
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../control-statement/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control Statement
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../instance-and-static-methods/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Instance & Static Methods
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../high-order-function/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    High Order Function (Hof)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../closure/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Closure
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../js-exception-handling/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exception Handling
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../topic/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Topic
   </span>
   
 
@@ -905,7 +685,7 @@
             
   
   <span class="md-ellipsis">
-    ADVANCED
+    CORE
   </span>
   
 
@@ -915,7 +695,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            ADVANCED
+            CORE
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -926,11 +706,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/this-in-js/" class="md-nav__link">
+      <a href="../../frontend/js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    this
+    Control Statement
   </span>
   
 
@@ -947,11 +727,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/serialization/" class="md-nav__link">
+      <a href="../../frontend/js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Serialization
+    Instance & Static Methods
   </span>
   
 
@@ -968,11 +748,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../frontend/js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Maps and Sets
+    Callbacks
   </span>
   
 
@@ -989,11 +769,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/promise/" class="md-nav__link">
+      <a href="../../frontend/js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Promise
+    Closure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/core/high-order-function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    High Order Function (Hof)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/core/js-exception-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exception Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/core/topic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topic
   </span>
   
 
@@ -1035,7 +878,7 @@
             
   
   <span class="md-ellipsis">
-    Data Types
+    ADVANCED
   </span>
   
 
@@ -1045,7 +888,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
-            Data Types
+            ADVANCED
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1056,11 +899,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/intro/" class="md-nav__link">
+      <a href="../../frontend/js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Intro
+    this
   </span>
   
 
@@ -1077,11 +920,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/data-types/" class="md-nav__link">
+      <a href="../../frontend/js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Data Type
+    Serialization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/advanced/maps-and-sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maps and Sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/advanced/promise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Promise
   </span>
   
 
@@ -1123,7 +1008,7 @@
             
   
   <span class="md-ellipsis">
-    Function
+    Data Types
   </span>
   
 
@@ -1133,7 +1018,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
-            Function
+            Data Types
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1144,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/intro/" class="md-nav__link">
+      <a href="../../frontend/js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1165,74 +1050,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/types/" class="md-nav__link">
+      <a href="../../frontend/js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Types
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../function/arrow-function/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Arrow Functions
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../function/arrow-example/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Arrow Example
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../function/advanced-concept/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Advanced
+    Data Type
   </span>
   
 
@@ -1274,7 +1096,7 @@
             
   
   <span class="md-ellipsis">
-    ECMAScript
+    Function
   </span>
   
 
@@ -1283,6 +1105,157 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Function
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/function/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/function/types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/function/arrow-function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrow Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/function/arrow-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrow Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/function/advanced-concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ECMAScript
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
             ECMAScript
           </label>
@@ -1305,10 +1278,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_7_1" id="__nav_2_7_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1319,8 +1292,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_1">
             <span class="md-nav__icon md-icon"></span>
             es6
           </label>
@@ -1333,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/es6/" class="md-nav__link">
+      <a href="../../frontend/js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1354,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../frontend/js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,10 +1374,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
         
           
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1415,8 +1388,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
             <span class="md-nav__icon md-icon"></span>
             HTTP Request
           </label>
@@ -1429,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/intro/" class="md-nav__link">
+      <a href="../../frontend/js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1450,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/fetch-api/" class="md-nav__link">
+      <a href="../../frontend/js/httprequest/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1471,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/axios/" class="md-nav__link">
+      <a href="../../frontend/js/httprequest/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1492,99 +1465,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/api-response-object/" class="md-nav__link">
+      <a href="../../frontend/js/httprequest/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Response Object
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    JSON
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_8">
-            <span class="md-nav__icon md-icon"></span>
-            JSON
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../json/intro/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Intro
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../json/json5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Json and .Json5
   </span>
   
 
@@ -1626,7 +1511,7 @@
             
   
   <span class="md-ellipsis">
-    Tools
+    JSON
   </span>
   
 
@@ -1636,7 +1521,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_9">
             <span class="md-nav__icon md-icon"></span>
-            Tools
+            JSON
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1647,11 +1532,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/vite/" class="md-nav__link">
+      <a href="../../frontend/js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Vite
+    Intro
   </span>
   
 
@@ -1668,116 +1553,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/node-version-manager/" class="md-nav__link">
+      <a href="../../frontend/js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Node Version Manager
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tools/ESLint/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ESLint
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tools/nodejs-package-manager/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    nodejs package manager
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tools/node-package-manager/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    npm
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tools/yarn/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    yarn
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../tools/pnpm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    pnpm
+    Json and .Json5
   </span>
   
 
@@ -1819,7 +1599,7 @@
             
   
   <span class="md-ellipsis">
-    Mnemonic
+    Tools
   </span>
   
 
@@ -1828,6 +1608,199 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/tools/vite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/tools/node-version-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Node Version Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/tools/ESLint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ESLint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/tools/nodejs-package-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nodejs package manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/tools/node-package-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    npm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/tools/yarn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    yarn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/js/tools/pnpm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pnpm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mnemonic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
             <span class="md-nav__icon md-icon"></span>
             Mnemonic
           </label>
@@ -1840,7 +1813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../frontend/js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1861,7 +1834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-array/" class="md-nav__link">
+      <a href="../../frontend/js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1882,7 +1855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../frontend/js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1903,7 +1876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../frontend/js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1924,7 +1897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../frontend/js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1998,11 +1971,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/react-strict-mode/" class="md-nav__link">
+      <a href="../../frontend/react/philosophy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Strict Mode
+    Philosophy
   </span>
   
 
@@ -2057,7 +2030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/intro/" class="md-nav__link">
+      <a href="../../frontend/react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2078,7 +2051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/guides/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2137,7 +2110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../frontend/react/core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2158,7 +2131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../frontend/react/core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2179,7 +2152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../frontend/react/core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2200,7 +2173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../frontend/react/core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2221,7 +2194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../frontend/react/core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2242,7 +2215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/antipattern/" class="md-nav__link">
+      <a href="../../frontend/react/core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2263,7 +2236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/misc/" class="md-nav__link">
+      <a href="../../frontend/react/core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2330,7 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2351,7 +2324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2372,7 +2345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2393,7 +2366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useCallback/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2414,7 +2387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useRef/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2435,7 +2408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/react-context-api/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2456,7 +2429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/react-router/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2477,7 +2450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../frontend/react/core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2544,7 +2517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/router/intro/" class="md-nav__link">
+      <a href="../../frontend/react/core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2611,7 +2584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/intro/" class="md-nav__link">
+      <a href="../../frontend/react/core/fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2632,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/json-server/" class="md-nav__link">
+      <a href="../../frontend/react/core/fake-api/json-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2653,7 +2626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/msw/" class="md-nav__link">
+      <a href="../../frontend/react/core/fake-api/msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2758,7 +2731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/auth-example/login/react-login/" class="md-nav__link">
+      <a href="../../frontend/react/core/auth-example/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2825,7 +2798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../frontend/react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2908,7 +2881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/passing-props/" class="md-nav__link">
+      <a href="../../frontend/react/example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2929,7 +2902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../../frontend/react/example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2950,7 +2923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/prop-drilling/" class="md-nav__link">
+      <a href="../../frontend/react/example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2971,7 +2944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/children-prop/" class="md-nav__link">
+      <a href="../../frontend/react/example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2992,7 +2965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/component-composition/" class="md-nav__link">
+      <a href="../../frontend/react/example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3013,7 +2986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/hoc/" class="md-nav__link">
+      <a href="../../frontend/react/example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3034,7 +3007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/render-props/" class="md-nav__link">
+      <a href="../../frontend/react/example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3055,7 +3028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../../frontend/react/example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3076,7 +3049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../frontend/react/example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3143,7 +3116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/intro/" class="md-nav__link">
+      <a href="../../frontend/react/testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3164,7 +3137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/jest/" class="md-nav__link">
+      <a href="../../frontend/react/testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3185,7 +3158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/cypress/" class="md-nav__link">
+      <a href="../../frontend/react/testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3206,7 +3179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../frontend/react/testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3273,7 +3246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/intro/" class="md-nav__link">
+      <a href="../../frontend/react/package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3332,7 +3305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/" class="md-nav__link">
+      <a href="../../frontend/react/package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3353,7 +3326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/topic/" class="md-nav__link">
+      <a href="../../frontend/react/package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3374,7 +3347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../frontend/react/package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3395,7 +3368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form/" class="md-nav__link">
+      <a href="../../frontend/react/package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3416,11 +3389,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../frontend/react/package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Antd Form Validation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/react/package/antd/form-crud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form CRUD
   </span>
   
 
@@ -3483,7 +3477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../frontend/react/package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3550,7 +3544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../frontend/react/package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3617,7 +3611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/fetching/intro/" class="md-nav__link">
+      <a href="../../frontend/react/package/fetching/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3638,7 +3632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/package/fetching/axios/" class="md-nav__link">
+      <a href="../../frontend/react/package/fetching/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3713,7 +3707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/intro/" class="md-nav__link">
+      <a href="../../frontend/react/codereport/bugs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3734,7 +3728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/solution/" class="md-nav__link">
+      <a href="../../frontend/react/codereport/bugs/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3755,7 +3749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../../frontend/react/codereport/bugs/cleanup-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3776,7 +3770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/debouncing/" class="md-nav__link">
+      <a href="../../frontend/react/codereport/bugs/debouncing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3797,7 +3791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/report/bugs/master-topic/" class="md-nav__link">
+      <a href="../../frontend/react/codereport/bugs/master-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3825,8 +3819,96 @@
   
   
   
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Optimization
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Optimization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../react/code-for-change/" class="md-nav__link">
+      <a href="../../frontend/react/optimization/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/react/react-strict-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strict Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/react/code-for-change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3847,7 +3929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/slides/" class="md-nav__link">
+      <a href="../../frontend/react/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3913,7 +3995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3972,7 +4054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3993,7 +4075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/folder-structure/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4014,7 +4096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-pattern/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4035,7 +4117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-testing/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4094,7 +4176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4161,7 +4243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4182,7 +4264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/folder-structure/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/rtk/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4249,7 +4331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/action/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4316,7 +4398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4337,7 +4419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/example/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4358,7 +4440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4379,7 +4461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4446,7 +4528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4467,7 +4549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4488,7 +4570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../frontend/state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4563,7 +4645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4630,7 +4712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../frontend/state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4697,7 +4779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/middleware/" class="md-nav__link">
+      <a href="../../frontend/state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4771,7 +4853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../frontend/typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4792,7 +4874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../frontend/typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4817,23 +4899,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -4844,7 +4931,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Interview
@@ -4858,7 +4945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/react/" class="md-nav__link">
+      <a href="../react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4879,7 +4966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/codesnap/" class="md-nav__link">
+      <a href="../codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4900,7 +4987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/micro-frontend/" class="md-nav__link">
+      <a href="../micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4921,7 +5008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/api/" class="md-nav__link">
+      <a href="../api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4942,7 +5029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/http-response/" class="md-nav__link">
+      <a href="../http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4963,7 +5050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/http-request/" class="md-nav__link">
+      <a href="../http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4984,7 +5071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4993,6 +5080,153 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Performance Optimization
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Performance Optimization
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-code-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Code Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data-structure-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Data Structure Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-database-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Database Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-system-level-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. System-Level Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-network-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Network Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-compilation-and-build-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Compilation and Build Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-memory-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Memory Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-load-testing-and-benchmarking" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Load Testing and Benchmarking:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-code-review-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Code Review and Best Practices:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-hardware-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Hardware Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5022,8 +5256,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5032,45 +5264,90 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-objectprototype" class="md-nav__link">
+  <a href="#1-code-optimization" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Object.prototype?
+      1. Code Optimization:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-properties-and-methods-from-objectprototype" class="md-nav__link">
+  <a href="#2-data-structure-optimization" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Properties and Methods from Object.prototype
+      2. Data Structure Optimization:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prototype-chain-example" class="md-nav__link">
+  <a href="#3-database-optimization" class="md-nav__link">
     <span class="md-ellipsis">
-      Prototype Chain Example
+      3. Database Optimization:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#customizing-objectprototype" class="md-nav__link">
+  <a href="#4-system-level-optimization" class="md-nav__link">
     <span class="md-ellipsis">
-      Customizing Object.prototype
+      4. System-Level Optimization:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#5-network-optimization" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      5. Network Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-compilation-and-build-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Compilation and Build Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-memory-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Memory Optimization:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-load-testing-and-benchmarking" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Load Testing and Benchmarking:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-code-review-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Code Review and Best Practices:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-hardware-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Hardware Optimization:
     </span>
   </a>
   
@@ -5091,100 +5368,65 @@
                   
 
 
-<div><h1 id="objectprototype">Object.prototype</h1>
-<p>In JavaScript, <strong>Object.prototype</strong> is the <mark>prototype object from which all other objects inherit their properties and methods</mark>, unless explicitly specified otherwise. It is the top of the prototype chain, meaning that any object created using a constructor function or an object literal will have Object.prototype in its prototype chain.</p>
-<h2 id="what-is-objectprototype">What is Object.prototype?</h2>
+  <h1>Performance Optimization</h1>
+
+<div><p>Performance optimization is crucial in various domains, including software development, system design, and data processing. Techniques can vary depending on the context, but here are some general strategies for optimizing performance:</p>
+<h2 id="1-code-optimization">1. Code Optimization:</h2>
 <ul>
-<li>
-<p><strong>Prototype Chain</strong>:</p>
-<p>In JavaScript, objects can have a prototype, which is another object from which they inherit properties. The prototype of an object is accessible through the <code>__proto__</code> property (or <code>[[Prototype]]</code> in more formal terms).</p>
-</li>
-<li>
-<p><strong>Inheritance</strong>:</p>
-<p><code>Object.prototype</code> is the final object in the prototype chain. It means that all properties and methods defined on <code>Object.prototype</code> are available to all other objects, unless those properties and methods are overridden further down the prototype chain.</p>
-</li>
+<li><strong>Profiling</strong>: Use profiling tools to identify bottlenecks in your code.</li>
+<li><strong>Efficient Algorithms</strong>: Choose algorithms with lower time and space complexity.</li>
+<li><strong>Code Refactoring</strong>: Clean up and optimize code to reduce unnecessary operations.</li>
+<li><strong>Inlining</strong>: Inline small functions to reduce overhead.</li>
 </ul>
-<h2 id="common-properties-and-methods-from-objectprototype">Common Properties and Methods from <code>Object.prototype</code></h2>
-<p>Object.prototype includes several methods and properties that are useful and commonly used:</p>
-<ol>
-<li>
-<p>hasOwnProperty:</p>
-<p>Checks if a property is a direct property of the object (<mark>not inherited</mark>).</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">'a'</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">'toString'</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>isPrototypeOf:</p>
-<p>Checks if an object exists in another object's prototype chain.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Person</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">();</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">isPrototypeOf</span><span class="p">(</span><span class="nx">person</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>toString:</p>
-<p>Returns a string representation of the object.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span><span class="w"> </span><span class="c1">// "[object Object]"</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>valueOf:</p>
-<p>Returns the primitive value of the specified object.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">valueOf</span><span class="p">());</span><span class="w"> </span><span class="c1">// { a: 1 }</span>
-</span></code></pre></div>
-</li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Prototype Chain Example</p>
-<h2 id="prototype-chain-example">Prototype Chain Example</h2>
-<p>To better understand <strong>Object.prototype</strong> and the <strong>prototype chain</strong>, consider the following example:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'John'</span><span class="p">,</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">greet</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello, '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">};</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1">// Create a new object that inherits from person</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">anotherPerson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nx">anotherPerson</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Jane'</span><span class="p">;</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nx">anotherPerson</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span><span class="w"> </span><span class="c1">// Hello, Jane</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="c1">// Check the prototype chain</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">anotherPerson</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">person</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span><span class="nx">person</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span></code></pre></div>
-<p>In this example:</p>
-<ol>
-<li>We define an object <code>person</code> with a property <code>name</code> and a method <code>greet</code>.</li>
-<li>We create a new object <code>anotherPerson</code> that inherits from person using <strong>Object.create</strong>.</li>
-<li>The <code>anotherPerson</code> object can access properties and methods from <code>person</code> because <code>person</code> is in its prototype chain.</li>
-<li>We verify the prototype chain using <strong>Object.getPrototypeOf</strong>.</li>
-</ol>
-</div>
-<hr>
-<h2 id="customizing-objectprototype">Customizing Object.prototype</h2>
-<p>While it is possible to add properties or methods to Object.prototypeit is generally discouraged== because it can lead to unexpected behavior and conflicts in your code, especially when working with third-party libraries. Modifying Object.prototype affects all objects, which can have unintended side effects.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">customMethod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'This is a custom method.'</span><span class="p">);</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">};</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nx">obj</span><span class="p">.</span><span class="nx">customMethod</span><span class="p">();</span><span class="w"> </span><span class="c1">// This is a custom method.</span>
-</span></code></pre></div>
-<p>In this example, the <code>customMethod</code> is added to <strong>Object.prototype</strong>, making it available to all objects. However, this practice should be used with caution.</p>
-<h2 id="summary">Summary</h2>
+<h2 id="2-data-structure-optimization">2. Data Structure Optimization:</h2>
 <ul>
-<li><strong>Object.prototype</strong> is the <mark>top-level prototype object</mark> from which all other objects inherit properties and methods.</li>
-<li>It provides several built-in methods like <code>hasOwnProperty</code>, <code>isPrototypeOf</code>, <code>toString</code>, and <code>valueOf</code>.</li>
-<li>All objects in JavaScript have <strong>Object.prototype</strong> in their prototype chain unless explicitly specified otherwise.</li>
-<li>Modifying <strong>Object.prototype</strong> is possible <mark>but generally discouraged</mark> due to the potential for unintended side effects.</li>
-</ul></div>
+<li><strong>Choose the Right Data Structures</strong>: Use appropriate data structures (e.g., hash tables, trees) based on access patterns.</li>
+<li><strong>Memory Layout</strong>: Optimize memory layout to enhance cache locality.</li>
+</ul>
+<h2 id="3-database-optimization">3. Database Optimization:</h2>
+<ul>
+<li><strong>Indexing</strong>: Create indexes on frequently queried columns.</li>
+<li><strong>Query Optimization</strong>: Write efficient SQL queries and avoid complex joins or subqueries.</li>
+<li><strong>Caching</strong>: Implement caching mechanisms to reduce database load.</li>
+</ul>
+<h2 id="4-system-level-optimization">4. System-Level Optimization:</h2>
+<ul>
+<li><strong>Concurrency</strong>: Use multi-threading or asynchronous processing to make better use of system resources.</li>
+<li><strong>Resource Management</strong>: Optimize the use of CPU, memory, and I/O resources.</li>
+<li><strong>Load Balancing</strong>: Distribute workloads evenly across servers or resources.</li>
+</ul>
+<h2 id="5-network-optimization">5. Network Optimization:</h2>
+<ul>
+<li><strong>Reduce Latency</strong>: Minimize the time it takes for data to travel between systems.</li>
+<li><strong>Compression</strong>: Compress data to reduce bandwidth usage.</li>
+<li><strong>Caching</strong>: Cache frequently accessed data to reduce network load.</li>
+</ul>
+<h2 id="6-compilation-and-build-optimization">6. Compilation and Build Optimization:</h2>
+<ul>
+<li><strong>Optimization Flags</strong>: Use compiler optimization flags to improve execution speed.</li>
+<li><strong>Minification</strong>: Minify code (especially JavaScript and CSS) to reduce file size.</li>
+</ul>
+<h2 id="7-memory-optimization">7. Memory Optimization:</h2>
+<ul>
+<li><strong>Garbage Collection</strong>: Optimize garbage collection strategies to manage memory more efficiently.</li>
+<li><strong>Memory Pools</strong>: Use memory pools to reduce allocation and deallocation overhead.</li>
+</ul>
+<h2 id="8-load-testing-and-benchmarking">8. Load Testing and Benchmarking:</h2>
+<ul>
+<li><strong>Stress Testing</strong>: Test how your system behaves under extreme conditions.</li>
+<li><strong>Benchmarking</strong>: Measure performance and identify areas for improvement.</li>
+</ul>
+<h2 id="9-code-review-and-best-practices">9. Code Review and Best Practices:</h2>
+<ul>
+<li><strong>Peer Reviews</strong>: Have others review your code for potential optimizations.</li>
+<li><strong>Best Practices</strong>: Follow industry best practices and design patterns that promote performance.</li>
+</ul>
+<h2 id="10-hardware-optimization">10. Hardware Optimization:</h2>
+<ul>
+<li><strong>Upgrade Hardware</strong>: Sometimes upgrading hardware can provide a significant performance boost.</li>
+<li><strong>Tune Hardware Settings</strong>: Configure hardware settings (like CPU frequency, disk caching) for optimal performance.</li>
+</ul>
+<p>Each context will have its specific techniques and tools, so it’s important to tailor these strategies to the specific requirements and constraints of your project or system.</p></div>
 
 
 
@@ -5220,7 +5462,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../prototype/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prototype">
+          <a href="../asynchronous-javaScript/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Asynchronous">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -5230,27 +5472,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Prototype
+                Asynchronous
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../array-prototype/" class="md-footer__link md-footer__link--next" aria-label="Next: Array Prototype">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Array Prototype
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -5298,10 +5524,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
