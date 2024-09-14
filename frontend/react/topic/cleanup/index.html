@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/react-strict-mode/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/topic/cleanup/">
       
       
-        <link rel="prev" href="../optimization/intro/">
+        <link rel="prev" href="../abort-controller-solved/">
       
       
-        <link rel="next" href="../code-for-change/">
+        <link rel="next" href="../explainingothers/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>Strict Mode - My Docs</title>
+        <title>Cleanup - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -61,7 +61,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-react-strict-mode" class="md-skip">
+        <a href="#what-is-cleanup" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Strict Mode
+              Cleanup
             
           </span>
         </div>
@@ -174,7 +174,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../blog/" class="md-tabs__link">
+        <a href="../../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -192,7 +192,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../js/intro/" class="md-tabs__link">
+        <a href="../../../js/intro/" class="md-tabs__link">
           
   
   JS
@@ -212,7 +212,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../philosophy/" class="md-tabs__link">
+        <a href="../../philosophy/" class="md-tabs__link">
           
   
   React
@@ -230,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../package/intro/" class="md-tabs__link">
+        <a href="../../../package/intro/" class="md-tabs__link">
           
   
   Package
@@ -248,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../state-management/intro/" class="md-tabs__link">
+        <a href="../../../state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -266,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../interview/react/" class="md-tabs__link">
+        <a href="../../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -323,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -381,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/" class="md-nav__link">
+      <a href="../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/intro/" class="md-nav__link">
+      <a href="../../../js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -575,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/essential/prototype/" class="md-nav__link">
+      <a href="../../../js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -596,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -617,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -638,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/essential/object/" class="md-nav__link">
+      <a href="../../../js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -659,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/essential/array/" class="md-nav__link">
+      <a href="../../../js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -726,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/core/control-statement/" class="md-nav__link">
+      <a href="../../../js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/core/callback/" class="md-nav__link">
+      <a href="../../../js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/core/closure/" class="md-nav__link">
+      <a href="../../../js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/core/high-order-function/" class="md-nav__link">
+      <a href="../../../js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/core/topic/" class="md-nav__link">
+      <a href="../../../js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -919,7 +919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -940,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/advanced/serialization/" class="md-nav__link">
+      <a href="../../../js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -961,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -982,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/advanced/promise/" class="md-nav__link">
+      <a href="../../../js/advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1049,7 +1049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/datatypes/intro/" class="md-nav__link">
+      <a href="../../../js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1070,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../../js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1137,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/function/intro/" class="md-nav__link">
+      <a href="../../../js/function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1158,7 +1158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/function/types/" class="md-nav__link">
+      <a href="../../../js/function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1179,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/function/arrow-function/" class="md-nav__link">
+      <a href="../../../js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1200,7 +1200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/function/arrow-example/" class="md-nav__link">
+      <a href="../../../js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1221,7 +1221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/function/advanced-concept/" class="md-nav__link">
+      <a href="../../../js/function/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1326,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1347,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1422,7 +1422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/httprequest/intro/" class="md-nav__link">
+      <a href="../../../js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1443,7 +1443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/httprequest/overview/" class="md-nav__link">
+      <a href="../../../js/httprequest/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1464,7 +1464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/httprequest/fetch-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1485,7 +1485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/httprequest/axios/" class="md-nav__link">
+      <a href="../../../js/httprequest/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1506,7 +1506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/httprequest/api-response-object/" class="md-nav__link">
+      <a href="../../../js/httprequest/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1573,7 +1573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/json/intro/" class="md-nav__link">
+      <a href="../../../js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1594,7 +1594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/json/json5/" class="md-nav__link">
+      <a href="../../../js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1661,7 +1661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/tools/vite/" class="md-nav__link">
+      <a href="../../../js/tools/vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1682,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../js/tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1703,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/tools/ESLint/" class="md-nav__link">
+      <a href="../../../js/tools/ESLint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1724,7 +1724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/tools/nodejs-package-manager/" class="md-nav__link">
+      <a href="../../../js/tools/nodejs-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1745,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/tools/node-package-manager/" class="md-nav__link">
+      <a href="../../../js/tools/node-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1766,7 +1766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/tools/yarn/" class="md-nav__link">
+      <a href="../../../js/tools/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1787,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/tools/pnpm/" class="md-nav__link">
+      <a href="../../../js/tools/pnpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1854,7 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1875,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1896,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1917,7 +1917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1938,7 +1938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2017,7 +2017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../philosophy/" class="md-nav__link">
+      <a href="../../philosophy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2076,7 +2076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/intro/" class="md-nav__link">
+      <a href="../../core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2097,7 +2097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/guides/" class="md-nav__link">
+      <a href="../../core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2156,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2177,7 +2177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2198,7 +2198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2219,7 +2219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2240,7 +2240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2261,7 +2261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/pattern/antipattern/" class="md-nav__link">
+      <a href="../../core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2282,7 +2282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/pattern/misc/" class="md-nav__link">
+      <a href="../../core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2349,7 +2349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2370,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2391,7 +2391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2412,7 +2412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/useCallback/" class="md-nav__link">
+      <a href="../../core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2433,7 +2433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/useRef/" class="md-nav__link">
+      <a href="../../core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2454,7 +2454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/react-context-api/" class="md-nav__link">
+      <a href="../../core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2475,7 +2475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/react-router/" class="md-nav__link">
+      <a href="../../core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2496,7 +2496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2563,7 +2563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/router/intro/" class="md-nav__link">
+      <a href="../../core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2630,7 +2630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/fake-api/intro/" class="md-nav__link">
+      <a href="../../core/fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2651,7 +2651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/fake-api/json-server/" class="md-nav__link">
+      <a href="../../core/fake-api/json-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2672,7 +2672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/fake-api/msw/" class="md-nav__link">
+      <a href="../../core/fake-api/msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2777,7 +2777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/auth-example/login/react-login/" class="md-nav__link">
+      <a href="../../core/auth-example/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2844,7 +2844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core/auth-example/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../core/auth-example/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2927,7 +2927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/passing-props/" class="md-nav__link">
+      <a href="../../example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2948,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/lifting-state-up/" class="md-nav__link">
+      <a href="../../example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2969,7 +2969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/prop-drilling/" class="md-nav__link">
+      <a href="../../example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2990,7 +2990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/children-prop/" class="md-nav__link">
+      <a href="../../example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3011,7 +3011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/component-composition/" class="md-nav__link">
+      <a href="../../example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3032,7 +3032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/hoc/" class="md-nav__link">
+      <a href="../../example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3053,7 +3053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/render-props/" class="md-nav__link">
+      <a href="../../example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3074,7 +3074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/presentational-and-container/" class="md-nav__link">
+      <a href="../../example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3095,7 +3095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3162,7 +3162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../testing/intro/" class="md-nav__link">
+      <a href="../../testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3183,7 +3183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../testing/jest/" class="md-nav__link">
+      <a href="../../testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3204,7 +3204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../testing/cypress/" class="md-nav__link">
+      <a href="../../testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3225,7 +3225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3234,6 +3234,157 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_5" id="__nav_3_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bug Report
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Bug Report
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/codereport/bugs/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/codereport/bugs/solution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/codereport/bugs/cleanup-function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cleanup Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/codereport/bugs/debouncing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    debouncing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/codereport/bugs/master-topic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    master topic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3271,7 +3422,7 @@
             
   
   <span class="md-ellipsis">
-    Report
+    Optimization
   </span>
   
 
@@ -3280,157 +3431,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
-            <span class="md-nav__icon md-icon"></span>
-            Report
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../codereport/bugs/intro/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Intro
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../codereport/bugs/solution/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Solution
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../codereport/bugs/cleanup-function/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cleanup Function
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../codereport/bugs/debouncing/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    debouncing
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../codereport/bugs/master-topic/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    master topic
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Optimization
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             Optimization
           </label>
@@ -3443,7 +3443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../optimization/intro/" class="md-nav__link">
+      <a href="../../optimization/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3473,24 +3473,46 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
+    
+    
+    
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
           
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
-    Strict Mode
+    Topic
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Topic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react-strict-mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3499,78 +3521,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-react-strict-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is React Strict Mode?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-does-strict-mode-cause-double-api-calls" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why Does Strict Mode Cause Double API Calls?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-and-why-to-use-strict-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      When and Why to Use Strict Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-to-remove-strict-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      When to Remove Strict Mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3604,6 +3554,234 @@
   
   
     <li class="md-nav__item">
+      <a href="../abort-controller-solved/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abort Controller Solved
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cleanup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cleanup
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Cleanup?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-do-you-need-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Do You Need Cleanup?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Do You Need Cleanup?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ongoing-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Ongoing Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-asynchronous-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Asynchronous Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-subscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Subscriptions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-event-listeners" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Event Listeners
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-rule-for-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Rule for Cleanup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-cleanup-is-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Cleanup is Important
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-or-concise-body-in-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      Block or Concise Body in return
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block or Concise Body in return">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-using-a-block-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Using a Block Body:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-using-a-concise-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Using a Concise Body:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explainingothers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Explain to 5 Year
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../slides/" class="md-nav__link">
         
   
@@ -3613,6 +3791,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3670,7 +3856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/intro/" class="md-nav__link">
+      <a href="../../../package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3729,7 +3915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/antd/" class="md-nav__link">
+      <a href="../../../package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3750,7 +3936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/antd/topic/" class="md-nav__link">
+      <a href="../../../package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3771,7 +3957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3792,7 +3978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/antd/antd-form/" class="md-nav__link">
+      <a href="../../../package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3813,7 +3999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../../package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3834,7 +4020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/antd/form-crud/" class="md-nav__link">
+      <a href="../../../package/antd/form-crud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3901,7 +4087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3968,7 +4154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4042,7 +4228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/intro/" class="md-nav__link">
+      <a href="../../../state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4101,7 +4287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4122,7 +4308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/folder-structure/" class="md-nav__link">
+      <a href="../../../state-management/redux/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4143,7 +4329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/redux-pattern/" class="md-nav__link">
+      <a href="../../../state-management/redux/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4164,7 +4350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/redux-testing/" class="md-nav__link">
+      <a href="../../../state-management/redux/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4223,7 +4409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4290,7 +4476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4311,7 +4497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/rtk/folder-structure/" class="md-nav__link">
+      <a href="../../../state-management/redux/rtk/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4378,7 +4564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/action/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4445,7 +4631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/reducer/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4466,7 +4652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/reducer/example/" class="md-nav__link">
+      <a href="../../../state-management/redux/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4487,7 +4673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../../state-management/redux/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4508,7 +4694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../../state-management/redux/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4575,7 +4761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4596,7 +4782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4617,7 +4803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4692,7 +4878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4759,7 +4945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4826,7 +5012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../state-management/middleware/" class="md-nav__link">
+      <a href="../../../state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4900,7 +5086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4921,7 +5107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4987,7 +5173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/react/" class="md-nav__link">
+      <a href="../../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5008,7 +5194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5029,7 +5215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/micro-frontend/" class="md-nav__link">
+      <a href="../../../../interview/micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5050,7 +5236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/api/" class="md-nav__link">
+      <a href="../../../../interview/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5071,7 +5257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http-response/" class="md-nav__link">
+      <a href="../../../../interview/http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5092,7 +5278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http-request/" class="md-nav__link">
+      <a href="../../../../interview/http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5113,7 +5299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../../../../interview/asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5134,7 +5320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/performance-optimization/" class="md-nav__link">
+      <a href="../../../../interview/performance-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5180,42 +5366,121 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-react-strict-mode" class="md-nav__link">
+  <a href="#what-is-cleanup" class="md-nav__link">
     <span class="md-ellipsis">
-      What is React Strict Mode?
+      What is Cleanup?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-does-strict-mode-cause-double-api-calls" class="md-nav__link">
+  <a href="#when-do-you-need-cleanup" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Does Strict Mode Cause Double API Calls?
+      When Do You Need Cleanup?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Do You Need Cleanup?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ongoing-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Ongoing Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-asynchronous-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Asynchronous Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-subscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Subscriptions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-event-listeners" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Event Listeners
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-rule-for-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Rule for Cleanup
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#when-and-why-to-use-strict-mode" class="md-nav__link">
+  <a href="#why-cleanup-is-important" class="md-nav__link">
     <span class="md-ellipsis">
-      When and Why to Use Strict Mode
+      Why Cleanup is Important
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#when-to-remove-strict-mode" class="md-nav__link">
+  <a href="#block-or-concise-body-in-return" class="md-nav__link">
     <span class="md-ellipsis">
-      When to Remove Strict Mode
+      Block or Concise Body in return
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Block or Concise Body in return">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-using-a-block-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Using a Block Body:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#2-using-a-concise-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Using a Concise Body:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
@@ -5223,13 +5488,9 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5248,62 +5509,217 @@
                   
 
 
-  <h1>Strict Mode</h1>
+  <h1>Cleanup</h1>
 
-<div><p>React’s Strict Mode is a development tool designed to help identify potential problems in an application by intentionally invoking certain lifecycle methods and hooks more than once. It is meant to help developers catch issues early, but it does not affect production builds. Here’s an explanation of what Strict Mode is, why it might cause behavior like double API calls, and when you should use it.</p>
-<h2 id="what-is-react-strict-mode">What is React Strict Mode?</h2>
-<p><strong>React Strict Mode</strong> is a tool provided by React to help developers identify and fix potential problems in their applications. It does the following:</p>
-<ol>
-<li>
-<p><strong>Double Invokes Certain Lifecycle Methods</strong>: In development mode, Strict Mode will intentionally invoke lifecycle methods and hooks like <code>useEffect</code> <mark>twice</mark>. This helps identify side effects that are not correctly handled, such as improper cleanup or unintended behaviors.</p>
-</li>
-<li>
-<p><strong>Warns About Deprecated Features</strong>: It helps find usage of deprecated lifecycle methods and legacy APIs that might lead to bugs.</p>
-</li>
-<li>
-<p><strong>Detects Unsafe Lifecycle Methods</strong>: It identifies unsafe lifecycle methods that may lead to issues in future React versions.</p>
-</li>
-</ol>
-<h2 id="why-does-strict-mode-cause-double-api-calls">Why Does Strict Mode Cause Double API Calls?</h2>
-<p>In development mode, React Strict Mode invokes <code>useEffect</code> <mark>twice</mark> <strong>to ensure that effects are properly <code>cleaned up</code></strong> and that the application is resilient to unexpected behavior. This behavior is intended to catch issues related to side effects and is not present in production builds.</p>
+<div><h2 id="what-is-cleanup">What is Cleanup?</h2>
+<p><strong>Cleanup</strong> is a way of making sure that when a component is removed from the screen (unmounted), any ongoing operations or resources it was using are properly cleaned up to avoid problems like memory leaks or unexpected behavior.</p>
+<h2 id="when-do-you-need-cleanup">When Do You Need Cleanup?</h2>
+<p>Here are some broad categories and everyday examples to help illustrate:</p>
+<h3 id="1-ongoing-operations">1.  Ongoing Operations</h3>
 <ul>
-<li><strong>Development Mode Only</strong>: The double invocation occurs only in development mode to help identify issues. It does not happen in production builds.</li>
-<li><strong>Strict Mode’s Purpose</strong>: This behavior helps ensure that side effects, cleanup, and other lifecycle aspects are handled correctly and can be safely cleaned up.</li>
+<li><strong>Example</strong>: You have a timer that does something every few seconds (like a clock or a poller).</li>
+<li><strong>Why Cleanup</strong>: If the component using the timer gets removed, you don’t want that timer still running in the background. It could keep trying to update a component that no longer exists, which could lead to errors or waste resources.</li>
 </ul>
-<h2 id="when-and-why-to-use-strict-mode">When and Why to Use Strict Mode</h2>
-<p><strong>Strict Mode</strong> is used during development for several reasons:</p>
-<ol>
-<li>
-<p><strong>Identify Potential Issues</strong>: It helps catch issues related to side effects, deprecated methods, and other unsafe patterns early in the development process.</p>
-</li>
-<li>
-<p><strong>Improve Code Quality</strong>: It encourages developers to write code that adheres to best practices and is more robust against potential issues.</p>
-</li>
-<li>
-<p><strong>Prepare for Future Versions</strong>: It helps identify code that might not be compatible with future React versions, allowing developers to update their code proactively.</p>
-</li>
-</ol>
-<h2 id="when-to-remove-strict-mode">When to Remove Strict Mode</h2>
-<p>Strict Mode should generally be used during development to help catch issues early. Here’s when you might consider removing it:</p>
-<ol>
-<li>
-<p>Testing Production Behavior: To test your application’s behavior as it would be in production, where Strict Mode’s additional checks and double invocations are not present.</p>
-</li>
-<li>
-<p>Debugging Specific Issues: If you are experiencing issues like double API calls and have confirmed that they are due to Strict Mode, you might temporarily remove Strict Mode to isolate and debug the problem. However, this is only for debugging purposes; you should re-enable Strict Mode during development to benefit from its checks.</p>
-</li>
-</ol>
-<h2 id="summary">Summary</h2>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">intervalId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Tick'</span><span class="p">);</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="c1">// Cleanup</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">intervalId</span><span class="p">);</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+<h3 id="2-asynchronous-requests">2. Asynchronous Requests</h3>
 <ul>
-<li><strong>React Strict Mode</strong> is a development-only feature that helps identify potential issues by double-invoking certain lifecycle methods and hooks.</li>
-<li><strong>In Production</strong>: Strict Mode's behavior does not affect production builds; the double invocation and additional checks are only present during development.</li>
-<li><strong>Use During Development</strong>: Strict Mode is valuable during development to ensure your code adheres to best practices and to catch potential issues early.</li>
-<li><strong>Remove Temporarily for Testing</strong>: If you’re encountering specific issues related to Strict Mode, you can temporarily remove it to debug. However, ensure it’s used during development to catch potential problems.</li>
+<li><strong>Example</strong>: You’re making a network request to fetch data from a server.</li>
+<li><strong>Why Cleanup</strong>: If the request takes time and the component gets removed before it finishes, you might try to update a component that no longer exists, which can cause errors. Cleanup ensures you stop the request if it’s no longer needed.</li>
 </ul>
-<p>In conclusion, React Strict Mode is a useful tool for improving code quality and ensuring robustness, but its effects should be understood and managed during the development phase.</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">controller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">AbortController</span><span class="p">();</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">signal</span><span class="o">:</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">signal</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="c1">// Handle data</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="c1">// Cleanup</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">abort</span><span class="p">();</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+<h3 id="3-subscriptions">3. Subscriptions</h3>
+<ul>
+<li><strong>Example</strong>: You’re listening to a data stream or a real-time event (like a WebSocket connection).</li>
+<li><strong>Why Cleanup</strong>: If you’re listening to events and the component is removed, you should stop listening to avoid unnecessary network usage or errors.</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocket</span><span class="p">(</span><span class="s1">'ws://example.com'</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">socket</span><span class="p">.</span><span class="nx">onmessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Message:'</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="c1">// Cleanup</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">socket</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+<h3 id="4-event-listeners">4. Event Listeners</h3>
+<ul>
+<li><strong>Example</strong>: You’re adding a listener to the <code>window</code> to detect when the user resizes the browser.</li>
+<li><strong>Why Cleanup</strong>: If the component is removed, the event listener should be removed to avoid potential memory leaks or errors.</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleResize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Window resized'</span><span class="p">);</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'resize'</span><span class="p">,</span><span class="w"> </span><span class="nx">handleResize</span><span class="p">);</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="c1">// Cleanup</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s1">'resize'</span><span class="p">,</span><span class="w"> </span><span class="nx">handleResize</span><span class="p">);</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+<h2 id="general-rule-for-cleanup">General Rule for Cleanup</h2>
+<p><strong>If your component does something that might continue after it’s removed from the screen (like running timers, making network requests, listening to events), you should provide a cleanup function to stop or undo that activity.</strong></p>
+<h2 id="why-cleanup-is-important">Why Cleanup is Important</h2>
+<ul>
+<li><strong>Prevents Memory Leaks</strong>: If you don’t clean up resources, they might keep using memory even after the component is gone.</li>
+<li><strong>Avoids Errors</strong>: Ensures that your app doesn’t try to update or interact with components that no longer exist.</li>
+<li><strong>Improves Performance</strong>: Frees up resources when they’re no longer needed, leading to better performance.</li>
+</ul>
+<p>In summary, cleanup in React is about making sure your components are good neighbors—tidying up after themselves so they don’t leave messes behind when they’re done.</p>
 <hr>
-<h2 id="reference">Reference</h2>
-<p><a class="glightbox" href="https://www.youtube.com/embed/VUg7olsnusg?si=oZotBoCRNV3mnUR7" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><div class="video-container"><iframe src="https://www.youtube.com/embed/VUg7olsnusg?si=oZotBoCRNV3mnUR7" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></a></p></div>
+<h2 id="block-or-concise-body-in-return">Block or Concise Body in <code>return</code></h2>
+<p>Both of these syntax options for cleanup functions in React's <code>useEffect</code> hook are functionally equivalent, but they have subtle differences in style and readability. Let’s break down each option and discuss when to use each:</p>
+<h3 id="1-using-a-block-body">1. Using a Block Body:</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Basic Example</label><label for="__tabbed_1_2">Characteristics</label><label for="__tabbed_1_3">When to Use</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nx">controller</span><span class="p">.</span><span class="nx">abort</span><span class="p">();</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">};</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Block Body</strong>: The <code>return</code> statement uses a block body <code>{}</code> which allows for multiple statements inside the cleanup function.</li>
+<li><strong>Readability</strong>: This syntax can be more readable and flexible when the cleanup function needs to perform multiple actions or when additional logic is needed.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Multiple Statements</strong>: Use this syntax if your cleanup function involves multiple operations. For example, you might need to abort a fetch request and also remove event listeners or perform other cleanup tasks.</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="nx">controller</span><span class="p">.</span><span class="nx">abort</span><span class="p">();</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Cleanup complete'</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="c1">// Additional cleanup tasks</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">};</span>
+</span></code></pre></div>
+<ul>
+<li><strong>Complex Logic</strong>: When you need to include more complex logic or conditions within the cleanup function, a block body is preferable for clarity.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="2-using-a-concise-body">2. Using a Concise Body:</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Basic Example</label><label for="__tabbed_2_2">Characteristics</label><label for="__tabbed_2_3">When to Use</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">abort</span><span class="p">();</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Concise Body</strong>: The <code>return</code> statement uses a single expression without a block body. It’s often more compact and concise.</li>
+<li><strong>Readability</strong>: This syntax is clear and succinct when the cleanup function only needs to execute a single line of code.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Single Statement</strong>: Use this syntax when the cleanup function consists of a single operation. It’s a more streamlined approach for simple cleanup tasks.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="example-usage">Example Usage</h3>
+<p><strong>Single Statement Cleanup</strong>: If you only need to abort a fetch request, the concise body is sufficient and keeps your code clean.</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">controller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">AbortController</span><span class="p">();</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">signal</span><span class="o">:</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">signal</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">            </span><span class="c1">// Handle data</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">abort</span><span class="p">();</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+<p><strong>Multiple Statements Cleanup</strong>: If you need to perform several cleanup actions, the block body is more appropriate.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Basic</label><label for="__tabbed_3_2">Advanced</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">controller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">AbortController</span><span class="p">();</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">signal</span><span class="o">:</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">signal</span><span class="w"> </span><span class="p">})</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">            </span><span class="c1">// Handle data</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">        </span><span class="nx">controller</span><span class="p">.</span><span class="nx">abort</span><span class="p">();</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Fetch aborted and cleanup complete'</span><span class="p">);</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">        </span><span class="c1">// Additional cleanup tasks if needed</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="c1">// Establishing a WebSocket connection</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocket</span><span class="p">(</span><span class="s1">'ws://example.com/chat'</span><span class="p">);</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="c1">// Function to handle incoming messages</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleMessage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Message received:'</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="c1">// Function to handle window resize events</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleResize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Window resized'</span><span class="p">);</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="c1">// Adding event listeners</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'resize'</span><span class="p">,</span><span class="w"> </span><span class="nx">handleResize</span><span class="p">);</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">    </span><span class="nx">socket</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'message'</span><span class="p">,</span><span class="w"> </span><span class="nx">handleMessage</span><span class="p">);</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">    </span><span class="c1">// Cleanup function</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">        </span><span class="c1">// Close WebSocket connection</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">        </span><span class="nx">socket</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'WebSocket connection closed'</span><span class="p">);</span>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="w">        </span><span class="c1">// Remove event listeners</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">        </span><span class="nb">window</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s1">'resize'</span><span class="p">,</span><span class="w"> </span><span class="nx">handleResize</span><span class="p">);</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="w">        </span><span class="nx">socket</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s1">'message'</span><span class="p">,</span><span class="w"> </span><span class="nx">handleMessage</span><span class="p">);</span>
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Event listeners removed'</span><span class="p">);</span>
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">    </span><span class="p">};</span>
+</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="summary">Summary</h3>
+<ul>
+<li>
+<p><strong>Use a Block Body</strong> when you need to perform multiple cleanup actions or when including additional logic is necessary. It’s more versatile and readable for complex cleanup scenarios.</p>
+</li>
+<li>
+<p><strong>Use a Concise Body</strong> for simple cleanup tasks that involve only a single action. It’s more succinct and keeps your code neat for straightforward scenarios.</p>
+</li>
+</ul>
+<p>Both approaches are valid and serve different needs based on the complexity of your cleanup logic. Choose the one that best fits the task at hand and improves code readability and maintainability.</p></div>
 
 
 
@@ -5339,7 +5755,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../optimization/intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
+          <a href="../abort-controller-solved/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Abort Controller Solved">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -5349,20 +5765,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Intro
+                Abort Controller Solved
               </div>
             </div>
           </a>
         
         
           
-          <a href="../code-for-change/" class="md-footer__link md-footer__link--next" aria-label="Next: Code For Change">
+          <a href="../explainingothers/" class="md-footer__link md-footer__link--next" aria-label="Next: Explain to 5 Year">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Code For Change
+                Explain to 5 Year
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -5417,10 +5833,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
