@@ -366,6 +366,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/useReducer/</loc>
+         <lastmod>2024-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/js/json/intro/</loc>
          <lastmod>2024-09-17</lastmod>
          <changefreq>daily</changefreq>

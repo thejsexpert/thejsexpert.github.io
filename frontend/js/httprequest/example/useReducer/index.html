@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/blog/2024/04/01/understanding-javascript-array-methods-mutating-vs-non-mutating/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/httprequest/example/useReducer/">
       
       
-        <link rel="prev" href="../../../01/29/understanding-the-impact-of-the-return-statement-in-javascripts-map-function/">
+        <link rel="prev" href="../overview/">
       
       
-        <link rel="next" href="../../23/formsetfieldsvalue-vs-defaultvalue-in-react/">
+        <link rel="next" href="../fetch-api-example/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Understanding JavaScript Array Methods: Mutating vs. Non-Mutating - My Docs</title>
+        <title>useReducer - My Docs</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-javascript-array-methods-mutating-vs-non-mutating" class="md-skip">
+        <a href="#making-code-modular" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Understanding JavaScript Array Methods: Mutating vs. Non-Mutating
+              useReducer
             
           </span>
         </div>
@@ -170,13 +170,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -190,11 +188,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../frontend/js/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../intro/" class="md-tabs__link">
           
   
   JS
@@ -212,7 +212,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/react/philosophy/" class="md-tabs__link">
+        <a href="../../../../react/philosophy/" class="md-tabs__link">
           
   
   React
@@ -230,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/package/intro/" class="md-tabs__link">
+        <a href="../../../../package/intro/" class="md-tabs__link">
           
   
   Package
@@ -248,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/state-management/intro/" class="md-tabs__link">
+        <a href="../../../../state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -266,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -312,9 +312,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -340,28 +338,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -372,7 +365,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -383,14 +376,12 @@
                 
   
   
-    
-  
   
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      <a href="../../../../" class="md-nav__link">
+    <li class="md-nav__item">
+      <a href="../../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../archive/2024/" class="md-nav__link">
+      <a href="../../../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -484,23 +475,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -511,7 +507,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             JS
@@ -525,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/intro/" class="md-nav__link">
+      <a href="../../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -584,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/prototype/" class="md-nav__link">
+      <a href="../../../essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -605,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../../essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../../essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -647,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/object/" class="md-nav__link">
+      <a href="../../../essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/array/" class="md-nav__link">
+      <a href="../../../essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/control-statement/" class="md-nav__link">
+      <a href="../../../core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -756,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/callback/" class="md-nav__link">
+      <a href="../../../core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -798,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/closure/" class="md-nav__link">
+      <a href="../../../core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -819,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/high-order-function/" class="md-nav__link">
+      <a href="../../../core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/topic/" class="md-nav__link">
+      <a href="../../../core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -949,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/serialization/" class="md-nav__link">
+      <a href="../../../advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -970,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -991,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/promise/" class="md-nav__link">
+      <a href="../../../advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/datatypes/intro/" class="md-nav__link">
+      <a href="../../../datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1079,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../../datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1146,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/intro/" class="md-nav__link">
+      <a href="../../../function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/types/" class="md-nav__link">
+      <a href="../../../function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1188,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/arrow-function/" class="md-nav__link">
+      <a href="../../../function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1209,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/arrow-example/" class="md-nav__link">
+      <a href="../../../function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1230,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/advanced-concept/" class="md-nav__link">
+      <a href="../../../function/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1335,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../../ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1356,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1390,6 +1386,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1399,11 +1397,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
         
           
           <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
@@ -1417,7 +1415,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_8">
             <span class="md-nav__icon md-icon"></span>
             HTTP Request
@@ -1431,7 +1429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1452,7 +1450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../cancellation-mechanisms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1511,7 +1509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/overview/" class="md-nav__link">
+      <a href="../../core/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1532,7 +1530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1553,7 +1551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../core/then-and-asyncwait/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1574,7 +1572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../core/chaining/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1595,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../core/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1616,7 +1614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/axios/" class="md-nav__link">
+      <a href="../../core/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1642,6 +1640,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1651,11 +1651,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_8_4" id="__nav_2_8_4_label" tabindex="0">
@@ -1669,7 +1669,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_8_4">
             <span class="md-nav__icon md-icon"></span>
             Example
@@ -1683,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1701,10 +1701,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/useReducer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    useReducer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1713,6 +1731,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#making-code-modular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making Code Modular
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1725,7 +1779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../fetch-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1746,7 +1800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../axios-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1821,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/json/intro/" class="md-nav__link">
+      <a href="../../../json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1842,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/json/json5/" class="md-nav__link">
+      <a href="../../../json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1909,7 +1963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/vite/" class="md-nav__link">
+      <a href="../../../tools/vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1930,7 +1984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1951,7 +2005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/ESLint/" class="md-nav__link">
+      <a href="../../../tools/ESLint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1972,7 +2026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/nodejs-package-manager/" class="md-nav__link">
+      <a href="../../../tools/nodejs-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1993,7 +2047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/node-package-manager/" class="md-nav__link">
+      <a href="../../../tools/node-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2014,7 +2068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/yarn/" class="md-nav__link">
+      <a href="../../../tools/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2035,7 +2089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/pnpm/" class="md-nav__link">
+      <a href="../../../tools/pnpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2102,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2123,7 +2177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2144,7 +2198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2165,7 +2219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2186,7 +2240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2260,7 +2314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/philosophy/" class="md-nav__link">
+      <a href="../../../../react/philosophy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2319,7 +2373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/intro/" class="md-nav__link">
+      <a href="../../../../react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2340,7 +2394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/guides/" class="md-nav__link">
+      <a href="../../../../react/core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2399,7 +2453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../../react/core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2420,7 +2474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../../react/core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2441,7 +2495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../../react/core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2462,7 +2516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../../react/core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2483,7 +2537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../../react/core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2504,7 +2558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../../react/core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2525,7 +2579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/misc/" class="md-nav__link">
+      <a href="../../../../react/core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2592,7 +2646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../../../react/core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2613,7 +2667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../../react/core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2634,7 +2688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../../react/core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2655,7 +2709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useCallback/" class="md-nav__link">
+      <a href="../../../../react/core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2676,7 +2730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useRef/" class="md-nav__link">
+      <a href="../../../../react/core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2697,7 +2751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/react-context-api/" class="md-nav__link">
+      <a href="../../../../react/core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2718,7 +2772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/react-router/" class="md-nav__link">
+      <a href="../../../../react/core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2739,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../../react/core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2806,7 +2860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/router/intro/" class="md-nav__link">
+      <a href="../../../../react/core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2873,7 +2927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/fake-api/intro/" class="md-nav__link">
+      <a href="../../../../react/core/fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2894,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/fake-api/json-server/" class="md-nav__link">
+      <a href="../../../../react/core/fake-api/json-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2915,7 +2969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/fake-api/msw/" class="md-nav__link">
+      <a href="../../../../react/core/fake-api/msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3020,7 +3074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/auth-example/login/react-login/" class="md-nav__link">
+      <a href="../../../../react/core/auth-example/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3087,7 +3141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../../../react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3170,7 +3224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/passing-props/" class="md-nav__link">
+      <a href="../../../../react/example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3191,7 +3245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../../../../react/example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3212,7 +3266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/prop-drilling/" class="md-nav__link">
+      <a href="../../../../react/example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3233,7 +3287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/children-prop/" class="md-nav__link">
+      <a href="../../../../react/example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3254,7 +3308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/component-composition/" class="md-nav__link">
+      <a href="../../../../react/example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3275,7 +3329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/hoc/" class="md-nav__link">
+      <a href="../../../../react/example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3296,7 +3350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/render-props/" class="md-nav__link">
+      <a href="../../../../react/example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3317,7 +3371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../../../../react/example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3338,7 +3392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3405,7 +3459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/intro/" class="md-nav__link">
+      <a href="../../../../react/testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3426,7 +3480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/jest/" class="md-nav__link">
+      <a href="../../../../react/testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3447,7 +3501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/cypress/" class="md-nav__link">
+      <a href="../../../../react/testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3468,7 +3522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../../../react/testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3527,7 +3581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/intro/" class="md-nav__link">
+      <a href="../../../../react/testing/codereport/bugs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3548,7 +3602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/solution/" class="md-nav__link">
+      <a href="../../../../react/testing/codereport/bugs/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3569,7 +3623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../../../../react/testing/codereport/bugs/cleanup-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3590,7 +3644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/debouncing/" class="md-nav__link">
+      <a href="../../../../react/testing/codereport/bugs/debouncing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3611,7 +3665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/master-topic/" class="md-nav__link">
+      <a href="../../../../react/testing/codereport/bugs/master-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3686,7 +3740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/optimization/intro/" class="md-nav__link">
+      <a href="../../../../react/optimization/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3791,7 +3845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/mastering/function-declaration-and-expression/" class="md-nav__link">
+      <a href="../../../../react/topic/mastering/function-declaration-and-expression/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3812,7 +3866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/mastering/explainingothers/" class="md-nav__link">
+      <a href="../../../../react/topic/mastering/explainingothers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3833,7 +3887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/mastering/hooks-mastering-topic/" class="md-nav__link">
+      <a href="../../../../react/topic/mastering/hooks-mastering-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3900,7 +3954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer/" class="md-nav__link">
+      <a href="../../../../react/topic/hooks/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3921,7 +3975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer-and-reducer/" class="md-nav__link">
+      <a href="../../../../react/topic/hooks/useReducer-and-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3942,7 +3996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer-example/" class="md-nav__link">
+      <a href="../../../../react/topic/hooks/useReducer-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3963,7 +4017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer-with-api/" class="md-nav__link">
+      <a href="../../../../react/topic/hooks/useReducer-with-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3992,7 +4046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/react-strict-mode/" class="md-nav__link">
+      <a href="../../../../react/topic/react-strict-mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4013,7 +4067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/code-for-change/" class="md-nav__link">
+      <a href="../../../../react/topic/code-for-change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4034,7 +4088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/abort-controller-solved/" class="md-nav__link">
+      <a href="../../../../react/topic/abort-controller-solved/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4055,7 +4109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/cleanup/" class="md-nav__link">
+      <a href="../../../../react/topic/cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4076,7 +4130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/slides/" class="md-nav__link">
+      <a href="../../../../react/topic/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4105,7 +4159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/handling-side-effects/" class="md-nav__link">
+      <a href="../../../../react/handling-side-effects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4171,7 +4225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/intro/" class="md-nav__link">
+      <a href="../../../../package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4230,7 +4284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/" class="md-nav__link">
+      <a href="../../../../package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4251,7 +4305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/topic/" class="md-nav__link">
+      <a href="../../../../package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4272,7 +4326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../../package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4293,7 +4347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/antd-form/" class="md-nav__link">
+      <a href="../../../../package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4314,7 +4368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../../../package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4335,7 +4389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/form-crud/" class="md-nav__link">
+      <a href="../../../../package/antd/form-crud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4402,7 +4456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../../package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4469,7 +4523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../../package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4543,7 +4597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/intro/" class="md-nav__link">
+      <a href="../../../../state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4602,7 +4656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4623,7 +4677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/folder-structure/" class="md-nav__link">
+      <a href="../../../../state-management/redux/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4644,7 +4698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/redux-pattern/" class="md-nav__link">
+      <a href="../../../../state-management/redux/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4665,7 +4719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/redux-testing/" class="md-nav__link">
+      <a href="../../../../state-management/redux/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4724,7 +4778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4791,7 +4845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4812,7 +4866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/folder-structure/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4879,7 +4933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/action/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4946,7 +5000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/reducer/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4967,7 +5021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/reducer/example/" class="md-nav__link">
+      <a href="../../../../state-management/redux/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4988,7 +5042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../../../state-management/redux/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5009,7 +5063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../../../state-management/redux/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5076,7 +5130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5097,7 +5151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../../state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5118,7 +5172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../../state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5193,7 +5247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../../state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5260,7 +5314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../../state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5327,7 +5381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/middleware/" class="md-nav__link">
+      <a href="../../../../state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5401,7 +5455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5422,7 +5476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5664,8 +5718,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -5675,8 +5727,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5685,27 +5735,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mutating-array-methods" class="md-nav__link">
+  <a href="#making-code-modular" class="md-nav__link">
     <span class="md-ellipsis">
-      Mutating Array Methods:
+      Making Code Modular
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#non-mutating-array-methods" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Non-Mutating Array Methods:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
+      Summary
     </span>
   </a>
   
@@ -5720,179 +5761,216 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../../../../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-                  <span class="md-ellipsis">
-                    Back to index
-                  </span>
-                </a>
-              </div>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>useReducer</h1>
+
+<div><p>Using <code>useReducer</code> instead of <code>useState</code> hooks.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">fetch</label><label for="__tabbed_1_2">async/await</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">initialState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">reducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'FETCH_SUCCESS'</span><span class="o">:</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">action</span><span class="p">.</span><span class="nx">payload</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'FETCH_ERROR'</span><span class="o">:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="nx">action</span><span class="p">.</span><span class="nx">payload</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">();</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">}</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Example</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">(</span><span class="nx">reducer</span><span class="p">,</span><span class="w"> </span><span class="nx">initialState</span><span class="p">);</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">            </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">            </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'FETCH_SUCCESS'</span><span class="p">,</span><span class="w"> </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">}))</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">            </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'FETCH_ERROR'</span><span class="p">,</span><span class="w"> </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="p">}));</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">loading</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Loading</span><span class="p">...&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="ne">Error</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">state</span><span class="p">.</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">}&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;{</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">)}&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label><label for="__tabbed_2_2">Explanation</label><label for="__tabbed_2_3">Changes Made</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">initialState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">reducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'FETCH_SUCCESS'</span><span class="o">:</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">action</span><span class="p">.</span><span class="nx">payload</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'FETCH_ERROR'</span><span class="o">:</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="nx">action</span><span class="p">.</span><span class="nx">payload</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">();</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">}</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Example</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">(</span><span class="nx">reducer</span><span class="p">,</span><span class="w"> </span><span class="nx">initialState</span><span class="p">);</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="c1">// Define an async function inside useEffect</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">fetchData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">            </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">                </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">);</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">'Network response was not ok'</span><span class="p">);</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">                </span><span class="p">}</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">                </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">                </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'FETCH_SUCCESS'</span><span class="p">,</span><span class="w"> </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="w">                </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'FETCH_ERROR'</span><span class="p">,</span><span class="w"> </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">        </span><span class="p">};</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">        </span><span class="nx">fetchData</span><span class="p">();</span><span class="w"> </span><span class="c1">// Call the async function</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">loading</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Loading</span><span class="p">...&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="ne">Error</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">state</span><span class="p">.</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">}&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;{</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">)}&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="p">}</span>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Example</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Certainly! To convert the code to use <code>async/await</code>, you'll need to make some adjustments to the <code>useEffect</code> hook. Here’s how you can update it:</p>
+<ul>
+<li>Define an <code>async</code> function inside <code>useEffect</code> to handle the asynchronous fetch operation.</li>
+<li>Call this <code>async</code> function immediately within <code>useEffect</code>.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Added an <code>async</code> function</strong> inside the <code>useEffect</code> hook to perform the fetch operation.</li>
+<li><strong>Called</strong> <code>await</code> on the fetch function and <code>.json()</code> to handle promises with <code>async/await</code>.</li>
+<li><strong>Added a check</strong> to throw an error if the response is not ok (to handle HTTP errors).</li>
+</ul>
+</div>
+</div>
+</div>
+<p>This approach makes the asynchronous code cleaner and easier to read compared to using <code>.then</code> and <code>.catch</code>.</p>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="making-code-modular">Making Code Modular</h2>
+<div class="admonition question">
+<p class="admonition-title">can we separate the api call to api folder</p>
+</div>
+<p>Yes, separating the API call into a dedicated file or folder is a great idea for better organization and maintainability. You can create a separate module for the API call and then import it into your component. Here’s how you can do that:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Step 1: Create an API Utility</label><label for="__tabbed_3_2">Step 2: Update Your Component</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li><strong>Create a new file</strong> in your project, for example, <code>api.js</code> or <code>api.ts</code> if you're using TypeScript. You might place it in an <code>api</code> folder or similar.</li>
+<li><strong>Define the API call</strong> function in this file. For instance, you can create a function that fetches data from the API:</li>
+</ol>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// api/api.js</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">export</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">fetchData</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">'Network response was not ok'</span><span class="p">);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">data</span><span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><strong>Import the API function</strong> into your component file.</li>
+<li><strong>Use the imported function</strong> inside the <code>useEffect</code> hook.</li>
+</ol>
+<p>Here’s how you can modify your <code>Example</code> component:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">fetchData</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./api/api'</span><span class="p">;</span><span class="w"> </span><span class="c1">// Adjust the import path according to your folder structure</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">initialState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kd">function</span><span class="w"> </span><span class="nx">reducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'FETCH_SUCCESS'</span><span class="o">:</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">action</span><span class="p">.</span><span class="nx">payload</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s1">'FETCH_ERROR'</span><span class="o">:</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="nx">action</span><span class="p">.</span><span class="nx">payload</span><span class="p">,</span><span class="w"> </span><span class="nx">loading</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">();</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p">}</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Example</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">(</span><span class="nx">reducer</span><span class="p">,</span><span class="w"> </span><span class="nx">initialState</span><span class="p">);</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">    </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">        </span><span class="c1">// Define an async function inside useEffect</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">fetchDataFromAPI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">            </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">                </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetchData</span><span class="p">();</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">                </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'FETCH_SUCCESS'</span><span class="p">,</span><span class="w"> </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">                </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'FETCH_ERROR'</span><span class="p">,</span><span class="w"> </span><span class="nx">payload</span><span class="o">:</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">        </span><span class="p">};</span>
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">        </span><span class="nx">fetchDataFromAPI</span><span class="p">();</span><span class="w"> </span><span class="c1">// Call the async function</span>
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">loading</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Loading</span><span class="p">...&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="ne">Error</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">state</span><span class="p">.</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">}&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;{</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">)}&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="p">}</span>
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Example</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><code>api/api.js</code>: Contains the <code>fetchData</code> function that performs the API request.</li>
+<li><strong>Component</strong>: Imports <code>fetchData</code> and uses it within the <code>useEffect</code> hook.</li>
+</ul>
+<p>This separation makes your component code cleaner and adheres to the principle of separation of concerns.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            
-              <div class="md-post__authors md-typeset">
-                
-                  <div class="md-profile md-post__profile">
-                    <span class="md-author md-author--long">
-                      <img src="https://avatars.githubusercontent.com/u/25550945" alt="Bishow Thapa">
-                    </span>
-                    <span class="md-profile__description">
-                      <strong>
-                        
-                          Bishow Thapa
-                        
-                      </strong>
-                      <br>
-                      Creator
-                    </span>
-                  </div>
-                
-              </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    Metadata
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
-                        <time datetime="2024-04-01 00:00:00" class="md-ellipsis">April 1, 2024</time>
-                      </div>
-                    </li>
-                    
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              2 min read
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-          </nav>
           
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
-  
-  
-
-<nav class="md-tags" >
-  
-    
-    
-    
-      <a href="../../../../../tags/#programming" class="md-tag">Programming</a>
-    
-  
-</nav>
-
-
-
-<div><h1 id="understanding-javascript-array-methods-mutating-vs-non-mutating">Understanding JavaScript Array Methods: Mutating vs. Non-Mutating</h1>
-<p>When working with arrays in JavaScript, it's crucial to understand the distinction between <strong>mutating</strong> and <strong>non-mutating</strong> array methods. This differentiation plays a significant role in how arrays are manipulated and can greatly impact the behavior of your code.</p>
-<!-- more -->
-
-<h2 id="mutating-array-methods">Mutating Array Methods:</h2>
-<p>Mutating array methods are those that modify the original array directly. They alter the array's contents in place, without creating a new array.</p>
-<p>Some commonly used mutating array methods include:</p>
-<ol>
-<li>
-<p><code>push()</code> and <code>pop()</code>: These methods add and remove elements from the end of the array, respectively.</p>
-</li>
-<li>
-<p><code>shift()</code> and <code>unshift()</code>: They add and remove elements from the beginning of the array, respectively.</p>
-</li>
-<li>
-<p><code>splice()</code>: This method can add, remove, or replace elements at any position within the array.</p>
-</li>
-<li>
-<p><code>sort()</code> and <code>reverse()</code>: These methods reorder the elements of the array.</p>
-</li>
-<li>
-<p><code>fill()</code> and <code>copyWithin()</code>: They modify elements within the array based on specified criteria.</p>
-</li>
-<li>
-<p><code>forEach()</code>: It iterates over each element of the array and allows you to perform actions on them.</p>
-</li>
-</ol>
-<h2 id="non-mutating-array-methods">Non-Mutating Array Methods:</h2>
-<p>Non-mutating array methods, on the other hand, do not modify the original array. Instead, they return a new array with the desired modifications, leaving the original array unchanged.</p>
-<p>Some common non-mutating array methods include:</p>
-<ol>
-<li>
-<p><code>concat()</code>:
-    This method combines two or more arrays and returns a new array.</p>
-</li>
-<li>
-<p><code>slice()</code>:
-    It returns a portion of the array without modifying the original array (returns a new array).</p>
-</li>
-<li>
-<p><code>filter()</code> and <code>map()</code>:
-    These methods create new arrays based on specific criteria or transformations applied to the original array's elements.</p>
-</li>
-<li>
-<p><code>reduce()</code> and <code>reduceRight()</code>:
-    They reduce the array to a single value based on a provided function.</p>
-</li>
-<li>
-<p><code>some()</code> and <code>every()</code>:
-    These methods check if certain conditions are met by at least one or all elements in the array, respectively.</p>
-</li>
-<li>
-<p><code>indexOf()</code> and <code>lastIndexOf()</code>:
-    They find the index of a specified element within the array.</p>
-</li>
-</ol>
-<p>Understanding the difference between <code>mutating</code> and <code>non-mutating</code> array methods is crucial for writing efficient and bug-free JavaScript code. Choosing the appropriate method based on your requirements can lead to cleaner, more maintainable code and prevent unintended side effects.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>In summary, mutating array methods directly modify the original array, while non-mutating array methods return a new array without altering the original one. By leveraging these methods effectively, you can harness the full power of JavaScript arrays in your projects.</p>
-<hr></div>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-      
-    </article>
-  </div>
-
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -5909,12 +5987,10 @@
   
     
       
-        
-      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../../01/29/understanding-the-impact-of-the-return-statement-in-javascripts-map-function/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Understanding the Impact of the Return Statement in JavaScript&#39;s Map Function">
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -5924,20 +6000,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Understanding the Impact of the Return Statement in JavaScript's Map Function
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../23/formsetfieldsvalue-vs-defaultvalue-in-react/" class="md-footer__link md-footer__link--next" aria-label="Next: form.setFieldsValue vs defaultValue in react">
+          <a href="../fetch-api-example/" class="md-footer__link md-footer__link--next" aria-label="Next: Fetch Api Example">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                form.setFieldsValue vs defaultValue in react
+                Fetch Api Example
               </div>
             </div>
             <div class="md-footer__button md-icon">
