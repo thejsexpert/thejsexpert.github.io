@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/httprequest/overview/">
+        <link rel="canonical" href="https://thejsexpert.github.io/blog/2024/08/06/how-many-concurrent-requests-can-a-web-browser-handle/">
       
       
-        <link rel="prev" href="../intro/">
+        <link rel="prev" href="../../05/choosing-between-function-declarations-and-arrow-functions-for-react-components/">
       
       
-        <link rel="next" href="../fetch-api/">
+        <link rel="next" href="../../07/where-does-redux-shines/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>Overview - My Docs</title>
+        <title>How Many Concurrent Requests Can a Web Browser Handle? - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -61,7 +61,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#how-many-concurrent-requests-can-a-web-browser-handle" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              How Many Concurrent Requests Can a Web Browser Handle?
             
           </span>
         </div>
@@ -170,11 +170,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   Blog
@@ -188,13 +190,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../../frontend/js/intro/" class="md-tabs__link">
           
   
   JS
@@ -212,7 +212,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../react/philosophy/" class="md-tabs__link">
+        <a href="../../../../../frontend/react/philosophy/" class="md-tabs__link">
           
   
   React
@@ -230,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../package/intro/" class="md-tabs__link">
+        <a href="../../../../../frontend/package/intro/" class="md-tabs__link">
           
   
   Package
@@ -248,7 +248,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../../../../frontend/state-management/intro/" class="md-tabs__link">
           
   
   State Management
@@ -266,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../../../frontend/typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../interview/react/" class="md-tabs__link">
+        <a href="../../../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -312,7 +312,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -323,7 +325,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -338,23 +340,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -365,7 +372,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -376,12 +383,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -475,28 +484,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -507,7 +511,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             JS
@@ -521,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/prototype/" class="md-nav__link">
+      <a href="../../../../../frontend/js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/object-prototype/" class="md-nav__link">
+      <a href="../../../../../frontend/js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/array-prototype/" class="md-nav__link">
+      <a href="../../../../../frontend/js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -643,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/object/" class="md-nav__link">
+      <a href="../../../../../frontend/js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -664,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/array/" class="md-nav__link">
+      <a href="../../../../../frontend/js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/control-statement/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/callback/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -794,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/closure/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -815,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/high-order-function/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -857,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/topic/" class="md-nav__link">
+      <a href="../../../../../frontend/js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -924,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../../../frontend/js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -945,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/serialization/" class="md-nav__link">
+      <a href="../../../../../frontend/js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -966,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../../../frontend/js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -987,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/promise/" class="md-nav__link">
+      <a href="../../../../../frontend/js/advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1054,7 +1058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1075,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/data-types/" class="md-nav__link">
+      <a href="../../../../../frontend/js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1142,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1163,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/types/" class="md-nav__link">
+      <a href="../../../../../frontend/js/function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1184,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/arrow-function/" class="md-nav__link">
+      <a href="../../../../../frontend/js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1205,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/arrow-example/" class="md-nav__link">
+      <a href="../../../../../frontend/js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1226,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/advanced-concept/" class="md-nav__link">
+      <a href="../../../../../frontend/js/function/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1331,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/es6/" class="md-nav__link">
+      <a href="../../../../../frontend/js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1352,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../../../frontend/js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1386,8 +1390,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1397,11 +1399,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
         
           
           <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
@@ -1415,7 +1417,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_8">
             <span class="md-nav__icon md-icon"></span>
             HTTP Request
@@ -1429,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1447,28 +1449,69 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+        
   
   <span class="md-ellipsis">
-    Overview
+    Cancellation Mechanisms
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_3" id="__nav_2_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Basic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/core/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1477,159 +1520,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fetch-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fetch API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#axios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Axios
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mastering-fetch-and-axios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mastering Fetch and Axios
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#detailed-differences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Detailed Differences
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Detailed Differences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-error-handling" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Error Handling:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-json-transformation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. JSON Transformation:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-request-and-response-interceptors" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Request and Response Interceptors:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-cancellation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Cancellation:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-browser-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Browser Support:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-to-use-each" class="md-nav__link">
-    <span class="md-ellipsis">
-      When to Use Each
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#major-difference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Major Difference
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Major Difference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    <span class="md-ellipsis">
-      Error Handling:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1642,7 +1532,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../fetch-api/" class="md-nav__link">
+      <a href="../../../../../frontend/js/httprequest/core/api-response-object/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Object
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Then and async await
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/core/chaining/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chaning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1663,11 +1616,78 @@
   
   
     <li class="md-nav__item">
-      <a href="../axios/" class="md-nav__link">
+      <a href="../../../../../frontend/js/httprequest/core/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Axios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8_4" id="__nav_2_8_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            Example
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/example/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
   </span>
   
 
@@ -1684,15 +1704,44 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-response-object/" class="md-nav__link">
+      <a href="../../../../../frontend/js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Response Object
+    Fetch Api Example
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/js/httprequest/example/axios-api-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Axios Api Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1751,7 +1800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../json/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1772,7 +1821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../json/json5/" class="md-nav__link">
+      <a href="../../../../../frontend/js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1839,7 +1888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/vite/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1860,7 +1909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1881,7 +1930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/ESLint/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/ESLint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1902,7 +1951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/nodejs-package-manager/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/nodejs-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1923,7 +1972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/node-package-manager/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/node-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1944,7 +1993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/yarn/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1965,7 +2014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/pnpm/" class="md-nav__link">
+      <a href="../../../../../frontend/js/tools/pnpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2032,7 +2081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2053,7 +2102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2074,7 +2123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2095,7 +2144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2116,7 +2165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../../../frontend/js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2190,7 +2239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/philosophy/" class="md-nav__link">
+      <a href="../../../../../frontend/react/philosophy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2249,7 +2298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2270,7 +2319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/guides/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2329,7 +2378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2350,7 +2399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2371,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2392,7 +2441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2413,7 +2462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2434,7 +2483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2455,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/pattern/misc/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2522,7 +2571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2543,7 +2592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2564,7 +2613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2585,7 +2634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useCallback/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2606,7 +2655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/useRef/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2627,7 +2676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/react-context-api/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2648,7 +2697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/react-router/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2669,7 +2718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2736,7 +2785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/router/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2803,7 +2852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2824,7 +2873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/json-server/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/fake-api/json-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2845,7 +2894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/fake-api/msw/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/fake-api/msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2950,7 +2999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/auth-example/login/react-login/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/auth-example/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3017,7 +3066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3100,7 +3149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/passing-props/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3121,7 +3170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3142,7 +3191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/prop-drilling/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3163,7 +3212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/children-prop/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3184,7 +3233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/component-composition/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3205,7 +3254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/hoc/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3226,7 +3275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/render-props/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3247,7 +3296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3268,7 +3317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/react/example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3335,7 +3384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3356,7 +3405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/jest/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3377,7 +3426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/cypress/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3398,7 +3447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3457,7 +3506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/codereport/bugs/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/codereport/bugs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3478,7 +3527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/codereport/bugs/solution/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/codereport/bugs/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3499,7 +3548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/codereport/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/codereport/bugs/cleanup-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3520,7 +3569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/codereport/bugs/debouncing/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/codereport/bugs/debouncing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3541,7 +3590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/testing/codereport/bugs/master-topic/" class="md-nav__link">
+      <a href="../../../../../frontend/react/testing/codereport/bugs/master-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3616,7 +3665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/optimization/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/react/optimization/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3682,12 +3731,50 @@
   
   
   
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_1" id="__nav_3_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mastering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Mastering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../react/topic/react-strict-mode/" class="md-nav__link">
+      <a href="../../../../../frontend/react/topic/mastering/function-declaration-and-expression/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Strict Mode
+    Function Declaration & Expression
   </span>
   
 
@@ -3704,70 +3791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/topic/code-for-change/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Code For Change
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../react/topic/abort-controller-solved/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Abort Controller Solved
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../react/topic/cleanup/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cleanup
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../react/topic/explainingothers/" class="md-nav__link">
+      <a href="../../../../../frontend/react/topic/mastering/explainingothers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3788,7 +3812,250 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../react/topic/slides/" class="md-nav__link">
+      <a href="../../../../../frontend/react/topic/mastering/hooks-mastering-topic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hooks Mastering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/hooks/useReducer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/hooks/useReducer-and-reducer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer & Reducer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/hooks/useReducer-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/hooks/useReducer-with-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer with API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/react-strict-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strict Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/code-for-change/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code For Change
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/abort-controller-solved/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abort Controller Solved
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/cleanup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cleanup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/topic/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3805,6 +4072,27 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../frontend/react/handling-side-effects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Handling Side Effects
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -3862,7 +4150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3921,7 +4209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/" class="md-nav__link">
+      <a href="../../../../../frontend/package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3942,7 +4230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/topic/" class="md-nav__link">
+      <a href="../../../../../frontend/package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3963,7 +4251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../../../frontend/package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3984,7 +4272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/antd-form/" class="md-nav__link">
+      <a href="../../../../../frontend/package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4005,7 +4293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../../../../frontend/package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4026,7 +4314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/form-crud/" class="md-nav__link">
+      <a href="../../../../../frontend/package/antd/form-crud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4093,7 +4381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../../../frontend/package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4160,7 +4448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../../../frontend/package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4234,7 +4522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4293,7 +4581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4314,7 +4602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/folder-structure/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4335,7 +4623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-pattern/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4356,7 +4644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-testing/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4415,7 +4703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4482,7 +4770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4503,7 +4791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/folder-structure/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/rtk/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4570,7 +4858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/action/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4637,7 +4925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4658,7 +4946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/example/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4679,7 +4967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4700,7 +4988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4767,7 +5055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4788,7 +5076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4809,7 +5097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/redux/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4884,7 +5172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4951,7 +5239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5018,7 +5306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/middleware/" class="md-nav__link">
+      <a href="../../../../../frontend/state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5092,7 +5380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../../../frontend/typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5113,7 +5401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../../../frontend/typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5179,7 +5467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/react/" class="md-nav__link">
+      <a href="../../../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5200,7 +5488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5221,7 +5509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/micro-frontend/" class="md-nav__link">
+      <a href="../../../../../interview/micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5242,7 +5530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/api/" class="md-nav__link">
+      <a href="../../../../../interview/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5263,7 +5551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/http-response/" class="md-nav__link">
+      <a href="../../../../../interview/http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5284,7 +5572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/http-request/" class="md-nav__link">
+      <a href="../../../../../interview/http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5305,7 +5593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../../../../../interview/asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5326,7 +5614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/performance-optimization/" class="md-nav__link">
+      <a href="../../../../../interview/performance-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5355,6 +5643,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -5364,6 +5654,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5372,137 +5664,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#standard-approach-for-managing-requests" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fetch-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fetch API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#axios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Axios
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mastering-fetch-and-axios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mastering Fetch and Axios
+      Standard Approach for Managing Requests:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#detailed-differences" class="md-nav__link">
+  <a href="#practical-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Detailed Differences
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Detailed Differences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-error-handling" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Error Handling:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-json-transformation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. JSON Transformation:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-request-and-response-interceptors" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Request and Response Interceptors:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-cancellation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Cancellation:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-browser-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Browser Support:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-to-use-each" class="md-nav__link">
-    <span class="md-ellipsis">
-      When to Use Each
+      Practical Example:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#major-difference" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Major Difference
+      Summary
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Major Difference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    <span class="md-ellipsis">
-      Error Handling:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5515,362 +5699,244 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  <h1>Overview</h1>
-
-<div><h2 id="overview">Overview</h2>
-<p>Great question! Both Fetch API and Axios are popular tools for making HTTP requests in JavaScript, but they have some key differences.</p>
-<h3 id="fetch-api">Fetch API</h3>
-<p>Fetch API is a modern JavaScript API built into browsers for making HTTP requests. It’s part of the standard Web API and doesn’t require any external libraries.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Example</label><label for="__tabbed_1_2">Key Features</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li><strong>Built-In</strong>: Fetch is natively supported in most modern browsers, so there's no need for additional libraries.</li>
-<li><strong>Promises-Based</strong>: Fetch uses promises, making it easier to handle asynchronous operations.</li>
-<li><strong>Configurable</strong>: You have to manually handle some aspects like response parsing, headers, and status codes.</li>
-<li><strong>No Built-In Support for Older Browsers</strong>: For browsers that don't support Fetch, you might need a polyfill.</li>
-</ol>
-</div>
-</div>
-</div>
-<h3 id="axios">Axios</h3>
-<p>Axios is a third-party library for making HTTP requests. It’s popular in both browser and Node.js environments.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label><label for="__tabbed_2_2">Key Features</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li><strong>Promises-Based</strong>: Like Fetch, Axios uses promises.</li>
-<li><strong>Automatic JSON Data Transformation</strong>: Axios automatically transforms JSON data into JavaScript objects.</li>
-<li><strong>Request and Response Interceptors</strong>: Axios allows you to define interceptors to modify requests or responses before they are handled by <code>.then</code> or <code>.catch</code>.</li>
-<li><strong>Error Handling</strong>: Axios provides a more refined error handling mechanism, including status codes and error messages.</li>
-<li><strong>Older Browser Support</strong>: Axios works in older browsers without needing a polyfill.</li>
-</ol>
-</div>
-</div>
-</div>
-<h2 id="mastering-fetch-and-axios">Mastering Fetch and Axios</h2>
-<ol>
-<li>
-<p><strong>Understand the Basics</strong>: Make sure you’re comfortable with basic HTTP concepts (GET, POST, PUT, DELETE) and how to handle responses and errors.</p>
-</li>
-<li>
-<p><strong>Read Documentation</strong>: Familiarize yourself with the official documentation for <a href="#">Fetch API</a> and <a href="#">Axios</a>.</p>
-</li>
-<li>
-<p><strong>Practice Error Handling</strong>:</p>
-<ul>
-<li>Fetch: Check the <code>response.ok</code> property and handle HTTP errors explicitly.</li>
-<li>Axios: Use <code>.catch</code> to handle errors and access more detailed error information.</li>
-</ul>
-</li>
-<li>
-<p><strong>Use Advanced Features</strong>:</p>
-<ul>
-<li>Fetch: Learn to use the <a href="#">AbortController</a> for request cancellation and handle streams.</li>
-<li>Axios: Explore request/response interceptors, <code>axios.create</code> for custom instances, and <code>axios.all</code> for concurrent requests.</li>
-</ul>
-</li>
-<li>
-<p><strong>Consider Use Cases</strong>:</p>
-<ul>
-<li>Use <a href="#">Fetch</a> for simple cases or when working in environments with native support.</li>
-<li>Use <a href="#">Axios</a> if you need advanced features like interceptors or are working in older browsers.</li>
-</ul>
-</li>
-<li>
-<p><strong>Build Projects</strong>: Implement both Fetch and Axios in various projects to see their strengths and weaknesses in real-world scenarios.</p>
-</li>
-<li>
-<p><strong>Stay Updated</strong>: Libraries and standards evolve. Follow updates to the Fetch API and Axios to keep your knowledge current.</p>
-</li>
-</ol>
-<p>By exploring these aspects, you'll gain a solid understanding and become proficient in using both Fetch API and Axios!</p>
-<hr>
-<h2 id="detailed-differences">Detailed Differences</h2>
-<p>Absolutely, let's dive deeper into the differences between Fetch API and Axios, and examine scenarios where one might be preferable over the other.</p>
-<h3 id="1-error-handling">1.  Error Handling:</h3>
-<p><strong>Fetch API:</strong></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Example</label><label for="__tabbed_3_2">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">'Network response was not ok'</span><span class="p">);</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="p">})</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Fetch error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Fetch does not reject the promise on HTTP error status codes (like 404 or 500). It only rejects on network errors or issues that prevent the request from completing.</li>
-<li>You need to manually check <code>response.ok</code> or <code>response.status</code> to handle HTTP errors.</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Axios</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Example</label><label for="__tabbed_4_2">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">            </span><span class="c1">// Server responded with a status other than 2xx</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Response error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">);</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">            </span><span class="c1">// Request was made but no response received</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Request error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">request</span><span class="p">);</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">            </span><span class="c1">// Something else caused an error</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="p">});</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Axios automatically rejects the promise for HTTP status codes that fall outside the range of <code>2xx</code>. It provides a more straightforward way to handle errors with the <code>catch</code> block.</li>
-</ul>
-</div>
-</div>
-</div>
-<h3 id="2-json-transformation">2.  JSON Transformation:</h3>
-<p><strong>Fetch API</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">Example</label><label for="__tabbed_5_2">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Fetch requires you to explicitly call <code>.json()</code> to parse the JSON response.</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Axios</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Example</label><label for="__tabbed_6_2">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">));</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Axios automatically transforms the response data to JSON if the response header <code>Content-Type</code> is set to <code>application/json</code>.</li>
-</ul>
-</div>
-</div>
-</div>
-<h3 id="2-request-and-response-interceptors">2. Request and Response Interceptors:</h3>
-<p><strong>Fetch API</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked id="__tabbed_7_1" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="__tabbed_7_1">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li>Fetch does not have built-in support for interceptors. You have to manually handle request and response modification in each request.</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Axios</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked id="__tabbed_8_1" name="__tabbed_8" type="radio"><input id="__tabbed_8_2" name="__tabbed_8" type="radio"><div class="tabbed-labels"><label for="__tabbed_8_1">Example</label><label for="__tabbed_8_2">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// Request interceptor</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nx">axios</span><span class="p">.</span><span class="nx">interceptors</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">config</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="c1">// Modify request config</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">config</span><span class="p">;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">},</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">});</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1">// Response interceptor</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="nx">axios</span><span class="p">.</span><span class="nx">interceptors</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="c1">// Modify response data</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">;</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="p">},</span><span class="w"> </span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="p">});</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Axios supports interceptors for both requests and responses, allowing you to modify or log them before they are handled by <code>.then</code> or <code>.catch</code>.</li>
-</ul>
-</div>
-</div>
-</div>
-<h3 id="3-cancellation">3. Cancellation:</h3>
-<p><strong>Fetch API</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked id="__tabbed_9_1" name="__tabbed_9" type="radio"><input id="__tabbed_9_2" name="__tabbed_9" type="radio"><div class="tabbed-labels"><label for="__tabbed_9_1">Example</label><label for="__tabbed_9_2">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">controller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">AbortController</span><span class="p">();</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">signal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">controller</span><span class="p">.</span><span class="nx">signal</span><span class="p">;</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">signal</span><span class="w"> </span><span class="p">})</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'AbortError'</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Fetch request canceled'</span><span class="p">);</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Fetch error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="p">});</span>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
-</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="c1">// To cancel the request</span>
-</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="nx">controller</span><span class="p">.</span><span class="nx">abort</span><span class="p">();</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Fetch supports request cancellation using <a href="#">AbortController</a>.</li>
-</ul>
-</div>
-</div>
-</div>
-<p><strong>Axios</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked id="__tabbed_10_1" name="__tabbed_10" type="radio"><input id="__tabbed_10_2" name="__tabbed_10" type="radio"><div class="tabbed-labels"><label for="__tabbed_10_1">Example</label><label for="__tabbed_10_2">Explanation</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">CancelToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">axios</span><span class="p">.</span><span class="nx">CancelToken</span><span class="p">;</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">CancelToken</span><span class="p">.</span><span class="nx">source</span><span class="p">();</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">cancelToken</span><span class="o">:</span><span class="w"> </span><span class="nx">source</span><span class="p">.</span><span class="nx">token</span><span class="w"> </span><span class="p">})</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">axios</span><span class="p">.</span><span class="nx">isCancel</span><span class="p">(</span><span class="nx">error</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Request canceled:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Axios error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="p">});</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="c1">// To cancel the request</span>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nx">source</span><span class="p">.</span><span class="nx">cancel</span><span class="p">(</span><span class="s1">'Operation canceled by the user.'</span><span class="p">);</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Axios supports request cancellation via cancel tokens.</li>
-</ul>
-</div>
-</div>
-</div>
-<h3 id="5-browser-support">5. Browser Support:</h3>
-<p><strong>Fetch API</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code>-   Fetch is natively supported in modern browsers but may require a polyfill for older browsers.
-</code></pre></div>
-<p><strong>Axios</strong>:</p>
-<ul>
-<li>Axios works in both modern and older browsers without additional polyfills, and also supports Node.js environments.</li>
-</ul>
-<hr>
-<h2 id="when-to-use-each">When to Use Each</h2>
-<details class="info" open="open">
-<summary>Use Fetch API When:</summary>
-<ol>
-<li><strong>You prefer native browser support</strong> and want to avoid including external libraries.</li>
-<li><strong>You need a lightweight solution</strong> for basic HTTP requests without advanced features.</li>
-<li><strong>You want fine-grained control</strong> over error handling and parsing responses.</li>
-</ol>
-</details>
-<details class="info" open="open">
-<summary>Use Axios When:</summary>
-<ol>
-<li><strong>You need advanced features</strong> like request and response interceptors, or need to handle concurrent requests.</li>
-<li><strong>You want simplified error handling</strong>, especially when dealing with different types of errors.</li>
-<li><strong>You’re working with older browsers</strong> or need compatibility with both Node.js and browser environments.</li>
-<li><strong>You need automatic JSON data transformation</strong> and would benefit from built-in request and response manipulation.</li>
-</ol>
-</details>
-<p><strong>Summary</strong></p>
-<p>Both Fetch and Axios have their strengths. Fetch is ideal for simpler use cases or when avoiding additional dependencies is crucial. Axios is more feature-rich and suitable for complex scenarios involving interceptors, cancellation, and universal support across environments. Understanding these differences will help you choose the right tool for your needs and become more effective at managing HTTP requests in your projects.</p>
-<hr>
-<h2 id="major-difference">Major Difference</h2>
-<p>The major difference to remember between Fetch API and Axios is:</p>
-<h3 id="error-handling">Error Handling:</h3>
-<ul>
-<li>
-<p><strong>Fetch API</strong>:</p>
-<p>Does not reject the promise on HTTP error status codes (like 404 or 500). You need to manually check <code>response.ok</code> or <code>response.status</code> to handle these errors.</p>
-<p>Example:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">'Network response was not ok'</span><span class="p">);</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="p">})</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Fetch error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>Axios</strong>:</p>
-<p>Automatically rejects the promise for HTTP status codes that fall outside the range of 2xx, making error handling more straightforward and consistent.</p>
-<p>Example:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">))</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Response error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">response</span><span class="p">);</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Request error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">request</span><span class="p">);</span>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">    </span><span class="p">});</span>
-</span></code></pre></div>
-</li>
-</ul>
-<p><strong>Summary</strong>: Axios handles HTTP errors automatically by rejecting the promise for non-2xx status codes, whereas Fetch API requires you to manually check for errors and handle them.</p></div>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/25550945" alt="Bishow Thapa">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Bishow Thapa
+                        
+                      </strong>
+                      <br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
+                        <time datetime="2024-08-06 00:00:00" class="md-ellipsis">August 6, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              3 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../../../../../tags/#antd" class="md-tag">antd</a>
+    
+  
+    
+    
+    
+      <a href="../../../../../tags/#react" class="md-tag">react</a>
+    
+  
+</nav>
+
+
+
+<div><h1 id="how-many-concurrent-requests-can-a-web-browser-handle">How Many Concurrent Requests Can a Web Browser Handle?</h1>
+<p>The number of concurrent requests a web browser can handle depends on several factors including the browser type, version, and whether <code>HTTP/1.1</code> or <code>HTTP/2</code> is being used. </p>
+<!-- more -->
+
+<p>Here's a general overview:</p>
+<ol>
+<li>
+<p>HTTP/1.1:</p>
+<ul>
+<li>Standard Limit: Most browsers traditionally limit the number of concurrent connections per domain to around 6. This limit is set to prevent overwhelming the server and to manage resources efficiently.</li>
+</ul>
+</li>
+<li>
+<p>HTTP/2:</p>
+<ul>
+<li>Improved Handling: HTTP/2 allows multiplexing, meaning multiple requests and responses can be sent over a single connection simultaneously. This significantly improves performance and reduces the need for multiple connections.</li>
+<li>
+<p>Connection Limit: With HTTP/2, browsers are more efficient in handling many concurrent requests as it uses a single connection to manage multiple streams.</p>
+</li>
+<li>
+<p>HTTP/3:</p>
+</li>
+<li>
+<p>Further Improvements: HTTP/3, which is based on QUIC (Quick UDP Internet Connections), offers even better performance and handles multiple requests efficiently over a single connection with reduced latency and improved speed.</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="standard-approach-for-managing-requests">Standard Approach for Managing Requests:</h2>
+<ol>
+<li>
+<p>Throttle Requests:</p>
+<ul>
+<li>Purpose: To prevent overwhelming the browser or server with too many requests at once.</li>
+<li>How: Implement request throttling techniques where you control the rate of outgoing requests. This can be done using libraries or custom logic in your code.</li>
+</ul>
+</li>
+<li>
+<p>Use of HTTP/2 or HTTP/3:</p>
+<ul>
+<li>Purpose: To improve performance by allowing multiple requests over a single connection.</li>
+<li>How: Ensure your server supports HTTP/2 or HTTP/3 and that your application benefits from the multiplexing and efficiency provided by these protocols.</li>
+</ul>
+</li>
+<li>
+<p>Batch Requests:</p>
+<ul>
+<li>Purpose: To reduce the number of individual network requests by combining multiple requests into a single batch.</li>
+<li>How: Use techniques such as GraphQL to fetch multiple pieces of data in a single request or combine related REST API calls into a single request if supported by the API.</li>
+</ul>
+</li>
+<li>
+<p>Debounce and Throttle API Calls:</p>
+<ul>
+<li>Purpose: To avoid making excessive requests, especially in scenarios where users trigger requests rapidly (e.g., search suggestions).</li>
+<li>How: Implement debouncing (waiting a short time after the last user action before making a request) and throttling (limiting the number of requests over a certain period).</li>
+</ul>
+</li>
+<li>
+<p>Use Caching:</p>
+<ul>
+<li>Purpose: To reduce the number of requests sent to the server and improve performance by reusing previously fetched data.</li>
+<li>How: Implement client-side caching mechanisms, such as <code>Cache-Control</code> headers and local storage, to store and reuse data.</li>
+</ul>
+</li>
+<li>
+<p>Monitor and Optimize:</p>
+<ul>
+<li>Purpose: To ensure that your application remains performant and within the limits of browser capabilities.</li>
+<li>How: Use tools like browser developer tools, performance monitoring, and analytics to track and optimize the number of requests and their impact on performance.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="practical-example">Practical Example:</h2>
+<p>If you have multiple independent API calls, you might handle them in parallel to optimize performance. Here’s a simple example using <code>Promise.all</code> with <code>async/await</code>:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Example</label><label for="__tabbed_1_2">Explanation</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">fetchMultipleData</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="c1">// Use Promise.all to handle multiple requests in parallel</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">response1</span><span class="p">,</span><span class="w"> </span><span class="nx">response2</span><span class="p">,</span><span class="w"> </span><span class="nx">response3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">([</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data1'</span><span class="p">),</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data2'</span><span class="p">),</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data3'</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="p">]);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="c1">// Convert responses to JSON</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">data1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response1</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">data2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response2</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">data3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response3</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Data1:'</span><span class="p">,</span><span class="w"> </span><span class="nx">data1</span><span class="p">);</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Data2:'</span><span class="p">,</span><span class="w"> </span><span class="nx">data2</span><span class="p">);</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Data3:'</span><span class="p">,</span><span class="w"> </span><span class="nx">data3</span><span class="p">);</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Error:'</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="nx">fetchMultipleData</span><span class="p">();</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Parallel Requests</strong>: <code>Promise.all</code> runs all the fetch requests in parallel, efficiently handling multiple requests.</li>
+<li><strong>Error Handling</strong>: Any errors in any of the requests are caught in the <code>catch</code> block.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><strong>Browser Limits</strong>: Browsers handle around 6 concurrent connections per domain with HTTP/1.1 and can handle many more with HTTP/2 and HTTP/3 due to multiplexing.</li>
+<li><strong>Standard Approach</strong>: Use HTTP/2 or HTTP/3, implement request throttling and debouncing, batch requests, use caching, and monitor performance for optimal handling of requests.</li>
+</ul>
+<p>By following these practices, you can effectively manage concurrent requests and optimize the performance of your web applications.</p></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -5887,10 +5953,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
+          <a href="../../05/choosing-between-function-declarations-and-arrow-functions-for-react-components/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Choosing Between Function Declarations and Arrow Functions for React Components">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -5900,20 +5968,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Intro
+                Choosing Between Function Declarations and Arrow Functions for React Components
               </div>
             </div>
           </a>
         
         
           
-          <a href="../fetch-api/" class="md-footer__link md-footer__link--next" aria-label="Next: Fetch API">
+          <a href="../../07/where-does-redux-shines/" class="md-footer__link md-footer__link--next" aria-label="Next: Where does redux shines?">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Fetch API
+                Where does redux shines?
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -5968,10 +6036,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
