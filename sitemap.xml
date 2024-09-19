@@ -361,6 +361,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/cancel-axios-api/</loc>
+         <lastmod>2024-09-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/cancel-fetch-api/</loc>
+         <lastmod>2024-09-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/fetch-api-example/</loc>
          <lastmod>2024-09-19</lastmod>
          <changefreq>daily</changefreq>
