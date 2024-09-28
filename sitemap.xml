@@ -316,6 +316,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/js/designpattern/daily/</loc>
+         <lastmod>2024-09-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/designpattern/intro/</loc>
+         <lastmod>2024-09-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/designpattern/js/</loc>
+         <lastmod>2024-09-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/designpattern/mnemonic/</loc>
+         <lastmod>2024-09-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/</loc>
+         <lastmod>2024-09-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/js/ecmascript/es6/</loc>
          <lastmod>2024-09-28</lastmod>
          <changefreq>daily</changefreq>
