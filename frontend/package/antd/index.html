@@ -4424,6 +4424,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -4433,6 +4444,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-one-day" class="md-nav__link">
+    <span class="md-ellipsis">
+      In one day
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mastering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mastering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4560,6 +4608,72 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_8" id="__nav_4_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Table
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Table
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="table/filters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -6732,6 +6846,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-one-day" class="md-nav__link">
+    <span class="md-ellipsis">
+      In one day
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mastering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mastering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6748,7 +6888,161 @@
 <div><h1 id="and">and</h1>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$ pnpm add antd
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$ pnpm add @ant-design/icons
-</span></code></pre></div></div>
+</span></code></pre></div>
+<hr>
+<h2 id="in-one-day">In one day</h2>
+<p>Mastering Ant Design (antd) in React in just one day is ambitious, but you can certainly get a solid grasp of its advanced features by focusing your efforts strategically. Here’s a plan to help you maximize your learning in one day:</p>
+<p><strong>1. Set Up Your Environment (1 hour)</strong></p>
+<ul>
+<li>Install Ant Design: Ensure you have a React environment ready. You can create a new project with Create React App:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npx<span class="w"> </span>create-react-app<span class="w"> </span>my-app
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>my-app
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>npm<span class="w"> </span>install<span class="w"> </span>antd
+</span></code></pre></div>
+<ul>
+<li>Basic Setup: Import Ant Design styles in your index.js or App.js:</li>
+</ul>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="s2">"antd/dist/antd.css"</span><span class="p">;</span>
+</span></code></pre></div>
+<p><strong>2. Explore the Components (3 hours)</strong></p>
+<ul>
+<li>
+<p>Component Library: Go through the Ant Design Component Library. Focus on the following categories:</p>
+<div class="language-text highlight"><pre><span></span><code>- Layout: Grids, containers, and menus.
+- Navigation: Breadcrumbs, tabs, pagination.
+- Data Entry: Forms, inputs, select, date pickers.
+- Data Display: Tables, lists, cards, avatars.
+- Feedback: Modals, notifications, alerts.
+</code></pre></div>
+</li>
+<li>
+<p>Practice: Build small examples for each component. For instance, create a form using <code>Form</code>, <code>Input</code>, and <code>Button</code> components.</p>
+</li>
+</ul>
+<p><strong>3. Deep Dive into Advanced Features (3 hours)</strong></p>
+<ul>
+<li>
+<p>Custom Themes: Learn how to customize the default theme using Less variables or CSS overrides.</p>
+</li>
+<li>
+<p>Form Management: Explore <code>Form</code> validation, nested forms, and dynamic fields. Implement a form that uses <code>Formik</code> or <code>react-hook-form</code> with antd.</p>
+</li>
+<li>
+<p>State Management: Understand how to manage global state with tools like Redux or Context API, and integrate it with antd components.</p>
+</li>
+<li>
+<p>Tables: Go deep into the <code>Table</code> component. Implement features like:</p>
+<div class="language-text highlight"><pre><span></span><code>- Sorting
+- Filtering
+- Pagination
+- Editable cells
+- Row selection
+</code></pre></div>
+</li>
+</ul>
+<p><strong>4. Routing and Navigation (1 hour)</strong></p>
+<ul>
+<li>React Router: Set up <code>react-router</code> for navigation. Create multiple pages and use antd's <code>Menu</code> for navigation links.</li>
+</ul>
+<p><strong>5. Responsive Design (1 hour)</strong></p>
+<ul>
+<li>Grid System: Utilize the antd grid system for responsive layouts. Create a multi-column layout that adapts to different screen sizes.</li>
+</ul>
+<p><strong>6. Testing (1 hour)</strong></p>
+<ul>
+<li>Unit Testing: Learn how to test antd components using libraries like Jest and React - Testing Library. Write tests for your components, focusing on form submissions and interactions.</li>
+</ul>
+<p><strong>7. Build a Complete Application (2 hours)</strong></p>
+<ul>
+<li>Project: Create a small project that incorporates multiple antd components and features. For example, a simple task manager that allows users to add, delete, and edit tasks, using forms and tables.</li>
+</ul>
+<p><strong>8. Documentation and Community (1 hour)</strong></p>
+<ul>
+<li>
+<p>Explore Documentation: Familiarize yourself with the Ant Design documentation. Pay special attention to advanced usage sections.</p>
+</li>
+<li>
+<p>Community: Join communities or forums, such as GitHub discussions or Stack Overflow, to ask questions and see how others are using antd.</p>
+</li>
+</ul>
+<p><strong>9. Practice and Reflect (1 hour)</strong></p>
+<ul>
+<li>Review Your Code: Go through what you’ve built throughout the day. Refactor where necessary and ensure best practices.</li>
+<li>Seek Feedback: If possible, share your work with peers or mentors for constructive criticism.</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>By following this structured approach, you'll be able to cover a lot of ground in mastering Ant Design in a day. Remember that mastery comes with practice, so continue to build projects and refine your skills beyond this initial day of learning!</p>
+<hr>
+<h2 id="mastering">Mastering</h2>
+<p>To gain a deep understanding of Ant Design (antd) and its capabilities, it's crucial to master several advanced components that are commonly used in building complex applications. Here’s a list of the most important components to focus on:</p>
+<p><strong>1. Table</strong></p>
+<ul>
+<li>Features: Sorting, filtering, pagination, row selection, expandable rows, and editable cells.</li>
+<li>Advanced Use Cases: Implementing custom renderers, integrating with server-side data, and managing complex data structures.</li>
+</ul>
+<p><strong>2. Form</strong></p>
+<ul>
+<li>Features: Controlled components, validation, dynamic fields, and form layout.</li>
+<li>Advanced Use Cases: Using external validation libraries (like Yup), managing nested forms, and integrating with state management solutions.</li>
+</ul>
+<p><strong>3. Modal</strong></p>
+<ul>
+<li>Features: Dialogs for confirmation, forms, and notifications.</li>
+<li>Advanced Use Cases: Implementing custom modal content and managing multiple modals efficiently.</li>
+</ul>
+<p><strong>4. Menu</strong></p>
+<ul>
+<li>Features: Navigation menus, submenus, and dropdowns.</li>
+<li>Advanced Use Cases: Dynamic menu generation based on user roles and permissions, and handling nested routing.</li>
+</ul>
+<p><strong>5. Card</strong></p>
+<ul>
+<li>Features: Contain multiple elements, customizable layouts, and actions.</li>
+<li>Advanced Use Cases: Creating interactive dashboards with cards, using grid layouts, and integrating with charts or other components.</li>
+</ul>
+<p><strong>6. Notification and Message</strong></p>
+<ul>
+<li>Features: System notifications and user feedback messages.</li>
+<li>Advanced Use Cases: Customizing notification placement, duration, and using them with asynchronous operations.</li>
+</ul>
+<p><strong>7. Select and AutoComplete</strong></p>
+<ul>
+<li>Features: Dropdown selections, multi-select, and search functionality.</li>
+<li>Advanced Use Cases: Implementing asynchronous options loading, custom option rendering, and integrating with API endpoints.</li>
+</ul>
+<p><strong>8. DatePicker</strong></p>
+<ul>
+<li>Features: Date selection, range selection, and date-time management.</li>
+<li>Advanced Use Cases: Customizing date formats, integrating with validation, and handling time zones.</li>
+</ul>
+<p><strong>9. Spin and Loading</strong></p>
+<ul>
+<li>Features: Loading indicators to improve UX.</li>
+<li>Advanced Use Cases: Managing loading states during data fetching and integrating with asynchronous actions.</li>
+</ul>
+<p><strong>10. Grid</strong></p>
+<ul>
+<li>Features: Responsive layout using Row and Col components.</li>
+<li>Advanced Use Cases: Building adaptive designs for different screen sizes and implementing complex layouts.</li>
+</ul>
+<p><strong>11. Tree</strong></p>
+<ul>
+<li>Features: Hierarchical data representation with expand/collapse functionality.</li>
+<li>Advanced Use Cases: Dynamic tree data loading, checkable trees, and drag-and-drop functionality.</li>
+</ul>
+<p><strong>12. Tabs</strong></p>
+<ul>
+<li>Features: Tabbed navigation for organizing content.</li>
+<li>Advanced Use Cases: Dynamic tab generation and preserving state across tabs.</li>
+</ul>
+<p><strong>13. Steps</strong></p>
+<ul>
+<li>Features: Step-by-step navigation for multi-step processes.</li>
+<li>Advanced Use Cases: Managing complex workflows and integrating forms within steps.</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>Focusing on these components will provide you with a comprehensive understanding of Ant Design's capabilities. Mastering them involves not just understanding how they work individually but also how they interact with each other to create cohesive user experiences. Additionally, practice by building projects that utilize these components in various ways to reinforce your knowledge!</p></div>
 
 
 
