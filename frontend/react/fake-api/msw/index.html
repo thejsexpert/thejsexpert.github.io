@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/core/fake-api/json-server/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/fake-api/msw/">
       
       
-        <link rel="prev" href="../intro/">
+        <link rel="prev" href="../json-server/">
       
       
-        <link rel="next" href="../msw/">
+        <link rel="next" href="../topic/">
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
     
     
       
-        <title>Use Mocking Libraries - My Docs</title>
+        <title>Mock Services with Browser APIs - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.50c56a3b.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -63,7 +63,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-use-mocking-libraries-eg-json-server-miragejs" class="md-skip">
+        <a href="#4-mock-services-with-browser-apis-eg-fetch-mock-msw" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Use Mocking Libraries
+              Mock Services with Browser APIs
             
           </span>
         </div>
@@ -176,7 +176,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../blog/" class="md-tabs__link">
+        <a href="../../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -194,7 +194,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../js/intro/" class="md-tabs__link">
+        <a href="../../../js/intro/" class="md-tabs__link">
           
   
   JS
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../philosophy/" class="md-tabs__link">
+        <a href="../../philosophy/" class="md-tabs__link">
           
   
   React
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../package/intro/" class="md-tabs__link">
+        <a href="../../../package/intro/" class="md-tabs__link">
           
   
   Package
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../../state-management/intro/" class="md-tabs__link">
           
   
   State
@@ -268,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../state-management/rtk/intro/" class="md-tabs__link">
+        <a href="../../../state-management/rtk/intro/" class="md-tabs__link">
           
   
   RTK
@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../interview/react/" class="md-tabs__link">
+        <a href="../../../../interview/react/" class="md-tabs__link">
           
   
   Interview
@@ -343,7 +343,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -403,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../blog/" class="md-nav__link">
+      <a href="../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -463,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/intro/" class="md-nav__link">
+      <a href="../../../js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -597,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/essential/prototype/" class="md-nav__link">
+      <a href="../../../js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/essential/object/" class="md-nav__link">
+      <a href="../../../js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/essential/array/" class="md-nav__link">
+      <a href="../../../js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/core/control-statement/" class="md-nav__link">
+      <a href="../../../js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/core/callback/" class="md-nav__link">
+      <a href="../../../js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -810,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/core/closure/" class="md-nav__link">
+      <a href="../../../js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/core/high-order-function/" class="md-nav__link">
+      <a href="../../../js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -873,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/core/topic/" class="md-nav__link">
+      <a href="../../../js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -939,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -960,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/advanced/serialization/" class="md-nav__link">
+      <a href="../../../js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -981,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1002,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/advanced/promise/" class="md-nav__link">
+      <a href="../../../js/advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1068,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/datatypes/intro/" class="md-nav__link">
+      <a href="../../../js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1089,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../../js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1155,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/function/intro/" class="md-nav__link">
+      <a href="../../../js/function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1176,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/function/types/" class="md-nav__link">
+      <a href="../../../js/function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1197,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/function/arrow-function/" class="md-nav__link">
+      <a href="../../../js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1218,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/function/arrow-example/" class="md-nav__link">
+      <a href="../../../js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1239,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/function/advanced-concept/" class="md-nav__link">
+      <a href="../../../js/function/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1342,7 +1342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1363,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1437,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/intro/" class="md-nav__link">
+      <a href="../../../js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1458,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1516,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/core/overview/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1537,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1558,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1579,7 +1579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/chaining/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1600,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1621,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/core/axios/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1687,7 +1687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/example/overview/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1708,7 +1708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/example/useReducer/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1729,7 +1729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1750,7 +1750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1771,7 +1771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1792,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1866,7 +1866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/designpattern/intro/" class="md-nav__link">
+      <a href="../../../js/designpattern/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1887,7 +1887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/designpattern/daily/" class="md-nav__link">
+      <a href="../../../js/designpattern/daily/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1908,7 +1908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/designpattern/js/" class="md-nav__link">
+      <a href="../../../js/designpattern/js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1929,7 +1929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/designpattern/react/" class="md-nav__link">
+      <a href="../../../js/designpattern/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1950,7 +1950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/designpattern/mnemonic/" class="md-nav__link">
+      <a href="../../../js/designpattern/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2016,7 +2016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/json/intro/" class="md-nav__link">
+      <a href="../../../js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2037,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/json/json5/" class="md-nav__link">
+      <a href="../../../js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2103,7 +2103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2124,7 +2124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2145,7 +2145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2166,7 +2166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2187,7 +2187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2253,7 +2253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/tools/vite/" class="md-nav__link">
+      <a href="../../../js/tools/vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2274,7 +2274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../js/tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2295,7 +2295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/tools/ESLint/" class="md-nav__link">
+      <a href="../../../js/tools/ESLint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2316,7 +2316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/tools/nodejs-package-manager/" class="md-nav__link">
+      <a href="../../../js/tools/nodejs-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2337,7 +2337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/tools/node-package-manager/" class="md-nav__link">
+      <a href="../../../js/tools/node-package-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2358,7 +2358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/tools/yarn/" class="md-nav__link">
+      <a href="../../../js/tools/yarn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2379,7 +2379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../js/tools/pnpm/" class="md-nav__link">
+      <a href="../../../js/tools/pnpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2457,7 +2457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../philosophy/" class="md-nav__link">
+      <a href="../../philosophy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2475,21 +2475,19 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -2503,7 +2501,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Core
@@ -2517,7 +2515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2538,7 +2536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/guides/" class="md-nav__link">
+      <a href="../../core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2596,7 +2594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2617,7 +2615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2638,7 +2636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2659,7 +2657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pattern/function-as-child/" class="md-nav__link">
+      <a href="../../core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2680,7 +2678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2701,7 +2699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pattern/antipattern/" class="md-nav__link">
+      <a href="../../core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2722,7 +2720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pattern/misc/" class="md-nav__link">
+      <a href="../../core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2788,7 +2786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2809,7 +2807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2830,7 +2828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2851,7 +2849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/useCallback/" class="md-nav__link">
+      <a href="../../core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2872,7 +2870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/useRef/" class="md-nav__link">
+      <a href="../../core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2893,7 +2891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/react-context-api/" class="md-nav__link">
+      <a href="../../core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2914,7 +2912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/react-router/" class="md-nav__link">
+      <a href="../../core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2935,7 +2933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3001,7 +2999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../router/intro/" class="md-nav__link">
+      <a href="../../core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3010,6 +3008,191 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_6" id="__nav_3_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Auth
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Auth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_6_1" id="__nav_3_2_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Authentication
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Authentication
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core/auth-example/login/react-login/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Login
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_6_2" id="__nav_3_2_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    React with API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            React with API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core/auth-example/react-without-redux/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Login
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3041,24 +3224,24 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_2_6" id="__nav_3_2_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Fake API Call
+    Fake API Call- MOCK API
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_2_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
-            Fake API Call
+            Fake API Call- MOCK API
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3087,6 +3270,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../json-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Mocking Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -3101,7 +3305,7 @@
           
   
   <span class="md-ellipsis">
-    Use Mocking Libraries
+    Mock Services with Browser APIs
   </span>
   
 
@@ -3112,7 +3316,7 @@
         
   
   <span class="md-ellipsis">
-    Use Mocking Libraries
+    Mock Services with Browser APIs
   </span>
   
 
@@ -3132,36 +3336,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2-use-mocking-libraries-eg-json-server-miragejs" class="md-nav__link">
+  <a href="#4-mock-services-with-browser-apis-eg-fetch-mock-msw" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Use Mocking Libraries (e.g., json-server, MirageJS):
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#my-json-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      My JSON Server
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
+      4. Mock Services with Browser APIs (e.g., fetch-mock, msw):
     </span>
   </a>
   
@@ -3183,430 +3360,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../msw/" class="md-nav__link">
+      <a href="../topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Mock Services with Browser APIs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2_7" id="__nav_3_2_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Auth
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_7">
-            <span class="md-nav__icon md-icon"></span>
-            Auth
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_7_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2_7_1" id="__nav_3_2_7_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Authentication
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_7_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_7_1">
-            <span class="md-nav__icon md-icon"></span>
-            Authentication
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../auth-example/login/react-login/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Login
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_7_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2_7_2" id="__nav_3_2_7_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    React with API
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_7_2">
-            <span class="md-nav__icon md-icon"></span>
-            React with API
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../auth-example/react-without-redux/intro/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Login
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Example
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-            Example
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/passing-props/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Passing Props
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/lifting-state-up/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Lifting State Up
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/prop-drilling/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Props Drilling
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/children-prop/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Children Prop
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/component-composition/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Component Composition
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/hoc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    High Order Component
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/render-props/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Render Props
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/presentational-and-container/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Presentation & Container
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../example/breaking-react-component-pattern/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to break react components
+    Topic
   </span>
   
 
@@ -3647,7 +3405,7 @@
             
   
   <span class="md-ellipsis">
-    Testing
+    Example
   </span>
   
 
@@ -3656,6 +3414,240 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Example
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/passing-props/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Passing Props
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/lifting-state-up/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lifting State Up
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/prop-drilling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Props Drilling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/children-prop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Children Prop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/component-composition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Component Composition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/hoc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    High Order Component
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/render-props/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Render Props
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/presentational-and-container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Presentation & Container
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/breaking-react-component-pattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to break react components
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Testing
           </label>
@@ -3668,7 +3660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/intro/" class="md-nav__link">
+      <a href="../../testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3689,7 +3681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/jest/" class="md-nav__link">
+      <a href="../../testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3710,7 +3702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/cypress/" class="md-nav__link">
+      <a href="../../testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3731,7 +3723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3761,10 +3753,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_4_5" id="__nav_3_4_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5_5" id="__nav_3_5_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3775,8 +3767,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_5">
             <span class="md-nav__icon md-icon"></span>
             Bug Report
           </label>
@@ -3789,7 +3781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/codereport/bugs/intro/" class="md-nav__link">
+      <a href="../../testing/codereport/bugs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3810,7 +3802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/codereport/bugs/solution/" class="md-nav__link">
+      <a href="../../testing/codereport/bugs/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3831,7 +3823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/codereport/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../../testing/codereport/bugs/cleanup-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3852,7 +3844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/codereport/bugs/debouncing/" class="md-nav__link">
+      <a href="../../testing/codereport/bugs/debouncing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3873,7 +3865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/codereport/bugs/master-topic/" class="md-nav__link">
+      <a href="../../testing/codereport/bugs/master-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3919,10 +3911,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3933,8 +3925,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             Optimization
           </label>
@@ -3947,7 +3939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../optimization/intro/" class="md-nav__link">
+      <a href="../../optimization/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3985,10 +3977,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3999,8 +3991,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             Topic
           </label>
@@ -4022,10 +4014,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_1" >
         
           
-          <label class="md-nav__link" for="__nav_3_6_1" id="__nav_3_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7_1" id="__nav_3_7_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4036,8 +4028,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_1">
             <span class="md-nav__icon md-icon"></span>
             Mastering
           </label>
@@ -4050,7 +4042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/mastering/function-declaration-and-expression/" class="md-nav__link">
+      <a href="../../topic/mastering/function-declaration-and-expression/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4071,7 +4063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/mastering/explainingothers/" class="md-nav__link">
+      <a href="../../topic/mastering/explainingothers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4092,7 +4084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/mastering/hooks-mastering-topic/" class="md-nav__link">
+      <a href="../../topic/mastering/hooks-mastering-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4130,10 +4122,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7_2" id="__nav_3_7_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4144,8 +4136,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_2">
             <span class="md-nav__icon md-icon"></span>
             Hooks
           </label>
@@ -4158,7 +4150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/hooks/useReducer/" class="md-nav__link">
+      <a href="../../topic/hooks/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4179,7 +4171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/hooks/useReducer-and-reducer/" class="md-nav__link">
+      <a href="../../topic/hooks/useReducer-and-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4200,7 +4192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/hooks/useReducer-example/" class="md-nav__link">
+      <a href="../../topic/hooks/useReducer-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4221,7 +4213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/hooks/useReducer-with-api/" class="md-nav__link">
+      <a href="../../topic/hooks/useReducer-with-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4250,7 +4242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/react-strict-mode/" class="md-nav__link">
+      <a href="../../topic/react-strict-mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4271,7 +4263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/code-for-change/" class="md-nav__link">
+      <a href="../../topic/code-for-change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4292,7 +4284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/abort-controller-solved/" class="md-nav__link">
+      <a href="../../topic/abort-controller-solved/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4313,7 +4305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/cleanup/" class="md-nav__link">
+      <a href="../../topic/cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4334,7 +4326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topic/slides/" class="md-nav__link">
+      <a href="../../topic/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4363,7 +4355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../handling-side-effects/" class="md-nav__link">
+      <a href="../../handling-side-effects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4431,7 +4423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/intro/" class="md-nav__link">
+      <a href="../../../package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4489,7 +4481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/" class="md-nav__link">
+      <a href="../../../package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4510,7 +4502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/topic/" class="md-nav__link">
+      <a href="../../../package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4531,7 +4523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4552,7 +4544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/antd-form/" class="md-nav__link">
+      <a href="../../../package/antd/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4573,7 +4565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/antd-form-validator/" class="md-nav__link">
+      <a href="../../../package/antd/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4594,7 +4586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/form-crud/" class="md-nav__link">
+      <a href="../../../package/antd/form-crud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4615,7 +4607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/antd-render-func/" class="md-nav__link">
+      <a href="../../../package/antd/antd-render-func/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4673,7 +4665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/antd/table/filters/" class="md-nav__link">
+      <a href="../../../package/antd/table/filters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4747,7 +4739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4813,7 +4805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4879,7 +4871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/axios/intro/" class="md-nav__link">
+      <a href="../../../package/axios/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4900,7 +4892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/axios/topic/" class="md-nav__link">
+      <a href="../../../package/axios/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4921,7 +4913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/axios/sentry/" class="md-nav__link">
+      <a href="../../../package/axios/sentry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4987,7 +4979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/composition/intro/" class="md-nav__link">
+      <a href="../../../package/composition/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5008,7 +5000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../package/composition/imagegallery/" class="md-nav__link">
+      <a href="../../../package/composition/imagegallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5084,7 +5076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/intro/" class="md-nav__link">
+      <a href="../../../state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5142,7 +5134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5163,7 +5155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/react-redux/" class="md-nav__link">
+      <a href="../../../state-management/redux/react-redux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5221,7 +5213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/folder-structure/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5242,7 +5234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-pattern/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5263,7 +5255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-testing/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5321,7 +5313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/action/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5387,7 +5379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5408,7 +5400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/example/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5429,7 +5421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5450,7 +5442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5516,7 +5508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5537,7 +5529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5558,7 +5550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5632,7 +5624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5698,7 +5690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/redux/redux-toolkit/intro/" class="md-nav__link">
+      <a href="../../../state-management/redux/redux-toolkit/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5772,7 +5764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5838,7 +5830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5904,7 +5896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/middleware/" class="md-nav__link">
+      <a href="../../../state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5970,7 +5962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/webstorage/intro/" class="md-nav__link">
+      <a href="../../../state-management/webstorage/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5991,7 +5983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/webstorage/token/" class="md-nav__link">
+      <a href="../../../state-management/webstorage/token/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6067,7 +6059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/intro/" class="md-nav__link">
+      <a href="../../../state-management/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6088,7 +6080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/folder-structure/" class="md-nav__link">
+      <a href="../../../state-management/rtk/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6109,7 +6101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/code-modularity/" class="md-nav__link">
+      <a href="../../../state-management/rtk/code-modularity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6130,7 +6122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/ultimate/" class="md-nav__link">
+      <a href="../../../state-management/rtk/ultimate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6188,7 +6180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/middleware/intro/" class="md-nav__link">
+      <a href="../../../state-management/rtk/middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6209,7 +6201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/middleware/setup/" class="md-nav__link">
+      <a href="../../../state-management/rtk/middleware/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6275,7 +6267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/example/example/" class="md-nav__link">
+      <a href="../../../state-management/rtk/example/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6304,7 +6296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/topic/" class="md-nav__link">
+      <a href="../../../state-management/rtk/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6362,7 +6354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/a.how-to-right-question/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/a.how-to-right-question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6383,7 +6375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/where-do-we-define-action/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/where-do-we-define-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6404,7 +6396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6425,7 +6417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6446,7 +6438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6467,7 +6459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6488,7 +6480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/what-are-thunk-action-creators/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/what-are-thunk-action-creators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6509,7 +6501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../state-management/rtk/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
+      <a href="../../../state-management/rtk/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6585,7 +6577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6606,7 +6598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6674,7 +6666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/react/" class="md-nav__link">
+      <a href="../../../../interview/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6695,7 +6687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/codesnap/" class="md-nav__link">
+      <a href="../../../../interview/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6716,7 +6708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/micro-frontend/" class="md-nav__link">
+      <a href="../../../../interview/micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6737,7 +6729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/api/" class="md-nav__link">
+      <a href="../../../../interview/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6758,7 +6750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http-response/" class="md-nav__link">
+      <a href="../../../../interview/http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6779,7 +6771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http-request/" class="md-nav__link">
+      <a href="../../../../interview/http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6800,7 +6792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../../../../interview/asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6821,7 +6813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/performance-optimization/" class="md-nav__link">
+      <a href="../../../../interview/performance-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6867,36 +6859,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2-use-mocking-libraries-eg-json-server-miragejs" class="md-nav__link">
+  <a href="#4-mock-services-with-browser-apis-eg-fetch-mock-msw" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Use Mocking Libraries (e.g., json-server, MirageJS):
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#my-json-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      My JSON Server
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
+      4. Mock Services with Browser APIs (e.g., fetch-mock, msw):
     </span>
   </a>
   
@@ -6917,265 +6882,98 @@
                   
 
 
-  <h1>Use Mocking Libraries</h1>
+  <h1>Mock Services with Browser APIs</h1>
 
-<div><h2 id="2-use-mocking-libraries-eg-json-server-miragejs">2. Use Mocking Libraries (e.g., <code>json-server</code>, <code>MirageJS</code>):</h2>
-<ul>
-<li><code>json-server</code>: A full fake REST API server that you can run locally.</li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>json-server
+<div><p>To fake an API for consumption in your frontend (React, Vue, Angular), you can use different tools and techniques, such as setting up a mock server or using third-party libraries. Here are a few common approaches:</p>
+<details class="info">
+<summary>1. Use Mock Services in JavaScript:</summary>
+<p>You can define mock data directly in your frontend project for development and testing.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Sample mock data</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mockData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">];</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// Mock API call</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">fetchMockData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">resolve</span><span class="p">(</span><span class="nx">mockData</span><span class="p">);</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span><span class="w"> </span><span class="c1">// Simulating network delay</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">});</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">};</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1">// In your React component</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nx">fetchMockData</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w"> </span><span class="c1">// Handle the data</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="p">});</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
 </span></code></pre></div>
-<details class="info" open="open">
-<summary>Steps:</summary>
-<ol>
-<li>
-<p>Install json-server:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>json-server
-</span></code></pre></div>
-</li>
-<li>
-<p>Create a <code>db.json</code> file with some mock data:</p>
-<div class="language-bash highlight"><span class="filename">json</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="s2">"users"</span>:<span class="w"> </span><span class="o">[</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="o">{</span><span class="w"> </span><span class="s2">"id"</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"John Doe"</span><span class="w"> </span><span class="o">}</span>,
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="o">{</span><span class="w"> </span><span class="s2">"id"</span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Jane Smith"</span><span class="w"> </span><span class="o">}</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="o">]</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="o">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Run the server:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--port<span class="w"> </span><span class="m">5000</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Now, you can access your API at <code>http://localhost:5000/users</code>.</p>
-</li>
-</ol>
 </details>
-<details class="example" open="open">
-<summary>Example in Vue/React/Angular:</summary>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s2">"http://localhost:5000/users"</span><span class="p">)</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+<details class="info">
+<summary>3. Use Axios Interceptors (or Fetch Mocking):</summary>
+<p>You can intercept network requests in your frontend using Axios or Fetch to return fake responses.</p>
+<div class="language-js highlight"><span class="filename">Axios Example:</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">axios</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'axios'</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">// Create a mock Axios instance</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mockAxios</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">axios</span><span class="p">.</span><span class="nx">create</span><span class="p">();</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1">// Intercept requests and return mock data</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nx">mockAxios</span><span class="p">.</span><span class="nx">interceptors</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">use</span><span class="p">((</span><span class="nx">config</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">url</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'/api/users'</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">({</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">            </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'John Doe'</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'Jane Smith'</span><span class="w"> </span><span class="p">}],</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">config</span><span class="p">;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">});</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1">// In your component</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nx">mockAxios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/api/users'</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span><span class="w"> </span><span class="c1">// Fake data</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
 </span></code></pre></div>
 </details>
 <hr>
-<h2 id="example">Example</h2>
-<details class="abstract" open="open">
-<summary>Abstract</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">1. Basic Example</label><label for="__tabbed_1_2">2. Intermediate Example</label><label for="__tabbed_1_3">3. Advanced Example</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>This example will create a simple REST API using json-server to serve basic user data.</p>
-<details class="example" open="open">
-<summary>Steps:</summary>
+<h2 id="4-mock-services-with-browser-apis-eg-fetch-mock-msw">4. Mock Services with Browser APIs (e.g., <code>fetch-mock</code>, <code>msw</code>):</h2>
+<ul>
+<li><code>fetch-mock</code>: Mock fetch requests.</li>
+<li><strong>MSW (Mock Service Worker)</strong>: An API mocking library that works by intercepting requests via Service Workers.</li>
+</ul>
+<details class="exampel" open="open">
+<summary>MSW Example:</summary>
 <ol>
 <li>
-<p>Install <code>json-server</code> globally (if not already installed):</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>json-server
+<p>Install <code>msw</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>msw<span class="w"> </span>--save-dev
 </span></code></pre></div>
 </li>
 <li>
-<p>Create a <code>db.json</code> file:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nt">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@example.com"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jane@example.com"</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="p">]</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
+<p>Setup <code>msw</code>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">setupWorker</span><span class="p">,</span><span class="w"> </span><span class="nx">rest</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"msw"</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1">// Define request handlers</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">worker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setupWorker</span><span class="p">(</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nx">rest</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">"/api/users"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="nx">ctx</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">res</span><span class="p">(</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">            </span><span class="nx">ctx</span><span class="p">.</span><span class="nx">json</span><span class="p">([</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">            </span><span class="p">])</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span><span class="p">);</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="p">})</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">);</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1">// Start the worker</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nx">worker</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
 </span></code></pre></div>
-</li>
-<li>
-<p>Run <code>json-server</code>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--port<span class="w"> </span><span class="m">5000</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Access the API:</p>
-<ul>
-<li><code>GET http://localhost:5000/users</code> will return the list of users.</li>
-<li><code>GET http://localhost:5000/users/1</code> will return the user with id <code>1</code>.</li>
-<li><code>POST</code>, <code>PUT</code>, <code>DELETE</code> operations will work automatically for <code>users</code>.</li>
-</ul>
+<p>These methods let you easily fake APIs to speed up frontend development without depending on a backend. You can choose the best approach depending on your stack and workflow!</p>
 </li>
 </ol>
-<p>Result:</p>
-<ul>
-<li>Simple API with RESTful routes for basic CRUD operations.</li>
-</ul>
-</details>
-</div>
-<div class="tabbed-block">
-<p>In this example, we’ll add:</p>
-<ul>
-<li><strong>Custom Routes</strong> for more control over the API.</li>
-<li><strong>Pagination and Filtering</strong> using query parameters.</li>
-</ul>
-<details class="example" open="open">
-<summary>Steps:</summary>
-<ol>
-<li>
-<p>Create an extended <code>db.json</code> file with multiple resources:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="nt">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@example.com"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jane@example.com"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bill Gates"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bill@microsoft.com"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Elon Musk"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elon@spacex.com"</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="p">],</span>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="nt">"posts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem Ipsum"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 2"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dolor Sit"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 3"</span><span class="p">,</span><span class="w"> </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amet Consectetur"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="p">]</span>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Add a <code>routes.json</code> file to define custom routes:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="nt">"/api/users"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/users"</span><span class="p">,</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">"/api/posts"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/posts"</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Run <code>json-server</code> with the custom routes:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>json-server<span class="w"> </span>--watch<span class="w"> </span>db.json<span class="w"> </span>--routes<span class="w"> </span>routes.json<span class="w"> </span>--port<span class="w"> </span><span class="m">5000</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>API Features:</p>
-<ul>
-<li>Pagination: <code>GET http://localhost:5000/users?_page=1&amp;_limit=2</code> will return 2 users per page.</li>
-<li>Filtering: <code>GET http://localhost:5000/posts?userId=1</code> will return all posts for user with <code>userId=1</code>.</li>
-<li>Custom Routes: Access users via <code>GET http://localhost:5000/api/users</code>.</li>
-</ul>
-</li>
-</ol>
-<p>Result:</p>
-<ul>
-<li>More control over API routes.</li>
-<li>Added pagination and filtering for more realistic data operations.</li>
-</ul>
-</details>
-</div>
-<div class="tabbed-block">
-<p>In this example, we’ll demonstrate:</p>
-<ul>
-<li><strong>Custom Middlewares</strong> for request logging.</li>
-<li><strong>Delayed Responses</strong> to simulate network delays.</li>
-<li><strong>Advanced Relationships</strong> between resources (users and posts).</li>
-</ul>
-<details class="example" open="open">
-<summary>Steps:</summary>
-<ol>
-<li>
-<p>Create a <code>db.json</code> file with more complex relationships:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="nt">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@example.com"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane Smith"</span><span class="p">,</span><span class="w"> </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jane@example.com"</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="p">],</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="nt">"posts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 2"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Post 3"</span><span class="p">,</span><span class="w"> </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="p">],</span>
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="nt">"comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nice post!"</span><span class="p">,</span><span class="w"> </span><span class="nt">"postId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Thanks for sharing!"</span><span class="p">,</span><span class="w"> </span><span class="nt">"postId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Great article"</span><span class="p">,</span><span class="w"> </span><span class="nt">"postId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="p">]</span>
-</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Create a <code>server.js</code> file to customize the server:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">jsonServer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">'json-server'</span><span class="p">);</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jsonServer</span><span class="p">.</span><span class="nx">create</span><span class="p">();</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">router</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jsonServer</span><span class="p">.</span><span class="nx">router</span><span class="p">(</span><span class="s1">'db.json'</span><span class="p">);</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">middlewares</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">jsonServer</span><span class="p">.</span><span class="nx">defaults</span><span class="p">();</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5000</span><span class="p">;</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1">// Custom middleware to log requests</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">middlewares</span><span class="p">);</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">((</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="nx">next</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`[LOG] Request: </span><span class="si">${</span><span class="nx">req</span><span class="p">.</span><span class="nx">method</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">req</span><span class="p">.</span><span class="nx">url</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">    </span><span class="nx">next</span><span class="p">();</span>
-</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="p">});</span>
-</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
-</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="c1">// Custom route for delayed response</span>
-</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="nx">server</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/api/delayed-response'</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">        </span><span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mf">200</span><span class="p">).</span><span class="nx">jsonp</span><span class="p">({</span><span class="w"> </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">"This response is delayed!"</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">3000</span><span class="p">);</span><span class="w"> </span><span class="c1">// 3-second delay</span>
-</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="p">});</span>
-</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>
-</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="c1">// Use default router with pagination, filters, etc.</span>
-</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">router</span><span class="p">);</span>
-</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>
-</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="c1">// Start server</span>
-</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`JSON Server is running on http://localhost:</span><span class="si">${</span><span class="nx">port</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="p">});</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Run the custom server:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>node<span class="w"> </span>server.js
-</span></code></pre></div>
-</li>
-<li>
-<p>API Features:</p>
-<ul>
-<li>Logging Middleware: Logs all incoming requests with their method and URL.</li>
-<li>Delayed Response: <code>GET http://localhost:5000/api/delayed-response</code> simulates a 3-second delay before responding.</li>
-<li>Relationships: <code>GET http://localhost:5000/posts?userId=1</code> will fetch posts for a specific user, and you can fetch comments for a post with <code>GET http://localhost:5000/comments?postId=1</code>.</li>
-</ul>
-</li>
-</ol>
-<p>Result:</p>
-<ul>
-<li>Advanced API with custom middlewares, delayed responses, and relationships between entities.</li>
-<li>You can simulate real-world scenarios with complex data structures.</li>
-</ul>
-</details>
-</div>
-</div>
-</div>
-</details>
-<blockquote>
-<p>Summary:</p>
-</blockquote>
-<ul>
-<li><strong>Basic Example</strong>: Simple CRUD operations using <code>json-server</code>.</li>
-<li><strong>Intermediate Example</strong>: Added custom routes, pagination, and filtering.</li>
-<li><strong>Advanced Example</strong>: Custom middlewares, delayed responses, and more complex relationships between entities.</li>
-</ul>
-<p>These progressively advanced examples help you mock an API for frontend development, simulate realistic scenarios, and add more flexibility to your workflow.</p>
-<hr>
-<h2 id="my-json-server"><a href="https://my-json-server.typicode.com/">My JSON Server</a></h2>
-<details class="tips" open="open">
-<summary>How to</summary>
-<ol>
-<li>Create a repository on GitHub (<code>&lt;your-username&gt;/&lt;your-repo&gt;</code>)</li>
-<li>Create a <code>db.json</code> file</li>
-<li>Visit <a href="#">https://my-json-server.typicode.com/<your-username>/<your-repo></your-repo></your-username></a> to access your server</li>
-</ol>
-</details>
-<p><strong>No registration</strong>. Nothing to install.</p>
-<hr>
-<ul>
-<li><a href="https://my-json-server.typicode.com/Bishow-Thapa/my-json-server">my-json-server: github</a></li>
-</ul>
-<hr>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="https://github.com/typicode/json-server">json server: github</a></li>
-<li><a href="https://my-json-server.typicode.com/">my-json-server.typicode.com</a></li>
-</ul></div>
+</details></div>
 
 
 
@@ -7211,7 +7009,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
+          <a href="../json-server/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Use Mocking Libraries">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -7221,20 +7019,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Intro
+                Use Mocking Libraries
               </div>
             </div>
           </a>
         
         
           
-          <a href="../msw/" class="md-footer__link md-footer__link--next" aria-label="Next: Mock Services with Browser APIs">
+          <a href="../topic/" class="md-footer__link md-footer__link--next" aria-label="Next: Topic">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mock Services with Browser APIs
+                Topic
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -7289,10 +7087,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
