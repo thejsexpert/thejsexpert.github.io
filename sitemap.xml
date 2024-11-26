@@ -425,23 +425,19 @@
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/tools/ESLint/</loc>
-         <lastmod>2024-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/tools/node-package-manager/</loc>
-         <lastmod>2024-11-26</lastmod>
-    </url>
-    <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/node-version-manager/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/tools/nodejs-package-manager/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/tools/eslint/intro/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/frontend/js/tools/yarn/</loc>
+         <loc>https://thejsexpert.github.io/frontend/js/tools/npm/example/</loc>
+         <lastmod>2024-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/tools/npm/intro/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
@@ -462,6 +458,10 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/vite/proxy/</loc>
+         <lastmod>2024-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/tools/yarn/intro/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
