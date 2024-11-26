@@ -1089,43 +1089,59 @@
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/api/</loc>
+         <loc>https://thejsexpert.github.io/interview/intro/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/asynchronous-javaScript/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/api/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/codesnap/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/app-ideas/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/http-request/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/asynchronous-javaScript/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/http-response/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/bff-question/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/micro-frontend/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/bff/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/performance-optimization/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/codesnap/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/react/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/http-request/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/pwa/bff-question/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/http-response/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/pwa/bff/</loc>
+         <loc>https://thejsexpert.github.io/interview/others/importing-file/</loc>
+         <lastmod>2024-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/interview/others/jwt/</loc>
+         <lastmod>2024-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/interview/others/micro-frontend/</loc>
+         <lastmod>2024-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/interview/others/performance-optimization/</loc>
+         <lastmod>2024-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/interview/others/react/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
@@ -1133,19 +1149,7 @@
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
-         <loc>https://thejsexpert.github.io/interview/storybook/app-ideas/</loc>
-         <lastmod>2024-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/interview/storybook/importing-file/</loc>
-         <lastmod>2024-11-26</lastmod>
-    </url>
-    <url>
          <loc>https://thejsexpert.github.io/interview/storybook/intro/</loc>
-         <lastmod>2024-11-26</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/interview/storybook/jwt/</loc>
          <lastmod>2024-11-26</lastmod>
     </url>
     <url>
