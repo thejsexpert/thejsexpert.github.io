@@ -9504,6 +9504,8 @@
   <h1>Simple Usage</h1>
 
 <div><h2 id="overview">Overview</h2>
+<div class="language-bash highlight"><span class="filename">Installation</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pnpm<span class="w"> </span>add<span class="w"> </span>pino<span class="w"> </span>pino-pretty
+</span></code></pre></div>
 <p><strong>Log Levels in Pino</strong></p>
 <p>Pino supports the following log levels, which control the severity and verbosity of logs:</p>
 <table>
@@ -9557,8 +9559,8 @@
 <p>You can control the log verbosity in different environments by setting the <code>VITE_LOG_LEVEL</code> environment variable.</p>
 <p><strong>1. <code>.env.development</code> (Development Environment)</strong></p>
 <p>For development, you need verbose logging to debug issues effectively. Set the level to <code>debug</code> or <code>trace</code>.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># .env.development
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>VITE_LOG_LEVEL=debug
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># .env.development
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>VITE_LOG_LEVEL=debug
 </span></code></pre></div>
 <ul>
 <li>Reason: <code>debug</code> logs give detailed insights into the app's behavior without being as noisy as <code>trace</code>.</li>
@@ -9566,11 +9568,11 @@
 <hr>
 <p><strong>2. <code>.env.production</code> (Production Environment)</strong></p>
 <p>For production, logs should focus on errors and warnings to avoid performance overhead and clutter.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># .env.production
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>VITE_LOG_LEVEL=warn
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a># or error only
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>VITE_LOG_LEVEL=error
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># .env.production
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>VITE_LOG_LEVEL=warn
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a># or error only
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>VITE_LOG_LEVEL=error
 </span></code></pre></div>
 <ul>
 <li>Reason: Warnings and errors are sufficient for monitoring production issues without flooding logs with unnecessary information.</li>
@@ -9578,8 +9580,8 @@
 <hr>
 <p><strong>3. <code>.env</code> (Default Environment)</strong></p>
 <p>Set a default level that works for both development and production but can be overridden by specific environments.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># .env
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>VITE_LOG_LEVEL=info
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># .env
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>VITE_LOG_LEVEL=info
 </span></code></pre></div>
 <ul>
 <li>Reason: <code>info</code> logs provide general operational details, which is a safe default for most environments.</li>
@@ -9587,21 +9589,21 @@
 <hr>
 <h3 id="how-pino-uses-vite_log_level">How Pino Uses <code>VITE_LOG_LEVEL</code></h3>
 <p>Here’s how you can configure Pino to respect the <code>VITE_LOG_LEVEL</code> in your React + Vite application:</p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// src/utils/logger.js</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">pino</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"pino"</span><span class="p">;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">// Get log level from environment variables</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">logLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_LOG_LEVEL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">"info"</span><span class="p">;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1">// Create a logger instance</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pino</span><span class="p">({</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="nx">logLevel</span><span class="p">,</span><span class="w"> </span><span class="c1">// Set log level dynamically</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="nx">browser</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="nx">asObject</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Make logs structured and readable in the browser console</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">});</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">logger</span><span class="p">;</span>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// src/utils/logger.js</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">pino</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"pino"</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">// Get log level from environment variables</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">logLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_LOG_LEVEL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">"info"</span><span class="p">;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">// Create a logger instance</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pino</span><span class="p">({</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="nx">level</span><span class="o">:</span><span class="w"> </span><span class="nx">logLevel</span><span class="p">,</span><span class="w"> </span><span class="c1">// Set log level dynamically</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="nx">browser</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="nx">asObject</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Make logs structured and readable in the browser console</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="p">});</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">logger</span><span class="p">;</span>
 </span></code></pre></div>
 <hr>
 <h3 id="summary">Summary</h3>
@@ -9618,12 +9620,12 @@
 <li>Only logs with severity <code>error</code> and <code>fatal</code> will be logged.</li>
 <li>Logs with lower severities (<code>warn</code>, <code>info</code>, <code>debug</code>, <code>trace</code>) will be suppressed.</li>
 </ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">fatal</span><span class="p">(</span><span class="s2">"Critical failure!"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will be logged</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Something went wrong"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will be logged</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s2">"This is a warning"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">"Application started"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="s2">"Debugging details"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">trace</span><span class="p">(</span><span class="s2">"Tracing execution"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">fatal</span><span class="p">(</span><span class="s2">"Critical failure!"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will be logged</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Something went wrong"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will be logged</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s2">"This is a warning"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">"Application started"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="s2">"Debugging details"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nx">logger</span><span class="p">.</span><span class="nx">trace</span><span class="p">(</span><span class="s2">"Tracing execution"</span><span class="p">);</span><span class="w"> </span><span class="c1">// Will NOT be logged</span>
 </span></code></pre></div>
 <hr>
 <h2 id="reference">Reference</h2>
