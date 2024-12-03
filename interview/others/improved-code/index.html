@@ -8,25 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/blog/2024/08/20/best-folder-structure-in-redux-toolkit/">
+        <link rel="canonical" href="https://thejsexpert.github.io/interview/others/improved-code/">
       
       
-        <link rel="prev" href="../../19/do-we-need-to-install-redux-thunk-separately-when-using-redux-toolkit/">
+        <link rel="prev" href="../importing-file/">
       
       
-        <link rel="next" href="../../21/combine-slices-in-a-feature-folder/">
       
-      
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>Best folder structure in Redux Toolkit - My Docs</title>
+        <title>Improved Code - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -45,14 +43,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -63,7 +61,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -75,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#best-folder-structure-in-redux-toolkit" class="md-skip">
+        <a href="#difference-between-single-double-curly-braces" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +89,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -111,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Best folder structure in Redux Toolkit
+              Improved Code
             
           </span>
         </div>
@@ -172,13 +170,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -196,7 +192,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/js/intro/" class="md-tabs__link">
+        <a href="../../../frontend/js/intro/" class="md-tabs__link">
           
   
   JS
@@ -214,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/package/intro/" class="md-tabs__link">
+        <a href="../../../frontend/package/intro/" class="md-tabs__link">
           
   
   Package
@@ -232,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/react/philosophy/" class="md-tabs__link">
+        <a href="../../../frontend/react/philosophy/" class="md-tabs__link">
           
   
   React
@@ -250,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/router/intro/" class="md-tabs__link">
+        <a href="../../../frontend/router/intro/" class="md-tabs__link">
           
   
   Router
@@ -268,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/state-management/intro/" class="md-tabs__link">
+        <a href="../../../frontend/state-management/intro/" class="md-tabs__link">
           
   
   State
@@ -286,7 +282,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../frontend/typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../frontend/typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -300,11 +296,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../interview/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
           
   
   Interview
@@ -332,9 +330,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -345,7 +341,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -360,28 +356,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -392,7 +383,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -403,14 +394,12 @@
                 
   
   
-    
-  
   
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      <a href="../../../../" class="md-nav__link">
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -471,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -545,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/prototype/" class="md-nav__link">
+      <a href="../../../frontend/js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../../frontend/js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../../frontend/js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -667,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/object/" class="md-nav__link">
+      <a href="../../../frontend/js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -688,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/essential/array/" class="md-nav__link">
+      <a href="../../../frontend/js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -755,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/control-statement/" class="md-nav__link">
+      <a href="../../../frontend/js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../frontend/js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -797,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/callback/" class="md-nav__link">
+      <a href="../../../frontend/js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -818,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/closure/" class="md-nav__link">
+      <a href="../../../frontend/js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -839,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/high-order-function/" class="md-nav__link">
+      <a href="../../../frontend/js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../frontend/js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -881,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/core/topic/" class="md-nav__link">
+      <a href="../../../frontend/js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -948,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../frontend/js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -969,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/serialization/" class="md-nav__link">
+      <a href="../../../frontend/js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -990,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../frontend/js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1011,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/advanced/promise/" class="md-nav__link">
+      <a href="../../../frontend/js/advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1078,7 +1067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/datatypes/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1099,7 +1088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../../frontend/js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1166,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/types/" class="md-nav__link">
+      <a href="../../../frontend/js/function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1208,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/arrow-function/" class="md-nav__link">
+      <a href="../../../frontend/js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1229,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/arrow-example/" class="md-nav__link">
+      <a href="../../../frontend/js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1250,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/function/advanced-concept/" class="md-nav__link">
+      <a href="../../../frontend/js/function/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1355,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../../frontend/js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1376,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../frontend/js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1451,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1472,7 +1461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/cancellation-mechanisms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1531,7 +1520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/overview/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/core/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1552,7 +1541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1573,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1594,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/core/chaining/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1615,7 +1604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1636,7 +1625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/core/axios/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/core/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1703,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/overview/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/example/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1724,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/useReducer/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/example/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1745,7 +1734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1766,7 +1755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/example/axios-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1787,7 +1776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1808,7 +1797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/httprequest/example/cancel-axios-api/" class="md-nav__link">
+      <a href="../../../frontend/js/httprequest/example/cancel-axios-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1883,7 +1872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/designpattern/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/designpattern/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1904,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/designpattern/daily/" class="md-nav__link">
+      <a href="../../../frontend/js/designpattern/daily/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1925,7 +1914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/designpattern/js/" class="md-nav__link">
+      <a href="../../../frontend/js/designpattern/js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1946,7 +1935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/designpattern/react/" class="md-nav__link">
+      <a href="../../../frontend/js/designpattern/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1967,7 +1956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/designpattern/mnemonic/" class="md-nav__link">
+      <a href="../../../frontend/js/designpattern/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2034,7 +2023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/json/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2055,7 +2044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/json/json5/" class="md-nav__link">
+      <a href="../../../frontend/js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2122,7 +2111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../frontend/js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2143,7 +2132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../frontend/js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2164,7 +2153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../frontend/js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2185,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../frontend/js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2206,7 +2195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../frontend/js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2273,7 +2262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2332,7 +2321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/eslint/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/eslint/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2399,7 +2388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/vite/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/vite/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2420,7 +2409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/vite/under-the-hood/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/vite/under-the-hood/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2441,7 +2430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/vite/mode/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/vite/mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2462,7 +2451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/vite/example/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/vite/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2483,7 +2472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/vite/proxy/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/vite/proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2550,7 +2539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/npm/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/npm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2571,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/npm/example/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/npm/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2638,7 +2627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/yarn/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/yarn/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2705,7 +2694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/pnpm/intro/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/pnpm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2726,7 +2715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/js/tools/pnpm/advanced/" class="md-nav__link">
+      <a href="../../../frontend/js/tools/pnpm/advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2808,7 +2797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/intro/" class="md-nav__link">
+      <a href="../../../frontend/package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2829,7 +2818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/barrel/" class="md-nav__link">
+      <a href="../../../frontend/package/barrel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2888,7 +2877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2909,7 +2898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/topic/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2930,7 +2919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2951,7 +2940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/antd-render-func/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/antd-render-func/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2972,7 +2961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/twoTone-color/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/twoTone-color/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2993,7 +2982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/antd-configprovider/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/antd-configprovider/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3052,7 +3041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/sidebar/intro/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/sidebar/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3119,7 +3108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/form/intro/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/form/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3140,7 +3129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/form/antd-form/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/form/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3161,7 +3150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/form/antd-form-validator/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/form/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3182,7 +3171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/form/form-crud/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/form/form-crud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3249,7 +3238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/antd/table/filters/" class="md-nav__link">
+      <a href="../../../frontend/package/antd/table/filters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3324,7 +3313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../frontend/package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3391,7 +3380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../frontend/package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3458,7 +3447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/axios/intro/" class="md-nav__link">
+      <a href="../../../frontend/package/axios/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3479,7 +3468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/axios/topic/" class="md-nav__link">
+      <a href="../../../frontend/package/axios/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3500,7 +3489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/axios/sentry/" class="md-nav__link">
+      <a href="../../../frontend/package/axios/sentry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3521,7 +3510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/axios/axios-interceptors/" class="md-nav__link">
+      <a href="../../../frontend/package/axios/axios-interceptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3588,7 +3577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/react-infinite-scroll-component/" class="md-nav__link">
+      <a href="../../../frontend/package/react-infinite-scroll-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3609,7 +3598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/react-infinite-scroll-component/resuable/" class="md-nav__link">
+      <a href="../../../frontend/package/react-infinite-scroll-component/resuable/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3676,7 +3665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/composition/intro/" class="md-nav__link">
+      <a href="../../../frontend/package/composition/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3697,7 +3686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/composition/imagegallery/" class="md-nav__link">
+      <a href="../../../frontend/package/composition/imagegallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3764,7 +3753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/intro/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3785,7 +3774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/logging-libraries/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/logging-libraries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3844,7 +3833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/pino/intro/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/pino/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3865,7 +3854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/pino/send-to-api/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/pino/send-to-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3886,7 +3875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/pino/example/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/pino/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3907,7 +3896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/pino/simple-usage/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/pino/simple-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3928,7 +3917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/pino/methods/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/pino/methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3949,7 +3938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/package/monitoring-and-logging/pino/notes/" class="md-nav__link">
+      <a href="../../../frontend/package/monitoring-and-logging/pino/notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4031,7 +4020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/philosophy/" class="md-nav__link">
+      <a href="../../../frontend/react/philosophy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4090,7 +4079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/intro/" class="md-nav__link">
+      <a href="../../../frontend/react/core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4111,7 +4100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/guides/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4170,7 +4159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../frontend/react/core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4191,7 +4180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../frontend/react/core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4212,7 +4201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../frontend/react/core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4233,7 +4222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../frontend/react/core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4254,7 +4243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../frontend/react/core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4275,7 +4264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../frontend/react/core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4296,7 +4285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/pattern/misc/" class="md-nav__link">
+      <a href="../../../frontend/react/core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4363,7 +4352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4384,7 +4373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4405,7 +4394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4426,7 +4415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useCallback/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4447,7 +4436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/useRef/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4468,7 +4457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/react-context-api/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4489,7 +4478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/react-router/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4510,7 +4499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../frontend/react/core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4577,7 +4566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/router/intro/" class="md-nav__link">
+      <a href="../../../frontend/react/core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4682,7 +4671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/auth-example/login/react-login/" class="md-nav__link">
+      <a href="../../../frontend/react/core/auth-example/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4749,7 +4738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../../frontend/react/core/auth-example/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4832,7 +4821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/fake-api/intro/" class="md-nav__link">
+      <a href="../../../frontend/react/fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4853,7 +4842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/fake-api/json-server/" class="md-nav__link">
+      <a href="../../../frontend/react/fake-api/json-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4874,7 +4863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/fake-api/msw/" class="md-nav__link">
+      <a href="../../../frontend/react/fake-api/msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4895,7 +4884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/fake-api/topic/" class="md-nav__link">
+      <a href="../../../frontend/react/fake-api/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4962,7 +4951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/passing-props/" class="md-nav__link">
+      <a href="../../../frontend/react/example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4983,7 +4972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/lifting-state-up/" class="md-nav__link">
+      <a href="../../../frontend/react/example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5004,7 +4993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/prop-drilling/" class="md-nav__link">
+      <a href="../../../frontend/react/example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5025,7 +5014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/children-prop/" class="md-nav__link">
+      <a href="../../../frontend/react/example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5046,7 +5035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/component-composition/" class="md-nav__link">
+      <a href="../../../frontend/react/example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5067,7 +5056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/hoc/" class="md-nav__link">
+      <a href="../../../frontend/react/example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5088,7 +5077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/render-props/" class="md-nav__link">
+      <a href="../../../frontend/react/example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5109,7 +5098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/presentational-and-container/" class="md-nav__link">
+      <a href="../../../frontend/react/example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5130,7 +5119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../../frontend/react/example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5197,7 +5186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/intro/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5218,7 +5207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/jest/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5239,7 +5228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/cypress/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5260,7 +5249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5319,7 +5308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/intro/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/codereport/bugs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5340,7 +5329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/solution/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/codereport/bugs/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5361,7 +5350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/codereport/bugs/cleanup-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5382,7 +5371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/debouncing/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/codereport/bugs/debouncing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5403,7 +5392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/testing/codereport/bugs/master-topic/" class="md-nav__link">
+      <a href="../../../frontend/react/testing/codereport/bugs/master-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5478,7 +5467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/optimization/intro/" class="md-nav__link">
+      <a href="../../../frontend/react/optimization/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5499,7 +5488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/optimization/react-suspense/" class="md-nav__link">
+      <a href="../../../frontend/react/optimization/react-suspense/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5520,7 +5509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/optimization/code-splitting/" class="md-nav__link">
+      <a href="../../../frontend/react/optimization/code-splitting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5541,7 +5530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/optimization/error-boundaries/" class="md-nav__link">
+      <a href="../../../frontend/react/optimization/error-boundaries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5562,7 +5551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/optimization/topic/" class="md-nav__link">
+      <a href="../../../frontend/react/optimization/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5667,7 +5656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/mastering/function-declaration-and-expression/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/mastering/function-declaration-and-expression/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5688,7 +5677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/mastering/explainingothers/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/mastering/explainingothers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5709,7 +5698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/mastering/hooks-mastering-topic/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/mastering/hooks-mastering-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5776,7 +5765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/hooks/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5797,7 +5786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer-and-reducer/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/hooks/useReducer-and-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5818,7 +5807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer-example/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/hooks/useReducer-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5839,7 +5828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/hooks/useReducer-with-api/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/hooks/useReducer-with-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5868,7 +5857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/react-strict-mode/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/react-strict-mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5889,7 +5878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/code-for-change/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/code-for-change/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5910,7 +5899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/abort-controller-solved/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/abort-controller-solved/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5931,7 +5920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/cleanup/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5952,7 +5941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/topic/slides/" class="md-nav__link">
+      <a href="../../../frontend/react/topic/slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5981,7 +5970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/handling-side-effects/" class="md-nav__link">
+      <a href="../../../frontend/react/handling-side-effects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6002,7 +5991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/folder-structure-pattern/" class="md-nav__link">
+      <a href="../../../frontend/react/folder-structure-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6023,7 +6012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/react/books/" class="md-nav__link">
+      <a href="../../../frontend/react/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6089,7 +6078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/intro/" class="md-nav__link">
+      <a href="../../../frontend/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6110,7 +6099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/types-of-router/" class="md-nav__link">
+      <a href="../../../frontend/router/types-of-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6131,7 +6120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/types-of-access-control-routes/" class="md-nav__link">
+      <a href="../../../frontend/router/types-of-access-control-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6190,7 +6179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/docs/router-version/" class="md-nav__link">
+      <a href="../../../frontend/router/docs/router-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6211,7 +6200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/docs/react-router/" class="md-nav__link">
+      <a href="../../../frontend/router/docs/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6232,7 +6221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/docs/why-react-router/" class="md-nav__link">
+      <a href="../../../frontend/router/docs/why-react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6253,7 +6242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/docs/not-found-component/" class="md-nav__link">
+      <a href="../../../frontend/router/docs/not-found-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6274,7 +6263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/docs/routing/" class="md-nav__link">
+      <a href="../../../frontend/router/docs/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6295,7 +6284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/docs/best-method-for-auth/" class="md-nav__link">
+      <a href="../../../frontend/router/docs/best-method-for-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6316,7 +6305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/docs/auth-techniques/" class="md-nav__link">
+      <a href="../../../frontend/router/docs/auth-techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6383,7 +6372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/example/simple-login/" class="md-nav__link">
+      <a href="../../../frontend/router/example/simple-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6404,7 +6393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/example/context-auth/" class="md-nav__link">
+      <a href="../../../frontend/router/example/context-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6471,7 +6460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/router/question/pervent-layout-flashing-v6/" class="md-nav__link">
+      <a href="../../../frontend/router/question/pervent-layout-flashing-v6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6545,7 +6534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6604,7 +6593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6663,7 +6652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/folder-structure/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6684,7 +6673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/redux-pattern/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6705,7 +6694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/redux-testing/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6764,7 +6753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/action/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6831,7 +6820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/reducer/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6852,7 +6841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/reducer/example/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6873,7 +6862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6894,7 +6883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6961,7 +6950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6982,7 +6971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7003,7 +6992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7078,7 +7067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7145,7 +7134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7204,7 +7193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7225,7 +7214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/folder-structure/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7246,7 +7235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/code-modularity/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/code-modularity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7267,7 +7256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/ultimate/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/ultimate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7326,7 +7315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/middleware/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7347,7 +7336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/middleware/setup/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/middleware/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7414,7 +7403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/example/example/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/example/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7443,7 +7432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/topic/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7502,7 +7491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/a.how-to-right-question/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/a.how-to-right-question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7523,7 +7512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/where-do-we-define-action/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/where-do-we-define-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7544,7 +7533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7565,7 +7554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7586,7 +7575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7607,7 +7596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7628,7 +7617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7649,7 +7638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7724,7 +7713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/query/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/query/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7745,7 +7734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/query/react-architecture/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/query/react-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7766,7 +7755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/query/rtkadvanced/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/query/rtkadvanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7787,7 +7776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/query/topic/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/query/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7808,7 +7797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/query/mnemonic/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/query/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7829,7 +7818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/rtk/query/tools/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/rtk/query/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7874,7 +7863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/react-redux/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/react-redux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7933,7 +7922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/persist/redux-persist/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/persist/redux-persist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7954,7 +7943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/persist/example/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/persist/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7975,7 +7964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/persist/question/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/persist/question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7996,7 +7985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/persist/immer-example/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/persist/immer-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8017,7 +8006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/persist/redux-persist-purge/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/persist/redux-persist-purge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8038,7 +8027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/persist/redux-store-subscribe/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/persist/redux-store-subscribe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8059,7 +8048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/redux/persist/reduxtoolkit-and-rtkquery/" class="md-nav__link">
+      <a href="../../../frontend/state-management/redux/persist/reduxtoolkit-and-rtkquery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8126,7 +8115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8193,7 +8182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8260,7 +8249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/middleware/" class="md-nav__link">
+      <a href="../../../frontend/state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8327,7 +8316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/webstorage/intro/" class="md-nav__link">
+      <a href="../../../frontend/state-management/webstorage/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8348,7 +8337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/state-management/webstorage/token/" class="md-nav__link">
+      <a href="../../../frontend/state-management/webstorage/token/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8422,7 +8411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../frontend/typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8443,7 +8432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../frontend/typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8464,7 +8453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/one-hour-ts/" class="md-nav__link">
+      <a href="../../../frontend/typescript/one-hour-ts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8485,7 +8474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/core-concept/" class="md-nav__link">
+      <a href="../../../frontend/typescript/core-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8544,7 +8533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/react-fc/intro/" class="md-nav__link">
+      <a href="../../../frontend/typescript/react-fc/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8565,7 +8554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/react-fc/react-fc/" class="md-nav__link">
+      <a href="../../../frontend/typescript/react-fc/react-fc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8586,7 +8575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../frontend/typescript/react-fc/example/" class="md-nav__link">
+      <a href="../../../frontend/typescript/react-fc/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8619,23 +8608,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -8646,7 +8640,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Interview
@@ -8660,7 +8654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8719,7 +8713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/best-approach-rtk/" class="md-nav__link">
+      <a href="../../topic/best-approach-rtk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8740,7 +8734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/csr-sgr-ssr/" class="md-nav__link">
+      <a href="../../topic/csr-sgr-ssr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8761,7 +8755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/postgress/" class="md-nav__link">
+      <a href="../../topic/postgress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8782,7 +8776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/private-vs-protected/" class="md-nav__link">
+      <a href="../../topic/private-vs-protected/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8803,7 +8797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/react-image-gallery/" class="md-nav__link">
+      <a href="../../topic/react-image-gallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8824,7 +8818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/holy-grail/" class="md-nav__link">
+      <a href="../../topic/holy-grail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8891,7 +8885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/pwa/intro/" class="md-nav__link">
+      <a href="../../pwa/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8958,7 +8952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/storybook/intro/" class="md-nav__link">
+      <a href="../../storybook/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8984,6 +8978,8 @@
                 
   
   
+    
+  
   
   
     
@@ -8993,11 +8989,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" checked>
         
           
           <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
@@ -9011,7 +9007,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8_5">
             <span class="md-nav__icon md-icon"></span>
             Others
@@ -9025,7 +9021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/react/" class="md-nav__link">
+      <a href="../react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9046,7 +9042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/codesnap/" class="md-nav__link">
+      <a href="../codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9067,7 +9063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/micro-frontend/" class="md-nav__link">
+      <a href="../micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9088,7 +9084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/api/" class="md-nav__link">
+      <a href="../api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9109,7 +9105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/http-response/" class="md-nav__link">
+      <a href="../http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9130,7 +9126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/http-request/" class="md-nav__link">
+      <a href="../http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9151,7 +9147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9172,7 +9168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/performance-optimization/" class="md-nav__link">
+      <a href="../performance-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9193,7 +9189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/bff/" class="md-nav__link">
+      <a href="../bff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9214,7 +9210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/bff-question/" class="md-nav__link">
+      <a href="../bff-question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9235,7 +9231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/app-ideas/" class="md-nav__link">
+      <a href="../app-ideas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9256,7 +9252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/jwt/" class="md-nav__link">
+      <a href="../jwt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9277,7 +9273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/others/importing-file/" class="md-nav__link">
+      <a href="../importing-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9295,10 +9291,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../interview/others/improved-code/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Improved Code
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -9307,6 +9321,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#difference-between-single-double-curly-braces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference between Single &amp; Double Curly Braces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improvements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-optimized-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Optimized Code:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#react-responsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      react-responsive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -9335,8 +9412,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -9346,8 +9421,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -9356,173 +9429,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#difference-between-single-double-curly-braces" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Difference between Single &amp; Double Curly Braces
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-folder-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Folder Structure:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-actions-and-reducers" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Actions and Reducers:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#suggested-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested Structure:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#additional-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Tips:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#overview_1" class="md-nav__link">
+  <a href="#improvements" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Improvements
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-purpose-of-the-middleware-folder" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Purpose of the /middleware Folder:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-default-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Default Middleware:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-middleware-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Middleware File:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrating-middleware-in-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrating Middleware in Store:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#overview_2" class="md-nav__link">
+  <a href="#final-optimized-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-purpose-of-custom-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Purpose of Custom Middleware:
+      Final Optimized Code:
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-what-custom-middleware-does" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#react-responsive" class="md-nav__link">
     <span class="md-ellipsis">
-      2. What Custom Middleware Does:
+      react-responsive
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-when-to-use-custom-middleware" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
     <span class="md-ellipsis">
-      3. When to Use Custom Middleware:
+      Reference
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-what-if-you-do-not-use-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. What If You Do Not Use It:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -9535,265 +9482,303 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../../../../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-                  <span class="md-ellipsis">
-                    Back to index
-                  </span>
-                </a>
-              </div>
-            </div>
-            
-              <div class="md-post__authors md-typeset">
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-                  <div class="md-profile md-post__profile">
-                    <span class="md-author md-author--long">
-                      <img src="https://avatars.githubusercontent.com/u/25550945" alt="Bishow Thapa">
-                    </span>
-                    <span class="md-profile__description">
-                      <strong>
-                        
-                          Bishow Thapa
-                        
-                      </strong>
-                      <br>
-                      Creator
-                    </span>
-                  </div>
-                
-              </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    Metadata
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2024-08-20 00:00:00+00:00" class="md-ellipsis">August 20, 2024</time>
-                      </div>
-                    </li>
-                    
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              4 min read
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-          </nav>
-          
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
-  
-  
-
-<nav class="md-tags" >
-  
-    
-    
-    
-      <a href="../../../../../tags/#porgramming" class="md-tag">Porgramming</a>
-    
-  
-    
-    
-    
-      <a href="../../../../../tags/#redux" class="md-tag">Redux</a>
-    
-  
-    
-    
-    
-      <a href="../../../../../tags/#saga" class="md-tag">Saga</a>
-    
-  
-    
-    
-    
-      <a href="../../../../../tags/#thunk" class="md-tag">Thunk</a>
-    
-  
-</nav>
+                  
 
 
+  <h1>Improved Code</h1>
 
-<div><h1 id="best-folder-structure-in-redux-toolkit">Best folder structure in Redux Toolkit</h1>
-<!-- more -->
-
-<hr>
-<div class="admonition question">
-<p class="admonition-title">Is this the best folder structure for a large application using Redux Toolkit, and do we still need separate actions and reducers folders?</p>
-</div>
-<h2 id="overview">Overview</h2>
-<h3 id="1-folder-structure">1. Folder Structure:</h3>
-<ul>
-<li>Your structure effectively separates concerns, which is great for maintainability.</li>
-<li>Using <code>/slices</code> is appropriate since Redux Toolkit encourages using "slices" to combine actions and reducers into one file.</li>
-</ul>
-<h3 id="2-actions-and-reducers">2. Actions and Reducers:</h3>
+<div><h2 id="difference-between-single-double-curly-braces">Difference between <code>Single</code> &amp; <code>Double</code> Curly Braces</h2>
+<p>In JavaScript (and JSX), <code>{}</code> and <code>{{}}</code> are used in different contexts, and here's the distinction:</p>
+<details class="success" open="open">
+<summary>Success</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1"><code>{}</code> (Single Curly Braces)</label><label for="__tabbed_1_2"><code>{{}}</code> (Double Curly Braces)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ul>
 <li>
-<p><strong>No Separate Folders Needed</strong>: <mark>With Redux Toolkit, you typically don't need separate</mark> <code>/actions</code> and <code>/reducers</code> folders. Each slice file contains both the actions and the reducers, which helps reduce redundancy and keeps related code together.</p>
+<p>In JSX: <code>{}</code> is used to embed JavaScript expressions into JSX.</p>
+<ul>
+<li>Example: <code>const name = 'John';</code> and <code>&lt;div&gt;{name}&lt;/div&gt;</code> will render the value of <code>name</code> inside the <code>&lt;div&gt;</code>.</li>
+</ul>
 </li>
 <li>
-<p><strong>Example Slice</strong>:</p>
+<p>In JavaScript: <code>{}</code> is also used for defining objects, blocks, or destructuring.</p>
+<ul>
+<li>
+<p>In JSX: When you want to embed a variable or a JavaScript expression (like a number, string, function call, etc.) inside JSX, you wrap it with <code>{}</code>. For example:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Hello, World!'</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;{</span><span class="nx">greeting</span><span class="p">}&lt;/</span><span class="nt">h1</span><span class="p">&gt;;</span><span class="w">  </span><span class="c1">// The value of greeting will be displayed inside the &lt;h1&gt;</span>
+</span></code></pre></div>
 </li>
 </ul>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// /redux/slices/exampleSlice.js</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">createSlice</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@reduxjs/toolkit"</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">exampleSlice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createSlice</span><span class="p">({</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"example"</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nx">initialState</span><span class="o">:</span><span class="w"> </span><span class="p">{},</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nx">reducers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nx">actionOne</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">      </span><span class="c1">// reducer logic</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">actionTwo</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="c1">// reducer logic</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">});</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">actionOne</span><span class="p">,</span><span class="w"> </span><span class="nx">actionTwo</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">exampleSlice</span><span class="p">.</span><span class="nx">actions</span><span class="p">;</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">exampleSlice</span><span class="p">.</span><span class="nx">reducer</span><span class="p">;</span>
-</span></code></pre></div>
-<h3 id="suggested-structure">Suggested Structure:</h3>
-<p>You could simplify your Redux-related folder as follows:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/redux
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── /slices             // Redux slices, combining actions and reducers
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├── /store.js          // Store configuration
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>└── /middleware         // Any custom middleware (optional)
-</span></code></pre></div>
-<h3 id="additional-tips">Additional Tips:</h3>
-<ul>
-<li><strong>Combine Slices</strong>: If your application grows, consider combining slices in a feature folder to keep related slices, components, and styles together.</li>
-<li><strong>Testing</strong>: Maintain your <code>/tests</code> folder for unit tests that cover slices, components, and hooks.</li>
-<li><strong>Documentation</strong>: As your app scales, consider documenting each folder's purpose to help onboard new developers.</li>
+</li>
 </ul>
-<p>This structure and approach should enhance your application's scalability and maintainability.</p>
-<hr>
-<div class="admonition question">
-<p class="admonition-title">What is the /middleware folder in a Redux Toolkit application, and what does it contain, given that Redux Toolkit uses thunk by default?</p>
 </div>
-<h2 id="overview_1">Overview</h2>
-<h3 id="1-purpose-of-the-middleware-folder">1. Purpose of the <code>/middleware</code> Folder:</h3>
+<div class="tabbed-block">
 <ul>
-<li>The <code>/middleware</code> folder is where you can define custom middleware that you want to use in your Redux application, beyond the default middleware provided by Redux Toolkit (like thunk).</li>
-<li>Middleware can be used for various purposes such as logging, error handling, analytics, or intercepting actions before they reach the reducer.</li>
-</ul>
-<h3 id="2-default-middleware">2. Default Middleware:</h3>
+<li>
+<p>In JSX: {{}} is commonly used when you're passing an object as a prop, especially for inline styles or for embedding an object inside JSX.</p>
 <ul>
-<li>Redux Toolkit comes with <code>redux-thunk</code> and some other default middleware (like <code>redux-immutable-state-invariant</code> in development) included in the store configuration. You can still add your own custom middleware alongside these.</li>
+<li>
+<p>For inline styles, you need to use a double pair of curly braces:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">'blue'</span><span class="p">,</span><span class="w"> </span><span class="nx">fontSize</span><span class="o">:</span><span class="w"> </span><span class="s1">'16px'</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">'blue'</span><span class="p">,</span><span class="w"> </span><span class="nx">fontSize</span><span class="o">:</span><span class="w"> </span><span class="s1">'16px'</span><span class="w"> </span><span class="p">}}&gt;</span><span class="nx">Styled</span><span class="w"> </span><span class="nx">Text</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;;</span>
+</span></code></pre></div>
+<ul>
+<li>The <strong>first pair</strong> <code>{}</code> is for the JSX syntax (since it's in JSX, it expects expressions).</li>
+<li>The <strong>second pair</strong> <code>{{}}</code> is the object itself that you want to pass (the inline styles are represented as an object).</li>
 </ul>
-<h3 id="example-middleware-file">Example Middleware File:</h3>
-<p>Here’s how you might structure a custom middleware file.</p>
-<p><strong>Folder Structure</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/redux
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── /slices
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── /middleware
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│   └── loggerMiddleware.js
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── /store.js
+</li>
+<li>
+<p><strong>Another use case</strong> is when you're passing an object to a function or a component prop:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">Component</span><span class="w"> </span><span class="na">prop</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="s1">'value'</span><span class="w"> </span><span class="p">}}</span><span class="w"> </span><span class="p">/&gt;</span>
 </span></code></pre></div>
-<p><strong>Example Middleware</strong>: <code>loggerMiddleware.js</code></p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// /redux/middleware/loggerMiddleware.js</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">loggerMiddleware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">store</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">next</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Dispatching action:"</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">);</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">next</span><span class="p">(</span><span class="nx">action</span><span class="p">);</span><span class="w"> </span><span class="c1">// Pass action to the next middleware/reducer</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Next state:"</span><span class="p">,</span><span class="w"> </span><span class="nx">store</span><span class="p">.</span><span class="nx">getState</span><span class="p">());</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span><span class="w"> </span><span class="c1">// Return the result of the action</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">};</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">loggerMiddleware</span><span class="p">;</span>
+<p>This means you're passing an object <code>{ key: 'value' }</code> to the <code>prop</code> of the <code>Component</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</details>
+<ul>
+<li><code>{}</code> (Single Curly Braces): Used to embed JavaScript expressions in JSX.</li>
+<li><code>{{}}</code> (Double Curly Braces): Used when you want to pass an object (like inline styles or any other object) inside JSX.</li>
+</ul>
+<hr>
+<h2 id="improvements">Improvements</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">MainLayout</label><label for="__tabbed_2_2">Header</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"antd"</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">Header</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./Header"</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">Sidebar</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./Sidebar"</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Content</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Layout</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">MainLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">children</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">collapsed</span><span class="p">,</span><span class="w"> </span><span class="nx">setCollapsed</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="c1">// Calculate sidebar width based on collapse state</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">sidebarWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">collapsed</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mf">80</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">240</span><span class="p">;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="c1">// Calculate content width based on sidebar state</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">contentWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`calc(100% - </span><span class="si">${</span><span class="nx">sidebarWidth</span><span class="si">}</span><span class="sb">px)`</span><span class="p">;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">Layout</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">minHeight</span><span class="o">:</span><span class="w"> </span><span class="s2">"100vh"</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">Header</span><span class="w"> </span><span class="na">collapsed</span><span class="o">=</span><span class="p">{</span><span class="nx">collapsed</span><span class="p">}</span><span class="w"> </span><span class="na">setCollapsed</span><span class="o">=</span><span class="p">{</span><span class="nx">setCollapsed</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">Layout</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">display</span><span class="o">:</span><span class="w"> </span><span class="s2">"flex"</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">Sidebar</span><span class="w"> </span><span class="na">collapsed</span><span class="o">=</span><span class="p">{</span><span class="nx">collapsed</span><span class="p">}</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="p">{</span><span class="nx">sidebarWidth</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">Content</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="nx">contentWidth</span><span class="w"> </span><span class="p">}}&gt;{</span><span class="nx">children</span><span class="p">}&lt;/</span><span class="nt">Content</span><span class="p">&gt;</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">            </span><span class="p">&lt;/</span><span class="nt">Layout</span><span class="p">&gt;</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">Layout</span><span class="p">&gt;</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="p">};</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">MainLayout</span><span class="p">;</span>
 </span></code></pre></div>
-<h3 id="integrating-middleware-in-store">Integrating Middleware in Store:</h3>
-<p>You would then apply this middleware in your <code>store.js</code> file.</p>
-<p><strong>Example</strong> <code>store.js</code></p>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// /redux/store.js</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">configureStore</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@reduxjs/toolkit"</span><span class="p">;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">rootReducer</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./slices"</span><span class="p">;</span><span class="w"> </span><span class="c1">// Your root reducer</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">import</span><span class="w"> </span><span class="nx">loggerMiddleware</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./middleware/loggerMiddleware"</span><span class="p">;</span>
+</div>
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">MenuUnfoldOutlined</span><span class="p">,</span><span class="w"> </span><span class="nx">MenuFoldOutlined</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@ant-design/icons"</span><span class="p">;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"antd"</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Header</span><span class="o">:</span><span class="w"> </span><span class="nx">AntHeader</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Layout</span><span class="p">;</span>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">configureStore</span><span class="p">({</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nx">reducer</span><span class="o">:</span><span class="w"> </span><span class="nx">rootReducer</span><span class="p">,</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="nx">middleware</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">getDefaultMiddleware</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nx">getDefaultMiddleware</span><span class="p">().</span><span class="nx">concat</span><span class="p">(</span><span class="nx">loggerMiddleware</span><span class="p">),</span><span class="w"> </span><span class="c1">// Adding custom middleware</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">});</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">store</span><span class="p">;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">collapsed</span><span class="p">,</span><span class="w"> </span><span class="nx">setCollapsed</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">AntHeader</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">padding</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">display</span><span class="o">:</span><span class="w"> </span><span class="s2">"flex"</span><span class="p">,</span><span class="w"> </span><span class="nx">justifyContent</span><span class="o">:</span><span class="w"> </span><span class="s2">"space-between"</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">                    </span><span class="p">&lt;</span><span class="nt">button</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">                        </span><span class="na">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setCollapsed</span><span class="p">(</span><span class="o">!</span><span class="nx">collapsed</span><span class="p">)}</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">                        </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">background</span><span class="o">:</span><span class="w"> </span><span class="s2">"none"</span><span class="p">,</span><span class="w"> </span><span class="nx">border</span><span class="o">:</span><span class="w"> </span><span class="s2">"none"</span><span class="w"> </span><span class="p">}}</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">                    </span><span class="p">&gt;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">                        </span><span class="p">{</span><span class="nx">collapsed</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">MenuUnfoldOutlined</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">MenuFoldOutlined</span><span class="w"> </span><span class="p">/&gt;}</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">                    </span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">                </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Other header content */</span><span class="p">}</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">            </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">AntHeader</span><span class="p">&gt;</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="p">};</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Header</span><span class="p">;</span>
 </span></code></pre></div>
-<h3 id="summary">Summary:</h3>
-<ul>
-<li>The <code>/middleware</code> folder is for any custom middleware you want to add to your Redux setup.</li>
-<li>You can create middleware for logging, API error handling, analytics, etc.</li>
-<li>Redux Toolkit uses thunk by default, but you can augment the middleware with your own logic as needed.</li>
-</ul>
-<hr>
-<div class="admonition question">
-<p class="admonition-title">What is the purpose of adding custom middleware in Redux Toolkit, what does it do, when should it be used, and what happens if it's not included?</p>
 </div>
-<h2 id="overview_2">Overview</h2>
-<h3 id="1-purpose-of-custom-middleware">1. Purpose of Custom Middleware:</h3>
-<ul>
-<li>Custom middleware is a powerful way to enhance the Redux store's capabilities. It allows you to intercept actions before they reach the reducers, enabling you to perform side effects or additional logic.</li>
-</ul>
-<h3 id="2-what-custom-middleware-does">2. What Custom Middleware Does:</h3>
-<ul>
-<li><strong>Intercept Actions</strong>: Custom middleware can log actions, modify them, or even prevent them from reaching the reducers.</li>
-<li><strong>Side Effects</strong>: You can perform asynchronous tasks, such as API calls, or other operations that are not purely related to state updates.</li>
-<li><strong>Logging and Debugging</strong>: Middleware like logging can be useful during development to track dispatched actions and the resulting state.</li>
-</ul>
-<div class="language-jsx highlight"><span class="filename">Example of logging middleware:</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">loggerMiddleware</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">store</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">next</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Dispatching action:"</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">);</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">next</span><span class="p">(</span><span class="nx">action</span><span class="p">);</span><span class="w"> </span><span class="c1">// Pass the action to the next middleware/reducer</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Next state:"</span><span class="p">,</span><span class="w"> </span><span class="nx">store</span><span class="p">.</span><span class="nx">getState</span><span class="p">());</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span><span class="w"> </span><span class="c1">// Return the result</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">};</span>
+</div>
+</div>
+<hr>
+<h2 id="final-optimized-code">Final Optimized Code:</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">MainLayout.jsx</label><label for="__tabbed_3_2">Header.jsx</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useCallback</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"antd"</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">RightCircleOutlined</span><span class="p">,</span><span class="w"> </span><span class="nx">LeftCircleOutlined</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@ant-design/icons"</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">import</span><span class="w"> </span><span class="nx">Header</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./Header"</span><span class="p">;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="k">import</span><span class="w"> </span><span class="nx">Sidebar</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./Sidebar"</span><span class="p">;</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Content</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Layout</span><span class="p">;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="kd">const</span><span class="w"> </span><span class="nx">MainLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">children</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">collapsed</span><span class="p">,</span><span class="w"> </span><span class="nx">setCollapsed</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="c1">// Using useCallback to memoize the function and prevent unnecessary re-renders</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">toggleSidebar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useCallback</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">        </span><span class="nx">setCollapsed</span><span class="p">((</span><span class="nx">prev</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="o">!</span><span class="nx">prev</span><span class="p">);</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">sidebarWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">collapsed</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mf">80</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">240</span><span class="p">;</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">contentWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`calc(100% - </span><span class="si">${</span><span class="nx">sidebarWidth</span><span class="si">}</span><span class="sb">px)`</span><span class="p">;</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">Layout</span><span class="p">&gt;</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">Header</span><span class="w"> </span><span class="na">toggleSidebar</span><span class="o">=</span><span class="p">{</span><span class="nx">toggleSidebar</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Pass toggleSidebar to Header */</span><span class="p">}</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">Layout</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">display</span><span class="o">:</span><span class="w"> </span><span class="s2">"flex"</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">Sidebar</span><span class="w"> </span><span class="na">collapsed</span><span class="o">=</span><span class="p">{</span><span class="nx">collapsed</span><span class="p">}</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="p">{</span><span class="nx">sidebarWidth</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">Content</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="nx">contentWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">position</span><span class="o">:</span><span class="w"> </span><span class="s2">"relative"</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">                    </span><span class="p">{</span><span class="nx">collapsed</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">                        </span><span class="p">&lt;</span><span class="nt">RightCircleOutlined</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">                            </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">toggleSidebar</span><span class="p">}</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">                            </span><span class="na">aria-label</span><span class="o">=</span><span class="s">"Expand Sidebar"</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="w">                        </span><span class="p">/&gt;</span>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">                    </span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">                        </span><span class="p">&lt;</span><span class="nt">LeftCircleOutlined</span>
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">                            </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">toggleSidebar</span><span class="p">}</span>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="w">                            </span><span class="na">aria-label</span><span class="o">=</span><span class="s">"Collapse Sidebar"</span>
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="w">                        </span><span class="p">/&gt;</span>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="w">                    </span><span class="p">)}</span>
+</span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a><span class="w">                    </span><span class="p">{</span><span class="nx">children</span><span class="p">}</span>
+</span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a><span class="w">                </span><span class="p">&lt;/</span><span class="nt">Content</span><span class="p">&gt;</span>
+</span><span id="__span-5-40"><a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a><span class="w">            </span><span class="p">&lt;/</span><span class="nt">Layout</span><span class="p">&gt;</span>
+</span><span id="__span-5-41"><a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">Layout</span><span class="p">&gt;</span>
+</span><span id="__span-5-42"><a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-5-43"><a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a><span class="p">};</span>
+</span><span id="__span-5-44"><a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a>
+</span><span id="__span-5-45"><a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">MainLayout</span><span class="p">;</span>
 </span></code></pre></div>
-<h3 id="3-when-to-use-custom-middleware">3. When to Use Custom Middleware:</h3>
-<p>Use custom middleware when you need to perform:</p>
+</div>
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="p">,</span><span class="w"> </span><span class="nx">Button</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'antd'</span><span class="p">;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">MenuFoldOutlined</span><span class="p">,</span><span class="w"> </span><span class="nx">MenuUnfoldOutlined</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@ant-design/icons'</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Header</span><span class="o">:</span><span class="w"> </span><span class="nx">AntHeader</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Layout</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">toggleSidebar</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">AntHeader</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">padding</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">display</span><span class="o">:</span><span class="w"> </span><span class="s1">'flex'</span><span class="p">,</span><span class="w"> </span><span class="nx">justifyContent</span><span class="o">:</span><span class="w"> </span><span class="s1">'space-between'</span><span class="p">,</span><span class="w"> </span><span class="nx">alignItems</span><span class="o">:</span><span class="w"> </span><span class="s1">'center'</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">            </span><span class="p">{</span><span class="cm">/* Button to toggle sidebar */</span><span class="p">}</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">Button</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">                </span><span class="na">type</span><span class="o">=</span><span class="s">"primary"</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">                </span><span class="na">icon</span><span class="o">=</span><span class="p">{</span><span class="nx">toggleSidebar</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">MenuUnfoldOutlined</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">MenuFoldOutlined</span><span class="w"> </span><span class="p">/&gt;}</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">                </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">toggleSidebar</span><span class="p">}</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">                </span><span class="na">aria-label</span><span class="o">=</span><span class="s">"Toggle Sidebar"</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">                </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">marginLeft</span><span class="o">:</span><span class="w"> </span><span class="mf">16</span><span class="w"> </span><span class="p">}}</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">            </span><span class="p">/&gt;</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">            </span><span class="p">{</span><span class="cm">/* You can add other elements like branding, user info, etc. */</span><span class="p">}</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">fontSize</span><span class="o">:</span><span class="w"> </span><span class="s1">'18px'</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">'white'</span><span class="w"> </span><span class="p">}}&gt;</span><span class="nx">My</span><span class="w"> </span><span class="nx">Application</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">AntHeader</span><span class="p">&gt;</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="p">};</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Header</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="react-responsive">react-responsive</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>npm<span class="w"> </span>install<span class="w"> </span>react-responsive
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked id="__tabbed_4_1" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Updated Code with Responsiveness</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"antd"</span><span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">Header</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./Header"</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">Sidebar</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./Sidebar"</span><span class="p">;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useMediaQuery</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react-responsive"</span><span class="p">;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Content</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Layout</span><span class="p">;</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">MainLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">children</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="c1">// State for sidebar collapse</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">collapsed</span><span class="p">,</span><span class="w"> </span><span class="nx">setCollapsed</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">    </span><span class="c1">// Set sidebar width based on collapse state</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">sidebarWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">collapsed</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mf">80</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mf">240</span><span class="p">;</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">    </span><span class="c1">// Use media query to check if the screen is small</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">isSmallScreen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useMediaQuery</span><span class="p">({</span><span class="w"> </span><span class="nx">maxWidth</span><span class="o">:</span><span class="w"> </span><span class="mf">768</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">    </span><span class="c1">// Automatically collapse sidebar on small screens</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">isSmallScreen</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="nx">collapsed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">        </span><span class="nx">setCollapsed</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">    </span><span class="c1">// Calculate content width based on sidebar state</span>
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">contentWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`calc(100% - </span><span class="si">${</span><span class="nx">sidebarWidth</span><span class="si">}</span><span class="sb">px)`</span><span class="p">;</span>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="w">        </span><span class="p">&lt;</span><span class="nt">Layout</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">minHeight</span><span class="o">:</span><span class="w"> </span><span class="s2">"100vh"</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">Header</span><span class="w"> </span><span class="na">collapsed</span><span class="o">=</span><span class="p">{</span><span class="nx">collapsed</span><span class="p">}</span><span class="w"> </span><span class="na">setCollapsed</span><span class="o">=</span><span class="p">{</span><span class="nx">setCollapsed</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="w">            </span><span class="p">&lt;</span><span class="nt">Layout</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">display</span><span class="o">:</span><span class="w"> </span><span class="s2">"flex"</span><span class="w"> </span><span class="p">}}&gt;</span>
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">Sidebar</span><span class="w"> </span><span class="na">collapsed</span><span class="o">=</span><span class="p">{</span><span class="nx">collapsed</span><span class="p">}</span><span class="w"> </span><span class="na">width</span><span class="o">=</span><span class="p">{</span><span class="nx">sidebarWidth</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="w">                </span><span class="p">&lt;</span><span class="nt">Content</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="nx">contentWidth</span><span class="w"> </span><span class="p">}}&gt;{</span><span class="nx">children</span><span class="p">}&lt;/</span><span class="nt">Content</span><span class="p">&gt;</span>
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a><span class="w">            </span><span class="p">&lt;/</span><span class="nt">Layout</span><span class="p">&gt;</span>
+</span><span id="__span-8-34"><a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a><span class="w">        </span><span class="p">&lt;/</span><span class="nt">Layout</span><span class="p">&gt;</span>
+</span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="w">    </span><span class="p">);</span>
+</span><span id="__span-8-36"><a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a><span class="p">};</span>
+</span><span id="__span-8-37"><a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>
+</span><span id="__span-8-38"><a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">MainLayout</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<hr>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// 1. Use effect to update sidebar collapse state based on screen size</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">isSmallScreen</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="nx">collapsed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="nx">setCollapsed</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Collapse sidebar on small screens</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">isSmallScreen</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">collapsed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="nx">setCollapsed</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="w"> </span><span class="c1">// Expand sidebar on large screens</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">isSmallScreen</span><span class="p">,</span><span class="w"> </span><span class="nx">collapsed</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Trigger effect on screen size change</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c1">// 2. Automatically collapse sidebar on small screens, but allow manual toggle on large screens</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">isSmallScreen</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span><span class="nx">setCollapsed</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Collapse sidebar on small screens</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="c1">// Don't override user's manual collapse state on large screens</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span><span class="nx">setCollapsed</span><span class="p">((</span><span class="nx">prev</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">prev</span><span class="p">);</span><span class="w"> </span><span class="c1">// Keep the previous state intact</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">isSmallScreen</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Trigger this effect only when the screen size changes</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="c1">// 3. Automatically collapse sidebar on small screens, but allow manual toggle on large screens</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">isSmallScreen</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">    </span><span class="nx">setCollapsed</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Collapse sidebar on small screens</span>
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="w">    </span><span class="nx">setCollapsed</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="w"> </span><span class="c1">// Expand sidebar on larger screens</span>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">isSmallScreen</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Trigger this effect only when the screen size changes</span>
+</span></code></pre></div>
+<hr>
+<h2 id="reference">Reference</h2>
 <ul>
-<li>Logging of actions and state changes.</li>
-<li>Error handling for actions (e.g., capturing errors from API calls).</li>
-<li>Conditional action dispatching (e.g., delaying actions based on certain criteria).</li>
-<li>Analytics tracking to log user interactions with your app.</li>
-</ul>
-<h3 id="4-what-if-you-do-not-use-it">4. What If You Do Not Use It:</h3>
-<ul>
-<li>If you don't add custom middleware, your Redux store will still function with the default middleware (like thunk), but you lose the extra capabilities that custom middleware provides.</li>
-<li>You might miss out on useful features like action logging, error handling, or other custom side effects that could enhance the user experience or simplify debugging.</li>
-</ul>
-<h3 id="summary_1">Summary:</h3>
-<p>Custom middleware extends the functionality of Redux, enabling you to intercept and manipulate actions, perform side effects, and implement features that go beyond simple state management. While not strictly necessary for every application, it can be very helpful for logging, debugging, and handling complex asynchronous logic. If omitted, your application will still work with the default middleware, but you might miss out on valuable insights and features.</p></div>
+<li><a href="https://www.browserstack.com/guide/how-to-make-react-app-responsive">Responsive websites with React-Responsive</a></li>
+<li><a href="https://medium.com/@jadencook.us/building-a-responsive-design-in-react-best-practices-for-creating-a-responsive-design-that-looks-72c11d0854fd">Use React Responsive Libraries</a></li>
+<li><a href="https://medium.com/@r.sipchenko/rtk-query-for-beginners-a82ab7188324">RTK Query For Beginners</a></li>
+</ul></div>
 
 
 
@@ -9801,20 +9786,15 @@
 
 
 
-  
-  
 
 
 
 
-  
 
-
-
-      
-    </article>
-  </div>
-
+                
+              </article>
+            </div>
+          
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -9831,12 +9811,10 @@
   
     
       
-        
-      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../19/do-we-need-to-install-redux-thunk-separately-when-using-redux-toolkit/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Do we need to install redux-thunk separately when using Redux Toolkit">
+          <a href="../importing-file/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Importing File">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -9846,27 +9824,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Do we need to install redux-thunk separately when using Redux Toolkit
+                Importing File
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../../21/combine-slices-in-a-feature-folder/" class="md-footer__link md-footer__link--next" aria-label="Next: Combine Slices in a Feature Folder">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Combine Slices in a Feature Folder
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -9914,10 +9876,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
