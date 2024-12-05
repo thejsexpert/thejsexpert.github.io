@@ -1199,6 +1199,65 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../js/function/pure-and-impure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pure & Impure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_4" id="__nav_2_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Arrow
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Arrow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../js/function/arrow-function/" class="md-nav__link">
         
   
@@ -1234,6 +1293,52 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_5" id="__nav_2_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -1241,15 +1346,44 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/advanced-concept/" class="md-nav__link">
+      <a href="../../../js/function/advanced/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Advanced
+    Concept
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../js/function/advanced/function-categories/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function Categories
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -9717,21 +9851,13 @@
 <ol>
 <li>
 <p><strong>Implicit Return</strong>: In JSX, the return of the JSX element is implicit. When you write JSX directly inside a function body like this:</p>
-<div class="language-text highlight"><pre><span></span><code>  ```tsx
-  const App: React.FC = () =&gt; (
-      &lt;Form&gt;...&lt;/Form&gt;
-  );
-  ```
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>const App: React.FC = () =&gt; &lt;Form&gt;...&lt;/Form&gt;;
+</span></code></pre></div>
 <p>It's equivalent to:</p>
-<div class="language-text highlight"><pre><span></span><code>  ```tsx
-  const App: React.FC = () =&gt; {
-    return (
-        &lt;Form&gt;...&lt;/Form&gt;
-    );
-  };
-  ```
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>const App: React.FC = () =&gt; {
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  return &lt;Form&gt;...&lt;/Form&gt;;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>};
+</span></code></pre></div>
 <p>The parentheses <code>()</code> after the arrow function indicate an implicit return of JSX (the <code>Form</code> component in this case). This shorthand is common in React components.</p>
 </li>
 <li>
