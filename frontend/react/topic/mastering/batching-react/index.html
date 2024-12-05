@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/topic/component-re-rendering/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/react/topic/mastering/batching-react/">
       
       
-        <link rel="prev" href="../abort-controller-solved/">
+        <link rel="prev" href="../shallow-comparison/">
       
       
-        <link rel="next" href="../one-most-important-in-react/">
+        <link rel="next" href="../batching-stale-state/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>Component Re-rendering Deep - My Docs</title>
+        <title>Batching - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -63,7 +63,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -91,7 +91,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Component Re-rendering Deep
+              Batching
             
           </span>
         </div>
@@ -176,7 +176,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../blog/" class="md-tabs__link">
+        <a href="../../../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -194,7 +194,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../js/intro/" class="md-tabs__link">
+        <a href="../../../../js/intro/" class="md-tabs__link">
           
   
   JS
@@ -212,7 +212,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../package/intro/" class="md-tabs__link">
+        <a href="../../../../package/intro/" class="md-tabs__link">
           
   
   Package
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../philosophy/" class="md-tabs__link">
+        <a href="../../../philosophy/" class="md-tabs__link">
           
   
   React
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../router/intro/" class="md-tabs__link">
+        <a href="../../../../router/intro/" class="md-tabs__link">
           
   
   Router
@@ -268,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../state-management/intro/" class="md-tabs__link">
+        <a href="../../../../state-management/intro/" class="md-tabs__link">
           
   
   State
@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../typescript/typescript-installation/" class="md-tabs__link">
+        <a href="../../../../typescript/typescript-installation/" class="md-tabs__link">
           
   
   Typescript
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../interview/intro/" class="md-tabs__link">
+        <a href="../../../../../interview/intro/" class="md-tabs__link">
           
   
   Interview
@@ -343,7 +343,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../../../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -401,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/" class="md-nav__link">
+      <a href="../../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -462,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -536,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/intro/" class="md-nav__link">
+      <a href="../../../../js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/prototype/" class="md-nav__link">
+      <a href="../../../../js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../../../js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../../../js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/object/" class="md-nav__link">
+      <a href="../../../../js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -679,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/array/" class="md-nav__link">
+      <a href="../../../../js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/control-statement/" class="md-nav__link">
+      <a href="../../../../js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -767,7 +767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../../js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/callback/" class="md-nav__link">
+      <a href="../../../../js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -809,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/closure/" class="md-nav__link">
+      <a href="../../../../js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -830,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/high-order-function/" class="md-nav__link">
+      <a href="../../../../js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -851,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/topic/" class="md-nav__link">
+      <a href="../../../../js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -939,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../../js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -960,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/serialization/" class="md-nav__link">
+      <a href="../../../../js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -981,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../../js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1002,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/promise/" class="md-nav__link">
+      <a href="../../../../js/advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1069,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/datatypes/intro/" class="md-nav__link">
+      <a href="../../../../js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1090,7 +1090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../../../js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1157,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/intro/" class="md-nav__link">
+      <a href="../../../../js/function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1178,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/types/" class="md-nav__link">
+      <a href="../../../../js/function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1199,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/arrow-function/" class="md-nav__link">
+      <a href="../../../../js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1220,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/arrow-example/" class="md-nav__link">
+      <a href="../../../../js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1241,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/advanced-concept/" class="md-nav__link">
+      <a href="../../../../js/function/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1346,7 +1346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1367,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1442,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/intro/" class="md-nav__link">
+      <a href="../../../../js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1463,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1522,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/overview/" class="md-nav__link">
+      <a href="../../../../js/httprequest/core/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1543,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../../../js/httprequest/core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1564,7 +1564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1585,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../../../js/httprequest/core/chaining/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1606,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../../../js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1627,7 +1627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/axios/" class="md-nav__link">
+      <a href="../../../../js/httprequest/core/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1694,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/overview/" class="md-nav__link">
+      <a href="../../../../js/httprequest/example/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1715,7 +1715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/useReducer/" class="md-nav__link">
+      <a href="../../../../js/httprequest/example/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1736,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1757,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1778,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
+      <a href="../../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1799,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
+      <a href="../../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1874,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/designpattern/intro/" class="md-nav__link">
+      <a href="../../../../js/designpattern/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1895,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/designpattern/daily/" class="md-nav__link">
+      <a href="../../../../js/designpattern/daily/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1916,7 +1916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/designpattern/js/" class="md-nav__link">
+      <a href="../../../../js/designpattern/js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1937,7 +1937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/designpattern/react/" class="md-nav__link">
+      <a href="../../../../js/designpattern/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1958,7 +1958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/designpattern/mnemonic/" class="md-nav__link">
+      <a href="../../../../js/designpattern/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2025,7 +2025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/json/intro/" class="md-nav__link">
+      <a href="../../../../js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2046,7 +2046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/json/json5/" class="md-nav__link">
+      <a href="../../../../js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2113,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../../js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2134,7 +2134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../../js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2155,7 +2155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../../js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2176,7 +2176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2197,7 +2197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2264,7 +2264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../../js/tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2323,7 +2323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/eslint/intro/" class="md-nav__link">
+      <a href="../../../../js/tools/eslint/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2390,7 +2390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/vite/intro/" class="md-nav__link">
+      <a href="../../../../js/tools/vite/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2411,7 +2411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/vite/under-the-hood/" class="md-nav__link">
+      <a href="../../../../js/tools/vite/under-the-hood/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2432,7 +2432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/vite/mode/" class="md-nav__link">
+      <a href="../../../../js/tools/vite/mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2453,7 +2453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/vite/example/" class="md-nav__link">
+      <a href="../../../../js/tools/vite/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2474,7 +2474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/vite/proxy/" class="md-nav__link">
+      <a href="../../../../js/tools/vite/proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2541,7 +2541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/npm/intro/" class="md-nav__link">
+      <a href="../../../../js/tools/npm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2562,7 +2562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/npm/example/" class="md-nav__link">
+      <a href="../../../../js/tools/npm/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2629,7 +2629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/yarn/intro/" class="md-nav__link">
+      <a href="../../../../js/tools/yarn/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2696,7 +2696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/pnpm/intro/" class="md-nav__link">
+      <a href="../../../../js/tools/pnpm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2717,7 +2717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/tools/pnpm/advanced/" class="md-nav__link">
+      <a href="../../../../js/tools/pnpm/advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2799,7 +2799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/intro/" class="md-nav__link">
+      <a href="../../../../package/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2820,7 +2820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/barrel/" class="md-nav__link">
+      <a href="../../../../package/barrel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2879,7 +2879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/" class="md-nav__link">
+      <a href="../../../../package/antd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2900,7 +2900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/topic/" class="md-nav__link">
+      <a href="../../../../package/antd/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2921,7 +2921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/controlled-components/" class="md-nav__link">
+      <a href="../../../../package/antd/controlled-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2942,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/antd-render-func/" class="md-nav__link">
+      <a href="../../../../package/antd/antd-render-func/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2963,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/twoTone-color/" class="md-nav__link">
+      <a href="../../../../package/antd/twoTone-color/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2984,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/antd-configprovider/" class="md-nav__link">
+      <a href="../../../../package/antd/antd-configprovider/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3043,7 +3043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/sidebar/intro/" class="md-nav__link">
+      <a href="../../../../package/antd/sidebar/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3110,7 +3110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/form/intro/" class="md-nav__link">
+      <a href="../../../../package/antd/form/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3131,7 +3131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/form/antd-form/" class="md-nav__link">
+      <a href="../../../../package/antd/form/antd-form/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3152,7 +3152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/form/antd-form-validator/" class="md-nav__link">
+      <a href="../../../../package/antd/form/antd-form-validator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3173,7 +3173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/form/form-crud/" class="md-nav__link">
+      <a href="../../../../package/antd/form/form-crud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3240,7 +3240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/antd/table/filters/" class="md-nav__link">
+      <a href="../../../../package/antd/table/filters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3315,7 +3315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/tinymce/tinymce/" class="md-nav__link">
+      <a href="../../../../package/tinymce/tinymce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3382,7 +3382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/lodash/debounce/" class="md-nav__link">
+      <a href="../../../../package/lodash/debounce/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3449,7 +3449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/axios/intro/" class="md-nav__link">
+      <a href="../../../../package/axios/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3470,7 +3470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/axios/topic/" class="md-nav__link">
+      <a href="../../../../package/axios/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3491,7 +3491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/axios/sentry/" class="md-nav__link">
+      <a href="../../../../package/axios/sentry/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3512,7 +3512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/axios/axios-interceptors/" class="md-nav__link">
+      <a href="../../../../package/axios/axios-interceptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3579,7 +3579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/react-infinite-scroll-component/" class="md-nav__link">
+      <a href="../../../../package/react-infinite-scroll-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3600,7 +3600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/react-infinite-scroll-component/resuable/" class="md-nav__link">
+      <a href="../../../../package/react-infinite-scroll-component/resuable/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3667,7 +3667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/composition/intro/" class="md-nav__link">
+      <a href="../../../../package/composition/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3688,7 +3688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/composition/imagegallery/" class="md-nav__link">
+      <a href="../../../../package/composition/imagegallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3755,7 +3755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/intro/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3776,7 +3776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/logging-libraries/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/logging-libraries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3835,7 +3835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/pino/intro/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/pino/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3856,7 +3856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/pino/send-to-api/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/pino/send-to-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3877,7 +3877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/pino/example/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/pino/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3898,7 +3898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/pino/simple-usage/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/pino/simple-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3919,7 +3919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/pino/methods/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/pino/methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3940,7 +3940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../package/monitoring-and-logging/pino/notes/" class="md-nav__link">
+      <a href="../../../../package/monitoring-and-logging/pino/notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4027,7 +4027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../philosophy/" class="md-nav__link">
+      <a href="../../../philosophy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4086,7 +4086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/intro/" class="md-nav__link">
+      <a href="../../../core/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4107,7 +4107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/guides/" class="md-nav__link">
+      <a href="../../../core/basic/guides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4166,7 +4166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/pattern/react-pattern-intro/" class="md-nav__link">
+      <a href="../../../core/pattern/react-pattern-intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4187,7 +4187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/pattern/compound-pattern/" class="md-nav__link">
+      <a href="../../../core/pattern/compound-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4208,7 +4208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/pattern/hoc-pattern/" class="md-nav__link">
+      <a href="../../../core/pattern/hoc-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4229,7 +4229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/pattern/function-as-child/" class="md-nav__link">
+      <a href="../../../core/pattern/function-as-child/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4250,7 +4250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/pattern/container-presentational-patterns/" class="md-nav__link">
+      <a href="../../../core/pattern/container-presentational-patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4271,7 +4271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/pattern/antipattern/" class="md-nav__link">
+      <a href="../../../core/pattern/antipattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4292,7 +4292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/pattern/misc/" class="md-nav__link">
+      <a href="../../../core/pattern/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4359,7 +4359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/useEffect-technique/" class="md-nav__link">
+      <a href="../../../core/basic/useEffect-technique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4380,7 +4380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/useEffect-technique-used/" class="md-nav__link">
+      <a href="../../../core/basic/useEffect-technique-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4401,7 +4401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/useEffect-cleanup/" class="md-nav__link">
+      <a href="../../../core/basic/useEffect-cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4422,7 +4422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/useCallback/" class="md-nav__link">
+      <a href="../../../core/basic/useCallback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4443,7 +4443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/useRef/" class="md-nav__link">
+      <a href="../../../core/basic/useRef/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4464,7 +4464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/react-context-api/" class="md-nav__link">
+      <a href="../../../core/basic/react-context-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4485,7 +4485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/react-router/" class="md-nav__link">
+      <a href="../../../core/basic/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4506,7 +4506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/basic/migrating-cra-vite/" class="md-nav__link">
+      <a href="../../../core/basic/migrating-cra-vite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4573,7 +4573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/router/intro/" class="md-nav__link">
+      <a href="../../../core/router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4678,7 +4678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/auth-example/login/react-login/" class="md-nav__link">
+      <a href="../../../core/auth-example/login/react-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4745,7 +4745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/auth-example/react-without-redux/intro/" class="md-nav__link">
+      <a href="../../../core/auth-example/react-without-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4828,7 +4828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fake-api/intro/" class="md-nav__link">
+      <a href="../../../fake-api/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4849,7 +4849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fake-api/json-server/" class="md-nav__link">
+      <a href="../../../fake-api/json-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4870,7 +4870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fake-api/msw/" class="md-nav__link">
+      <a href="../../../fake-api/msw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4891,7 +4891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fake-api/topic/" class="md-nav__link">
+      <a href="../../../fake-api/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4958,7 +4958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/passing-props/" class="md-nav__link">
+      <a href="../../../example/passing-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4979,7 +4979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/lifting-state-up/" class="md-nav__link">
+      <a href="../../../example/lifting-state-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5000,7 +5000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/prop-drilling/" class="md-nav__link">
+      <a href="../../../example/prop-drilling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5021,7 +5021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/children-prop/" class="md-nav__link">
+      <a href="../../../example/children-prop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5042,7 +5042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/component-composition/" class="md-nav__link">
+      <a href="../../../example/component-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5063,7 +5063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/hoc/" class="md-nav__link">
+      <a href="../../../example/hoc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5084,7 +5084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/render-props/" class="md-nav__link">
+      <a href="../../../example/render-props/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5105,7 +5105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/presentational-and-container/" class="md-nav__link">
+      <a href="../../../example/presentational-and-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5126,7 +5126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../example/breaking-react-component-pattern/" class="md-nav__link">
+      <a href="../../../example/breaking-react-component-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5193,7 +5193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/intro/" class="md-nav__link">
+      <a href="../../../testing/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5214,7 +5214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/jest/" class="md-nav__link">
+      <a href="../../../testing/jest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5235,7 +5235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/cypress/" class="md-nav__link">
+      <a href="../../../testing/cypress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5256,7 +5256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/measuring-optimization-tools/" class="md-nav__link">
+      <a href="../../../testing/measuring-optimization-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5315,7 +5315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/codereport/bugs/intro/" class="md-nav__link">
+      <a href="../../../testing/codereport/bugs/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5336,7 +5336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/codereport/bugs/solution/" class="md-nav__link">
+      <a href="../../../testing/codereport/bugs/solution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5357,7 +5357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/codereport/bugs/cleanup-function/" class="md-nav__link">
+      <a href="../../../testing/codereport/bugs/cleanup-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5378,7 +5378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/codereport/bugs/debouncing/" class="md-nav__link">
+      <a href="../../../testing/codereport/bugs/debouncing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5399,7 +5399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/codereport/bugs/master-topic/" class="md-nav__link">
+      <a href="../../../testing/codereport/bugs/master-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5474,7 +5474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../optimization/intro/" class="md-nav__link">
+      <a href="../../../optimization/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5495,7 +5495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../optimization/react-suspense/" class="md-nav__link">
+      <a href="../../../optimization/react-suspense/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5516,7 +5516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../optimization/code-splitting/" class="md-nav__link">
+      <a href="../../../optimization/code-splitting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5537,7 +5537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../optimization/error-boundaries/" class="md-nav__link">
+      <a href="../../../optimization/error-boundaries/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5558,7 +5558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../optimization/topic/" class="md-nav__link">
+      <a href="../../../optimization/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5624,6 +5624,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5633,11 +5635,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7_1" checked>
         
           
           <label class="md-nav__link" for="__nav_4_7_1" id="__nav_4_7_1_label" tabindex="0">
@@ -5651,7 +5653,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_7_1">
             <span class="md-nav__icon md-icon"></span>
             Mastering
@@ -5665,7 +5667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mastering/function-declaration-and-expression/" class="md-nav__link">
+      <a href="../function-declaration-and-expression/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5686,7 +5688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mastering/explainingothers/" class="md-nav__link">
+      <a href="../explainingothers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5707,7 +5709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mastering/hooks-mastering-topic/" class="md-nav__link">
+      <a href="../hooks-mastering-topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5721,52 +5723,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_7_2" id="__nav_4_7_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Hooks
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_7_2">
-            <span class="md-nav__icon md-icon"></span>
-            Hooks
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -5774,243 +5730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hooks/useReducer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    useReducer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hooks/useReducer-and-reducer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    useReducer & Reducer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hooks/useReducer-example/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    useReducer Example
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hooks/useReducer-with-api/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    useReducer with API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hooks/React.memo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    React.memo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hooks/React.memo-syntax/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    React.memo Syntax
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hooks/React.memo-vs-useMemo/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    React.memo vs useMemo
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../react-strict-mode/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Strict Mode
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../code-for-change/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Code For Change
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../abort-controller-solved/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Abort Controller Solved
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Component Re-rendering Deep
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../component-re-rendering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6019,138 +5739,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-virtual-dom-and-reconciliation" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Virtual DOM and Reconciliation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-component-re-renders" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Component Re-renders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-memoization-and-preventing-unnecessary-re-renders" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Memoization and Preventing Unnecessary Re-renders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-key-prop-in-lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Key Prop in Lists
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-state-and-prop-updates-are-batched" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. State and Prop Updates Are Batched
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-re-rendering-with-hooks" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Re-rendering with Hooks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-concurrent-mode-and-suspense" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Concurrent Mode and Suspense
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-fiber-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Fiber Architecture
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-updating-state-in-functional-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Updating State in Functional Components
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-event-handling-and-re-renders" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Event Handling and Re-renders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -6223,10 +5811,439 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Batching
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Batching
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-what-is-batching-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is Batching in React?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-why-is-batching-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Why is Batching Important?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-how-does-batching-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How Does Batching Work?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-when-does-batching-not-happen" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. When Does Batching Not Happen?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-why-is-batching-important-for-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Why is Batching Important for Performance?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-how-react-18-improved-batching" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. How React 18 Improved Batching:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-when-should-you-worry-about-batching" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. When Should You Worry About Batching?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-potential-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Potential Pitfalls:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../cleanup/" class="md-nav__link">
+      <a href="../batching-stale-state/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Batching Stale State
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7_2" id="__nav_4_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer-and-reducer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer & Reducer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/useReducer-with-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    useReducer with API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/React.memo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    React.memo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/React.memo-syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    React.memo Syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hooks/React.memo-vs-useMemo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    React.memo vs useMemo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../react-strict-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strict Mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code-for-change/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code For Change
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../abort-controller-solved/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abort Controller Solved
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6247,7 +6264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../slides/" class="md-nav__link">
+      <a href="../../slides/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6276,7 +6293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../handling-side-effects/" class="md-nav__link">
+      <a href="../../../handling-side-effects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6297,7 +6314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../folder-structure-pattern/" class="md-nav__link">
+      <a href="../../../folder-structure-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6318,7 +6335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../books/" class="md-nav__link">
+      <a href="../../../books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6384,7 +6401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/intro/" class="md-nav__link">
+      <a href="../../../../router/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6405,7 +6422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/types-of-router/" class="md-nav__link">
+      <a href="../../../../router/types-of-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6426,7 +6443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/types-of-access-control-routes/" class="md-nav__link">
+      <a href="../../../../router/types-of-access-control-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6485,7 +6502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/docs/router-version/" class="md-nav__link">
+      <a href="../../../../router/docs/router-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6506,7 +6523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/docs/react-router/" class="md-nav__link">
+      <a href="../../../../router/docs/react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6527,7 +6544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/docs/why-react-router/" class="md-nav__link">
+      <a href="../../../../router/docs/why-react-router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6548,7 +6565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/docs/not-found-component/" class="md-nav__link">
+      <a href="../../../../router/docs/not-found-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6569,7 +6586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/docs/routing/" class="md-nav__link">
+      <a href="../../../../router/docs/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6590,7 +6607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/docs/best-method-for-auth/" class="md-nav__link">
+      <a href="../../../../router/docs/best-method-for-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6611,7 +6628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/docs/auth-techniques/" class="md-nav__link">
+      <a href="../../../../router/docs/auth-techniques/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6678,7 +6695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/example/simple-login/" class="md-nav__link">
+      <a href="../../../../router/example/simple-login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6699,7 +6716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/example/context-auth/" class="md-nav__link">
+      <a href="../../../../router/example/context-auth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6766,7 +6783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../router/question/pervent-layout-flashing-v6/" class="md-nav__link">
+      <a href="../../../../router/question/pervent-layout-flashing-v6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6840,7 +6857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/intro/" class="md-nav__link">
+      <a href="../../../../state-management/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6899,7 +6916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6958,7 +6975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/folder-structure/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6979,7 +6996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/redux-pattern/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/redux-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7000,7 +7017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/redux-testing/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/redux-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7059,7 +7076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/action/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/action/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7126,7 +7143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/reducer/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7147,7 +7164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/reducer/example/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/reducer/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7168,7 +7185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/reducer/modular-reducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7189,7 +7206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/reducer/throw-new-error/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7256,7 +7273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/redux-middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7277,7 +7294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/redux-middleware/redux-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7298,7 +7315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
+      <a href="../../../../state-management/redux/core/redux-middleware/redux-saga/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7373,7 +7390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/standard-redux/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7440,7 +7457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7499,7 +7516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7520,7 +7537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/folder-structure/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/folder-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7541,7 +7558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/code-modularity/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/code-modularity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7562,7 +7579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/ultimate/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/ultimate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7621,7 +7638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/middleware/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/middleware/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7642,7 +7659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/middleware/setup/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/middleware/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7709,7 +7726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/example/example/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/example/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7738,7 +7755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/topic/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7797,7 +7814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/a.how-to-right-question/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/a.how-to-right-question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7818,7 +7835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/where-do-we-define-action/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/where-do-we-define-action/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7839,7 +7856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7860,7 +7877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7881,7 +7898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7902,7 +7919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7923,7 +7940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7944,7 +7961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8019,7 +8036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/query/intro/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/query/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8040,7 +8057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/query/react-architecture/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/query/react-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8061,7 +8078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/query/rtkadvanced/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/query/rtkadvanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8082,7 +8099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/query/topic/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/query/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8103,7 +8120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/query/mnemonic/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/query/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8124,7 +8141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/rtk/query/tools/" class="md-nav__link">
+      <a href="../../../../state-management/redux/rtk/query/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8169,7 +8186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/react-redux/" class="md-nav__link">
+      <a href="../../../../state-management/redux/react-redux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8228,7 +8245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/persist/redux-persist/" class="md-nav__link">
+      <a href="../../../../state-management/redux/persist/redux-persist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8249,7 +8266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/persist/example/" class="md-nav__link">
+      <a href="../../../../state-management/redux/persist/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8270,7 +8287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/persist/question/" class="md-nav__link">
+      <a href="../../../../state-management/redux/persist/question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8291,7 +8308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/persist/immer-example/" class="md-nav__link">
+      <a href="../../../../state-management/redux/persist/immer-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8312,7 +8329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/persist/redux-persist-purge/" class="md-nav__link">
+      <a href="../../../../state-management/redux/persist/redux-persist-purge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8333,7 +8350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/persist/redux-store-subscribe/" class="md-nav__link">
+      <a href="../../../../state-management/redux/persist/redux-store-subscribe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8354,7 +8371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/redux/persist/reduxtoolkit-and-rtkquery/" class="md-nav__link">
+      <a href="../../../../state-management/redux/persist/reduxtoolkit-and-rtkquery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8421,7 +8438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/mobx/intro/" class="md-nav__link">
+      <a href="../../../../state-management/mobx/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8488,7 +8505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/recoil/intro/" class="md-nav__link">
+      <a href="../../../../state-management/recoil/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8555,7 +8572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/middleware/" class="md-nav__link">
+      <a href="../../../../state-management/middleware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8622,7 +8639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/webstorage/intro/" class="md-nav__link">
+      <a href="../../../../state-management/webstorage/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8643,7 +8660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../state-management/webstorage/token/" class="md-nav__link">
+      <a href="../../../../state-management/webstorage/token/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8717,7 +8734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-installation/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8738,7 +8755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/typescript-compiler/" class="md-nav__link">
+      <a href="../../../../typescript/typescript-compiler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8759,7 +8776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/one-hour-ts/" class="md-nav__link">
+      <a href="../../../../typescript/one-hour-ts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8780,7 +8797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/core-concept/" class="md-nav__link">
+      <a href="../../../../typescript/core-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8839,7 +8856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/react-fc/intro/" class="md-nav__link">
+      <a href="../../../../typescript/react-fc/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8860,7 +8877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/react-fc/react-fc/" class="md-nav__link">
+      <a href="../../../../typescript/react-fc/react-fc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8881,7 +8898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../typescript/react-fc/example/" class="md-nav__link">
+      <a href="../../../../typescript/react-fc/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -8955,7 +8972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/intro/" class="md-nav__link">
+      <a href="../../../../../interview/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9014,7 +9031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/topic/best-approach-rtk/" class="md-nav__link">
+      <a href="../../../../../interview/topic/best-approach-rtk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9035,7 +9052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/topic/csr-sgr-ssr/" class="md-nav__link">
+      <a href="../../../../../interview/topic/csr-sgr-ssr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9056,7 +9073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/topic/postgress/" class="md-nav__link">
+      <a href="../../../../../interview/topic/postgress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9077,7 +9094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/topic/private-vs-protected/" class="md-nav__link">
+      <a href="../../../../../interview/topic/private-vs-protected/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9098,7 +9115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/topic/react-image-gallery/" class="md-nav__link">
+      <a href="../../../../../interview/topic/react-image-gallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9119,7 +9136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/topic/holy-grail/" class="md-nav__link">
+      <a href="../../../../../interview/topic/holy-grail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9186,7 +9203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/pwa/intro/" class="md-nav__link">
+      <a href="../../../../../interview/pwa/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9253,7 +9270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/storybook/intro/" class="md-nav__link">
+      <a href="../../../../../interview/storybook/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9320,7 +9337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/react/" class="md-nav__link">
+      <a href="../../../../../interview/others/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9341,7 +9358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/codesnap/" class="md-nav__link">
+      <a href="../../../../../interview/others/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9362,7 +9379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/micro-frontend/" class="md-nav__link">
+      <a href="../../../../../interview/others/micro-frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9383,7 +9400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/api/" class="md-nav__link">
+      <a href="../../../../../interview/others/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9404,7 +9421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/http-response/" class="md-nav__link">
+      <a href="../../../../../interview/others/http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9425,7 +9442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/http-request/" class="md-nav__link">
+      <a href="../../../../../interview/others/http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9446,7 +9463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../../../../../interview/others/asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9467,7 +9484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/performance-optimization/" class="md-nav__link">
+      <a href="../../../../../interview/others/performance-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9488,7 +9505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/bff/" class="md-nav__link">
+      <a href="../../../../../interview/others/bff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9509,7 +9526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/bff-question/" class="md-nav__link">
+      <a href="../../../../../interview/others/bff-question/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9530,7 +9547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/app-ideas/" class="md-nav__link">
+      <a href="../../../../../interview/others/app-ideas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9551,7 +9568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/jwt/" class="md-nav__link">
+      <a href="../../../../../interview/others/jwt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9572,7 +9589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/importing-file/" class="md-nav__link">
+      <a href="../../../../../interview/others/importing-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9593,7 +9610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../interview/others/improved-code/" class="md-nav__link">
+      <a href="../../../../../interview/others/improved-code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -9657,99 +9674,72 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-virtual-dom-and-reconciliation" class="md-nav__link">
+  <a href="#1-what-is-batching-in-react" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Virtual DOM and Reconciliation
+      1. What is Batching in React?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-component-re-renders" class="md-nav__link">
+  <a href="#2-why-is-batching-important" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Component Re-renders
+      2. Why is Batching Important?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-memoization-and-preventing-unnecessary-re-renders" class="md-nav__link">
+  <a href="#3-how-does-batching-work" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Memoization and Preventing Unnecessary Re-renders
+      3. How Does Batching Work?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-key-prop-in-lists" class="md-nav__link">
+  <a href="#4-when-does-batching-not-happen" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Key Prop in Lists
+      4. When Does Batching Not Happen?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-state-and-prop-updates-are-batched" class="md-nav__link">
+  <a href="#5-why-is-batching-important-for-performance" class="md-nav__link">
     <span class="md-ellipsis">
-      5. State and Prop Updates Are Batched
+      5. Why is Batching Important for Performance?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-re-rendering-with-hooks" class="md-nav__link">
+  <a href="#6-how-react-18-improved-batching" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Re-rendering with Hooks
+      6. How React 18 Improved Batching:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-concurrent-mode-and-suspense" class="md-nav__link">
+  <a href="#7-when-should-you-worry-about-batching" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Concurrent Mode and Suspense
+      7. When Should You Worry About Batching?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-fiber-architecture" class="md-nav__link">
+  <a href="#8-potential-pitfalls" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Fiber Architecture
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-updating-state-in-functional-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Updating State in Functional Components
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-event-handling-and-re-renders" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Event Handling and Re-renders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
+      8. Potential Pitfalls:
     </span>
   </a>
   
@@ -9775,104 +9765,102 @@
                   
 
 
-  <h1>Component Re-rendering Deep</h1>
+  <h1>Batching</h1>
 
 <div><h2 id="overview">Overview</h2>
-<p>A deep understanding of React's rendering mechanics is crucial for optimizing performance and avoiding common pitfalls when building React applications. Here's an overview of the key concepts involved:</p>
-<h3 id="1-virtual-dom-and-reconciliation">1. Virtual DOM and Reconciliation</h3>
+<p>Understanding batching in React is important because it directly affects performance and the behavior of state updates. Here's a breakdown of what you need to understand about batching:</p>
+<h3 id="1-what-is-batching-in-react">1. What is Batching in React?</h3>
+<p>Batching in React refers to the grouping of multiple state updates together so that React can process them all at once and trigger a single re-render of the component. Without batching, React would re-render after each state update, which could be inefficient, especially if many updates happen in a short period.</p>
+<h3 id="2-why-is-batching-important">2. Why is Batching Important?</h3>
+<ul>
+<li><strong>Performance</strong>: By grouping state updates, React avoids unnecessary re-renders, which improves performance, especially in complex components or large applications.</li>
+<li><strong>Consistency</strong>: Batching ensures that all state updates happen before React re-renders the component. This ensures that the UI is updated consistently, reflecting all the changes made to the state in one go.</li>
+</ul>
+<h3 id="3-how-does-batching-work">3. How Does Batching Work?</h3>
+<ul>
+<li><strong>Synchronous Updates</strong>: In React, state updates are batched when triggered from <mark>synchronous event handlers</mark> (like <code>onClick</code>, <code>onChange</code>, etc.). This means if you call <code>setState</code> multiple times in a single function, React will <strong>batch</strong> those updates and <code>re-render only once</code>.</li>
+</ul>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 1st update</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">setText</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2nd update</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">setVisible</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// 3rd update</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="c1">// React batches these 3 updates and re-renders only once</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">};</span>
+</span></code></pre></div>
 <ul>
 <li>
-<p><strong>Virtual DOM</strong>: React uses a Virtual DOM to optimize the process of updating the real DOM. When the state or props of a component change, React doesn’t immediately change the actual DOM. Instead, it creates a virtual representation (a "diff") of the updated DOM, compares it with the previous one, and then updates only the parts that have changed.</p>
+<p><strong>Asynchronous Updates (React 18+)</strong>: Starting with <code>React 18</code>, React also batches updates that occur in asynchronous operations, such as:</p>
 </li>
 <li>
-<p><strong>Reconciliation</strong>: This is the process by which React updates the DOM based on the differences between the old and new Virtual DOM. React uses an efficient algorithm called "diffing" to minimize the number of DOM updates.</p>
+<p>Promises</p>
 </li>
+<li><code>setTimeout</code></li>
+<li><code>async</code> functions</li>
 </ul>
-<p>The diffing algorithm has certain assumptions:</p>
+<p>Before React 18, batching only worked in synchronous events. React 18 extends this feature to include async code, so multiple updates in async code also result in just one re-render.</p>
+<div class="language-jsx highlight"><span class="filename">Example (React 18+)</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleAsyncUpdate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 1st update</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">fetchData</span><span class="p">();</span><span class="w"> </span><span class="c1">// Async operation</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nx">setText</span><span class="p">(</span><span class="s2">"Updated"</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2nd update after async operation</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="c1">// React batches both updates and re-renders once</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">};</span>
+</span></code></pre></div>
+<h3 id="4-when-does-batching-not-happen">4. When Does Batching Not Happen?</h3>
+<p>There are some cases where React does not batch updates:</p>
 <ul>
-<li>It assumes components with the same type will generate the same subtree.</li>
-<li>It compares the component trees efficiently, only updating what is necessary, using keys in lists to optimize the process.</li>
+<li><strong>Outside React event handlers</strong>: If you trigger a state update outside of a React event handler (e.g., in a <code>callback</code> function from a third-party library or non-React event), React doesn't batch updates by default.</li>
 </ul>
-<h3 id="2-component-re-renders">2. Component Re-renders</h3>
-<details class="question" open="open">
-<summary>When Does React Re-render Components?</summary>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// React will NOT batch this update</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nx">setText</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">);</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+</span></code></pre></div>
+<p>However, starting with <strong>React 18</strong>, asynchronous updates inside <code>setTimeout</code>, <code>Promise</code>, and <code>async</code> functions are batched.</p>
 <ul>
-<li><strong>State Changes</strong>: When a component’s state (<code>useState</code>) changes, React re-renders that component and its children.</li>
-<li><strong>Props Changes</strong>: If a component’s props change (i.e., the parent component passes new values), React will re-render that child component.</li>
-<li><strong>Context Changes</strong>: If the value passed through a React Context provider changes, any components consuming that context will re-render.</li>
+<li><strong>State updates inside a loop</strong>: While React will batch state updates inside loops if those updates are in a single event handler or function, if you make asynchronous or out-of-scope updates within loops, batching may not work as expected.</li>
 </ul>
-</details>
-<p>This re-rendering behavior is designed for correctness, but it can lead to performance issues if not managed properly, particularly in large applications with complex component trees.</p>
-<h3 id="3-memoization-and-preventing-unnecessary-re-renders">3. Memoization and Preventing Unnecessary Re-renders</h3>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">setState</span><span class="p">(</span><span class="nx">newValue</span><span class="p">);</span><span class="w"> </span><span class="c1">// React batches all state updates in this loop</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="5-why-is-batching-important-for-performance">5. Why is Batching Important for Performance?</h3>
+<p>Batching helps minimize the number of re-renders in your React components:</p>
 <ul>
-<li><strong>Pure Components</strong>: A pure component is one that only re-renders when its props or state change. React provides <code>React.memo</code> (for functional components) and <code>PureComponent</code> (for class components) to automatically implement <mark>shallow comparison</mark> of props and prevent unnecessary re-renders.</li>
+<li><strong>Reducing reflows and repaints in the DOM</strong>: Every time React re-renders a component, it may cause the browser to recalculate styles, layout, and re-render parts of the page. Reducing the number of re-renders improves the app’s overall speed and responsiveness.</li>
+<li><strong>Fewer computational resources</strong>: By reducing unnecessary renders, you also reduce the computational resources required to update the UI.</li>
 </ul>
-<p><strong>useMemo and useCallback Hooks:</strong></p>
+<h3 id="6-how-react-18-improved-batching">6. How React 18 Improved Batching:</h3>
+<p>Before React 18, batching was limited to <strong>synchronous code</strong>. With React 18, batching now works even in <strong>asynchronous code</strong> (such as in <code>async</code> functions, <code>promises</code>, or <code>setTimeout</code>).</p>
+<div class="language-jsx highlight"><span class="filename">For example, with React 18:</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">handleClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">someAsyncOperation</span><span class="p">();</span><span class="w"> </span><span class="c1">// Async operation</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nx">setText</span><span class="p">(</span><span class="s2">"Updated"</span><span class="p">);</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="c1">// React batches both updates and triggers only one re-render</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>In React 18, even though <code>setCounter</code> is called before <code>await</code>, and <code>setText</code> is called <code>after</code> the async operation completes, both state updates are batched together and result in only one re-render.</p>
+<h3 id="7-when-should-you-worry-about-batching">7. When Should You Worry About Batching?</h3>
+<p>In most cases, React's built-in batching will take care of performance optimizations automatically. However, if you notice performance issues, such as frequent re-renders in large applications, or if you're managing complex state updates, you might need to:</p>
 <ul>
-<li>
-<p><code>useMemo</code>: Used to memoize expensive calculations and avoid recalculating them on every render.</p>
-</li>
-<li>
-<p><code>useCallback</code>: Used to memoize functions to ensure that functions aren't recreated on every render unless their dependencies change.</p>
-</li>
-<li>
-<p><strong>Shallow Comparison</strong>: React performs a shallow comparison of props and state. If the object references remain the same, React assumes the component’s data hasn’t changed, and therefore, no re-render is necessary. However, this can cause issues when working with mutable objects like arrays and objects, as React might not detect changes if the reference hasn’t changed.</p>
-</li>
+<li>Optimize how you structure state updates.</li>
+<li>Avoid unnecessary state updates inside loops or async operations that might prevent batching from working properly.</li>
+<li>Use <code>useCallback</code> or <code>useMemo</code> to prevent unnecessary re-renders caused by props or state changes in child components.</li>
 </ul>
-<h3 id="4-key-prop-in-lists">4. Key Prop in Lists</h3>
+<h3 id="8-potential-pitfalls">8. Potential Pitfalls:</h3>
 <ul>
-<li>The <code>key</code> prop is essential when rendering lists in React. React uses keys to identify which items have changed, been added, or removed, which helps optimize the reconciliation process. Without proper keys, React may fail to efficiently update the list, leading to performance issues and unexpected behaviors.</li>
+<li><strong>Stale state in batch updates</strong>: When using batching, if you rely on the current state to compute the next state, ensure you are correctly using the functional form of <code>setState</code> to avoid stale state.</li>
 </ul>
-<h3 id="5-state-and-prop-updates-are-batched">5. State and Prop Updates Are Batched</h3>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">setCounter</span><span class="p">((</span><span class="nx">prev</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">prev</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Correct: Using functional form</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">setCounter</span><span class="p">(</span><span class="nx">counter</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Potential issue: may use stale state</span>
+</span></code></pre></div>
+<p><strong>Summary:</strong></p>
 <ul>
-<li>
-<p><strong>Batching</strong>: React batches multiple state updates together for performance optimization. This means that when you call multiple <code>setState</code> or state-updating functions, React groups these updates and processes them in a single re-render cycle.</p>
-</li>
-<li>
-<p>However, state updates may still cause multiple renders if they happen in different event handlers (or in different life cycle methods for class components). React batches updates in event handlers, but not in asynchronous callbacks (e.g., <code>setTimeout</code>, <code>Promises</code>).</p>
-</li>
+<li><strong>Batching</strong> is React's way of grouping multiple state updates to minimize re-renders and improve performance.</li>
+<li>React <strong>batches updates</strong> during synchronous event handlers and async operations (from React 18 onwards).</li>
+<li>Understanding when batching occurs and when it doesn't is important to ensure you're writing efficient, performant React components.</li>
+<li>React 18 extends batching capabilities, including asynchronous state updates, for better performance optimization in modern React apps.</li>
 </ul>
-<h3 id="6-re-rendering-with-hooks">6. Re-rendering with Hooks</h3>
-<ul>
-<li>
-<p>Hooks like <code>useState</code>, <code>useEffect</code>, <code>useReducer</code>, and <code>useContext</code> can cause components to re-render when state or context values change. However, React doesn’t automatically re-render a component for every hook call, and this can sometimes be confusing:</p>
-</li>
-<li>
-<p><code>useEffect</code>: The <code>useEffect</code> hook runs after a render, and its behavior can be controlled by its dependency array. This allows for fine-grained control over when side effects are executed and can help avoid unnecessary re-renders.</p>
-</li>
-<li>
-<p><code>useReducer</code>: This hook can be used to manage complex state logic and helps avoid excessive re-renders by keeping state updates in a single dispatch cycle.</p>
-</li>
-</ul>
-<p>Understanding how each hook causes re-renders (and under what conditions) is crucial for efficient performance.</p>
-<h3 id="7-concurrent-mode-and-suspense">7. Concurrent Mode and Suspense</h3>
-<ul>
-<li>
-<p><strong>Concurrent Mode</strong> is an experimental feature in React designed to make rendering more responsive by allowing React to pause work and come back to it later. This feature is particularly helpful in large applications with complex UIs, as it prevents the UI from becoming unresponsive during heavy computations.</p>
-</li>
-<li>
-<p><strong>Suspense</strong>: Suspense allows React to delay rendering a part of the UI until some condition is met (e.g., waiting for data to load). It is often used with React.lazy for code-splitting, where large components are loaded only when necessary.</p>
-</li>
-</ul>
-<h3 id="8-fiber-architecture">8. Fiber Architecture</h3>
-<ul>
-<li>
-<p>React Fiber is the reimplementation of React's core algorithm. It enables asynchronous rendering, which allows React to pause work and come back to it later, improving the performance of complex applications.</p>
-</li>
-<li>
-<p>Fiber allows React to prioritize updates based on their importance. For instance, a user interaction might take priority over less critical updates (like an animation).</p>
-</li>
-</ul>
-<h3 id="9-updating-state-in-functional-components">9. Updating State in Functional Components</h3>
-<ul>
-<li>When you call <code>setState</code> (in class components) or the <code>useState</code> hook (in functional components), React schedules a re-render. However, due to batching, the state update might not be applied immediately. This can lead to unexpected results if you try to use the updated state value immediately after calling <code>setState</code>. Instead, React applies the new state in the next render cycle.</li>
-</ul>
-<h3 id="10-event-handling-and-re-renders">10. Event Handling and Re-renders</h3>
-<ul>
-<li>React’s synthetic event system can impact re-render behavior. When an event handler is triggered, React may update the component state or props, which causes the component to re-render. It’s important to understand how events work in React, and how to manage event listeners to avoid unnecessary re-renders.</li>
-</ul>
-<h3 id="conclusion">Conclusion</h3>
-<p>A deep understanding of React’s rendering mechanics revolves around efficiently managing state, minimizing unnecessary re-renders, optimizing performance, and leveraging hooks and memoization techniques. By mastering these concepts, React developers can ensure their applications remain performant, even as they grow in complexity.</p></div>
+<p>By understanding these concepts, you'll be able to write more optimized React code and handle state updates efficiently.</p></div>
 
 
 
@@ -9908,7 +9896,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../abort-controller-solved/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Abort Controller Solved">
+          <a href="../shallow-comparison/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Shallow Comparison">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -9918,20 +9906,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Abort Controller Solved
+                Shallow Comparison
               </div>
             </div>
           </a>
         
         
           
-          <a href="../one-most-important-in-react/" class="md-footer__link md-footer__link--next" aria-label="Next: One Most IMP">
+          <a href="../batching-stale-state/" class="md-footer__link md-footer__link--next" aria-label="Next: Batching Stale State">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                One Most IMP
+                Batching Stale State
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -9986,10 +9974,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
