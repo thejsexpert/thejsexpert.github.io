@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reference" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -2283,6 +2283,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-can-we-also-call-it-hoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why can we also call it HOC?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     <span class="md-ellipsis">
       Reference
@@ -2312,6 +2330,27 @@
   
   <span class="md-ellipsis">
     Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../question-answer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Q&A
   </span>
   
 
@@ -3544,6 +3583,27 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../miscellaneous/cognitive-skills/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coginitive Skills
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -10677,27 +10737,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/hoc-simple/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HOC
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../../../interview/implicit-explicit-return/" class="md-nav__link">
         
   
@@ -10765,6 +10804,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-can-we-also-call-it-hoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why can we also call it HOC?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     <span class="md-ellipsis">
       Reference
@@ -10790,7 +10847,7 @@
 
   <h1>Intro</h1>
 
-<div><p>higher-order functions (HOFs) — that is, functions that take functions as <code>parameters</code>, such as the following</p>
+<div><p>Higher-order functions (HOFs) — that is, functions that take functions as <code>parameters</code>, such as the following</p>
 <ul>
 <li><code>reduce()</code> and <code>reduceRight()</code> to apply an operation to a whole array, reducing it to a single result</li>
 <li><code>map()</code> to transform one array into another by applying a function to each of its elements</li>
@@ -10805,6 +10862,83 @@
 <li>A pair of predicates, <code>every()</code> and <code>some()</code>, to check an array for a Boolean test</li>
 </ul>
 <p>Using these functions will let you work more declaratively, and you’ll see that your focus will shift to what you need to do and not so much to how it’s going to be done; the dirty details are hidden inside our functions. Instead of writing a series of possibly nested loops, we’ll focus on using functions as building blocks to specify our desired result.</p>
+<hr>
+<h2 id="overview">Overview</h2>
+<p><a href="https://www.programiz.com/javascript/online-compiler/">JS Online Compiler</a></p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">veg</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="s2">"I'm Veg"</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">nonVege</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="s2">"I'm non Veg"</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Meal</span><span class="p">(</span><span class="nx">veg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">veg</span><span class="p">();</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">// Meal(veg);</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Meal</span><span class="p">(</span><span class="nx">veg</span><span class="p">));</span>
+</span></code></pre></div>
+<p>A higher-order function (HOF) in JavaScript is defined as a function that:</p>
+<ul>
+<li>Accepts a function as an argument, <mark>or</mark></li>
+<li>Returns a function.</li>
+</ul>
+<p>Your original Meal function only meets the first criterion, because it accepts a function (veg) as an argument and calls it.</p>
+<p>Let's break down your two criteria:</p>
+<hr>
+<p><strong>1. Function that accepts another function as an argument</strong></p>
+<p>Your <code>Meal</code> function does this:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Meal</span><span class="p">(</span><span class="nx">veg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">veg</span><span class="p">();</span><span class="w"> </span><span class="c1">// 'veg' is a function passed as an argument.</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>In this case, <code>veg</code> is passed as an argument to the <code>Meal</code> function. When <code>Meal</code> is called with the <code>veg</code> function as an argument, it calls <code>veg()</code> inside it, which makes it a higher-order function (HOF).</p>
+<p><strong>2. Function that returns another function</strong></p>
+<p>Here's an example where the <code>Meal</code> function <mark>returns another function</mark>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">createMeal</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"veg"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="s2">"I'm Veg"</span><span class="p">;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="s2">"I'm non Veg"</span><span class="p">;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">vegMeal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createMeal</span><span class="p">(</span><span class="s2">"veg"</span><span class="p">);</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">vegMeal</span><span class="p">());</span><span class="w"> </span><span class="c1">// Prints: "I'm Veg"</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nonVegMeal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createMeal</span><span class="p">(</span><span class="s2">"nonVeg"</span><span class="p">);</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nonVegMeal</span><span class="p">());</span><span class="w"> </span><span class="c1">// Prints: "I'm non Veg"</span>
+</span></code></pre></div>
+<p>In this example, <code>createMeal</code> is a higher-order function because it <mark>returns a new function</mark> based on the argument (<code>'veg'</code> or <code>'nonVeg'</code>). The returned function then contains the logic for the meal type.</p>
+<details class="success" open="open">
+<summary>Summary</summary>
+<ul>
+<li>In your original example, <code>Meal</code> qualifies as a <strong>higher-order function</strong> because it <strong>accepts a function as an argument</strong> (<code>veg</code>).</li>
+<li>If the <code>Meal</code> function had returned a function (rather than just calling <code>veg</code>), it would also qualify as a higher-order function for returning a function.</li>
+</ul>
+</details>
+<p>So, you are correct in both cases:</p>
+<ul>
+<li>If a function accepts another function as an argument (like your <code>Meal</code> function), it is a higher-order function.</li>
+<li>If a function returns a function, it is also a higher-order function.</li>
+</ul>
+<p>Your initial code fits the definition of a higher-order function because it <strong>takes a function (<code>veg</code>) as an argument</strong> and calls it, which is why it qualifies as a higher-order function in JavaScript.</p>
+<hr>
+<h2 id="why-can-we-also-call-it-hoc">Why can we also call it HOC?</h2>
+<p>The term HOC (Higher-Order Component) is generally used in the context of React, which is a JavaScript library for building user interfaces. <mark>In React</mark>, <strong>Higher-Order Components</strong> are a specific type of higher-order function that takes a component as an argument and returns a new component, typically with enhanced functionality.</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">withEnhancement</span><span class="p">(</span><span class="nx">Component</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">EnhancedComponent</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="c1">// Add some additional behavior here</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">Component</span><span class="w"> </span><span class="p">{</span><span class="na">...props</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Higher-Order Component (HOC) is a term specific to React and is a type of higher-order function that <mark>operates on</mark> <strong>React components</strong>.</p>
 <hr>
 <h2 id="reference">Reference</h2>
 <ul>
