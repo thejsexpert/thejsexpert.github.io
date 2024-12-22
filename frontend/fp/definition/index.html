@@ -1230,6 +1230,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#closure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closure
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10845,6 +10854,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#closure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closure
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10871,6 +10889,11 @@
 <p>A function that takes another function as a parameter, or returns a function as a result, is known as a <strong>high-order function</strong>.</p>
 <ul>
 <li><a href="#">Quick Functional Programming by David Matuszek</a></li>
+</ul>
+<p><a href="" title="JavaScript Cookbook, Second Edition by Shelley Powers, pg: 64">A function that accepts another function as a parameter, or returns a function, or both, is known as a higher order function.</a></p>
+<p>Memoization is the process where interim values are cached rather than recreated, cutting down on the number of iterations and computation time.</p>
+<ul>
+<li>JavaScript Cookbook, Second Edition by Shelley Powers, pg: 80</li>
 </ul>
 <details class="note">
 <summary>Note</summary>
@@ -10914,7 +10937,26 @@
 the sake of our example, the old way is enough. We’ll be getting back to promises, though,
 in Chapter 12, Building Better Containers, when we discuss monads; in particular, see the
 Unexpected monads – promises section.</p>
-</details></div>
+</details>
+<hr>
+<details>
+<summary>3 basic ways to define function</summary>
+<p>JavaScript functions provide a way to encapsulate a block of code in order to reuse the code several times. They are <strong>first-class objects</strong> in JavaScript, which means they can be treated as an object, as well as an expression or statement.</p>
+<ul>
+<li>JavaScript Cookbook, Second Edition by Shelley Powers, pg: 61</li>
+</ul>
+</details>
+<details>
+<summary>note</summary>
+<p>An important concept to remember when considering the different ways you can create a function is <mark>hoisting</mark>. In JavaScript, all variable declarations are <strong>moved</strong>, <mark>or</mark> <strong>hoisted</strong> to the top of their current scope.</p>
+<p>That’s declaration, though, not instantiation. The difference is critical. If you access a variable that’s not declared, you’ll get a <code>reference error</code>.</p>
+<p>However, if you access a variable before it’s declared, but it is declared within the scope at a later time, you’ll get an <code>undefined</code>:</p>
+<ul>
+<li>JavaScript Cookbook, Second Edition by Shelley Powers, pg: 62</li>
+</ul>
+</details>
+<hr>
+<h2 id="closure"><a href="https://thejsexpert.github.io/interview/javascript/#what-is-a-closure-in-javascript-provide-an-example">Closure</a></h2></div>
 
 
 
@@ -11028,7 +11070,7 @@ Unexpected monads – promises section.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>

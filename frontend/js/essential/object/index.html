@@ -1464,6 +1464,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#dynamically-selecting-a-methodproperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamically Selecting a Method/Property
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
@@ -10899,6 +10908,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#dynamically-selecting-a-methodproperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamically Selecting a Method/Property
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       Summary
@@ -11005,6 +11023,18 @@
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
 </span></code></pre></div>
 </div>
+<hr>
+<h2 id="dynamically-selecting-a-methodproperty">Dynamically Selecting a Method/Property</h2>
+<p>JavaScript offers a simple syntax for dynamically selecting methods and properties, all relying on the square brackets (<code>[ ]</code>) operator. You see JavaScript has two interchangeable syntaxes for member access (that is a common dynamic language trait):</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">obj</span><span class="p">[</span><span class="nx">expressionResultingInMemberName</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">obj</span><span class="p">.</span><span class="nx">memberName</span><span class="p">;</span>
+</span></code></pre></div>
+<p>If you’ve ever plucked a value from an Array cell using its integer index, you’ve already used the square brackets operator for dynamic member selection! This is because Array objects have properties named after their numerical indices (plus the length property). However, in this case, JavaScript won’t let you use the dot operator (<code>.</code>) for direct access. <code>myArray.0</code> is invalid syntax (too bad, that would have made a good nerd trick).</p>
+<p>Here’s why using the <strong>square brackets operator</strong> (<code>[ ]</code>) <mark>is more powerful</mark> than dot notation: you can put anything in between the brackets to obtain the name of the member (property or method) that you want to access.</p>
+<p>Common cases include literals, variables holding the member name, name composition expressions (mostly string concatenations), and quick <code>if/then</code> choices in the form of a ternary operator (<code>condition ? valueIfTrue : valueIfFalse</code>). It’ll all be turned into a string first and then used to look up the member you want to use.</p>
+<ul>
+<li><a href="#">Pragmatic Guide to JavaScript by Christophe Porteneuve :pg - 18</a></li>
+</ul>
+<hr>
 <h2 id="summary">Summary</h2>
 <p>Objects are essential in OOP, providing a structured way to represent and manipulate data. They exist in memory and within OOP languages but not in non-OOP contexts. They transfer over HTTP through serialization into formats like JSON, XML, or binary.</p></div>
 
@@ -11120,7 +11150,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
