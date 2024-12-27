@@ -2,1486 +2,1490 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://thejsexpert.github.io/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/06/02/advanced-tips-tricks-antd-design-table/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/12/api-call-in-parent-or-child/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/16/application-structure-for-reactjs/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/20/best-folder-structure-in-redux-toolkit/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/01/22/how-to-check-the-react-version-in-your-project/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/11/checking-nodejs-versions-in-react-projects/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/05/choosing-between-function-declarations-and-arrow-functions-for-react-components/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/21/combine-slices-in-a-feature-folder/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/27/conditional-rendering-in-react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/11/conditinally-mounting-component/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/29/deep-dive-into-map/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/18/what-are-the-main-differences-between-redux-thunk-and-redux-saga-and-which-one-should-i-use-and-why/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/19/do-we-need-to-install-redux-thunk-separately-when-using-redux-toolkit/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/18/understanding-eitemprops-in-react-and-ant-designs-menu-component/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/21/exploring-objectprototype-in-javascript/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/17/understanding-functional-state-updates-in-react-a-deep-dive-into-setselectedgroupdata/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/13/a-comparative-guide-to-lodash-and-javascript/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/23/handling-circular-references-in-javascript-avoiding-typeerror-cyclic-object-value-in-jsonstringify/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/12/handling-json-parsing-errors-in-javascript-a-practical-approach/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/26/handling-multiple-api-calls-with-search-input-in-react-using-debouncing-and-axios/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/13/history-api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/06/how-many-concurrent-requests-can-a-web-browser-handle/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/06/01/optimizing-javascript-object-manipulation-with-destructuring/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/04/01/understanding-javascript-array-methods-mutating-vs-non-mutating/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/15/javascript-arrow-functions/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/20/js-objects/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/16/libraries-for-immutable-data-structure-in-react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/09/loglist/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/06/03/mastering-object-destructuring-rest-and-spread-operators-in-javascript/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/16/difference-between-mutable-and-immutable-data-in-react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/28/order-of-operations-in-ant-design-forms-ensuring-proper-form-resetting/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/08/principle-of-least-privilege-polp/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/17/predefined-functions-in-redux-toolkit/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/14/prettier-formatter-for-visual-studio-code/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/01/18/react-router-v6-guide/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/30/efficiently-removing-a-property-from-an-object-while-retaining-its-value/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/10/understanding-the-difference-between-response-object-and-parsed-data-object/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/01/29/understanding-the-impact-of-the-return-statement-in-javascripts-map-function/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/25/role-based-vs-permission-based-access-control-in-react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/23/the-role-of-reducers-in-async-logic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/19/saving-base64-data-into-an-excel-file-in-a-react-application/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/04/23/formsetfieldsvalue-vs-defaultvalue-in-react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/24/simplifying-error-management-in-react-a-deep-dive-into-component-decomposition/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/22/unveiling-static-and-prototype-methods-in-javascript-built-in-objects/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/06/04/understanding-asyncawait/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/25/understanding-the-importance-of-rowkey-in-react-tables/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/05/24/useful-react-libraries-for-projects/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/10/empty-array-or-null/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/14/using-immer-with-standard-redux/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/07/where-does-redux-shines/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/22/where-to-store-api-calls-in-redux-toolkit/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/2024/08/15/write-cleaner-reducers-with-immer/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/fp/books/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/fp/definition/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/fp/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/fp/principle/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/advanced/maps-and-sets/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/advanced/promise/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/advanced/serialization/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/advanced/this-in-js/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/advanced/reducer/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/advanced/reducer/syntax/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/convention/coercion/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/convention/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/convention/js-style-guide/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/convention/naming-convention/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/callback/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/closure/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/control-statement/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/high-order-function/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/instance-and-static-methods/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/js-exception-handling/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/core/topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/datatypes/data-types/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/datatypes/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/datatypes/state-immutability/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/daily/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/js/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/mnemonic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/advanced/recall/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/antd-resuable-component/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/container-presentation-theory/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/container-presentation/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/custom-component/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/mostly-used/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/ecmascript/es6/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/ecmascript/spread-vs-rest-operator/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/essential/array-prototype/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/essential/array/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/essential/definition/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/essential/object-object.prototype/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/essential/object-prototype/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/essential/object/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/essential/prototype/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/arrow-example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/arrow-function/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/implicit-explicit-return/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/pure-and-impure/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/return-statement/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/types/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/advanced/advanced-concept/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/advanced/function-categories/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/hof/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/hof/map/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/function/hof/question-answer/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/cancellation-mechanisms/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/core/api-response-object/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/core/axios/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/core/chaining/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/core/fetch-api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/core/overview/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/core/then-and-asyncwait/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/axios-api-example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/cancel-axios-api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/cancel-fetch-api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/fetch-api-example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/overview/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/httprequest/example/useReducer/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/json/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/json/json5/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/miscellaneous/books/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/miscellaneous/bug-in-js/</loc>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/miscellaneous/cognitive-skills/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/miscellaneous/js-missing-parts/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/mnemonic/js-array/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/mnemonic/js-functions/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/mnemonic/js-object-iterating-method/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/mnemonic/js-objects/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/mnemonic/object-array-iteration-methods/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/node-version-manager/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/eslint/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/npm/example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/npm/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/pnpm/advanced/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/pnpm/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/vite/example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/vite/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/vite/mode/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/vite/proxy/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/vite/under-the-hood/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/tools/yarn/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/barrel/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/antd-configprovider/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/antd-render-func/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/controlled-components/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/twoTone-color/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/form/antd-form-validator/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/form/antd-form/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/form/form-crud/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/form/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/sidebar/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/table/filters/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/axios/axios-interceptors/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/axios/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/axios/sentry/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/axios/topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/composition/imagegallery/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/composition/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/lodash/debounce/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/logging-libraries/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/pino/example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/pino/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/pino/methods/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/pino/notes/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/pino/send-to-api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/monitoring-and-logging/pino/simple-usage/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/react-infinite-scroll-component/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/react-infinite-scroll-component/resuable/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/tinymce/tinymce/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/query/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/query/rtk-post-put-mutation/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/query/rtk-query-header/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/query/rtk-transform/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/query/rtk-vs-tanstack/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/philosophy/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/breaking-react-component-pattern/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/children-prop/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/component-composition/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/hoc/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/lifting-state-up/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/passing-props/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/presentational-and-container/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/prop-drilling/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/example/render-props/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/fake-api/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/fake-api/json-server/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/fake-api/topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/fake-api/msw/msw-version/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/fake-api/msw/msw/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/folder-structure/feature-based-pattern/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/folder-structure/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/folder-structure/react-architecture/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/React.memo-syntax/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/React.memo-vs-useMemo/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/React.memo/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/guides/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/migrating-cra-vite/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/react-context-api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/react-router/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useCallback/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useEffect-cleanup/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useEffect-technique-used/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useEffect-technique/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useReducer-and-reducer/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useReducer-example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useReducer-with-api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useReducer/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/hooks/useRef/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/miscellaneous/books/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/miscellaneous/handling-side-effects/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/miscellaneous/namespace-import/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/miscellaneous/react-depth/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/optimization/code-splitting/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/optimization/error-boundaries/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/optimization/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/optimization/react-suspense/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/optimization/topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/antipattern/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/compound-pattern/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/container-presentational-patterns/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/function-as-child/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/hoc-pattern/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/misc/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/pattern/react-pattern-intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/cypress/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/jest/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/measuring-optimization-tools/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/codereport/bugs/cleanup-function/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/codereport/bugs/debouncing/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/codereport/bugs/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/codereport/bugs/master-topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/testing/codereport/bugs/solution/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/abort-controller-solved/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/cleanup/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/code-for-change/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/react-strict-mode/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/slides/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/batching-react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/batching-stale-state/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/component-re-rendering/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/explainingothers/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/function-declaration-and-expression/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/hooks-mastering-topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/one-most-important-in-react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/shallow-comparison/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/react/topic/mastering/state-immutability/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/docs/auth-techniques/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/docs/best-method-for-auth/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/docs/not-found-component/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/docs/react-router/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/docs/router-version/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/docs/routing/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/docs/why-react-router/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/example/context-auth/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/example/simple-login/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/example/antd/active-link/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/example/antd/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/example/antd/key-and-label/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/question/pervent-layout-flashing-v6/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/types/types-of-access-control-routes/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/types/types-of-router/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/router/version/v6/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/middleware/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/mobx/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/recoil/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/react-redux/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/folder-structure/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/redux-pattern/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/redux-testing/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/action/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/reducer/example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/reducer/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/reducer/modular-reducer/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/reducer/throw-new-error/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/redux-middleware/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/redux-middleware/redux-saga/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/core/redux-middleware/redux-thunk/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/persist/example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/persist/immer-example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/persist/question/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/persist/redux-persist-purge/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/persist/redux-persist/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/persist/redux-store-subscribe/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/persist/reduxtoolkit-and-rtkquery/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/core-vs-query/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/query/anatomy-of-rtkquery/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/query/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/query/mnemonic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/query/rtkadvanced/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/query/tools/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/query/topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/code-modularity/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/folder-structure/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/topic/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/ultimate/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/example/example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/middleware/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/middleware/setup/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/a.how-to-right-question/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/where-do-we-define-action/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/redux/standard-redux/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/webstorage/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/webstorage/token/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/core-concept/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/one-hour-ts/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/typescript-compiler/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/typescript-installation/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/react-fc/example/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/react-fc/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/typescript/react-fc/react-fc/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/improved-code/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/javascript/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/bff/bff-question/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/bff/bff/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/api/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/asynchronous-javaScript/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/codesnap/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/http-request/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/http-response/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/importing-file/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/jwt/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/react/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/mf/micro-frontend/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/pwa/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/selling-app/app-ideas/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/selling-app/finance/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/selling-app/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/storybook/intro/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/best-approach-rtk/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/csr-sgr-ssr/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/holy-grail/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/performance-optimization/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/postgress/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/private-vs-protected/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/react-image-gallery/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/page/2/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/page/3/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/page/4/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/page/5/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/page/6/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/2/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/3/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/4/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/5/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/blog/archive/2024/page/6/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
     <url>
          <loc>https://thejsexpert.github.io/tags/</loc>
-         <lastmod>2024-12-26</lastmod>
+         <lastmod>2024-12-27</lastmod>
     </url>
 </urlset>

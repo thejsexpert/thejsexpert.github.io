@@ -1541,9 +1541,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#primitte-values" class="md-nav__link">
+  <a href="#primitive-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Primitte values
+      Primitive values
     </span>
   </a>
   
@@ -1562,6 +1562,24 @@
   <a href="#scope-and-closures" class="md-nav__link">
     <span class="md-ellipsis">
       Scope and Closures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errors in Javascript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primitive-wrapper-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitive Wrapper Types
     </span>
   </a>
   
@@ -3915,6 +3933,27 @@
   
   <span class="md-ellipsis">
     JS Missing Part
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miscellaneous/bug-in-js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bug in JS
   </span>
   
 
@@ -11161,9 +11200,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#primitte-values" class="md-nav__link">
+  <a href="#primitive-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Primitte values
+      Primitive values
     </span>
   </a>
   
@@ -11187,6 +11226,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#errors-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errors in Javascript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primitive-wrapper-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitive Wrapper Types
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -11204,7 +11261,39 @@
 
   <h1>Definition</h1>
 
-<div><h2 id="js-data-types">JS Data Types</h2>
+<div><p>A literal is syntax that allows you to define a reference value without explicitly creating an object, using the <code>new</code> operator and the object’s constructor.</p>
+<ul>
+<li><a href="#"> The Principles of Object-Oriented JavaScript by Nicholas C. Zakas: Literal Forms: pg-9</a></li>
+</ul>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p><strong>What Are Types?</strong></p>
+<p>Although JavaScript has no concept of classes, it still uses two kinds of types: <strong>primitive</strong> and <strong>reference</strong>.</p>
+<ul>
+<li>Primitive types are stored as simple data types.</li>
+<li>Reference types are stored as objects, which are really just references to locations in memory.</li>
+</ul>
+<p>The tricky thing is that JavaScript lets you treat primitive types like reference types in order to make the language more consistent for the developer.</p>
+<p>While other programming languages distinguish between primitive and reference types by storing <code>primitives</code> on the <strong>stack</strong> and <code>references</code> in the <strong>heap</strong>, JavaScript does away with this concept completely: It tracks variables for a particular scope with a variable object. Primitive values are stored directly on the variable object, while reference values are placed as a pointer in the variable object, which serves as a reference to a location in memory where the object is stored.</p>
+<p>However, as you’ll see later in this chapter, primitive values and reference values behave quite differently although they may initially seem the same.</p>
+<ul>
+<li><a href="#"> The Principles of Object-Oriented JavaScript by Nicholas C. Zakas: Literal Forms: pg-2</a></li>
+</ul>
+</details>
+<p><strong>Dereferencing Objects</strong></p>
+<p>JavaScript is a garbage-collected language, so you don’t really need to worry about memory allocations when you use reference types. However,</p>
+<p>it’s best to dereference objects that you no longer need so that the garbage collector can free up that memory. The best way to do this is to set the object variable to <code>null</code>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">object1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Object</span><span class="p">();</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// do something</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nx">object1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span><span class="c1">// dereference</span>
+</span></code></pre></div>
+<ul>
+<li><a href="#"> The Principles of Object-Oriented JavaScript by Nicholas C. Zakas: Literal Forms: pg-7</a></li>
+</ul>
+<hr>
+<h2 id="js-data-types">JS Data Types</h2>
 <p><strong>Primitive data types</strong></p>
 <ol>
 <li>Number</li>
@@ -11287,15 +11376,15 @@ values of using typeof are one of the following:</p>
 <hr>
 <h2 id="the-instanceof-operator">The <code>instanceof</code> operator</h2>
 <p>With the instanceof operator, you can test if an object was created with a specific constructor function:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&gt;</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Hero</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">&gt;</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Hero</span><span class="p">();</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="o">&gt;</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">o</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">&gt;</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">Hero</span><span class="p">;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kc">true</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="o">&gt;</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Object</span><span class="p">;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kc">true</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="o">&gt;</span><span class="w"> </span><span class="nx">o</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Object</span><span class="p">;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kc">true</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&gt;</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Hero</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">&gt;</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Hero</span><span class="p">();</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">&gt;</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">o</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="o">&gt;</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">Hero</span><span class="p">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kc">true</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="o">&gt;</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Object</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kc">true</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="o">&gt;</span><span class="w"> </span><span class="nx">o</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Object</span><span class="p">;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kc">true</span>
 </span></code></pre></div>
 <p>Note that you don't put parentheses after the function name (you don't use <code>h instanceof Hero()</code>). This is because you're not invoking this function, but just referring to it by name, as with any other variable.</p>
 <hr>
@@ -11303,17 +11392,17 @@ values of using typeof are one of the following:</p>
 <p><strong>Conceptual overview of using the <code>null</code> value</strong></p>
 <p>You can use <code>null</code> to explicitly indicate that an object property does not contain a value.</p>
 <p>Typically, if a property is set up to contain a value, but the value is not available for some reason, the value <code>null</code> should be used to indicate that the reference property has an empty value.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// The property foo is waiting for a value, so we set its initial value</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">to</span><span class="w"> </span><span class="kc">null</span><span class="p">.</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myObjectObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myObjectObject</span><span class="p">.</span><span class="nx">foo</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 'null</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// The property foo is waiting for a value, so we set its initial value</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">to</span><span class="w"> </span><span class="kc">null</span><span class="p">.</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myObjectObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myObjectObject</span><span class="p">.</span><span class="nx">foo</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 'null</span>
 </span></code></pre></div>
 <p><strong><code>typeof</code> returns <code>null</code> values as "object"</strong></p>
 <p>For a variable that has a value of <code>null</code>, the <code>typeof</code> operator returns "object”. If you need to verify a <code>null</code> value, the ideal solution would be to see if the value you are after is equal to <code>null</code>.</p>
 <p>In the following sample, we use the <code>===</code> operator to specifically verify that we are dealing with a null value.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myObject</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 'object', not exactly helpful.</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myObject</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">null</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs true, only for a real null value.</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">myObject</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 'object', not exactly helpful.</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myObject</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">null</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs true, only for a real null value.</span>
 </span></code></pre></div>
 <details class="note" open="open">
 <summary>Note</summary>
@@ -11330,15 +11419,15 @@ values of using typeof are one of the following:</p>
 <li>The first way it's used is to indicate that a declared variable (e.g., var foo) has no assigned value.</li>
 <li>The second way it's used is to indicate that an object property you’re trying to access is <mark>not defined</mark> (i.e. it has not even been named), and is not found in the prototype chain.</li>
 </ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">initializedVariable</span><span class="p">;</span><span class="w"> </span><span class="c1">// Declare variable.</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">initializedVariable</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs undefined.</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">initializedVariable</span><span class="p">);</span><span class="w"> </span><span class="c1">// Confirm that JavaScript returns undefined.</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kd">var</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs undefined, no bar property in foo object.</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span><span class="p">);</span><span class="w"> </span><span class="c1">// Confirm that JavaScript returns undefined.</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">initializedVariable</span><span class="p">;</span><span class="w"> </span><span class="c1">// Declare variable.</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">initializedVariable</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs undefined.</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">initializedVariable</span><span class="p">);</span><span class="w"> </span><span class="c1">// Confirm that JavaScript returns undefined.</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kd">var</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs undefined, no bar property in foo object.</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span><span class="p">);</span><span class="w"> </span><span class="c1">// Confirm that JavaScript returns undefined.</span>
 </span></code></pre></div>
 <details class="note">
 <summary>Note</summary>
@@ -11348,22 +11437,22 @@ values of using typeof are one of the following:</p>
 <li><a href="#">JavaScript Succinctly by Cody Lindley - 69</a></li>
 </ul>
 <hr>
-<h2 id="primitte-values">Primitte values</h2>
+<h2 id="primitive-values">Primitive values</h2>
 <p>Primitive/literal values are converted to objects when properties are accessed</p>
 <p>Do not be mystified by the fact that <code>string</code>, <code>number</code>, and <code>Boolean</code> literals <mark>can be treated like an object</mark> with properties (e.g., <code>true.toString()</code>). When these primitive values are treated like objects by attempting to access their properties, JavaScript will create a <strong>wrapper object</strong> from the primitive’s associated constructor, so that the properties and methods of the wrapper object can be accessed. Once the properties have been accessed, the wrapper object is discarded. This conversion allows us to write code that would make it appear as if a primitive value was, in fact, an object. Truth be told, when it is treated like an object in code, JavaScript will convert it to an object so property access will work, and then convert it back to a primitive value once a value is returned. The key thing to notice here is what is occurring, and that JavaScript is doing this for you behind the scenes.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// String object treated like an object.</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">stringObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="s2">"foo"</span><span class="p">);</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringObject</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringObject</span><span class="p">[</span><span class="s2">"length"</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1">// String literal/primitive converted to an object when treated as an object.</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="kd">var</span><span class="w"> </span><span class="nx">stringLiteral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"foo"</span><span class="p">;</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringLiteral</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringLiteral</span><span class="p">[</span><span class="s2">"length"</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"bar"</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"bar"</span><span class="p">[</span><span class="s2">"length"</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// String object treated like an object.</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">stringObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="s2">"foo"</span><span class="p">);</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringObject</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringObject</span><span class="p">[</span><span class="s2">"length"</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1">// String literal/primitive converted to an object when treated as an object.</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="kd">var</span><span class="w"> </span><span class="nx">stringLiteral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"foo"</span><span class="p">;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringLiteral</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stringLiteral</span><span class="p">[</span><span class="s2">"length"</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"bar"</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"bar"</span><span class="p">[</span><span class="s2">"length"</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Logs 3.</span>
 </span></code></pre></div>
 <ul>
 <li><a href="#">JavaScript Succinctly by Cody Lindley - 65</a></li>
@@ -11372,15 +11461,15 @@ values of using typeof are one of the following:</p>
 <h2 id="the-headglobal-object">The Head/Global Object</h2>
 <p><strong>Conceptual overview of the head object</strong></p>
 <p>JavaScript code itself <mark>must be contained within an object</mark>. For example, when crafting JavaScript code for a web browser environment, JavaScript is contained and executed within the <mark>window</mark> object. This <mark>window</mark> object <strong>is considered</strong> to be the <mark>"head object,"</mark> or sometimes confusingly referred to as <mark>"the global object."</mark> All implementations of JavaScript require the use of a single head object.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myStringVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"myString"</span><span class="p">;</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myFunctionVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nx">myString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"myString"</span><span class="p">;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nx">myFunction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myStringVar"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns true.</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myFunctionVar"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns true.</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myString"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns true.</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myFunction"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Return true.</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myStringVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"myString"</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myFunctionVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{};</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nx">myString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"myString"</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nx">myFunction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{};</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myStringVar"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns true.</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myFunctionVar"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns true.</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myString"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns true.</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"myFunction"</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nb">window</span><span class="p">);</span><span class="w"> </span><span class="c1">// Return true.</span>
 </span></code></pre></div>
 <details class="note" open="open">
 <summary>Note</summary>
@@ -11399,20 +11488,113 @@ values of using typeof are one of the following:</p>
 <li><strong>local</strong> scope (sometimes referred to as "function scope"), &amp;</li>
 <li><strong>eval</strong> scope.</li>
 </ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bar"</span><span class="p">;</span><span class="w"> </span><span class="c1">// foo is a global object and a property of the head/window object.</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myApp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="c1">// Remember functions create scope.</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="c1">// Logs bar, foo's value is found via the scope chain in the head object.</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="p">})();</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">};</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nx">myApp</span><span class="p">();</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bar"</span><span class="p">;</span><span class="w"> </span><span class="c1">// foo is a global object and a property of the head/window object.</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">myApp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="c1">// Remember functions create scope.</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="c1">// Logs bar, foo's value is found via the scope chain in the head object.</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="p">})();</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="p">};</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="nx">myApp</span><span class="p">();</span>
 </span></code></pre></div>
 <ul>
 <li><a href="#">JavaScript Succinctly by Cody Lindley - 102</a></li>
+</ul>
+<hr>
+<h2 id="errors-in-javascript">Errors in Javascript</h2>
+<p>Three kinds of errors can occur in JavaScript:</p>
+<ul>
+<li><strong>syntax</strong> errors</li>
+<li><strong>runtime</strong> errors</li>
+<li><strong>logic</strong> errors</li>
+</ul>
+<p>Only the <mark>first two produce</mark> error messages.</p>
+<details class="note">
+<summary>Note</summary>
+<p><mark>Syntax Errors</mark></p>
+<p>A <strong>syntax error</strong> is caused when your code violates the fundamental rules (or syntax) of the JavaScript language. It’s the browser’s way of saying, “Whatchoo talkin’ ’bout,</p>
+<p>syntax errors are the easiest to fix, but the hardest to spot in your code.</p>
+<p><mark>Runtime Errors</mark></p>
+<p><strong>Runtime errors</strong> occur when a perfectly valid piece of JavaScript code tries to do something that it’s not allowed to do, or that is flat out impossible. These errors are so named because they occur while the script is actually running.</p>
+<p>The trick is figuring out why the error occurred.</p>
+<p><mark>Logic Errors</mark></p>
+<p><strong>Logic errors</strong> aren’t so much errors as they are bugs in your script. The code runs fine as it was written—it just doesn’t behave the way you expected it to when you wrote it. These kinds of errors can be devilishly difficult to find because as far as the browser’s concerned the script is working just fine, so you never see an error message.</p>
+</details>
+<p><strong>Debugging with Firebug</strong></p>
+<p>In the past, the most common approach to resolving logic errors in JavaScript code was liberal use of the <code>alert</code> function.</p>
+<p>At the time of writing, a much more powerful (not to mention sane) approach is to use a JavaScript debugger, and by far the best debugger around is <code>Firebug</code>. <code>Firebug</code> is a free extension for Firefox that adds to the browser a panel containing a rich set of tools for diagnosing problems with your HTML, CSS, and JavaScript.</p>
+<ul>
+<li><a href="#">Simply JavaScript by Kevin Yank and Cameron Adams - 306</a></li>
+</ul>
+<hr>
+<h2 id="primitive-wrapper-types">Primitive Wrapper Types</h2>
+<p>Perhaps one of the most confusing parts of JavaScript is the <mark>concept of primitive wrapper types</mark>.</p>
+<p>There are three primitive wrapper types</p>
+<ol>
+<li><strong>String</strong></li>
+<li><strong>Number</strong></li>
+<li><strong>Boolean</strong></li>
+</ol>
+<p>These special reference types exist to make working with primitive values as easy as working with objects.</p>
+<p>The primitive wrapper types are reference types that are <mark>automatically created behind the scenes whenever</mark> <code>strings</code>, <code>num­bers</code>, or <code>Booleans</code> are read. For example, in the first line of this listing, a primitive string value is assigned to name. The second line treats name like an object and calls <code>charAt(0)</code> using dot notation.</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Nicholas"</span><span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">firstChar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstChar</span><span class="p">);</span>
+</span></code></pre></div>
+<p>This is what happens behind the scenes:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">// what the JavaScript engine does</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Nicholas"</span><span class="p">;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kd">var</span><span class="w"> </span><span class="nx">firstChar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">temp</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nx">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstChar</span><span class="p">);</span><span class="w"> </span><span class="c1">// "N"</span>
+</span></code></pre></div>
+<p>Because the second line uses a string (a primitive) like an object, the JavaScript engine creates an instance of String so that charAt(0) will work. The String object exists only for one statement before it’s destroyed (<mark>a process called</mark> <strong>autoboxing</strong>). To test this out, try adding a property to a string as if it were a regular object:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Nicholas"</span><span class="p">;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Zakas"</span><span class="p">;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
+</span></code></pre></div>
+<p>This code attempts to add the property last to the string name. The code itself is just fine except that the property disappears. What happened? When working with regular objects, you can add properties at any time and they stay until you manually remove them. With primitive wrapper types, properties seem to disappear because the object on which the property was assigned is destroyed immediately afterward.</p>
+<div class="language-js highlight"><span class="filename">Here’s what’s actually happening in the JavaScript engine:</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">// what the JavaScript engine does</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Nicholas"</span><span class="p">;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nx">temp</span><span class="p">.</span><span class="nx">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Zakas"</span><span class="p">;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="nx">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span><span class="c1">// temporary object destroyed</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="kd">var</span><span class="w"> </span><span class="nx">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">temp</span><span class="p">.</span><span class="nx">last</span><span class="p">);</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="nx">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span><span class="c1">// undefined</span>
+</span></code></pre></div>
+<p>Instead of assigning a new property to a string, the code actually c­reates a new property on a temporary object that is then destroyed. When you try to access that property later, a different object is temporarily created and the new property doesn’t exist there. Although reference values are created automatically for primitive values, when <code>instanceof</code> checks for these types of values the result is false:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Nicholas"</span><span class="p">;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">String</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">count</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Number</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">found</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Boolean</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+</span></code></pre></div>
+<p>The instanceof operator returns false because a temporary object is created only when a value is read. Because <code>instanceof</code> doesn’t actually read anything, no temporary objects are created, and it tells us the ­values aren’t instances of primitive wrapper types. You can create primitive wrapper types manually, but there are certain side effects:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="s2">"Nicholas"</span><span class="p">);</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kd">var</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Boolean</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">name</span><span class="p">);</span><span class="w"> </span><span class="c1">// "object"</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">count</span><span class="p">);</span><span class="w"> </span><span class="c1">// "object"</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">found</span><span class="p">);</span><span class="w"> </span><span class="c1">// "object"</span>
+</span></code></pre></div>
+<p>As you can see, creating an instance of the primitive wrapper type just creates another object, which means that typeof can’t identify the type of data you intend to store.</p>
+<p><strong>Summary</strong></p>
+<p>While JavaScript doesn’t have classes, it does have types. Each variable or piece of data is associated with a specific <strong>primitive</strong> or <strong>reference type</strong>.</p>
+<p>The <mark>five primitive types</mark> (<code>strings</code>, <code>numbers</code>, <code>Booleans</code>, <code>null</code>, and <code>­undefined</code>) represent simple values stored directly in the variable object for a given context. You can use <code>typeof</code> to identify primitive types <mark>with the exception of</mark> <code>null</code>, which must be compared directly against the special value null.</p>
+<p><mark>Reference types</mark> are the closest thing to <strong>classes</strong> in JavaScript, and objects are <code>instances</code> of reference types. You can create new objects using the <code>new</code> operator <mark>or</mark> a reference literal.</p>
+<p>Functions are objects in JavaScript, and you can identify them with the <code>typeof</code> operator. You should use <code>instanceof</code> with a constructor to identify objects of any other reference type.</p>
+<p><strong>To make primitives seem more like <code>references</code></strong>, JavaScript has <mark>three primitive wrapper types</mark>: <code>String</code>, <code>Number</code>, and <code>Boolean</code>. JavaScript creates these objects behind the scenes so that you can treat primitives like regular objects, <strong><em>but the temporary objects are destroyed as soon as the statement using them is complete</em></strong>. Although you can create your own instances of primitive wrappers, it’s best not to do that because it can be confusing.</p>
+<ul>
+<li><a href="#"> The Principles of Object-Oriented JavaScript by Nicholas C. Zakas: pg-14</a></li>
 </ul></div>
 
 
