@@ -221,6 +221,10 @@
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/deployment/refresh-reloading-react/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/deployment/refreshing-issue/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
@@ -338,6 +342,10 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/definition/intro/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/js/definition/memoization/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
@@ -637,6 +645,10 @@
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/package/antd/antd-autofill-input-issue/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/package/antd/antd-configprovider/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
@@ -750,54 +762,6 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/package/tinymce/tinymce/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/intro/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/rtk-post-put-mutation/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/rtk-query-header/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/rtk-transform/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/rtk-vs-tanstack/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/hooks/notification-approach-rtk/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/hooks/rtk-lifecycle-hooks/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/hooks/rtk-query-hooks/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/hooks/rtk-skip-option/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/hooks/tanStack-query/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/official-docs/advanced/</loc>
-         <lastmod>2025-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/query/official-docs/basic/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
@@ -1169,6 +1133,10 @@
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/jwt-verification-clientside/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/middleware/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
@@ -1361,6 +1329,54 @@
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/intro/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/rtk-post-put-mutation/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/rtk-query-header/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/rtk-transform/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/rtk-vs-tanstack/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/hooks/notification-approach-rtk/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/hooks/rtk-lifecycle-hooks/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/hooks/rtk-query-hooks/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/hooks/rtk-skip-option/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/hooks/tanStack-query/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/official-docs/advanced/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/state-management/rtkquery/official-docs/basic/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/state-management/webstorage/intro/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
@@ -1398,6 +1414,10 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/improved-code/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/interview/interview/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
@@ -1498,6 +1518,14 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/topic/react-image-gallery/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/nextjs/history/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/nextjs/intro/</loc>
          <lastmod>2025-01-02</lastmod>
     </url>
     <url>
