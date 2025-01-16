@@ -101,6 +101,58 @@
          <lastmod>2025-01-16</lastmod>
     </url>
     <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/daily/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/intro/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/js/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/mnemonic/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/official/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/advanced/recall/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/creational/factory/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/react/antd-resuable-component/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/react/container-presentation-theory/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/react/container-presentation/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/react/custom-component/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/react/intro/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
+         <loc>https://thejsexpert.github.io/frontend/designpattern/react/mostly-used/</loc>
+         <lastmod>2025-01-16</lastmod>
+    </url>
+    <url>
          <loc>https://thejsexpert.github.io/frontend/fp/books/</loc>
          <lastmod>2025-01-16</lastmod>
     </url>
@@ -230,58 +282,6 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/frontend/js/definition/memoization/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/daily/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/intro/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/js/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/mnemonic/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/official/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/advanced/recall/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/creational/factory/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/antd-resuable-component/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/container-presentation-theory/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/container-presentation/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/custom-component/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/intro/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/frontend/js/designpattern/react/mostly-used/</loc>
          <lastmod>2025-01-16</lastmod>
     </url>
     <url>
@@ -582,10 +582,6 @@
     </url>
     <url>
          <loc>https://thejsexpert.github.io/interview/http/react/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://thejsexpert.github.io/interview/mf/micro-frontend/</loc>
          <lastmod>2025-01-16</lastmod>
     </url>
     <url>
