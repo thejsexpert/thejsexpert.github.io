@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/function/return-statement/">
+        <link rel="canonical" href="https://thejsexpert.github.io/frontend/js/coercion/rules/">
       
       
-        <link rel="prev" href="../implicit-explicit-return/">
+        <link rel="prev" href="../common-pitfalls/">
       
       
-        <link rel="next" href="../arrow-function/">
+        <link rel="next" href="../../core/control-statement/">
       
       
       <link rel="icon" href="../../../../assets/logo/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Return Statement - JS Expert Docs</title>
+        <title>Rules - JS Expert Docs</title>
       
     
     
@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#type-coercion-rules-in-javascript" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Return Statement
+              Rules
             
           </span>
         </div>
@@ -1495,6 +1500,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1504,11 +1511,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -1522,7 +1529,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             Coercion
@@ -1536,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1557,7 +1564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/type-coercion/" class="md-nav__link">
+      <a href="../type-coercion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1578,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/how-does-it-really-works/" class="md-nav__link">
+      <a href="../how-does-it-really-works/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1599,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/common-pitfalls/" class="md-nav__link">
+      <a href="../common-pitfalls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1617,10 +1624,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../coercion/rules/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1629,6 +1654,84 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-coercion-rules-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Coercion Rules in JavaScript:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-precedence-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence in JavaScript:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operator Precedence in JavaScript:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator-precedence-table-simplified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence Table (Simplified)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-precedence-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence in Action:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2166,8 +2269,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2177,11 +2278,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
         
           
           <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
@@ -2195,7 +2296,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_8">
             <span class="md-nav__icon md-icon"></span>
             Function
@@ -2209,7 +2310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2230,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types/" class="md-nav__link">
+      <a href="../../function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2251,7 +2352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types2/" class="md-nav__link">
+      <a href="../../function/types2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2272,7 +2373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pure-and-impure/" class="md-nav__link">
+      <a href="../../function/pure-and-impure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2293,7 +2394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../implicit-explicit-return/" class="md-nav__link">
+      <a href="../../function/implicit-explicit-return/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2311,17 +2412,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../function/return-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2330,7 +2424,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2381,7 +2474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrow-function/" class="md-nav__link">
+      <a href="../../function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2402,7 +2495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrow-example/" class="md-nav__link">
+      <a href="../../function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2469,7 +2562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hof/intro/" class="md-nav__link">
+      <a href="../../function/hof/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2490,7 +2583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hof/map/" class="md-nav__link">
+      <a href="../../function/hof/map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2511,7 +2604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hof/question-answer/" class="md-nav__link">
+      <a href="../../function/hof/question-answer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2578,7 +2671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/advanced-concept/" class="md-nav__link">
+      <a href="../../function/advanced/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2599,7 +2692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/function-categories/" class="md-nav__link">
+      <a href="../../function/advanced/function-categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5013,6 +5106,74 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#type-coercion-rules-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Coercion Rules in JavaScript:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-precedence-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence in JavaScript:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operator Precedence in JavaScript:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator-precedence-table-simplified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence Table (Simplified)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operator-precedence-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Precedence in Action:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5026,48 +5187,138 @@
                   
 
 
-  <h1>Return Statement</h1>
+  <h1>Rules</h1>
 
-<div><p>All functions return a value whether the original developer intended it or not.</p>
-<p>If a value was defined and passed back to the function caller, it can be assigned to a variable or used directly.</p>
-<p>A function returns <code>undefined</code> if a value was not returned, <mark>or</mark> the return statement inside a function is empty.</p>
-<div class="language-jsx highlight"><span class="filename">Determining If a Function Defines and Returns a Value</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// A function with an empty return-statement returns undefined</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">function1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="k">return</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">// A function with no return-statement returns undefined</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kd">function</span><span class="w"> </span><span class="nx">function2</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kd">function</span><span class="w"> </span><span class="nx">function3</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="kd">function</span><span class="w"> </span><span class="nx">function4</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="kd">function</span><span class="w"> </span><span class="nx">function5</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">}</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="kd">var</span><span class="w"> </span><span class="nx">fn1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">function1</span><span class="p">();</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Function1 returns: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">fn1</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="kd">var</span><span class="w"> </span><span class="nx">fn2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">function2</span><span class="p">();</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Function2 returns: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">fn2</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="kd">var</span><span class="w"> </span><span class="nx">fn3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">function3</span><span class="p">();</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Function3 returns: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">fn3</span><span class="p">);</span><span class="w"> </span><span class="c1">// 4</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="kd">var</span><span class="w"> </span><span class="nx">fn4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">function4</span><span class="p">();</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Function4 returns: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">fn4</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="kd">var</span><span class="w"> </span><span class="nx">fn5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">function5</span><span class="p">();</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Function5 returns: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">fn5</span><span class="p">);</span><span class="w"> </span><span class="c1">// Object{}</span>
+<div><p>Yes, there are <mark>rules and precedence</mark> that govern how JavaScript handles operations between different types, including string and number concatenation or addition. Here's a breakdown of <mark>how <strong>type coercion</strong> works</mark> and the <strong>operator precedence</strong> in JavaScript:</p>
+<hr>
+<h2 id="type-coercion-rules-in-javascript">Type Coercion Rules in JavaScript:</h2>
+<p>JavaScript automatically converts (or <mark>coerces</mark>) values from one type to another depending on the operation being performed. Here are the most common rules related to type coercion:</p>
+<p><strong>1.1. String <code>+</code> Number (or any other type)</strong></p>
+<p>When using the <code>+</code> operator, JavaScript checks if either operand is a <code>string</code>. If so, it converts the other operand to a string and concatenates the two.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// '55' (number is coerced to string and concatenated)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// 'Hello2'</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">" apples"</span><span class="p">);</span><span class="w"> </span><span class="c1">// '3 apples'</span>
 </span></code></pre></div>
+<details class="question" open="open">
+<summary>Why?</summary>
+<p>The <code>+</code> operator is special:</p>
 <ul>
-<li><a href="#">JavaScript Recipes: A Problem-Solution Approach by Russ Ferguson, Keith Cirkel - pg: 13</a></li>
+<li>it can either perform numeric addition (if both operands are numbers) <mark>or</mark></li>
+<li>string concatenation (if one or both operands are strings).</li>
+</ul>
+<p>If there's a string involved, JavaScript <mark>prefers concatenation</mark>.</p>
+</details>
+<p><strong>1.2. Number + Number</strong></p>
+<p>If both operands are numbers, JavaScript performs <mark>numeric addition</mark>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">2.5</span><span class="p">);</span><span class="w"> </span><span class="c1">// 5.5</span>
+</span></code></pre></div>
+<details class="question" open="open">
+<summary>Why?</summary>
+<ul>
+<li>Both operands are numbers, so JavaScript simply adds them.</li>
+</ul>
+</details>
+<p><strong>1.3. Other Arithmetic Operators (e.g., <code>-</code>, <code>*</code>, <code>/</code>)</strong></p>
+<p>For operations like <code>-</code>, <code>*</code>, <code>/</code>, and <code>**</code> (exponentiation), JavaScript <mark>coerces</mark> values to numbers before performing the operation, even if one operand is a string.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// 0 (string '5' is converted to number 5)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"10"</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// 20</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"6"</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"2"</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// 8</span>
+</span></code></pre></div>
+<details class="question" open="open">
+<summary>Why</summary>
+<p>JavaScript tries to perform <mark>numeric operations</mark> when the operator is not <code>+</code> (because <code>+</code> can also be used for string concatenation). If one of the operands is a string, it will be converted to a number.</p>
+</details>
+<p><strong>1.4. Non-numeric Values in Arithmetic Operations</strong></p>
+<p>If non-numeric values (like <code>null</code>, <code>undefined</code>, or <code>boolean</code>) are involved in arithmetic operations, JavaScript will attempt to coerce them into numbers. However, this can lead to unexpected results.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="kc">null</span><span class="p">);</span><span class="w"> </span><span class="c1">// 5 (null coerced to 0)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// 4 (true coerced to 1)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span><span class="w"> </span><span class="c1">// 5 (false coerced to 0)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="kc">undefined</span><span class="p">);</span><span class="w"> </span><span class="c1">// NaN (undefined coerced to NaN)</span>
+</span></code></pre></div>
+<p><strong>1.5. Boolean to Number Conversion</strong></p>
+<p>When a boolean is used in arithmetic or other operations, <code>true</code> becomes <code>1</code> and <code>false</code> becomes <code>0</code>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">true</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 2</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">false</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// 1</span>
+</span></code></pre></div>
+<hr>
+<h2 id="operator-precedence-in-javascript">Operator Precedence in JavaScript:</h2>
+<p>JavaScript operators have precedence, meaning some operators take priority over others in an expression. Here’s a summary of operator precedence in JavaScript:</p>
+<p><strong>2.1. High Precedence Operators (evaluated first):</strong></p>
+<ul>
+<li>Parentheses <code>()</code> — Used to change the order of operations.</li>
+<li>Exponentiation <code>**</code> — Evaluates to the power of a number (e.g., <code>2 ** 3</code> is <code>8</code>).</li>
+<li>Multiplication, Division, Modulus (<code>*</code>, <code>/</code>, <code>%</code>) — Evaluate from left to right.</li>
+</ul>
+<p><strong>2.2. Lower Precedence Operators:</strong></p>
+<ul>
+<li>Addition and Subtraction (<code>+</code>, <code>-</code>) — These operators are evaluated after multiplication, division, and exponentiation.</li>
+</ul>
+<p><strong>2.3. Assignment Operators:</strong></p>
+<ul>
+<li>Assignment (<code>=</code>, <code>+=</code>, <code>-=</code> etc.) — These have lower precedence than arithmetic operations.</li>
+</ul>
+<h3 id="operator-precedence-table-simplified">Operator Precedence Table (Simplified)</h3>
+<table>
+<thead>
+<tr>
+<th>Precedence</th>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1st</td>
+<td><code>()</code></td>
+<td>Parentheses (grouping)</td>
+</tr>
+<tr>
+<td>2nd</td>
+<td><code>**</code></td>
+<td>Exponentiation</td>
+</tr>
+<tr>
+<td>3rd</td>
+<td><code>*</code>, <code>/</code>, <code>%</code></td>
+<td>Multiplication, Division, Modulus</td>
+</tr>
+<tr>
+<td>4th</td>
+<td><code>+</code>, <code>-</code></td>
+<td>Addition, Subtraction</td>
+</tr>
+<tr>
+<td>5th</td>
+<td><code>=</code>, <code>+=</code>, <code>-=</code>, etc.</td>
+<td>Assignment</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operator-precedence-in-action">Operator Precedence in Action:</h3>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// 14, because multiplication (*) has higher precedence than addition (+)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span></code></pre></div>
+<p>If you want to change the order of operations, you can use parentheses to ensure the intended precedence:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mf">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">3</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// 20, because parentheses change the order</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span></code></pre></div>
+<hr>
+<h2 id="conclusion">Conclusion:</h2>
+<ul>
+<li>
+<p><strong>Type Coercion</strong>: JavaScript automatically converts types when necessary. The <code>+</code> operator triggers string concatenation if one operand is a string, otherwise, it performs numeric addition.</p>
+</li>
+<li>
+<p><strong>Operator Precedence</strong>: JavaScript evaluates operators according to a set precedence. For example, multiplication and division are evaluated before addition and subtraction.</p>
+</li>
+</ul>
+<p><strong>Best Practice</strong>: <mark>It's good practice to be explicit about your intent</mark> (e.g., converting values before performing operations) to avoid unexpected behavior due to JavaScript's type coercion rules. For example, if you want to ensure that both operands are treated as numbers, you can explicitly convert them using <code>Number()</code>, <code>parseInt()</code>, or <code>parseFloat()</code>.</p>
+<hr>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://www.w3schools.com/js/js_precedence.asp">W3Schools: JavaScript Operator Precedence</a></li>
 </ul></div>
 
 
@@ -5104,7 +5355,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../implicit-explicit-return/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Implicit &amp; Explicit">
+          <a href="../common-pitfalls/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Common Pitfalls">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -5114,20 +5365,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Implicit & Explicit
+                Common Pitfalls
               </div>
             </div>
           </a>
         
         
           
-          <a href="../arrow-function/" class="md-footer__link md-footer__link--next" aria-label="Next: Arrow Functions">
+          <a href="../../core/control-statement/" class="md-footer__link md-footer__link--next" aria-label="Next: Control Statement">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Arrow Functions
+                Control Statement
               </div>
             </div>
             <div class="md-footer__button md-icon">

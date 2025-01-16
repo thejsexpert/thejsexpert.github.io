@@ -14,7 +14,7 @@
         <link rel="prev" href="../type-coercion/">
       
       
-        <link rel="next" href="../../core/control-statement/">
+        <link rel="next" href="../common-pitfalls/">
       
       
       <link rel="icon" href="../../../../assets/logo/favicon.ico">
@@ -73,6 +73,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#six-falsy-values-in-javascript" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -1587,6 +1592,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How does it work
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1597,6 +1613,185 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#six-falsy-values-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Six falsy values in JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-type-conversion-type-coercion-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit Type Conversion (Type Coercion) in JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Type Conversion (Type Coercion) in JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-type-coercion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Type Coercion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-implicit-type-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Implicit Type Conversion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avoiding-type-coercion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoiding Type Coercion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#falsy-values-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Falsy Values in JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Falsy Values in JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-does-javascript-perform-type-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Does JavaScript Perform Type Conversion?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-javascript-perform-implicit-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Does JavaScript Perform Implicit Conversion?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-implicit-conversion-to-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Implicit Conversion to Boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversion Mechanics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-falsy-values-behave-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Falsy Values Behave This Way?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-pitfalls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Pitfalls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -4971,6 +5166,134 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#six-falsy-values-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Six falsy values in JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-type-conversion-type-coercion-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit Type Conversion (Type Coercion) in JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Type Conversion (Type Coercion) in JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-type-coercion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Type Coercion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-implicit-type-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Implicit Type Conversion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avoiding-type-coercion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoiding Type Coercion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#falsy-values-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Falsy Values in JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Falsy Values in JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-does-javascript-perform-type-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Does JavaScript Perform Type Conversion?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-javascript-perform-implicit-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Does JavaScript Perform Implicit Conversion?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-implicit-conversion-to-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Implicit Conversion to Boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversion Mechanics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-falsy-values-behave-this-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Falsy Values Behave This Way?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4986,7 +5309,275 @@
 
   <h1>How does it work</h1>
 
-<p>How does it really work</p>
+<div><h2 id="six-falsy-values-in-javascript"><a href="https://www.freecodecamp.org/news/what-are-falsey-values-in-javascript/">Six falsy values in JavaScript</a></h2>
+<ul>
+<li><strong>false</strong>: The boolean value <code>false</code>.</li>
+<li><strong>0</strong>: The number zero.</li>
+<li><code>""</code>: An empty string.</li>
+<li><strong>null</strong>: The null keyword, representing the absence of any object value.</li>
+<li><strong>undefined</strong>: The undefined keyword, representing an uninitialized value.</li>
+<li><strong>NaN</strong>: Stands for "Not a Number". It represents a special value returned from an operation that should return a numeric value but doesn't.</li>
+</ul>
+<hr>
+<h2 id="implicit-type-conversion-type-coercion-in-javascript">Implicit Type Conversion (Type Coercion) in JavaScript</h2>
+<p>Implicit type conversion, <mark>also known as</mark> <strong>type coercion</strong>, occurs when JavaScript automatically converts one data type to another during operations. This happens in scenarios where different types are involved in an operation, and JavaScript attempts to make the operation valid by converting one of the types.</p>
+<hr>
+<h3 id="types-of-type-coercion">Types of Type Coercion</h3>
+<ol>
+<li>
+<p><strong>To String</strong></p>
+<ul>
+<li>
+<p>When a number or boolean is added to a string, JavaScript converts them to a string.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hello"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">42</span><span class="p">);</span><span class="w"> </span><span class="c1">// "Hello42"</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Value: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// "Value: true"</span>
+</span></code></pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>To Number</strong></p>
+<ul>
+<li>
+<p>When using arithmetic operators (except <code>+</code>), JavaScript converts non-numeric types to numbers.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// 3</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"10"</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// 30</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"100"</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// 20</span>
+</span></code></pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>To Boolean</strong></p>
+<ul>
+<li>In conditional statements, non-boolean values are implicitly converted to boolean values.</li>
+<li>Falsy values: <code>false</code>, <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code></li>
+<li>Truthy values: Everything else</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s2">""</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"This won’t run"</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Falsy value"</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Truthy value"</span><span class="p">);</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+</ol>
+<hr>
+<h3 id="examples-of-implicit-type-conversion">Examples of Implicit Type Conversion</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Expression</strong></th>
+<th><strong>Converted To</strong></th>
+<th><strong>Result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>'5' + 5</code></td>
+<td><code>'5' + '5'</code></td>
+<td><code>'55'</code></td>
+</tr>
+<tr>
+<td><code>'5' - 2</code></td>
+<td><code>5 - 2</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>true + 1</code></td>
+<td><code>1 + 1</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>false + 1</code></td>
+<td><code>0 + 1</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>null + 5</code></td>
+<td><code>0 + 5</code></td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td><code>undefined + 5</code></td>
+<td><code>NaN + 5</code></td>
+<td><code>NaN</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="avoiding-type-coercion">Avoiding Type Coercion</h3>
+<p>To avoid implicit type coercion:</p>
+<ul>
+<li>Use strict equality (<code>===</code>) instead of loose equality (<code>==</code>).</li>
+<li>Explicitly convert types using <code>String()</code>, <code>Number()</code>, or <code>Boolean()</code>.</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// true (implicit conversion)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"5"</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span><span class="w"> </span><span class="c1">// false (no conversion)</span>
+</span></code></pre></div>
+<hr>
+<h2 id="falsy-values-in-javascript">Falsy Values in JavaScript</h2>
+<p>In JavaScript, falsy values are values that are considered <code>false</code> <mark>when evaluated in a boolean context</mark> (e.g., in <code>if</code> conditions). These values include:</p>
+<ol>
+<li><code>false</code></li>
+<li><code>0</code> (both <code>+0</code> and <code>-0</code>)</li>
+<li><code>""</code> (empty string)</li>
+<li><code>null</code></li>
+<li><code>undefined</code></li>
+<li><code>NaN</code> (Not-a-Number)</li>
+</ol>
+<p>Everything else is considered a truthy value, including non-empty strings (<code>"hello"</code>), objects (<code>{}</code>), arrays (<code>[]</code>), and numbers <mark>other than</mark> <code>0</code>.</p>
+<hr>
+<h3 id="why-does-javascript-perform-type-conversion">Why Does JavaScript Perform Type Conversion?</h3>
+<p>JavaScript is a <strong>loosely typed</strong> or <strong>dynamically typed language</strong>, meaning variables do not have a fixed type. The language performs type coercion to make operations valid when operands or values are of different types.
+Reasons:</p>
+<details class="tip" open="open">
+<summary>Reasons</summary>
+<ol>
+<li>
+<p><strong>Convenience</strong></p>
+<p>To allow developers to write concise code without explicitly converting data types.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'5'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">5</span><span class="p">);</span><span class="w">  </span><span class="c1">// "55" (string concatenation)</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Dynamic Behavior</strong></p>
+<p>JavaScript needs to make sense of dynamic or uncertain types during execution.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userInput</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="c1">// Automatically checks if userInput is truthy or falsy.</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Specification</strong></p>
+<p>JavaScript follows the <a href="#">ECMAScript Language Specification</a> that defines rules for implicit conversions.</p>
+</li>
+</ol>
+</details>
+<hr>
+<h3 id="how-does-javascript-perform-implicit-conversion">How Does JavaScript Perform Implicit Conversion?</h3>
+<p>JavaScript uses a <strong>ToBoolean</strong> abstract operation to determine whether a value is truthy or falsy. Here's how it works:</p>
+<details class="tip" open="open">
+<summary>ToBoolean Conversion Table</summary>
+<table>
+<thead>
+<tr>
+<th><strong>Value</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Converted To</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>false</code></td>
+<td>Boolean</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td>Number</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>""</code></td>
+<td>String</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>null</code></td>
+<td>Null</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>undefined</code></td>
+<td>Undefined</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>NaN</code></td>
+<td>Number</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>All others</td>
+<td>Various Types</td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr>
+<h3 id="examples-of-implicit-conversion-to-boolean">Examples of Implicit Conversion to Boolean</h3>
+<ol>
+<li>
+<p><strong>In <code>if</code> statements</strong>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"This won’t run"</span><span class="p">);</span><span class="w"> </span><span class="c1">// 0 is falsy</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Falsy value"</span><span class="p">);</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>In logical operators</strong>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">"Hello"</span><span class="p">);</span><span class="w"> </span><span class="c1">// "Hello" (0 is falsy, so it returns the second operand)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">1</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="s2">"World"</span><span class="p">);</span><span class="w"> </span><span class="c1">// "World" (1 is truthy, so it evaluates the second operand)</span>
+</span></code></pre></div>
+</li>
+</ol>
+<hr>
+<h3 id="conversion-mechanics">Conversion Mechanics</h3>
+<ol>
+<li>
+<p>String to Boolean</p>
+<ul>
+<li>Non-empty strings → <code>true</code></li>
+<li>Empty string <code>""</code> → <code>false</code></li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="s2">""</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Number to Boolean</strong></p>
+<ul>
+<li><code>0</code>, <code>-0</code>, <code>NaN</code> → <code>false</code></li>
+<li>All other numbers → <code>true</code></li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="mf">0</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="mf">42</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong><code>null</code> and <code>undefined</code></strong></p>
+<ul>
+<li>Always false.</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="kc">null</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="kc">undefined</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
+</span></code></pre></div>
+</li>
+</ol>
+<hr>
+<h3 id="why-falsy-values-behave-this-way">Why Falsy Values Behave This Way?</h3>
+<p>The interpretation of falsy values is designed to align with common programming scenarios. For example:</p>
+<ul>
+<li><code>0</code> represents "no value" in numerical contexts.</li>
+<li><code>""</code> represents "no content" in string contexts.</li>
+<li><code>null</code> and <code>undefined</code> represent "absence of value."</li>
+<li><code>NaN</code> represents invalid numerical operations.</li>
+</ul>
+<p>This makes the language flexible and expressive but can also lead to bugs if not handled carefully.</p>
+<hr>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/what-are-falsey-values-in-javascript/">Six falsy values in JavaScript</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">Falsy: MDN docs</a></li>
+</ul></div>
 
 
 
@@ -5039,13 +5630,13 @@
         
         
           
-          <a href="../../core/control-statement/" class="md-footer__link md-footer__link--next" aria-label="Next: Control Statement">
+          <a href="../common-pitfalls/" class="md-footer__link md-footer__link--next" aria-label="Next: Common Pitfalls">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Control Statement
+                Common Pitfalls
               </div>
             </div>
             <div class="md-footer__button md-icon">
