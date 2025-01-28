@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/blog/2024/05/22/unveiling-static-and-prototype-methods-in-javascript-built-in-objects/">
+        <link rel="canonical" href="https://thejsexpert.github.io/tools/husky/intro/">
       
       
-        <link rel="prev" href="../../21/exploring-objectprototype-in-javascript/">
+        <link rel="prev" href="../../eslint/intro/">
       
       
-        <link rel="next" href="../../23/handling-circular-references-in-javascript-avoiding-typeerror-cyclic-object-value-in-jsonstringify/">
+        <link rel="next" href="../../vite/intro/">
       
       
-      <link rel="icon" href="../../../../../assets/logo/favicon.ico">
+      <link rel="icon" href="../../../assets/logo/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
     
     
       
-        <title>Unveiling Static and Prototype Methods in JavaScript Built-in Objects - JS Expert Docs</title>
+        <title>Husky - JS Expert Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -45,14 +45,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -63,7 +63,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unveiling-static-and-prototype-methods-in-javascript-built-in-objects" class="md-skip">
+        <a href="#intro" class="md-skip">
           Skip to content
         </a>
       
@@ -91,9 +91,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../../../assets/logo/js.png" alt="logo">
+  <img src="../../../assets/logo/js.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Unveiling Static and Prototype Methods in JavaScript Built-in Objects
+              Husky
             
           </span>
         </div>
@@ -171,13 +171,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -191,11 +189,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../tools/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
           
   
   Tools
@@ -213,7 +213,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../fp/intro/" class="md-tabs__link">
+        <a href="../../../fp/intro/" class="md-tabs__link">
           
   
   FP
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../js/intro/" class="md-tabs__link">
+        <a href="../../../js/intro/" class="md-tabs__link">
           
   
   JS
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../designpattern/intro/" class="md-tabs__link">
+        <a href="../../../designpattern/intro/" class="md-tabs__link">
           
   
   Design Pattern
@@ -267,7 +267,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../style-guide/intro/" class="md-tabs__link">
+        <a href="../../../style-guide/intro/" class="md-tabs__link">
           
   
   Style Guide
@@ -285,7 +285,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../interview/intro/" class="md-tabs__link">
+        <a href="../../../interview/intro/" class="md-tabs__link">
           
   
   Interview
@@ -313,9 +313,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -326,9 +324,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../../../assets/logo/js.png" alt="logo">
+  <img src="../../../assets/logo/js.png" alt="logo">
 
     </a>
     JS Expert Docs
@@ -340,28 +338,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -372,7 +365,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -383,14 +376,12 @@
                 
   
   
-    
-  
   
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      <a href="../../../../" class="md-nav__link">
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -484,23 +475,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -511,7 +507,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -525,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/node-version-manager/" class="md-nav__link">
+      <a href="../../node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -567,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/eslint/intro/" class="md-nav__link">
+      <a href="../../eslint/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,10 +581,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../tools/husky/intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Husky
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -597,6 +613,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#precommit-and-husky" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precommit and Husky
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -647,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/intro/" class="md-nav__link">
+      <a href="../../vite/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/under-the-hood/" class="md-nav__link">
+      <a href="../../vite/under-the-hood/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/mode/" class="md-nav__link">
+      <a href="../../vite/mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/example/" class="md-nav__link">
+      <a href="../../vite/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/proxy/" class="md-nav__link">
+      <a href="../../vite/proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -798,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/npm/intro/" class="md-nav__link">
+      <a href="../../npm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -819,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/npm/alias/" class="md-nav__link">
+      <a href="../../npm/alias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/npm/example/" class="md-nav__link">
+      <a href="../../npm/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -907,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/yarn/intro/" class="md-nav__link">
+      <a href="../../yarn/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -974,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/pnpm/intro/" class="md-nav__link">
+      <a href="../../pnpm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -995,7 +1049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/pnpm/advanced/" class="md-nav__link">
+      <a href="../../pnpm/advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1069,7 +1123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/intro/" class="md-nav__link">
+      <a href="../../../fp/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1090,7 +1144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/principle/" class="md-nav__link">
+      <a href="../../../fp/principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1111,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/definition/" class="md-nav__link">
+      <a href="../../../fp/definition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1132,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/books/" class="md-nav__link">
+      <a href="../../../fp/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1198,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/intro/" class="md-nav__link">
+      <a href="../../../js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1219,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/terminology/intro/" class="md-nav__link">
+      <a href="../../../js/terminology/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1278,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/definition/" class="md-nav__link">
+      <a href="../../../js/definition/definition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1299,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/intro/" class="md-nav__link">
+      <a href="../../../js/definition/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1320,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/functional/" class="md-nav__link">
+      <a href="../../../js/definition/functional/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1341,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/memoization/" class="md-nav__link">
+      <a href="../../../js/definition/memoization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1362,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/best/" class="md-nav__link">
+      <a href="../../../js/definition/best/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1429,7 +1483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/prototype/" class="md-nav__link">
+      <a href="../../../js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1450,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1471,7 +1525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1492,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/object/" class="md-nav__link">
+      <a href="../../../js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1513,7 +1567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/array/" class="md-nav__link">
+      <a href="../../../js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1534,7 +1588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/object-object.prototype/" class="md-nav__link">
+      <a href="../../../js/essential/object-object.prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1563,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/hoisting/intro/" class="md-nav__link">
+      <a href="../../../js/hoisting/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1622,7 +1676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/intro/" class="md-nav__link">
+      <a href="../../../js/coercion/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1643,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/type-coercion/" class="md-nav__link">
+      <a href="../../../js/coercion/type-coercion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1664,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/how-does-it-really-works/" class="md-nav__link">
+      <a href="../../../js/coercion/how-does-it-really-works/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1685,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/common-pitfalls/" class="md-nav__link">
+      <a href="../../../js/coercion/common-pitfalls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1706,7 +1760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/rules/" class="md-nav__link">
+      <a href="../../../js/coercion/rules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1773,7 +1827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/control-statement/" class="md-nav__link">
+      <a href="../../../js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1794,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1815,7 +1869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/callback/" class="md-nav__link">
+      <a href="../../../js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1836,7 +1890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/closure/" class="md-nav__link">
+      <a href="../../../js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1857,7 +1911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/high-order-function/" class="md-nav__link">
+      <a href="../../../js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1878,7 +1932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1899,7 +1953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/topic/" class="md-nav__link">
+      <a href="../../../js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1966,7 +2020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1987,7 +2041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/serialization/" class="md-nav__link">
+      <a href="../../../js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2008,7 +2062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2029,7 +2083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/promise/" class="md-nav__link">
+      <a href="../../../js/advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2088,7 +2142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/reducer/intro/" class="md-nav__link">
+      <a href="../../../js/advanced/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2109,7 +2163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/reducer/syntax/" class="md-nav__link">
+      <a href="../../../js/advanced/reducer/syntax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2184,7 +2238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/datatypes/intro/" class="md-nav__link">
+      <a href="../../../js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2205,7 +2259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../../js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2226,7 +2280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/datatypes/state-immutability/" class="md-nav__link">
+      <a href="../../../js/datatypes/state-immutability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2293,7 +2347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/intro/" class="md-nav__link">
+      <a href="../../../js/function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2314,7 +2368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/types/" class="md-nav__link">
+      <a href="../../../js/function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2335,7 +2389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/defining-functions/" class="md-nav__link">
+      <a href="../../../js/function/defining-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2356,7 +2410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/pure-and-impure/" class="md-nav__link">
+      <a href="../../../js/function/pure-and-impure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2377,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/implicit-explicit-return/" class="md-nav__link">
+      <a href="../../../js/function/implicit-explicit-return/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2398,7 +2452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/return-statement/" class="md-nav__link">
+      <a href="../../../js/function/return-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2457,7 +2511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/arrow-function/" class="md-nav__link">
+      <a href="../../../js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2478,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/arrow-example/" class="md-nav__link">
+      <a href="../../../js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2545,7 +2599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/hof/intro/" class="md-nav__link">
+      <a href="../../../js/function/hof/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2566,7 +2620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/hof/map/" class="md-nav__link">
+      <a href="../../../js/function/hof/map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2587,7 +2641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/hof/question-answer/" class="md-nav__link">
+      <a href="../../../js/function/hof/question-answer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2654,7 +2708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/advanced/advanced-concept/" class="md-nav__link">
+      <a href="../../../js/function/advanced/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2675,7 +2729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/advanced/function-categories/" class="md-nav__link">
+      <a href="../../../js/function/advanced/function-categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2750,7 +2804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/iterables/intro/" class="md-nav__link">
+      <a href="../../../js/iterables/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2771,7 +2825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/iterables/types/" class="md-nav__link">
+      <a href="../../../js/iterables/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2838,7 +2892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2859,7 +2913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2880,7 +2934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/ecmascript/defaultParameters/" class="md-nav__link">
+      <a href="../../../js/ecmascript/defaultParameters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2947,7 +3001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/intro/" class="md-nav__link">
+      <a href="../../../js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2968,7 +3022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3027,7 +3081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/overview/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3048,7 +3102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3069,7 +3123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3090,7 +3144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/chaining/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3111,7 +3165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3132,7 +3186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/axios/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3199,7 +3253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/overview/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3220,7 +3274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/useReducer/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3241,7 +3295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3262,7 +3316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3283,7 +3337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3304,7 +3358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3379,7 +3433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/json/intro/" class="md-nav__link">
+      <a href="../../../js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3400,7 +3454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/json/json5/" class="md-nav__link">
+      <a href="../../../js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3467,7 +3521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3488,7 +3542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3509,7 +3563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3530,7 +3584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3551,7 +3605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3618,7 +3672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/weird-parts/js-missing-parts/" class="md-nav__link">
+      <a href="../../../js/weird-parts/js-missing-parts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3639,7 +3693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/weird-parts/bug-in-js/" class="md-nav__link">
+      <a href="../../../js/weird-parts/bug-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3706,7 +3760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/miscellaneous/guard-clause/" class="md-nav__link">
+      <a href="../../../js/miscellaneous/guard-clause/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3727,7 +3781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/miscellaneous/cognitive-skills/" class="md-nav__link">
+      <a href="../../../js/miscellaneous/cognitive-skills/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3748,7 +3802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/miscellaneous/books/" class="md-nav__link">
+      <a href="../../../js/miscellaneous/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3822,7 +3876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/intro/" class="md-nav__link">
+      <a href="../../../designpattern/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3843,7 +3897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/daily/" class="md-nav__link">
+      <a href="../../../designpattern/daily/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3864,7 +3918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/official/" class="md-nav__link">
+      <a href="../../../designpattern/official/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3885,7 +3939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/js/" class="md-nav__link">
+      <a href="../../../designpattern/js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3906,7 +3960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/mnemonic/" class="md-nav__link">
+      <a href="../../../designpattern/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3965,7 +4019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/creational/factory/" class="md-nav__link">
+      <a href="../../../designpattern/creational/factory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4032,7 +4086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/intro/" class="md-nav__link">
+      <a href="../../../designpattern/react/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4053,7 +4107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/mostly-used/" class="md-nav__link">
+      <a href="../../../designpattern/react/mostly-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4074,7 +4128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/container-presentation/" class="md-nav__link">
+      <a href="../../../designpattern/react/container-presentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4095,7 +4149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/container-presentation-theory/" class="md-nav__link">
+      <a href="../../../designpattern/react/container-presentation-theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4116,7 +4170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/custom-component/" class="md-nav__link">
+      <a href="../../../designpattern/react/custom-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4137,7 +4191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/antd-resuable-component/" class="md-nav__link">
+      <a href="../../../designpattern/react/antd-resuable-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4204,7 +4258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/advanced/recall/" class="md-nav__link">
+      <a href="../../../designpattern/advanced/recall/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4278,7 +4332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../style-guide/intro/" class="md-nav__link">
+      <a href="../../../style-guide/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4299,7 +4353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../style-guide/js-style-guide/" class="md-nav__link">
+      <a href="../../../style-guide/js-style-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4320,7 +4374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../style-guide/naming-convention/" class="md-nav__link">
+      <a href="../../../style-guide/naming-convention/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4341,7 +4395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../style-guide/coercion/" class="md-nav__link">
+      <a href="../../../style-guide/coercion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4362,7 +4416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../style-guide/js-constants/" class="md-nav__link">
+      <a href="../../../style-guide/js-constants/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4383,7 +4437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../style-guide/js-array/" class="md-nav__link">
+      <a href="../../../style-guide/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4449,7 +4503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/intro/" class="md-nav__link">
+      <a href="../../../interview/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4508,7 +4562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/best-approach-rtk/" class="md-nav__link">
+      <a href="../../../interview/topic/best-approach-rtk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4529,7 +4583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/csr-sgr-ssr/" class="md-nav__link">
+      <a href="../../../interview/topic/csr-sgr-ssr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4550,7 +4604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/postgress/" class="md-nav__link">
+      <a href="../../../interview/topic/postgress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4571,7 +4625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/private-vs-protected/" class="md-nav__link">
+      <a href="../../../interview/topic/private-vs-protected/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4592,7 +4646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/react-image-gallery/" class="md-nav__link">
+      <a href="../../../interview/topic/react-image-gallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4613,7 +4667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/performance-optimization/" class="md-nav__link">
+      <a href="../../../interview/topic/performance-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4634,7 +4688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/topic/holy-grail/" class="md-nav__link">
+      <a href="../../../interview/topic/holy-grail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4663,7 +4717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/pwa/intro/" class="md-nav__link">
+      <a href="../../../interview/pwa/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4722,7 +4776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/react/" class="md-nav__link">
+      <a href="../../../interview/http/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4743,7 +4797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/codesnap/" class="md-nav__link">
+      <a href="../../../interview/http/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4764,7 +4818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/api/" class="md-nav__link">
+      <a href="../../../interview/http/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4785,7 +4839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/http-response/" class="md-nav__link">
+      <a href="../../../interview/http/http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4806,7 +4860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/http-request/" class="md-nav__link">
+      <a href="../../../interview/http/http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4827,7 +4881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../../../interview/http/asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4848,7 +4902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/jwt/" class="md-nav__link">
+      <a href="../../../interview/http/jwt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4869,7 +4923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/http/importing-file/" class="md-nav__link">
+      <a href="../../../interview/http/importing-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4936,7 +4990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/selling-app/intro/" class="md-nav__link">
+      <a href="../../../interview/selling-app/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4957,7 +5011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/selling-app/finance/" class="md-nav__link">
+      <a href="../../../interview/selling-app/finance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4978,7 +5032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/selling-app/app-ideas/" class="md-nav__link">
+      <a href="../../../interview/selling-app/app-ideas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5045,7 +5099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/memory-model/overview/" class="md-nav__link">
+      <a href="../../../interview/memory-model/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5066,7 +5120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/memory-model/serialization/" class="md-nav__link">
+      <a href="../../../interview/memory-model/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5087,7 +5141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/memory-model/memory-types/" class="md-nav__link">
+      <a href="../../../interview/memory-model/memory-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5116,7 +5170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/javascript/" class="md-nav__link">
+      <a href="../../../interview/javascript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5137,7 +5191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/interview/" class="md-nav__link">
+      <a href="../../../interview/interview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5158,7 +5212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/improved-code/" class="md-nav__link">
+      <a href="../../../interview/improved-code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5179,7 +5233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../interview/export-issue-lexical-declaration/" class="md-nav__link">
+      <a href="../../../interview/export-issue-lexical-declaration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5208,8 +5262,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -5229,75 +5281,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-using-developer-tools" class="md-nav__link">
+  <a href="#precommit-and-husky" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Using Developer Tools
+      Precommit and Husky
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Using Developer Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#viewing-static-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Viewing Static Methods
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#viewing-constructor-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Viewing Constructor Methods
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-using-javascript-code" class="md-nav__link">
+  <a href="#reference" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Using JavaScript Code
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Using JavaScript Code">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#list-all-static-methods-and-properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      List All Static Methods and Properties
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list-all-prototype-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      List All Prototype Methods
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-consulting-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Consulting Documentation
+      Reference
     </span>
   </a>
   
@@ -5312,168 +5307,30 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../../../../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-                  <span class="md-ellipsis">
-                    Back to index
-                  </span>
-                </a>
-              </div>
-            </div>
-            
-              <div class="md-post__authors md-typeset">
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-                  <div class="md-profile md-post__profile">
-                    <span class="md-author md-author--long">
-                      <img src="https://avatars.githubusercontent.com/u/25550945" alt="Bishow Thapa">
-                    </span>
-                    <span class="md-profile__description">
-                      <strong>
-                        
-                          Bishow Thapa
-                        
-                      </strong>
-                      <br>
-                      Creator
-                    </span>
-                  </div>
-                
-              </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    Metadata
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2024-05-22 00:00:00+00:00" class="md-ellipsis">May 22, 2024</time>
-                      </div>
-                    </li>
-                    
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              2 min read
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-          </nav>
-          
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
-  
-  
-
-<nav class="md-tags" >
-  
-    
-    
-    
-      <a href="../../../../../tags/#js" class="md-tag">js</a>
-    
-  
-</nav>
+                  
 
 
-
-<div><h1 id="unveiling-static-and-prototype-methods-in-javascript-built-in-objects">Unveiling Static and Prototype Methods in JavaScript Built-in Objects</h1>
-<p>To thoroughly understand and see the <mark>static methods</mark> and <mark>constructor methods</mark> in JavaScript built-in objects, you can use a combination of developer tools, documentation, and JavaScript code. Here’s a detailed guide:</p>
-<!-- more -->
-
-<h2 id="1-using-developer-tools">1. Using Developer Tools</h2>
-<p>In a Browser Console</p>
-<ol>
-<li>Open Developer Tools: You can usually open this by pressing <code>F12</code>, <code>Ctrl+Shift+I</code>, or <code>Cmd+Option+I</code>.</li>
-<li>Go to the Console Tab: Here you can execute JavaScript code.</li>
-</ol>
-<h3 id="viewing-static-methods">Viewing Static Methods</h3>
-<p>Static methods are functions that are called on the class itself, not on instances of the class. For example, <code>Array.from()</code> is a static method on the <code>Array</code> constructor.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">dir</span><span class="p">(</span><span class="nb">Array</span><span class="p">);</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">dir</span><span class="p">(</span><span class="nb">Object</span><span class="p">);</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">dir</span><span class="p">(</span><span class="nb">Math</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="viewing-constructor-methods">Viewing Constructor Methods</h3>
-<p>Constructor methods (or prototype methods) are functions that are available on the instances of the objects. For example, <code>Array.prototype.push()</code> is a constructor method.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">dir</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">dir</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
-</span></code></pre></div>
-<hr>
-<h2 id="2-using-javascript-code">2. Using JavaScript Code</h2>
-<h3 id="list-all-static-methods-and-properties">List All Static Methods and Properties</h3>
-<p>To list all static methods and properties of a built-in object, you can use the following code snippet:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">listStaticMethods</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyNames</span><span class="p">(</span><span class="nx">obj</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="nx">prop</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">obj</span><span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'function'</span><span class="p">);</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">listStaticMethods</span><span class="p">(</span><span class="nb">Array</span><span class="p">));</span><span class="w"> </span><span class="c1">// List static methods of Array</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">listStaticMethods</span><span class="p">(</span><span class="nb">Object</span><span class="p">));</span><span class="w"> </span><span class="c1">// List static methods of Object</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">listStaticMethods</span><span class="p">(</span><span class="nb">Math</span><span class="p">));</span><span class="w">   </span><span class="c1">// List static methods of Math</span>
-</span></code></pre></div>
-<h3 id="list-all-prototype-methods">List All Prototype Methods</h3>
-<p>To list all prototype methods of a built-in object, you can use the following code snippet:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">listPrototypeMethods</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyNames</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">prototype</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="nx">prop</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">obj</span><span class="p">.</span><span class="nx">prototype</span><span class="p">[</span><span class="nx">prop</span><span class="p">]</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'function'</span><span class="p">);</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">listPrototypeMethods</span><span class="p">(</span><span class="nb">Array</span><span class="p">));</span><span class="w"> </span><span class="c1">// List prototype methods of Array</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">listPrototypeMethods</span><span class="p">(</span><span class="nb">Object</span><span class="p">));</span><span class="w"> </span><span class="c1">// List prototype methods of Object</span>
-</span></code></pre></div>
-<hr>
-<h2 id="3-consulting-documentation">3. Consulting Documentation</h2>
-<p>Refer to the official JavaScript documentation for comprehensive details on built-in objects, their static methods, and prototype methods:</p>
+<div><h1 id="intro">Intro</h1>
+<p><a class="glightbox" href="https://miro.medium.com/v2/resize:fit:720/format:webp/1*sHkY9r8stQstn-HJL5wkIQ.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Husky “pre-commit” hooks" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*sHkY9r8stQstn-HJL5wkIQ.jpeg"></a></p>
+<h2 id="precommit-and-husky">Precommit and Husky</h2>
 <ul>
-<li>
-<p>MDN Web Docs: This is a highly recommended resource for in-depth information on JavaScript built-in objects. For example:</p>
-</li>
-<li>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></p>
-</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">Math</a></li>
+<li>Precommit: Cross-platform, broader tool for git hooks, not limited to JS.</li>
+<li><a href="https://typicode.github.io/husky/how-to.html">Husky</a>: Node-specific, great for JS/TypeScript projects with built-in integration for JS tools.</li>
 </ul>
-<details class="example">
-<summary>Example Output</summary>
-<p>When you run the provided code snippets, you will get lists of methods:</p>
-<blockquote>
-<p>Static Methods of Array:</p>
-</blockquote>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">[</span><span class="s2">"from"</span><span class="p">,</span><span class="w"> </span><span class="s2">"isArray"</span><span class="p">,</span><span class="w"> </span><span class="s2">"of"</span><span class="p">]</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>lint-staged
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># or</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>pnpm<span class="w"> </span>add<span class="w"> </span>lint-staged<span class="w"> </span>--save-dev
 </span></code></pre></div>
-<blockquote>
-<p>Prototype Methods of Array:</p>
-</blockquote>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">[</span><span class="s2">"constructor"</span><span class="p">,</span><span class="w"> </span><span class="s2">"copyWithin"</span><span class="p">,</span><span class="w"> </span><span class="s2">"fill"</span><span class="p">,</span><span class="w"> </span><span class="s2">"find"</span><span class="p">,</span><span class="w"> </span><span class="s2">"findIndex"</span><span class="p">,</span><span class="w"> </span><span class="s2">"keys"</span><span class="p">,</span><span class="w"> </span><span class="s2">"entries"</span><span class="p">,</span><span class="w"> </span><span class="s2">"values"</span><span class="p">,</span><span class="w"> </span><span class="s2">"pop"</span><span class="p">,</span><span class="w"> </span><span class="s2">"push"</span><span class="p">,</span><span class="w"> </span><span class="s2">"concat"</span><span class="p">,</span><span class="w"> </span><span class="s2">"join"</span><span class="p">,</span><span class="w"> </span><span class="s2">"reverse"</span><span class="p">,</span><span class="w"> </span><span class="s2">"shift"</span><span class="p">,</span><span class="w"> </span><span class="s2">"unshift"</span><span class="p">,</span><span class="w"> </span><span class="s2">"slice"</span><span class="p">,</span><span class="w"> </span><span class="s2">"splice"</span><span class="p">,</span><span class="w"> </span><span class="s2">"sort"</span><span class="p">,</span><span class="w"> </span><span class="s2">"indexOf"</span><span class="p">,</span><span class="w"> </span><span class="s2">"lastIndexOf"</span><span class="p">,</span><span class="w"> </span><span class="s2">"every"</span><span class="p">,</span><span class="w"> </span><span class="s2">"some"</span><span class="p">,</span><span class="w"> </span><span class="s2">"forEach"</span><span class="p">,</span><span class="w"> </span><span class="s2">"map"</span><span class="p">,</span><span class="w"> </span><span class="s2">"filter"</span><span class="p">,</span><span class="w"> </span><span class="s2">"reduce"</span><span class="p">,</span><span class="w"> </span><span class="s2">"reduceRight"</span><span class="p">,</span><span class="w"> </span><span class="s2">"includes"</span><span class="p">,</span><span class="w"> </span><span class="s2">"flat"</span><span class="p">,</span><span class="w"> </span><span class="s2">"flatMap"</span><span class="p">,</span><span class="w"> </span><span class="s2">"at"</span><span class="p">,</span><span class="w"> </span><span class="s2">"toLocaleString"</span><span class="p">,</span><span class="w"> </span><span class="s2">"toString"</span><span class="p">,</span><span class="w"> </span><span class="s2">"length"</span><span class="p">]</span>
-</span></code></pre></div>
-<p>By using these methods, you can thoroughly explore and understand the static and prototype methods available in JavaScript <code>built-in</code> objects.</p>
-</details></div>
+<hr>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/how-to-add-commit-hooks-to-git-with-husky-to-automate-code-tasks/">freecodecamp: How to Add Commit Hooks to Git with Husky to Automate Code Tasks</a></li>
+<li><a href="https://medium.com/@kaushalkoladiya123/configuration-husky-pre-commit-hooks-0995c458c7ab">Husky “pre-commit” hooks</a></li>
+<li><a href="https://typicode.github.io/husky/get-started.html">official docs</a></li>
+</ul></div>
 
 
 
@@ -5481,20 +5338,15 @@
 
 
 
-  
-  
 
 
 
 
-  
 
-
-
-      
-    </article>
-  </div>
-
+                
+              </article>
+            </div>
+          
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -5511,12 +5363,10 @@
   
     
       
-        
-      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../21/exploring-objectprototype-in-javascript/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Exploring Object.prototype in JavaScript">
+          <a href="../../eslint/intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ESLint">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -5526,20 +5376,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Exploring Object.prototype in JavaScript
+                ESLint
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../23/handling-circular-references-in-javascript-avoiding-typeerror-cyclic-object-value-in-jsonstringify/" class="md-footer__link md-footer__link--next" aria-label="Next: Handling Circular References in JavaScript: Avoiding &#39;TypeError: cyclic object value&#39; in JSON.stringify">
+          <a href="../../vite/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Handling Circular References in JavaScript: Avoiding 'TypeError: cyclic object value' in JSON.stringify
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -5594,10 +5444,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
