@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/style-guide/intro/">
+        <link rel="canonical" href="https://thejsexpert.github.io/eventloop/intro/">
       
       
-        <link rel="prev" href="../../designpattern/advanced/recall/">
+        <link rel="prev" href="../../js/miscellaneous/books/">
       
       
-        <link rel="next" href="../js-style-guide/">
+        <link rel="next" href="../../designpattern/intro/">
       
       
       <link rel="icon" href="../../assets/logo/favicon.ico">
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a-meta-code-style-guide" class="md-skip">
+        <a href="#event-loop" class="md-skip">
           Skip to content
         </a>
       
@@ -289,11 +289,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../eventloop/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Event Loop
@@ -325,13 +327,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../style-guide/intro/" class="md-tabs__link">
           
   
   Style Guide
@@ -3836,23 +3836,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -3863,7 +3868,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Event Loop
@@ -3874,10 +3879,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../eventloop/intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -3886,6 +3909,171 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#event-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Loop
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-the-event-loop-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is the Event Loop Important?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-the-event-loop-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How the Event Loop Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-the-event-loop-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of the Event Loop in Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-about-the-event-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Points About the Event Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-representation-of-the-event-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Representation of the Event Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-world-analogy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Analogy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-an-event-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of an Event in JavaScript
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-flow-bubbling-and-capturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Flow (Bubbling and Capturing)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preventing-default-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preventing Default Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4358,28 +4546,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4390,7 +4573,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Style Guide
@@ -4401,30 +4584,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Intro
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../style-guide/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4433,44 +4596,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#existing-style-guides" class="md-nav__link">
-    <span class="md-ellipsis">
-      Existing Style Guides
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4483,7 +4608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js-style-guide/" class="md-nav__link">
+      <a href="../../style-guide/js-style-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4504,7 +4629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../naming-convention/" class="md-nav__link">
+      <a href="../../style-guide/naming-convention/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4525,7 +4650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coercion/" class="md-nav__link">
+      <a href="../../style-guide/coercion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4546,7 +4671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js-constants/" class="md-nav__link">
+      <a href="../../style-guide/js-constants/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4567,7 +4692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js-array/" class="md-nav__link">
+      <a href="../../style-guide/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5401,8 +5526,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5411,20 +5534,149 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#existing-style-guides" class="md-nav__link">
+  <a href="#event-loop" class="md-nav__link">
     <span class="md-ellipsis">
-      Existing Style Guides
+      Event Loop
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-the-event-loop-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is the Event Loop Important?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#how-the-event-loop-works" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference
+      How the Event Loop Works
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-the-event-loop-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of the Event Loop in Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-about-the-event-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Points About the Event Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-representation-of-the-event-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Representation of the Event Loop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-world-analogy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Analogy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-an-event-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of an Event in JavaScript
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-flow-bubbling-and-capturing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Flow (Bubbling and Capturing)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preventing-default-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preventing Default Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5443,26 +5695,250 @@
                   
 
 
-<div><h1 id="a-meta-code-style-guide">A Meta Code Style Guide</h1>
-<p>JavaScript has many great style guides. Thus, there is no need to write yet another one. Instead, this chapter describes meta style rules and surveys existing style guides and established best practices. It also mentions practices I like that are more controversial. The idea is to complement existing style guides rather than to replace them.</p>
-<h2 id="existing-style-guides">Existing Style Guides</h2>
-<p>These are style guides that I like:</p>
+  <h1>Intro</h1>
+
+<div><h2 id="event-loop">Event Loop</h2>
+<p>The event loop is a fundamental concept in JavaScript that enables its <strong>non-blocking</strong>, <strong>asynchronous behavior</strong>. It is the mechanism that allows JavaScript to handle tasks like I/O operations, timers, and callbacks efficiently, even though JavaScript is single-threaded.</p>
+<h3 id="why-is-the-event-loop-important">Why is the Event Loop Important?</h3>
+<p>JavaScript runs in a single-threaded environment, meaning it can only execute one task at a time. However, many tasks in a web application (like network requests, file reading, or timers) are asynchronous and take time to complete. The event loop ensures that these tasks don't block the main thread, allowing the application to remain responsive.</p>
+<hr>
+<h3 id="how-the-event-loop-works">How the Event Loop Works</h3>
+<p>The event loop continuously monitors the call stack and the task queues to determine what to execute next. Here's a breakdown of the key components:</p>
+<ol>
+<li>
+<p><strong>Call Stack</strong>:</p>
 <ul>
-<li><a href="https://github.com/rwaldron/idiomatic.js/">Idiomatic.js: Principles of Writing Consistent, Idiomatic JavaScript</a></li>
-<li><a href="https://google.github.io/styleguide/">Google JavaScript Style Guide</a></li>
-<li><a href="https://contribute.jquery.org/style-guide/js/">jQuery JavaScript Style Guide</a></li>
-<li><a href="https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a></li>
+<li>The call stack is where JavaScript keeps track of function calls. It operates in a Last In, First Out (LIFO) manner.</li>
+<li>When a function is called, it is added to the top of the stack. When the function returns, it is removed from the stack.</li>
 </ul>
-<p>Additionally, there are two style guides that go meta:</p>
+</li>
+<li>
+<p><strong>Web APIs</strong>:</p>
 <ul>
-<li><a href="http://sideeffect.kr/popularconvention/">Popular Conventions on GitHub</a> analyzes GitHub code to find out which coding conventions are most frequently used.</li>
-<li><a href="https://seravo.com/fi/2013/javascript-the-winning-style">JavaScript, the winning style</a> examines what the majority of several popular style guides recommend.</li>
+<li>Browser-provided APIs (like <code>setTimeout</code>, <code>fetch</code>, or DOM events) handle tasks that are asynchronous or take time to complete.</li>
+<li>When an asynchronous operation is initiated, it is offloaded to the Web API, and the main thread continues executing other code.</li>
+</ul>
+</li>
+<li>
+<p><strong>Callback Queue (Task Queue)</strong>:</p>
+<ul>
+<li>Once an asynchronous operation is completed, its callback function is placed in the callback queue.</li>
+<li>
+<p>Examples of tasks in the callback queue include:</p>
+</li>
+<li>
+<p>Callbacks from <code>setTimeout</code> or <code>setInterval</code>.</p>
+</li>
+<li>Event handlers like <code>click</code> or <code>keypress</code>.</li>
+<li>Callbacks from network requests (<code>fetch</code> or <code>XMLHttpRequest</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Microtask Queue</strong>:</p>
+<ul>
+<li>This queue has higher priority than the callback queue and is used for promises and other microtasks.</li>
+<li>
+<p>Examples of microtasks include:</p>
+</li>
+<li>
+<p><code>Promise.then()</code> or <code>Promise.catch()</code> callbacks.</p>
+</li>
+<li><code>queueMicrotask()</code>.</li>
+<li><code>MutationObserver</code> callbacks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Event Loop</strong>:</p>
+<ul>
+<li>The event loop constantly checks if the call stack is empty.</li>
+<li>If the call stack is empty, it first processes all tasks in the microtask queue.</li>
+<li>Once the microtask queue is empty, it processes tasks in the callback queue.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="example-of-the-event-loop-in-action">Example of the Event Loop in Action</h3>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Start"</span><span class="p">);</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Timeout callback"</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">},</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">().</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Promise resolved"</span><span class="p">);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">});</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"End"</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><span class="filename">Output</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Start
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>End
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Promise<span class="w"> </span>resolved
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Timeout<span class="w"> </span>callback
+</span></code></pre></div>
+<details class="note" open="open">
+<summary>Explanation</summary>
+<ol>
+<li>
+<p><code>console.log('Start')</code> is executed and added to the call stack.</p>
+</li>
+<li>
+<p><code>setTimeout</code> is called, and its callback is offloaded to the Web API. After the timer completes (even if it's 0ms), the callback is moved to the <mark>callback queue</mark>.</p>
+</li>
+<li>
+<p><code>Promise.resolve().then()</code> is called, and its callback is added to the <mark>microtask queue</mark>.</p>
+</li>
+<li>
+<p><code>console.log('End')</code> is executed and added to the call stack.</p>
+</li>
+<li>
+<p>The call stack is now empty, so the event loop processes the <mark>microtask queue</mark> first, logging <code>Promise resolved</code>.</p>
+</li>
+<li>
+<p>Finally, the event loop processes the callback queue, logging <code>Timeout callback</code>.</p>
+</li>
+</ol>
+</details>
+<hr>
+<h3 id="key-points-about-the-event-loop">Key Points About the Event Loop</h3>
+<ol>
+<li>
+<p><strong>Single-Threaded</strong>: JavaScript has only one call stack, meaning it can only do one thing at a time.</p>
+</li>
+<li>
+<p><strong>Non-Blocking</strong>: Asynchronous operations are handled by Web APIs, so they don't block the main thread.</p>
+</li>
+<li>
+<p><strong>Microtasks vs Macrotasks</strong>:</p>
+<ul>
+<li>Microtasks (e.g., promises) have higher priority and are executed before macrotasks (e.g., <code>setTimeout</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Event Loop Phases</strong>:</p>
+<ul>
+<li>The event loop processes microtasks first, then macrotasks, and repeats this cycle.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="visual-representation-of-the-event-loop">Visual Representation of the Event Loop</h3>
+<ol>
+<li><strong>Call Stack</strong>: Executes synchronous code.</li>
+<li><strong>Web APIs</strong>: Handle asynchronous operations.</li>
+<li><strong>Callback Queue</strong>: Holds callbacks from asynchronous operations.</li>
+<li><strong>Microtask Queue</strong>: Holds promise callbacks and other microtasks.</li>
+<li><strong>Event Loop</strong>: Moves tasks from the queues to the call stack when it's empty.</li>
+</ol>
+<hr>
+<h3 id="real-world-analogy">Real-World Analogy</h3>
+<p>Imagine a restaurant:</p>
+<ul>
+<li>The <strong>call stack</strong> is the chef cooking one dish at a time.</li>
+<li>The <strong>Web APIs</strong> are the kitchen assistants handling tasks like fetching ingredients or washing dishes.</li>
+<li>The <strong>callback queue</strong> is the line of orders waiting to be cooked.</li>
+<li>The <strong>microtask queue</strong> is a priority line for urgent orders (like a VIP customer).</li>
+<li>The <strong>event loop</strong> is the manager who ensures the chef cooks orders from the priority line first, then the regular line.</li>
 </ul>
 <hr>
-<h2 id="reference">Reference</h2>
+<h3 id="summary">Summary</h3>
+<p>The <strong>event loop</strong> is the backbone of JavaScript's asynchronous programming model. It ensures that asynchronous tasks are handled efficiently without blocking the main thread. By understanding the event loop, you can write more efficient and responsive JavaScript code.</p>
+<hr>
+<h2 id="event">Event</h2>
+<p>In JavaScript, an event is an action or occurrence that happens in the browser, such as a user clicking a button, resizing a window, or pressing a key. Events are a core part of interactive web applications, allowing developers to respond to user actions or other changes in the application.</p>
+<h3 id="event-basics">Event Basics</h3>
+<ol>
+<li>
+<p><strong>Event Types</strong>: There are many types of events in JavaScript, such as:</p>
 <ul>
-<li><a href="https://www.amazon.com/Speaking-JavaScript-Depth-Guide-Programmers/dp/1449365035">Book: Speaking JavaScript by Dr. Axel Rauschmayer</a></li>
-<li><a href="https://javascript.plainenglish.io/javascript-style-guides-d5d25df8cb0f">9 Most Useful JavaScript Style Guides To Write Better Code</a></li>
+<li>Mouse events: click, mouseover, mouseout, mousedown, mouseup</li>
+<li>Keyboard events: keydown, keyup, keypress</li>
+<li>Form events: submit, change, focus, blur</li>
+<li>Window events: load, resize, scroll</li>
+<li>Custom events: You can also create your own custom events.</li>
+</ul>
+</li>
+<li>
+<p><strong>Event Target</strong>: The element or object that the event occurs on. For example, if a user clicks a button, the button is the event target.</p>
+</li>
+<li>
+<p><strong>Event Listener</strong>: A function that waits for a specific event to occur and then executes in response. You attach an event listener to an element using methods like <code>addEventListener</code>.</p>
+</li>
+<li>
+<p><strong>Event Object</strong>: When an event occurs, the browser creates an <strong>event object</strong> that contains information about the event, such as the type of event, the target element, and additional data (e.g., mouse coordinates for a click event).</p>
+</li>
+</ol>
+<hr>
+<h3 id="example-of-an-event-in-javascript">Example of an Event in JavaScript</h3>
+<p>Here’s a simple example of handling a click event:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Select the button element</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// Add an event listener for the 'click' event</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="c1">// event is the event object</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Button clicked!"</span><span class="p">);</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Event type:"</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">type</span><span class="p">);</span><span class="w"> </span><span class="c1">// Output: "click"</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Target element:"</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">);</span><span class="w"> </span><span class="c1">// Output: The button element</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">});</span>
+</span></code></pre></div>
+<hr>
+<h3 id="event-flow-bubbling-and-capturing">Event Flow (Bubbling and Capturing)</h3>
+<p>Events in JavaScript follow a flow:</p>
+<ol>
+<li><strong>Capturing Phase</strong>: The event starts from the top of the DOM tree and goes down to the target element.</li>
+<li><strong>Target Phase</strong>: The event reaches the target element.</li>
+<li><strong>Bubbling Phase</strong>: The event bubbles up from the target element back to the top of the DOM tree.</li>
+</ol>
+<p>You can control whether an event listener is triggered during the capturing or bubbling phase using the third parameter of <code>addEventListener</code>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">element</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="s2">"click"</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Event triggered during bubbling phase"</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="kc">false</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">);</span><span class="w"> </span><span class="c1">// false (default) means bubbling phase</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nx">element</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="s2">"click"</span><span class="p">,</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Event triggered during capturing phase"</span><span class="p">);</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="kc">true</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p">);</span><span class="w"> </span><span class="c1">// true means capturing phase</span>
+</span></code></pre></div>
+<hr>
+<h3 id="preventing-default-behavior">Preventing Default Behavior</h3>
+<p>Some events have default behaviors (e.g., a form submission or a link click). You can prevent these default behaviors using <code>event.preventDefault()</code>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">"a"</span><span class="p">);</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">link</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span><span class="w"> </span><span class="c1">// Prevents the link from navigating</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Link click prevented"</span><span class="p">);</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">});</span>
+</span></code></pre></div>
+<hr>
+<h3 id="custom-events">Custom Events</h3>
+<p>You can create and dispatch custom events using the <code>CustomEvent</code> constructor:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// Create a custom event</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">customEvent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">CustomEvent</span><span class="p">(</span><span class="s2">"myCustomEvent"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nx">detail</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">"This is a custom event"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">});</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1">// Add an event listener for the custom event</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"myCustomEvent"</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Custom event triggered:"</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">});</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1">// Dispatch the custom event</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="nb">document</span><span class="p">.</span><span class="nx">dispatchEvent</span><span class="p">(</span><span class="nx">customEvent</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="summary_1">Summary</h3>
+<ul>
+<li>An <strong>event</strong> in JavaScript is an action or occurrence in the browser.</li>
+<li>Events are handled using <strong>event listeners</strong> attached to elements.</li>
+<li>The <strong>event object</strong> contains details about the event.</li>
+<li>Events flow through the DOM in three phases: capturing, target, and bubbling.</li>
+<li>You can prevent default behaviors or create custom events.</li>
 </ul></div>
 
 
@@ -5499,7 +5975,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../designpattern/advanced/recall/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Recall">
+          <a href="../../js/miscellaneous/books/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Books">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -5509,20 +5985,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Recall
+                Books
               </div>
             </div>
           </a>
         
         
           
-          <a href="../js-style-guide/" class="md-footer__link md-footer__link--next" aria-label="Next: Style">
+          <a href="../../designpattern/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Style
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
