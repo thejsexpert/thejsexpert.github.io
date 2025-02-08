@@ -6115,30 +6115,36 @@ Reasons:</p>
 <p>String to Boolean</p>
 <ul>
 <li>Non-empty strings → <code>true</code></li>
-<li>Empty string <code>""</code> → <code>false</code></li>
-</ul>
+<li>
+<p>Empty string <code>""</code> → <code>false</code></p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="s2">""</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
 </span></code></pre></div>
+</li>
+</ul>
 </li>
 <li>
 <p><strong>Number to Boolean</strong></p>
 <ul>
 <li><code>0</code>, <code>-0</code>, <code>NaN</code> → <code>false</code></li>
-<li>All other numbers → <code>true</code></li>
-</ul>
+<li>
+<p>All other numbers → <code>true</code></p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="mf">0</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="mf">42</span><span class="p">));</span><span class="w"> </span><span class="c1">// true</span>
 </span></code></pre></div>
 </li>
+</ul>
+</li>
 <li>
 <p><strong><code>null</code> and <code>undefined</code></strong></p>
 <ul>
-<li>Always false.</li>
-</ul>
+<li>
+<p>Always false.</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="kc">null</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="kc">undefined</span><span class="p">));</span><span class="w"> </span><span class="c1">// false</span>
 </span></code></pre></div>
+</li>
+</ul>
 </li>
 </ol>
 <hr>
