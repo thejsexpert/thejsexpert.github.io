@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/designpattern/categories/">
+        <link rel="canonical" href="https://thejsexpert.github.io/js-async/promise/">
       
       
-        <link rel="prev" href="../js/">
+        <link rel="prev" href="../overview/">
       
       
-        <link rel="next" href="../mnemonic/">
+        <link rel="next" href="../../eventloop/intro/">
       
       
       <link rel="icon" href="../../assets/logo/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Categories - JS Expert Docs</title>
+        <title>Promise - JS Expert Docs</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#categories" class="md-skip">
+        <a href="#promise" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Categories
+              Promise
             
           </span>
         </div>
@@ -289,11 +289,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../js-async/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   Async
@@ -325,13 +327,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../designpattern/intro/" class="md-tabs__link">
           
   
   Design Pattern
@@ -4234,23 +4234,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -4262,7 +4267,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Async
@@ -4276,7 +4281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../js-async/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4295,10 +4300,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../js-async/promise/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Promise
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -4308,6 +4334,146 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#promise-thenables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promise &amp; Thenables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difference-between-fetch-and-promise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference Between fetch and Promise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Difference Between fetch and Promise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      fetch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promise_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promise
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      In summary:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vip-watch-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIP WATCH THIS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Question">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-determine-if-a-function-in-javascript-returns-a-promise-you-can-use-these-practical-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      To determine if a function in JavaScript returns a Promise, you can use these practical approaches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-determine-if-something-is-a-promise-in-javascript-you-can-use-these-practical-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      To determine if something is a Promise in JavaScript, you can use these practical methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-can-identify-a-promise-in-javascript-using-several-reliable-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      You can identify a Promise in JavaScript using several reliable methods:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4524,28 +4690,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4557,7 +4718,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Design Pattern
@@ -4571,7 +4732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../designpattern/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4593,7 +4754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../daily/" class="md-nav__link">
+      <a href="../../designpattern/daily/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4615,7 +4776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../official/" class="md-nav__link">
+      <a href="../../designpattern/official/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4637,7 +4798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../js/" class="md-nav__link">
+      <a href="../../designpattern/js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4656,31 +4817,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Categories
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../designpattern/categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4690,95 +4830,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-are-design-patterns-in-javascript-focused-on-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why are design patterns in JavaScript focused on objects?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#are-design-patterns-only-about-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      Are design patterns only about objects?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#non-object-focused-dp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Non Object focused dp
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Non Object focused dp">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-functional-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Functional Patterns:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-asynchronous-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Asynchronous Patterns:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-state-management-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. State Management Patterns:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4791,7 +4842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mnemonic/" class="md-nav__link">
+      <a href="../../designpattern/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4852,7 +4903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creational/factory/" class="md-nav__link">
+      <a href="../../designpattern/creational/factory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4921,7 +4972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/intro/" class="md-nav__link">
+      <a href="../../designpattern/react/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4943,7 +4994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/mostly-used/" class="md-nav__link">
+      <a href="../../designpattern/react/mostly-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4965,7 +5016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/container-presentation/" class="md-nav__link">
+      <a href="../../designpattern/react/container-presentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4987,7 +5038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/container-presentation-theory/" class="md-nav__link">
+      <a href="../../designpattern/react/container-presentation-theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5009,7 +5060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/custom-component/" class="md-nav__link">
+      <a href="../../designpattern/react/custom-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5031,7 +5082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/antd-resuable-component/" class="md-nav__link">
+      <a href="../../designpattern/react/antd-resuable-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5100,7 +5151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/recall/" class="md-nav__link">
+      <a href="../../designpattern/advanced/recall/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6505,64 +6556,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-are-design-patterns-in-javascript-focused-on-objects" class="md-nav__link">
+  <a href="#promise-thenables" class="md-nav__link">
     <span class="md-ellipsis">
-      Why are design patterns in JavaScript focused on objects?
+      Promise &amp; Thenables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#are-design-patterns-only-about-objects" class="md-nav__link">
+  <a href="#difference-between-fetch-and-promise" class="md-nav__link">
     <span class="md-ellipsis">
-      Are design patterns only about objects?
+      Difference Between fetch and Promise
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#non-object-focused-dp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Non Object focused dp
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Non Object focused dp">
+    <nav class="md-nav" aria-label="Difference Between fetch and Promise">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-functional-patterns" class="md-nav__link">
+  <a href="#fetch" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Functional Patterns:
+      fetch
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-asynchronous-patterns" class="md-nav__link">
+  <a href="#promise_1" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Asynchronous Patterns:
+      Promise
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-state-management-patterns" class="md-nav__link">
+  <a href="#comparison-table" class="md-nav__link">
     <span class="md-ellipsis">
-      3. State Management Patterns:
+      Comparison Table
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#in-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary:
+      In summary:
     </span>
   </a>
   
@@ -6570,6 +6612,66 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vip-watch-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIP WATCH THIS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Question">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-determine-if-a-function-in-javascript-returns-a-promise-you-can-use-these-practical-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      To determine if a function in JavaScript returns a Promise, you can use these practical approaches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-determine-if-something-is-a-promise-in-javascript-you-can-use-these-practical-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      To determine if something is a Promise in JavaScript, you can use these practical methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-can-identify-a-promise-in-javascript-using-several-reliable-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      You can identify a Promise in JavaScript using several reliable methods:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
   
 </li>
       
@@ -6589,225 +6691,488 @@
 
 
 
-<div><h1 id="categories">Categories</h1>
-<div class="admonition question">
-<p class="admonition-title">so design patterns in js is all about objects</p>
-</div>
-<p><strong>Yes</strong>, design patterns in JavaScript often revolve around objects because JavaScript is an object-oriented language (though it also supports functional programming). In JavaScript, most design patterns are centered around organizing and structuring objects, managing their behavior, and defining how they interact with each other.</p>
-<p>Here are some common design patterns in JavaScript that focus on objects:</p>
+<div><h1 id="promise">Promise</h1>
+<p>In JavaScript, <mark>Promises</mark> are objects that link the <strong>producing</strong> and the <strong>consuming code</strong> together. While in simple terms a Promise in JavaScript means the same as a promise in real life.</p>
+<p>Whenever a Promise is created there are 3 conditions or would rather say results that we can expect:</p>
+<ul>
+<li>resolve</li>
+<li>reject</li>
+<li>pending</li>
+</ul>
+<p><a href="https://www.geeksforgeeks.org/javascript-program-that-returns-true-if-an-object-looks-like-a-promise/">Definition from geeksforgeeks</a></p>
 <hr>
-<details class="tip" open="open">
-<summary>Conclusion</summary>
-<p>While <strong>objects</strong> are central to JavaScript design patterns, these patterns are more about structuring and managing the relationships and behaviors of those objects. The goal is to make code easier to manage, extend, and maintain by applying reusable solutions to common design problems.</p>
-<p>Some patterns also borrow from functional programming principles, but the core structure often revolves around object creation, behavior management, and state handling.</p>
+<p><a class="glightbox" href="../../assets/js/promise-object--1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="https://www.freecodecamp.org/news/javascript-promise-object-explained/" src="../../assets/js/promise-object--1.png"></a>
+<a class="glightbox" href="../../assets/js/callback-vs-promise.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="https://www.freecodecamp.org/news/javascript-promise-object-explained/" src="../../assets/js/callback-vs-promise.png"></a></p>
+<hr>
+<details class="question" open="open">
+<summary>Promise</summary>
+<p>When you run <code>console.log(fetch instanceof Promise);</code> and get <code>false</code>, it's because <code>fetch</code> is a <mark>function</mark>, not a <mark>Promise object</mark>.</p>
+<ul>
+<li><code>fetch</code> is a built-in JavaScript function that returns a Promise when you call it, but the function itself is not an instance of <code>Promise</code>.</li>
+<li>
+<p>If you want to check if the result of calling <code>fetch()</code> is a Promise, you should do:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://example.com'</span><span class="p">)</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Promise</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>If you check <code>fetch instanceof Promise</code>, you're asking if the function object <code>fetch</code> was created by the Promise constructor, which is not the case.</p>
+</li>
+<li>
+<p><strong>The correct way to check</strong> if something is a Promise is either using <code>instanceof Promise</code> <mark>on the result of</mark> <code>fetch()</code>, or by checking if it has a <code>.then</code> method.</p>
+</li>
+</ul>
+<p>Summary:</p>
+<ul>
+<li><code>fetch</code> is a function, not a Promise.</li>
+<li><code>fetch()</code> (when called) returns a Promise.</li>
+</ul>
+<p>So, <code>console.log(fetch instanceof Promise);</code> is <code>false</code> because <code>fetch</code> is a function, not a Promise object.</p>
+<hr>
+<ul>
+<li><a href="https://stackoverflow.com/questions/27746304/how-to-check-if-an-object-is-a-promise">How to check if an object is a Promise?</a></li>
+<li>
+<p><a href="https://www.reddit.com/r/learnprogramming/comments/onihyt/javascript_can_someone_explain_how_this_code_with/?rdt=50398">[JavaScript] Can someone explain how this code with fetch and promises works???</a></p>
+</li>
+<li>
+<p><a href="https://www.freecodecamp.org/news/javascript-promise-object-explained/">How JavaScript Promises Work – Tutorial for Beginners</a></p>
+</li>
+</ul>
 </details>
 <hr>
-<h2 id="why-are-design-patterns-in-javascript-focused-on-objects">Why are design patterns in JavaScript focused on objects?</h2>
-<p>Here's why design patterns in JavaScript often focus on objects:</p>
+<h2 id="promise-thenables">Promise &amp; Thenables</h2>
+<p>A Promise in JavaScript is an <mark>object</mark> that represents the eventual completion (success) or failure of an asynchronous operation and its resulting value. When you perform something that takes time (like fetching data from a server), a Promise acts as a placeholder for the future result. It can be in one of three states:</p>
+<ul>
+<li><strong>Pending</strong>: The operation is still in progress.</li>
+<li><strong>Fulfilled</strong>: The operation completed successfully, and the Promise has a result.</li>
+<li><strong>Rejected</strong>: The operation failed, and the Promise has an error</li>
+</ul>
+<p>You interact with Promises using <code>.then()</code> for success and <code>.catch()</code> for errors.</p>
+<p><strong>Thenables</strong> are any objects that have a <code>.then()</code> method. All Promises are thenables, but not all thenables are Promises. For example, you can create a plain object with a <code>.then()</code> method, and JavaScript will treat it like a Promise in many situations. This means:</p>
+<ul>
+<li><strong>Promise</strong>: A specific, standardized object with special behavior for handling asynchronous results.</li>
+<li><strong>Thenable</strong>: Any object with a <code>.then()</code> method, which can be "promise-like" but may not have all the features or guarantees of a real Promise.</li>
+</ul>
+<p>Summary:</p>
+<ul>
+<li>All Promises are thenables.</li>
+<li>Not all thenables are real Promises.</li>
+<li>Promises follow a standard and have built-in behaviors; thenables just need a <code>.then()</code> method.</li>
+</ul>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// A real Promise</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">promise</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nx">resolve</span><span class="p">(</span><span class="s2">"done!"</span><span class="p">);</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">});</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1">// A thenable (not a real Promise)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kd">let</span><span class="w"> </span><span class="nx">thenable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="nx">then</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nx">resolve</span><span class="p">(</span><span class="s2">"done!"</span><span class="p">);</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>If you pass either to <code>Promise.resolve()</code>, JavaScript will treat both as if they are Promises, but only the first is a true Promise.</p>
+<p><strong>Key Usage Differences</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Promise</th>
+<th>Thenable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standardized</td>
+<td>Yes (Promises/A+ spec)</td>
+<td>No (just needs a <code>.then()</code> method)</td>
+</tr>
+<tr>
+<td>Reliability</td>
+<td>Always predictable (chaining, error handling, etc.)</td>
+<td>May not behave exactly like a real Promise</td>
+</tr>
+<tr>
+<td>Async/Await</td>
+<td>Fully supported</td>
+<td>Supported if the thenable implements <code>.then()</code></td>
+</tr>
+<tr>
+<td>Interoperability</td>
+<td>Always works with <code>Promise.resolve()</code> and chains</td>
+<td>Works, but may have quirks in edge cases</td>
+</tr>
+<tr>
+<td>Library Support</td>
+<td>Used by modern APIs (e.g., Fetch, Axios)</td>
+<td>Used by some libraries for compatibility</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reference</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">Definiation</a></li>
+<li><a href="https://javascript.plainenglish.io/whats-the-difference-between-a-thenable-and-a-promise-74d697bc9c79">What’s the difference between a Thenable and a Promise?</a></li>
+<li><a href="https://stackoverflow.com/questions/29435262/regarding-promises-a-specification-what-is-the-difference-between-the-terms-t">Regarding Promises/A+ Specification, what is the difference between the terms "thenable" and "promise"?</a></li>
+<li><a href="https://masteringjs.io/tutorials/fundamentals/thenable">Thenables in JavaScript</a></li>
+</ul>
+<hr>
+<h2 id="difference-between-fetch-and-promise">Difference Between <code>fetch</code> and <code>Promise</code></h2>
+<h3 id="fetch">fetch</h3>
+<ul>
+<li>
+<p><code>fetch</code> is a built-in JavaScript function used to make HTTP requests (like GET, POST) to servers.</p>
+</li>
+<li>
+<p>When you call <code>fetch()</code>, it immediately returns a Promise that will eventually resolve to a Response object representing the result of the HTTP request.</p>
+</li>
+<li>
+<p><code>fetch</code> is specifically designed for network operations and is part of the Fetch API, which replaces older methods like XMLHttpRequest.</p>
+</li>
+<li>
+<p>Example usage:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s2">"https://api.example.com/data"</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="promise_1">Promise</h3>
+<ul>
+<li>
+<p>A <code>Promise</code> is a general-purpose JavaScript object for handling asynchronous operations.</p>
+</li>
+<li>
+<p>It represents a value that may be available now, in the future, or never, and provides methods (<code>then</code>, <code>catch</code>) to handle the eventual result or error.</p>
+</li>
+<li>
+<p>Promises are not tied to networking; they can be used for any asynchronous task, such as timers, file reading, or custom async logic.</p>
+</li>
+<li>
+<p>Example usage:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">myPromise</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="c1">// async operation</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">success</span><span class="p">)</span><span class="w"> </span><span class="nx">resolve</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">});</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nx">myPromise</span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">));</span>
+</span></code></pre></div>
+</li>
+</ul>
+<h3 id="comparison-table">Comparison Table</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><code>fetch</code></th>
+<th><code>Promise</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What it is</td>
+<td>Function for network requests</td>
+<td>Object for managing async operations</td>
+</tr>
+<tr>
+<td>Returns</td>
+<td>A Promise (when called)</td>
+<td>N/A (it <em>is</em> the object itself)</td>
+</tr>
+<tr>
+<td>Purpose</td>
+<td>HTTP/REST API calls</td>
+<td>Handle any asynchronous process</td>
+</tr>
+<tr>
+<td>Usage example</td>
+<td><code>fetch(url).then(...)</code></td>
+<td><code>new Promise(...).then(...)</code></td>
+</tr>
+<tr>
+<td>Part of</td>
+<td>Fetch API (Web standard)</td>
+<td>ES6 (ECMAScript 2015) standard</td>
+</tr>
+</tbody>
+</table>
+<h3 id="in-summary">In summary:</h3>
+<ul>
+<li><code>fetch</code> is a function that returns a Promise when making network requests.</li>
+<li><code>Promise</code> is the underlying mechanism that allows you to handle the <mark>asynchronous result</mark> of <code>fetch</code> and many other operations.</li>
+</ul>
+<p><strong>Reference</strong></p>
+<ul>
+<li><a href="https://dev.to/mahf001/fetch-api-promise-3ln1">Fetch API &amp; Promise</a></li>
+<li><a href="https://subscription.packtpub.com/book/programming/9781838641917/15/ch15lvl1sec19/promises-and-the-fetch-api">Promises and the Fetch API</a></li>
+<li><a href="https://education.launchcode.org/intro-to-professional-web-dev/chapters/fetch/asynchronous.html">27.2. Asynchronous and Promises</a></li>
+</ul>
+<hr>
+<p><a href="https://www.youtube.com/shorts/RezYIIJYZ6Y">Youtube Tricks</a></p>
+<p><a href="https://www.youtube.com/watch?v=D_5T6KMTRb8">Github Codespace crash course</a></p>
+<hr>
+<h2 id="vip-watch-this"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">VIP WATCH THIS</a></h2>
+<hr>
+<h2 id="question">Question</h2>
+<h3 id="to-determine-if-a-function-in-javascript-returns-a-promise-you-can-use-these-practical-approaches">To determine if a function in JavaScript returns a Promise, you can use these practical approaches</h3>
+<details class="tip" open="open">
+<summary>To determine if a function in JavaScript returns a Promise, you can use these practical approaches</summary>
 <ol>
 <li>
-<p><strong>JavaScript is Object-Oriented</strong>: JavaScript supports object-oriented programming (OOP), which revolves around objects and their properties/methods. Even though JavaScript is multi-paradigm and supports functional programming, the language's design encourages using objects to model real-world entities and behaviors.</p>
+<p><strong>Check the Documentation or Source</strong></p>
+<ul>
+<li>The most reliable way is to consult the official documentation or the source code. For example, libraries like Axios, Fetch API, and many modern async utilities explicitly state that their functions return Promises.</li>
+</ul>
 </li>
 <li>
-<p><strong>Objects Represent Real-World Entities</strong>: Objects are great for modeling real-world concepts. For example, a <code>Car</code> object can have properties like <code>make</code> and <code>model</code>, and methods like <code>start()</code> or <code>stop()</code>. This makes it easier to represent and work with complex systems. Many design patterns, such as the Factory or Singleton patterns, aim to solve problems of object creation and management.</p>
+<p><strong>Look for the <code>Promise</code> Constructor</strong></p>
+<ul>
+<li>
+<p>If a function is written like this:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">myAsyncFunc</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">        </span><span class="c1">// async code</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>It returns a Promise.</p>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>Flexibility of Objects</strong>: JavaScript objects are flexible, allowing dynamic property addition and methods. This is why many design patterns (like the Module or Decorator patterns) revolve around adding or modifying behaviors to objects at runtime.</p>
+<p><strong>Check for <code>async</code> Keyword</strong></p>
+<ul>
+<li>
+<p>Functions declared with async always return a Promise, regardless of what you return inside:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">foo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mf">42</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">}</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1">// foo() returns Promise&lt;number&gt;</span>
+</span></code></pre></div>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>State Management with Objects</strong>: Objects are an excellent way to manage state. Many design patterns, such as the <code>Observer</code> or <code>State</code> patterns, are used to manage how an object's state changes over time or how it communicates with other objects when the state changes. Objects are ideal for keeping track of internal states and behaviors.</p>
+<p><strong>Test with <code>.then()</code></strong></p>
+<ul>
+<li>
+<p>If you call the function and can chain <code>.then()</code> on its result, it returns a Promise:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">myFunc</span><span class="p">();</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">then</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"function"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="c1">// result is a Promise or thenable</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>Encapsulation</strong>: Objects allow for encapsulation—keeping internal details private and exposing only the necessary interface. This is the basis of patterns like the <code>Module</code> and <code>Singleton</code> patterns, where you limit access to certain parts of an object while exposing others to the outside world.</p>
+<p><strong>Check for "thenable"</strong></p>
+<ul>
+<li>Some objects are "thenable" (have a <code>.then()</code> method) but aren't native Promises. Calling .then() is a quick test, but only native Promises have the full API.</li>
+</ul>
 </li>
 <li>
-<p><strong>Inheritance</strong>: JavaScript (with prototypal inheritance) allows objects to inherit properties and methods from other objects. Patterns like the <code>Prototype</code> pattern take advantage of this, allowing you to create new objects based on the structure of existing ones without directly creating a new class.</p>
+<p><strong>Common Examples</strong></p>
+<ul>
+<li>
+<p>Returns a Promise:</p>
+<ul>
+<li><code>fetch()</code>, <code>axios.get()</code>, <code>async function</code>, <code>Promise.resolve()</code></li>
+</ul>
+</li>
+<li>
+<p>Does NOT return a Promise:</p>
+<ul>
+<li>Most synchronous functions, <code>Array.map()</code>, <code>console.log()</code>, etc.</li>
+</ul>
+</li>
+</ul>
 </li>
 </ol>
 <hr>
-<h2 id="are-design-patterns-only-about-objects">Are design patterns only about objects?</h2>
-<p>Not necessarily. While most of the popular patterns in JavaScript revolve around objects, there are also patterns that are more about function management, such as:</p>
-<ul>
-<li>
-<p><strong>Functional Patterns</strong>: Patterns like <code>Currying</code>, <code>Memoization</code>, and <code>Higher-Order Functions</code> focus on functions rather than objects.</p>
-</li>
-<li>
-<p><strong>Async Patterns</strong>: Patterns like <code>Observer</code> and <code>Promise</code> or <code>Async/Await</code> are more concerned with handling asynchronous operations.</p>
-</li>
-</ul>
-<p>However, when you're dealing with <mark>object-oriented</mark> design in JavaScript (or any OOP-based language), you'll often find that design patterns are heavily oriented around how objects are structured, created, and interact with one another.</p>
-<details class="tip" open="open">
-<summary>Summary</summary>
-<p>Design patterns in JavaScript are often centered around objects because objects are a natural fit for representing real-world entities, encapsulating state, and managing behaviors. While JavaScript allows for both object-oriented and functional programming, the language's object model makes it a popular choice for applying these design patterns.</p>
+<p><strong>Summary Table</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function Type</th>
+<th style="text-align: center;">Returns Promise?</th>
+<th>How to Tell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>async function</code></td>
+<td style="text-align: center;">Yes</td>
+<td>Uses <code>async</code> keyword</td>
+</tr>
+<tr>
+<td>Uses <code>new Promise(...)</code></td>
+<td style="text-align: center;">Yes</td>
+<td>Returns <code>new Promise</code></td>
+</tr>
+<tr>
+<td>Library docs say "returns Promise"</td>
+<td style="text-align: center;">Yes</td>
+<td>Check documentation</td>
+</tr>
+<tr>
+<td>Supports <code>.then()</code> chaining</td>
+<td style="text-align: center;">Yes</td>
+<td>Test with <code>.then()</code></td>
+</tr>
+<tr>
+<td>Synchronous function</td>
+<td style="text-align: center;">No</td>
+<td>Returns value directly</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>In short:</strong></p>
+<p>If a function is declared with <code>async</code>, returns <code>new Promise</code>, or documentation says it returns a Promise, it does. You can also test by chaining <code>.then()</code> — if that works, it's a Promise.</p>
 </details>
 <hr>
-<p><strong>Are Design Patterns Only for Objects in JavaScript?</strong></p>
-<p>No, design patterns are not exclusive to JavaScript objects. While JavaScript is an object-oriented language, design patterns apply to all kinds of software development, including object-oriented, functional, and procedural programming. They are commonly used in:</p>
+<h3 id="to-determine-if-something-is-a-promise-in-javascript-you-can-use-these-practical-methods">To determine if something is a Promise in JavaScript, you can use these practical methods</h3>
+<details class="tip" open="open">
+<summary>To determine if something is a Promise in JavaScript, you can use these practical methods:</summary>
+<ol>
+<li>
+<p><strong>Using <code>instanceof</code> Operator</strong></p>
+<p>Check if a value is an instance of the Promise constructor:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">isPromise</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Promise</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>This returns <code>true</code> if the value is a Promise, and <code>false</code> otherwise.</p>
+</li>
+<li>
+<p><strong>Checking for a <code>.then</code> Method</strong></p>
+<p>Promises have a <code>.then</code> method. You can check if the value is an object (or function) and has a <code>.then</code> method:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">isPromise</span><span class="p">(</span><span class="nx">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">!!</span><span class="nx">p</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">p</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'object'</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">p</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'function'</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">p</span><span class="p">.</span><span class="nx">then</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'function'</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>This also works for "thenables" (objects that act like Promises).</p>
+</li>
+<li>
+<p><strong>Behavioral Check</strong></p>
+<p>Try chaining <code>.then()</code> on the function's return value. If it works, it’s a Promise or <mark>thenable</mark>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">someFunction</span><span class="p">();</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">then</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'function'</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="c1">// result is a Promise or thenable</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>If <code>.then()</code> is not a function, it's not a Promise.</p>
+</li>
+<li>
+<p><strong>Check Documentation or Source</strong></p>
+<p>Official documentation or source code will state if a function returns a Promise.</p>
+</li>
+</ol>
+<hr>
+<p><strong>Summary:</strong></p>
 <ul>
-<li><strong>Object-Oriented Programming (OOP)</strong>: Patterns like Singleton, Factory, and Observer are often associated with OOP languages (like Java or C++), but they are also used in JavaScript.</li>
-<li><strong>Functional Programming</strong>: Patterns like Currying, Composition, or Decorator can be implemented in a functional programming style, which is often seen in modern JavaScript.</li>
+<li>Use <code>instanceof</code> Promise for native Promises.</li>
+<li>Check for a <code>.then</code> method for Promises and thenables.</li>
+<li>Consult docs for library or built-in functions.</li>
 </ul>
-<p>In JavaScript, while you may see patterns implemented with objects or classes (like the Singleton), many patterns can also be applied to functions, closures, and other structures.</p>
+<p>These methods help you reliably distinguish between Promises and non-Promises in JavaScript.</p>
+</details>
 <hr>
-<h2 id="non-object-focused-dp">Non Object focused dp</h2>
-<p>Would you like to explore non-object-focused design patterns in JavaScript or dive deeper into any specific object-based pattern?</p>
-<p>Great! Let's explore some <mark>non-object-focused design patterns</mark> in JavaScript, particularly those that are more function-oriented or deal with asynchronous behavior. These patterns focus on <strong>functions</strong>, <strong>state management</strong>, and <strong>flow control</strong> rather than directly on objects.</p>
+<h3 id="you-can-identify-a-promise-in-javascript-using-several-reliable-methods">You can identify a Promise in JavaScript using several reliable methods:</h3>
+<details class="question" open="open">
+<summary>You can identify a Promise in JavaScript using several reliable methods:</summary>
+<ol>
+<li>
+<p>Check for <code>.then</code> Method ("Thenable" Check)</p>
+<p>The most common and broadly compatible way is to check if the object has a <code>.then</code> method that is a function:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">isPromise</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">!!</span><span class="nx">value</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="nx">then</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"function"</span><span class="p">;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>If this returns <code>true</code>, the value is either a Promise or a "thenable" (an object that behaves like a Promise).</p>
+</li>
+<li>
+<p>Using <code>instanceof</code> Promise</p>
+<p>You can check if the value is an instance of the native Promise constructor:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">isPromise</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nb">Promise</span><span class="p">;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>This is reliable for native Promises, but may not work across different JavaScript contexts (like iframes) or for custom thenables.</p>
+</li>
+<li>
+<p>Using <code>Promise.resolve()</code> Identity</p>
+<p>If <code>Promise.resolve(value) === value</code>, then <code>value</code> is a Promise:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">isPromise</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">value</span><span class="p">;</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>This works because <code>Promise.resolve()</code> returns the same object if the input is already a Promise.</p>
+</li>
+<li>
+<p><strong>Documentation and Source Code</strong></p>
+<p>For built-in functions and libraries, check the documentation to see if a function returns a Promise.</p>
+</li>
+</ol>
 <hr>
-<h3 id="1-functional-patterns">1. Functional Patterns:</h3>
-<p>These patterns focus on the behavior and manipulation of functions themselves.</p>
-<p><strong>1.1. Currying:</strong></p>
-<p>Currying is the process of transforming a function that takes multiple arguments into a series of functions that each take one argument.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p">};</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">add5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="mf">5</span><span class="p">);</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add5</span><span class="p">(</span><span class="mf">10</span><span class="p">));</span><span class="w"> </span><span class="c1">// 15</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add5</span><span class="p">(</span><span class="mf">20</span><span class="p">));</span><span class="w"> </span><span class="c1">// 25</span>
-</span></code></pre></div>
-<p>In this example, <code>add</code> is curried so that you can create specialized functions (like <code>add5</code>) that remember the first argument and return a function that takes the next argument.</p>
-<p><strong>1.2. Memoization:</strong></p>
-<p>Memoization is a technique for optimizing performance by caching the results of expensive function calls based on input parameters. If the same input is provided again, the result is retrieved from the cache instead of recalculating it.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">memoize</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">cache</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">cache</span><span class="p">[</span><span class="nx">arg</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">cache</span><span class="p">[</span><span class="nx">arg</span><span class="p">];</span><span class="w"> </span><span class="c1">// Return cached result</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fn</span><span class="p">(</span><span class="nx">arg</span><span class="p">);</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">      </span><span class="nx">cache</span><span class="p">[</span><span class="nx">arg</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="p">};</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">slowFunction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">num</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Calculating..."</span><span class="p">);</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">num</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">};</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fastFunction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">memoize</span><span class="p">(</span><span class="nx">slowFunction</span><span class="p">);</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fastFunction</span><span class="p">(</span><span class="mf">10</span><span class="p">));</span><span class="w"> </span><span class="c1">// Calculating... 20</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fastFunction</span><span class="p">(</span><span class="mf">10</span><span class="p">));</span><span class="w"> </span><span class="c1">// 20 (no calculation, from cache)</span>
-</span></code></pre></div>
-<p>This pattern improves performance by avoiding recalculating results that have already been computed.</p>
-<p><strong>1.3. Function Composition:</strong></p>
-<p>Function composition allows you to combine simple functions to create more complex ones. This pattern is useful in functional programming to build reusable and modular components.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">add5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">multiply2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// Composing the functions</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">add5AndMultiply2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">multiply2</span><span class="p">(</span><span class="nx">add5</span><span class="p">(</span><span class="nx">x</span><span class="p">));</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add5AndMultiply2</span><span class="p">(</span><span class="mf">3</span><span class="p">));</span><span class="w"> </span><span class="c1">// (3 + 5) * 2 = 16</span>
-</span></code></pre></div>
-<p>Here, <code>add5</code> and <code>multiply2</code> are simple functions, but when combined through composition, they create a more complex operation.</p>
+<p>Summary Table</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: center;">Works for Native Promise</th>
+<th style="text-align: center;">Works for Thenables</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.then</code> method check</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td>Most widely used</td>
+</tr>
+<tr>
+<td><code>instanceof Promise</code></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>Only for native Promises</td>
+</tr>
+<tr>
+<td><code>Promise.resolve(value)===value</code></td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td>Reliable for both</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h3 id="2-asynchronous-patterns">2. Asynchronous Patterns:</h3>
-<p>These patterns deal with handling asynchronous operations like promises, events, or time-based operations.</p>
-<p><strong>2.1. Promise Chain (Async Flow):</strong></p>
-<p>The Promise chain pattern helps to handle sequences of asynchronous operations in a clean, readable way. Promises are used to deal with async operations, allowing us to chain operations that depend on previous ones.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">getDataFromAPI</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">url</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="nx">resolve</span><span class="p">({</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="s2">"Some API data"</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="nx">reject</span><span class="p">(</span><span class="s2">"Error: No URL provided"</span><span class="p">);</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="p">});</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">}</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="nx">getDataFromAPI</span><span class="p">(</span><span class="s2">"https://api.example.com"</span><span class="p">)</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span><span class="w"> </span><span class="c1">// "Some API data"</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">getDataFromAPI</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span><span class="w"> </span><span class="c1">// Simulate error</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">  </span><span class="p">})</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">  </span><span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span><span class="w"> </span><span class="c1">// "Error: No URL provided"</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">  </span><span class="p">});</span>
-</span></code></pre></div>
-<p>The <code>Promise</code> pattern is especially useful for handling async code in a way that avoids deeply nested callbacks (callback hell) and makes the code more readable.</p>
-<p><strong>2.2. Observer Pattern (Event Listeners):</strong></p>
-<p>While it's often used in OOP, the <code>Observer</code> pattern also works in asynchronous scenarios where functions are notified of events or changes. In JavaScript, this is commonly implemented with event listeners or callbacks.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">EventEmitter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nx">EventEmitter</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">,</span><span class="w"> </span><span class="nx">listener</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">[</span><span class="nx">event</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">[</span><span class="nx">event</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">[</span><span class="nx">event</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">listener</span><span class="p">);</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">};</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nx">EventEmitter</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">emit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">[</span><span class="nx">event</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">[</span><span class="nx">event</span><span class="p">].</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">listener</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">listener</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">};</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="kd">const</span><span class="w"> </span><span class="nx">emitter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">EventEmitter</span><span class="p">();</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="nx">emitter</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">"dataReceived"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Data received:"</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">);</span>
-</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="p">});</span>
-</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>
-</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">  </span><span class="nx">emitter</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s2">"dataReceived"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="p">},</span><span class="w"> </span><span class="mf">2000</span><span class="p">);</span><span class="w"> </span><span class="c1">// Trigger after 2 seconds</span>
-</span></code></pre></div>
-<p>In this example, an <code>EventEmitter</code> acts as a "subject" that notifies listeners (observers) when an event (like <code>'dataReceived'</code>) happens asynchronously.</p>
-<p><strong>2.3. Async/Await (Syntactic Sugar for Promises):</strong></p>
-<p>The <code>async/await</code> pattern allows you to write asynchronous code in a more synchronous-like manner, improving readability and avoiding callback hell.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">fetchData</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Error:"</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">}</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nx">fetchData</span><span class="p">(</span><span class="s2">"https://api.example.com"</span><span class="p">);</span>
-</span></code></pre></div>
-<p>With <code>async/await</code>, asynchronous code looks like normal sequential code, making it easier to write and understand.</p>
-<hr>
-<h3 id="3-state-management-patterns">3. State Management Patterns:</h3>
-<p>State management patterns help to manage and track the state of an application, especially in larger or more complex applications.</p>
-<p><strong>3.1. State Pattern (Managing State Transitions):</strong></p>
-<p>In JavaScript, the State pattern is useful for managing state transitions, such as handling different modes or stages within an application.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">State</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"initial"</span><span class="p">;</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">newState</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">newState</span><span class="p">;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`State changed to: </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="p">};</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">getState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">;</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="p">};</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">}</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">appState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">State</span><span class="p">();</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="nx">appState</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span><span class="s2">"loading"</span><span class="p">);</span>
-</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="nx">appState</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span><span class="s2">"loaded"</span><span class="p">);</span>
-</span></code></pre></div>
-<p>This pattern can be extended to more complex systems where each state has its own behavior and transition logic.</p>
-<hr>
-<h3 id="summary">Summary:</h3>
-<p>These <mark>non-object-focused patterns</mark> in JavaScript show that design patterns are not always about objects. Many patterns focus on functions, flow control (like promises), and state management. These patterns are highly useful for:</p>
+<p><strong>In practice:</strong></p>
 <ul>
-<li><strong>Optimizing performance</strong> (Memoization).</li>
-<li><strong>Managing asynchronous behavior</strong> (Promise Chain, Async/Await).</li>
-<li><strong>Handling complex function behaviors</strong> (Currying, Function Composition).</li>
-<li><strong>Tracking and transitioning states</strong> (State Pattern, Observer for events).</li>
+<li>Use the <code>.then</code> method check for the broadest compatibility.</li>
+<li>Use <code>instanceof Promise</code> if you only care about native Promises.</li>
+<li>For maximum reliability, combine both if needed.</li>
+</ul>
+<p>These methods will help you confidently identify Promises in JavaScript.</p>
+</details>
+<hr>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">async function - MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise - MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve">Promise.resolve() - MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then">then() - MDN</a></li>
+<li><a href="https://javascript.info/promise-basics">JavaScript Promises - JavaScript.info</a></li>
+<li><a href="https://axios-http.com/docs/intro">Axios Documentation</a></li>
+<li><a href="https://reactrouter.com/en/main">React Router Documentation</a></li>
+<li>
+<p><a href="https://tanstack.com/router/v1">TanStack Router Documentation</a></p>
+</li>
+<li>
+<p><a href="https://www.geeksforgeeks.org/javascript-program-that-returns-true-if-an-object-looks-like-a-promise/">JavaScript Program that returns true if an object looks like a Promise</a></p>
+</li>
+<li><a href="https://www.simplilearn.com/tutorials/javascript-tutorial/javascript-promise">All You Need to Know About JavaScript Promises</a></li>
 </ul></div>
 
 
@@ -6844,7 +7209,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../js/" class="md-footer__link md-footer__link--prev" aria-label="Previous: JS">
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -6854,20 +7219,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                JS
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mnemonic/" class="md-footer__link md-footer__link--next" aria-label="Next: Mnemonic">
+          <a href="../../eventloop/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mnemonic
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
