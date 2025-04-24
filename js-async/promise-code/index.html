@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/tools/vite/under-the-hood/">
+        <link rel="canonical" href="https://thejsexpert.github.io/js-async/promise-code/">
       
       
-        <link rel="prev" href="../intro/">
+        <link rel="prev" href="../promise/">
       
       
-        <link rel="next" href="../mode/">
+        <link rel="next" href="../../eventloop/intro/">
       
       
-      <link rel="icon" href="../../../assets/logo/favicon.ico">
+      <link rel="icon" href="../../assets/logo/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>Under the Hood - JS Expert Docs</title>
+        <title>Code - JS Expert Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#promise-code" class="md-skip">
           Skip to content
         </a>
       
@@ -101,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../assets/logo/js.png" alt="logo">
+  <img src="../../assets/logo/js.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Under the Hood
+              Code
             
           </span>
         </div>
@@ -221,7 +221,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../blog/" class="md-tabs__link">
+        <a href="../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -235,13 +235,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../overview/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../tools/overview/" class="md-tabs__link">
           
   
   Tools
@@ -259,7 +257,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../fp/intro/" class="md-tabs__link">
+        <a href="../../fp/intro/" class="md-tabs__link">
           
   
   FP
@@ -277,7 +275,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../js/intro/" class="md-tabs__link">
+        <a href="../../js/intro/" class="md-tabs__link">
           
   
   JS
@@ -291,11 +289,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../js-async/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   Async
@@ -313,7 +313,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../eventloop/intro/" class="md-tabs__link">
+        <a href="../../eventloop/intro/" class="md-tabs__link">
           
   
   Event Loop
@@ -331,7 +331,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../designpattern/intro/" class="md-tabs__link">
+        <a href="../../designpattern/intro/" class="md-tabs__link">
           
   
   Design Pattern
@@ -349,7 +349,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../advanced/intro/" class="md-tabs__link">
+        <a href="../../advanced/intro/" class="md-tabs__link">
           
   
   Advanced
@@ -367,7 +367,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../interview/intro/" class="md-tabs__link">
+        <a href="../../interview/intro/" class="md-tabs__link">
           
   
   Interview
@@ -406,9 +406,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../assets/logo/js.png" alt="logo">
+  <img src="../../assets/logo/js.png" alt="logo">
 
     </a>
     JS Expert Docs
@@ -464,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -527,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../blog/archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,28 +561,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -594,7 +589,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -608,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/" class="md-nav__link">
+      <a href="../../tools/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../node-version-manager/" class="md-nav__link">
+      <a href="../../tools/node-version-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -649,8 +644,6 @@
                 
   
   
-    
-  
   
   
     
@@ -660,11 +653,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -679,7 +672,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Vite
@@ -693,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../tools/vite/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -712,29 +705,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Under the Hood
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tools/vite/under-the-hood/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,78 +718,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-vite-uses-them-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      How Vite Uses Them Together
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benefits-of-using-both" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefits of Using Both
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage-in-application" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage in Application
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices-for-large-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices for Large Applications
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -828,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mode/" class="md-nav__link">
+      <a href="../../tools/vite/mode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
+      <a href="../../tools/vite/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proxy/" class="md-nav__link">
+      <a href="../../tools/vite/proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -941,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../npm/intro/" class="md-nav__link">
+      <a href="../../tools/npm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -963,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../npm/alias/" class="md-nav__link">
+      <a href="../../tools/npm/alias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -985,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../npm/example/" class="md-nav__link">
+      <a href="../../tools/npm/example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1054,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../yarn/intro/" class="md-nav__link">
+      <a href="../../tools/yarn/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1123,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pnpm/intro/" class="md-nav__link">
+      <a href="../../tools/pnpm/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1145,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pnpm/advanced/" class="md-nav__link">
+      <a href="../../tools/pnpm/advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pnpm/create/" class="md-nav__link">
+      <a href="../../tools/pnpm/create/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1189,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pnpm/guide/" class="md-nav__link">
+      <a href="../../tools/pnpm/guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1265,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/intro/" class="md-nav__link">
+      <a href="../../fp/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1287,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/principle/" class="md-nav__link">
+      <a href="../../fp/principle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1309,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/definition/" class="md-nav__link">
+      <a href="../../fp/definition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1331,7 +1233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/books/" class="md-nav__link">
+      <a href="../../fp/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1399,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/intro/" class="md-nav__link">
+      <a href="../../js/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1421,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/terminology/intro/" class="md-nav__link">
+      <a href="../../js/terminology/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1482,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/definition/definition/" class="md-nav__link">
+      <a href="../../js/definition/definition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1504,7 +1406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/definition/intro/" class="md-nav__link">
+      <a href="../../js/definition/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1526,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/definition/functional/" class="md-nav__link">
+      <a href="../../js/definition/functional/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1548,7 +1450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/definition/memoization/" class="md-nav__link">
+      <a href="../../js/definition/memoization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1570,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/definition/best/" class="md-nav__link">
+      <a href="../../js/definition/best/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1639,7 +1541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/prototype/" class="md-nav__link">
+      <a href="../../js/essential/prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1661,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../js/essential/object-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1683,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../js/essential/array-prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1705,7 +1607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/object/" class="md-nav__link">
+      <a href="../../js/essential/object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1727,7 +1629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/array/" class="md-nav__link">
+      <a href="../../js/essential/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1749,7 +1651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/essential/object-object.prototype/" class="md-nav__link">
+      <a href="../../js/essential/object-object.prototype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1779,7 +1681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/hoisting/intro/" class="md-nav__link">
+      <a href="../../js/hoisting/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1840,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/coercion/intro/" class="md-nav__link">
+      <a href="../../js/coercion/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1862,7 +1764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/coercion/type-coercion/" class="md-nav__link">
+      <a href="../../js/coercion/type-coercion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1884,7 +1786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/coercion/how-does-it-really-works/" class="md-nav__link">
+      <a href="../../js/coercion/how-does-it-really-works/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1906,7 +1808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/coercion/common-pitfalls/" class="md-nav__link">
+      <a href="../../js/coercion/common-pitfalls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1928,7 +1830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/coercion/rules/" class="md-nav__link">
+      <a href="../../js/coercion/rules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1997,7 +1899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/control-statement/" class="md-nav__link">
+      <a href="../../js/core/control-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2019,7 +1921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2041,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/callback/" class="md-nav__link">
+      <a href="../../js/core/callback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2063,7 +1965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/closure/" class="md-nav__link">
+      <a href="../../js/core/closure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2085,7 +1987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/high-order-function/" class="md-nav__link">
+      <a href="../../js/core/high-order-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2107,7 +2009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2129,7 +2031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/core/topic/" class="md-nav__link">
+      <a href="../../js/core/topic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2198,7 +2100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../js/advanced/this-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2220,7 +2122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/serialization/" class="md-nav__link">
+      <a href="../../js/advanced/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2242,7 +2144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2264,7 +2166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/promise/" class="md-nav__link">
+      <a href="../../js/advanced/promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2325,7 +2227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/reducer/intro/" class="md-nav__link">
+      <a href="../../js/advanced/reducer/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2347,7 +2249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/advanced/reducer/syntax/" class="md-nav__link">
+      <a href="../../js/advanced/reducer/syntax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2424,7 +2326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/datatypes/intro/" class="md-nav__link">
+      <a href="../../js/datatypes/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2446,7 +2348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../js/datatypes/data-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2468,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/datatypes/stack-vs-heap/" class="md-nav__link">
+      <a href="../../js/datatypes/stack-vs-heap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2490,7 +2392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/datatypes/state-immutability/" class="md-nav__link">
+      <a href="../../js/datatypes/state-immutability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2559,7 +2461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/operator/overview/" class="md-nav__link">
+      <a href="../../js/operator/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2581,7 +2483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/operator/details/" class="md-nav__link">
+      <a href="../../js/operator/details/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2650,7 +2552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/constructors/overview/" class="md-nav__link">
+      <a href="../../js/constructors/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2719,7 +2621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/math/overview/" class="md-nav__link">
+      <a href="../../js/math/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2788,7 +2690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/intro/" class="md-nav__link">
+      <a href="../../js/function/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2810,7 +2712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/types/" class="md-nav__link">
+      <a href="../../js/function/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2832,7 +2734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/defining-functions/" class="md-nav__link">
+      <a href="../../js/function/defining-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2854,7 +2756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/pure-and-impure/" class="md-nav__link">
+      <a href="../../js/function/pure-and-impure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2876,7 +2778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/implicit-explicit-return/" class="md-nav__link">
+      <a href="../../js/function/implicit-explicit-return/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2898,7 +2800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/return-statement/" class="md-nav__link">
+      <a href="../../js/function/return-statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2959,7 +2861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/arrow-function/" class="md-nav__link">
+      <a href="../../js/function/arrow-function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2981,7 +2883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/arrow-example/" class="md-nav__link">
+      <a href="../../js/function/arrow-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3050,7 +2952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/hof/intro/" class="md-nav__link">
+      <a href="../../js/function/hof/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3072,7 +2974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/hof/map/" class="md-nav__link">
+      <a href="../../js/function/hof/map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3094,7 +2996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/hof/question-answer/" class="md-nav__link">
+      <a href="../../js/function/hof/question-answer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3163,7 +3065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/advanced/advanced-concept/" class="md-nav__link">
+      <a href="../../js/function/advanced/advanced-concept/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3185,7 +3087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/function/advanced/function-categories/" class="md-nav__link">
+      <a href="../../js/function/advanced/function-categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3262,7 +3164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/iterables/intro/" class="md-nav__link">
+      <a href="../../js/iterables/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3284,7 +3186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/iterables/types/" class="md-nav__link">
+      <a href="../../js/iterables/types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3353,7 +3255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../js/ecmascript/es6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3375,7 +3277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3397,7 +3299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/ecmascript/defaultParameters/" class="md-nav__link">
+      <a href="../../js/ecmascript/defaultParameters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3466,7 +3368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/intro/" class="md-nav__link">
+      <a href="../../js/httprequest/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3488,7 +3390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3549,7 +3451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/overview/" class="md-nav__link">
+      <a href="../../js/httprequest/core/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3571,7 +3473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../js/httprequest/core/api-response-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3593,7 +3495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3615,7 +3517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../js/httprequest/core/chaining/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3637,7 +3539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3659,7 +3561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/core/axios/" class="md-nav__link">
+      <a href="../../js/httprequest/core/axios/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3728,7 +3630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/overview/" class="md-nav__link">
+      <a href="../../js/httprequest/example/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3750,7 +3652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/useReducer/" class="md-nav__link">
+      <a href="../../js/httprequest/example/useReducer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3772,7 +3674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3794,7 +3696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../../js/httprequest/example/axios-api-example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3816,7 +3718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
+      <a href="../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3838,7 +3740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
+      <a href="../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3915,7 +3817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/json/intro/" class="md-nav__link">
+      <a href="../../js/json/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3937,7 +3839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/json/json5/" class="md-nav__link">
+      <a href="../../js/json/json5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4006,7 +3908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../js/mnemonic/js-functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4028,7 +3930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../js/mnemonic/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4050,7 +3952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../js/mnemonic/js-objects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4072,7 +3974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4094,7 +3996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4163,7 +4065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/weird-parts/js-missing-parts/" class="md-nav__link">
+      <a href="../../js/weird-parts/js-missing-parts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4185,7 +4087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/weird-parts/bug-in-js/" class="md-nav__link">
+      <a href="../../js/weird-parts/bug-in-js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4254,7 +4156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/miscellaneous/guard-clause/" class="md-nav__link">
+      <a href="../../js/miscellaneous/guard-clause/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4276,7 +4178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/miscellaneous/cognitive-skills/" class="md-nav__link">
+      <a href="../../js/miscellaneous/cognitive-skills/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4298,7 +4200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js/miscellaneous/books/" class="md-nav__link">
+      <a href="../../js/miscellaneous/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4332,23 +4234,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -4360,7 +4267,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Async
@@ -4374,7 +4281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js-async/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4396,7 +4303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../js-async/promise/" class="md-nav__link">
+      <a href="../promise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4415,10 +4322,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../js-async/promise-code/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Code
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -4428,6 +4356,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-promise" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Promise?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-delay-promise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Delay Promise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-the-promise-constructor-for-api-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use the Promise Constructor for API Calls?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-many-then-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Many .then() Calls
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4486,7 +4479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/intro/" class="md-nav__link">
+      <a href="../../eventloop/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4508,7 +4501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/memory-management/" class="md-nav__link">
+      <a href="../../eventloop/memory-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4530,7 +4523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/shallow-copy/" class="md-nav__link">
+      <a href="../../eventloop/shallow-copy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4552,7 +4545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/deep-copy/" class="md-nav__link">
+      <a href="../../eventloop/deep-copy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4574,7 +4567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/queue/" class="md-nav__link">
+      <a href="../../eventloop/queue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4596,7 +4589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/macrotasks/" class="md-nav__link">
+      <a href="../../eventloop/macrotasks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4618,7 +4611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/microtasks/" class="md-nav__link">
+      <a href="../../eventloop/microtasks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4686,7 +4679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/intro/" class="md-nav__link">
+      <a href="../../designpattern/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4708,7 +4701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/daily/" class="md-nav__link">
+      <a href="../../designpattern/daily/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4730,7 +4723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/official/" class="md-nav__link">
+      <a href="../../designpattern/official/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4752,7 +4745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/js/" class="md-nav__link">
+      <a href="../../designpattern/js/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4774,7 +4767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/categories/" class="md-nav__link">
+      <a href="../../designpattern/categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4796,7 +4789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/mnemonic/" class="md-nav__link">
+      <a href="../../designpattern/mnemonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4857,7 +4850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/creational/factory/" class="md-nav__link">
+      <a href="../../designpattern/creational/factory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4926,7 +4919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/intro/" class="md-nav__link">
+      <a href="../../designpattern/react/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4948,7 +4941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/mostly-used/" class="md-nav__link">
+      <a href="../../designpattern/react/mostly-used/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4970,7 +4963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/container-presentation/" class="md-nav__link">
+      <a href="../../designpattern/react/container-presentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4992,7 +4985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/container-presentation-theory/" class="md-nav__link">
+      <a href="../../designpattern/react/container-presentation-theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5014,7 +5007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/custom-component/" class="md-nav__link">
+      <a href="../../designpattern/react/custom-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5036,7 +5029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/antd-resuable-component/" class="md-nav__link">
+      <a href="../../designpattern/react/antd-resuable-component/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5105,7 +5098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/advanced/recall/" class="md-nav__link">
+      <a href="../../designpattern/advanced/recall/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5181,7 +5174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/intro/" class="md-nav__link">
+      <a href="../../advanced/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5242,7 +5235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../scope/chatgpt/" class="md-nav__link">
+      <a href="../../scope/chatgpt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5264,7 +5257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../scope/deepseek/" class="md-nav__link">
+      <a href="../../scope/deepseek/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5286,7 +5279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../scope/mkdocs-warning-solved/" class="md-nav__link">
+      <a href="../../scope/mkdocs-warning-solved/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5355,7 +5348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modules/overview/" class="md-nav__link">
+      <a href="../../modules/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5424,7 +5417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../class/intro/" class="md-nav__link">
+      <a href="../../class/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5446,7 +5439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../class/in-depth/" class="md-nav__link">
+      <a href="../../class/in-depth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5515,7 +5508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memory-management/overview/" class="md-nav__link">
+      <a href="../../memory-management/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5537,7 +5530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memory-management/serialization/" class="md-nav__link">
+      <a href="../../memory-management/serialization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5559,7 +5552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../memory-management/memory-types/" class="md-nav__link">
+      <a href="../../memory-management/memory-types/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5628,7 +5621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../style-guide/intro/" class="md-nav__link">
+      <a href="../../style-guide/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5650,7 +5643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../style-guide/js-style-guide/" class="md-nav__link">
+      <a href="../../style-guide/js-style-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5672,7 +5665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../style-guide/naming-convention/" class="md-nav__link">
+      <a href="../../style-guide/naming-convention/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5694,7 +5687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../style-guide/coercion/" class="md-nav__link">
+      <a href="../../style-guide/coercion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5716,7 +5709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../style-guide/js-constants/" class="md-nav__link">
+      <a href="../../style-guide/js-constants/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5738,7 +5731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../style-guide/js-array/" class="md-nav__link">
+      <a href="../../style-guide/js-array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5814,7 +5807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/intro/" class="md-nav__link">
+      <a href="../../interview/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5875,7 +5868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/topic/best-approach-rtk/" class="md-nav__link">
+      <a href="../../interview/topic/best-approach-rtk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5897,7 +5890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/topic/csr-sgr-ssr/" class="md-nav__link">
+      <a href="../../interview/topic/csr-sgr-ssr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5919,7 +5912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/topic/postgress/" class="md-nav__link">
+      <a href="../../interview/topic/postgress/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5941,7 +5934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/topic/private-vs-protected/" class="md-nav__link">
+      <a href="../../interview/topic/private-vs-protected/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5963,7 +5956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/topic/react-image-gallery/" class="md-nav__link">
+      <a href="../../interview/topic/react-image-gallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5985,7 +5978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/topic/performance-optimization/" class="md-nav__link">
+      <a href="../../interview/topic/performance-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6007,7 +6000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/topic/holy-grail/" class="md-nav__link">
+      <a href="../../interview/topic/holy-grail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6037,7 +6030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/pwa/intro/" class="md-nav__link">
+      <a href="../../interview/pwa/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6098,7 +6091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/react/" class="md-nav__link">
+      <a href="../../interview/http/react/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6120,7 +6113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/codesnap/" class="md-nav__link">
+      <a href="../../interview/http/codesnap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6142,7 +6135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/api/" class="md-nav__link">
+      <a href="../../interview/http/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6164,7 +6157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/http-response/" class="md-nav__link">
+      <a href="../../interview/http/http-response/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6186,7 +6179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/http-request/" class="md-nav__link">
+      <a href="../../interview/http/http-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6208,7 +6201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/asynchronous-javaScript/" class="md-nav__link">
+      <a href="../../interview/http/asynchronous-javaScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6230,7 +6223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/jwt/" class="md-nav__link">
+      <a href="../../interview/http/jwt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6252,7 +6245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/http/importing-file/" class="md-nav__link">
+      <a href="../../interview/http/importing-file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6321,7 +6314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/selling-app/intro/" class="md-nav__link">
+      <a href="../../interview/selling-app/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6343,7 +6336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/selling-app/finance/" class="md-nav__link">
+      <a href="../../interview/selling-app/finance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6365,7 +6358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/selling-app/app-ideas/" class="md-nav__link">
+      <a href="../../interview/selling-app/app-ideas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6395,7 +6388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/javascript/" class="md-nav__link">
+      <a href="../../interview/javascript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6417,7 +6410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/interview/" class="md-nav__link">
+      <a href="../../interview/interview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6439,7 +6432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/improved-code/" class="md-nav__link">
+      <a href="../../interview/improved-code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6461,7 +6454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interview/export-issue-lexical-declaration/" class="md-nav__link">
+      <a href="../../interview/export-issue-lexical-declaration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6500,6 +6493,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -6508,54 +6503,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#what-is-a-promise" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      What is a Promise?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-vite-uses-them-together" class="md-nav__link">
+  <a href="#creating-a-delay-promise" class="md-nav__link">
     <span class="md-ellipsis">
-      How Vite Uses Them Together
+      Creating a Delay Promise
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#benefits-of-using-both" class="md-nav__link">
+  <a href="#simple" class="md-nav__link">
     <span class="md-ellipsis">
-      Benefits of Using Both
+      Simple
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#why-use-the-promise-constructor-for-api-calls" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      Why Use the Promise Constructor for API Calls?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage-in-application" class="md-nav__link">
+  <a href="#when-to-use-many-then-calls" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage in Application
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices-for-large-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices for Large Applications
+      When to Use Many .then() Calls
     </span>
   </a>
   
@@ -6577,148 +6563,120 @@
 
 
 
-  <h1>Under the Hood</h1>
-
-<div><p>Vite uses both <a href="#">dotenv</a> and <a href="#">dotenv-expand</a> under the hood. Here's why:</p>
+<div><h1 id="promise-code">Promise Code</h1>
+<p>In JavaScript, a <strong>Promise</strong> is an <mark>object</mark> that represents the eventual completion (or failure) of an <mark>asynchronous operation</mark> and its resulting value. It’s a way to handle asynchronous tasks, like fetching data from an API, reading files, or executing timeouts, in a more manageable way than callbacks. A Promise can be in one of three states:</p>
 <ul>
-<li><code>dotenv</code>: Loads environment variables from a <code>.env</code> file into <code>process.env</code>.</li>
-<li><code>dotenv-expand</code>: Expands and resolves variable references (e.g., <code>${VAR}</code>) within <code>.env</code> files.</li>
+<li><strong>Pending</strong>: Initial state, neither fulfilled nor rejected.</li>
+<li><strong>Fulfilled</strong>: The operation completed successfully, and a value is returned.</li>
+<li><strong>Rejected</strong>: The operation failed, and an error is returned.</li>
 </ul>
-<h2 id="overview">Overview</h2>
-<details class="abstract" open="open">
-<summary>Abstract</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">dotenv</label><label for="__tabbed_1_2">dotenv-expand</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<p>Promises are created using the <code>Promise</code> constructor and can be chained with <code>.then()</code> and <code>.catch()</code> methods to handle the resolved value or errors. They also support <code>async/await</code> syntax for cleaner asynchronous code.</p>
+<p>Here’s a brief overview of Promises and some practical "hacks" or techniques to use them effectively in JavaScript:</p>
+<hr>
+<h2 id="what-is-a-promise">What is a Promise?</h2>
+<p>A Promise is created like this:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">myPromise</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="c1">// Asynchronous operation (e.g., fetching data)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// Simulating a condition</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">success</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="nx">resolve</span><span class="p">(</span><span class="s2">"Operation successful!"</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nx">reject</span><span class="p">(</span><span class="s2">"Operation failed!"</span><span class="p">);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>You can handle the result using:</p>
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">myPromise</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">))</span><span class="w"> </span><span class="c1">// "Operation successful!"</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">));</span>
+</span></code></pre></div>
+<p>Or with <code>async/await</code>:</p>
+<div class="language-js highlight"><span class="filename">javascript</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">handlePromise</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">myPromise</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">}</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nx">handlePromise</span><span class="p">();</span>
+</span></code></pre></div>
+<div class="language-js highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">myPromise</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">reject</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="c1">// Asynchronous operation: fetching data from an API</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">"https://jsonplaceholder.typicode.com/posts/1"</span><span class="p">)</span><span class="w"> </span><span class="c1">// Example API</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="c1">// If the HTTP status is not OK (e.g., 404, 500), reject the Promise</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="sb">`HTTP error! Status: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span><span class="w"> </span><span class="c1">// Parse the JSON response</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">})</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="nx">resolve</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span><span class="w"> </span><span class="c1">// Resolve the Promise with the API data</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="p">})</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">      </span><span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span><span class="w"> </span><span class="c1">// Reject the Promise if there's an error (e.g., network failure)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="p">});</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1">// Using the Promise</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="nx">myPromise</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"API Response:"</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">))</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">  </span><span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Error:"</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
+</span></code></pre></div>
+<hr>
+<h2 id="creating-a-delay-promise">Creating a Delay Promise</h2>
+<p>Create a reusable delay for sequencing or debouncing.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">delay</span><span class="p">(</span><span class="nx">ms</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="nx">ms</span><span class="p">));</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1">// Example</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">example</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Start"</span><span class="p">);</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="k">await</span><span class="w"> </span><span class="nx">delay</span><span class="p">(</span><span class="mf">1000</span><span class="p">);</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"After 1 second"</span><span class="p">);</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">}</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nx">example</span><span class="p">();</span>
+</span></code></pre></div>
+<hr>
+<h2 id="simple">Simple</h2>
+<p>However, for simple <code>fetch</code> calls, you can often use <code>fetch</code> directly since it’s already <mark>Promise-based</mark>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s2">"https://jsonplaceholder.typicode.com/posts/1"</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="sb">`HTTP error! Status: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="p">})</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"API Response:"</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">))</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span><span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Error:"</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
+</span></code></pre></div>
+<h2 id="why-use-the-promise-constructor-for-api-calls">Why Use the Promise Constructor for API Calls?</h2>
+<p>While <code>fetch</code> already returns a Promise, wrapping it in a <code>Promise</code> constructor can be useful in specific scenarios:</p>
 <ul>
-<li>
-<p><strong>What It Does</strong>:</p>
-<p>The <code>dotenv</code> package loads environment variables from <code>.env</code> files into <code>process.env</code>.</p>
-</li>
-<li>
-<p><strong>Why Vite Uses It</strong>:</p>
-<p>Vite relies on <code>dotenv</code> to support managing environment-specific configurations. This enables you to define variables in <code>.env</code>, <code>.env.&lt;mode&gt;</code>, or <code>.env.&lt;mode&gt;.local</code> and have them automatically available in your app when a specific mode is used.</p>
-</li>
+<li><strong>Custom Logic</strong>: You want to add custom logic before resolving/rejecting (e.g., transforming data, checking conditions).</li>
+<li><strong>Legacy APIs</strong>: You’re working with a callback-based API (not Promise-based) and need to convert it to a Promise.</li>
+<li><strong>Combining Operations</strong>: You need to combine multiple async operations into a single Promise.</li>
+<li><strong>Error Normalization</strong>: You want to standardize error handling across different APIs.</li>
 </ul>
-<p>For example:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>VITE_API_URL=https://api.example.com
-</span></code></pre></div>
-<p>This gets loaded into <code>process.env</code> and exposed to the app as <code>import.meta.env.VITE_API_URL</code>.</p>
-</div>
-<div class="tabbed-block">
+<hr>
+<h2 id="when-to-use-many-then-calls">When to Use Many <code>.then()</code> Calls</h2>
+<p>Chaining multiple <code>.then()</code> calls is particularly useful when:</p>
 <ul>
-<li>
-<p><strong>What It Does</strong>:</p>
-<p>The dotenv-expand package extends dotenv by adding support for variable interpolation, allowing one environment variable to reference another.</p>
-<div class="language-text highlight"><span class="filename">env</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>BASE_URL=https://api.example.com
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>VITE_API_URL=${BASE_URL}/v1
-</span></code></pre></div>
-<p>Here, <code>VITE_API_URL</code> will be expanded to <code>https://api.example.com/v1</code>.</p>
-</li>
-<li>
-<p><strong>Why Vite Uses It</strong>:</p>
-<p>Vite includes <a href="#">dotenv-expand</a> to make it easier to manage complex environment setups, especially when multiple variables depend on a shared base value. Without this feature, you'd need to manually construct these dependent variables in your code.</p>
-</li>
+<li>You’re transforming data step-by-step in a pipeline.</li>
+<li>Each step depends on the result of the previous one.</li>
+<li>You want to keep the code functional and avoid mutable state.</li>
 </ul>
-</div>
-</div>
-</div>
-</details>
-<hr>
-<h2 id="how-vite-uses-them-together">How Vite Uses Them Together</h2>
-<ol>
-<li>
-<p><strong>Loading Environment Variables</strong>: Vite uses dotenv to load .env files into memory for the current mode.</p>
-<p>For example:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>.env
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>.env.development
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>.env.production
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>Expanding Variables</strong>: If there are references to other variables in the <code>.env</code> files, <a href="#">dotenv-expand</a> resolves those references.</p>
-</li>
-<li>
-<p><strong>Exposing Variables to the App</strong>: Only variables prefixed with <code>VITE_</code> are exposed to the client-side app via <code>import.meta.env</code>. The rest remain in <code>process.env</code> for server-side usage.</p>
-</li>
-</ol>
-<hr>
-<h2 id="benefits-of-using-both">Benefits of Using Both</h2>
-<ul>
-<li>Flexibility: Handles both simple and complex environment setups.</li>
-<li>Consistency: Ensures that <code>.env</code> files are loaded in a predictable order (<code>.env</code>, <code>.env.&lt;mode&gt;</code>, <code>.env.local</code>).</li>
-<li>Ease of Use: Developers can leverage variable interpolation for dynamic configurations.</li>
-</ul>
-<hr>
-<h2 id="example">Example</h2>
-<div class="language-text highlight"><span class="filename">env</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>BASE_API=https://api.example.com
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>VITE_API_URL=${BASE_API}/v1
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>VITE_APP_NAME=MyApp
-</span></code></pre></div>
-<div class="language-jsx highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_API_URL</span><span class="p">);</span><span class="w"> </span><span class="c1">// Outputs: https://api.example.com/v1</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_APP_NAME</span><span class="p">);</span><span class="w"> </span><span class="c1">// Outputs: MyApp</span>
-</span></code></pre></div>
-<hr>
-<h2 id="usage-in-application">Usage in Application</h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>project/
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>├── src/
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>│   ├── components/
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>│   ├── utils/
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>│   └── App.tsx
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>├── .env
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>├── .env.development
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>├── .env.production
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>├── vite.config.ts
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>├── package.json
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>└── tsconfig.json
-</span></code></pre></div>
-<p><strong>Environment Files</strong></p>
-<div class="language-text highlight"><span class="filename">.env (shared across all modes)</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>APP_NAME=My Vite App
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>BASE_API_URL=https://api.example.com
-</span></code></pre></div>
-<div class="language-text highlight"><span class="filename">.env.development</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>VITE_API_URL=${BASE_API_URL}/dev
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>VITE_LOG_LEVEL=debug
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>VITE_FEATURE_TOGGLE=true
-</span></code></pre></div>
-<div class="language-text highlight"><span class="filename">.env.production</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>VITE_API_URL=${BASE_API_URL}/prod
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>VITE_LOG_LEVEL=error
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>VITE_FEATURE_TOGGLE=false
-</span></code></pre></div>
-<hr>
-<h2 id="best-practices-for-large-applications">Best Practices for Large Applications</h2>
-<ol>
-<li>
-<p><strong>Centralize Configs in a Utility</strong>: Instead of accessing <code>import.meta.env</code> everywhere, create a utility to centralize environment variables:</p>
-<div class="language-js highlight"><span class="filename">src/utils/config.ts</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">Config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nx">apiUrl</span><span class="o">:</span><span class="w"> </span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_API_URL</span><span class="p">,</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nx">appName</span><span class="o">:</span><span class="w"> </span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_APP_NAME</span><span class="p">,</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nx">logLevel</span><span class="o">:</span><span class="w"> </span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_LOG_LEVEL</span><span class="p">,</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="nx">featureToggle</span><span class="o">:</span><span class="w"> </span><span class="k">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">VITE_FEATURE_TOGGLE</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"true"</span><span class="p">,</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">};</span>
-</span></code></pre></div>
-<div class="language-jsx highlight"><span class="filename">Usage</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Config</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./utils/config"</span><span class="p">;</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Config</span><span class="p">.</span><span class="nx">apiUrl</span><span class="p">);</span><span class="w"> </span><span class="c1">// Access variables via a single source</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>Use Variable Interpolation (<code>dotenv-expand</code>)</strong>: In the <code>.env</code> files, use <code>${VAR}</code> to reduce duplication and make configurations maintainable.</p>
-</li>
-<li>
-<p><strong>Secure Sensitive Data</strong>: Avoid exposing sensitive data (like API keys) by not prefixing such variables with <code>VITE_</code>. They’ll stay in <code>process.env</code> and not be exposed to the browser.</p>
-</li>
-<li>
-<p><strong>Testing Configurations</strong>: Add <code>.env.test</code> for testing environments if needed.</p>
-</li>
-</ol>
-<hr>
-<p><strong>Output Example (Development Mode)</strong></p>
-<p>When you run <code>pnpm dev</code>, the app will log:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>App Name: My Vite App
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>API URL: https://api.example.com/dev
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>Log Level: debug
-</span></code></pre></div>
-<p>This setup is scalable, maintainable, and fully leverages the power of <code>dotenv</code> and <code>dotenv-expand</code> with Vite in React.</p></div>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s2">"https://api.example.com/data"</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">data</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">active</span><span class="p">))</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">filtered</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">filtered</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">))</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">names</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">names</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">", "</span><span class="p">))</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">));</span>
+</span></code></pre></div></div>
 
 
 
@@ -6754,7 +6712,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
+          <a href="../promise/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Promise">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -6764,20 +6722,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Intro
+                Promise
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mode/" class="md-footer__link md-footer__link--next" aria-label="Next: Mode">
+          <a href="../../eventloop/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mode
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -6832,10 +6790,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
