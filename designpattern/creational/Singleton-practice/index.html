@@ -8,28 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/blog/2024/05/20/js-objects/">
+        <link rel="canonical" href="https://thejsexpert.github.io/designpattern/creational/Singleton-practice/">
       
       
-        <link rel="prev" href="../../17/understanding-functional-state-updates-in-react-a-deep-dive-into-setselectedgroupdata/">
+        <link rel="prev" href="../Singleton/">
       
       
-        <link rel="next" href="../../21/exploring-objectprototype-in-javascript/">
       
-      
-      <link rel="icon" href="../../../../../assets/logo/favicon.ico">
+      <link rel="icon" href="../../../assets/logo/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>JS objects - JS Expert Docs</title>
+        <title>Singleton Practice - JS Expert Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +64,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -85,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#js-objects" class="md-skip">
+        <a href="#singleton-practice" class="md-skip">
           Skip to content
         </a>
       
@@ -101,9 +99,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../../../assets/logo/js.png" alt="logo">
+  <img src="../../../assets/logo/js.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              JS objects
+              Singleton Practice
             
           </span>
         </div>
@@ -221,13 +219,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   
@@ -247,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../tools/overview/" class="md-tabs__link">
+        <a href="../../../tools/overview/" class="md-tabs__link">
           
   
   
@@ -267,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../fp/intro/" class="md-tabs__link">
+        <a href="../../../fp/intro/" class="md-tabs__link">
           
   
   
@@ -287,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../js/intro/" class="md-tabs__link">
+        <a href="../../../js/intro/" class="md-tabs__link">
           
   
   
@@ -307,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../fundamental/intro/" class="md-tabs__link">
+        <a href="../../../fundamental/intro/" class="md-tabs__link">
           
   
   
@@ -327,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../advanced/intro/" class="md-tabs__link">
+        <a href="../../../advanced/intro/" class="md-tabs__link">
           
   
   
@@ -347,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../eventloop/intro/" class="md-tabs__link">
+        <a href="../../../eventloop/intro/" class="md-tabs__link">
           
   
   
@@ -363,11 +359,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../designpattern/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
           
   
   
@@ -396,9 +394,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -409,9 +405,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../../../assets/logo/js.png" alt="logo">
+  <img src="../../../assets/logo/js.png" alt="logo">
 
     </a>
     JS Expert Docs
@@ -423,29 +419,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -458,7 +449,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -469,14 +460,12 @@
                 
   
   
-    
-  
   
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      <a href="../../../../" class="md-nav__link">
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   
@@ -542,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../archive/2025/" class="md-nav__link">
+      <a href="../../../blog/archive/2025/" class="md-nav__link">
         
   
   
@@ -567,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   
@@ -646,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/overview/" class="md-nav__link">
+      <a href="../../../tools/overview/" class="md-nav__link">
         
   
   
@@ -669,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../tools/node-version-manager/" class="md-nav__link">
         
   
   
@@ -733,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/intro/" class="md-nav__link">
+      <a href="../../../tools/vite/intro/" class="md-nav__link">
         
   
   
@@ -756,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/under-the-hood/" class="md-nav__link">
+      <a href="../../../tools/vite/under-the-hood/" class="md-nav__link">
         
   
   
@@ -779,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/mode/" class="md-nav__link">
+      <a href="../../../tools/vite/mode/" class="md-nav__link">
         
   
   
@@ -802,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/build/" class="md-nav__link">
+      <a href="../../../tools/vite/build/" class="md-nav__link">
         
   
   
@@ -825,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/example/" class="md-nav__link">
+      <a href="../../../tools/vite/example/" class="md-nav__link">
         
   
   
@@ -848,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/vite/proxy/" class="md-nav__link">
+      <a href="../../../tools/vite/proxy/" class="md-nav__link">
         
   
   
@@ -920,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/npm/intro/" class="md-nav__link">
+      <a href="../../../tools/npm/intro/" class="md-nav__link">
         
   
   
@@ -943,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/npm/alias/" class="md-nav__link">
+      <a href="../../../tools/npm/alias/" class="md-nav__link">
         
   
   
@@ -966,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/npm/example/" class="md-nav__link">
+      <a href="../../../tools/npm/example/" class="md-nav__link">
         
   
   
@@ -1038,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/yarn/intro/" class="md-nav__link">
+      <a href="../../../tools/yarn/intro/" class="md-nav__link">
         
   
   
@@ -1110,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/pnpm/intro/" class="md-nav__link">
+      <a href="../../../tools/pnpm/intro/" class="md-nav__link">
         
   
   
@@ -1133,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/pnpm/advanced/" class="md-nav__link">
+      <a href="../../../tools/pnpm/advanced/" class="md-nav__link">
         
   
   
@@ -1156,7 +1145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/pnpm/create/" class="md-nav__link">
+      <a href="../../../tools/pnpm/create/" class="md-nav__link">
         
   
   
@@ -1179,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../tools/pnpm/guide/" class="md-nav__link">
+      <a href="../../../tools/pnpm/guide/" class="md-nav__link">
         
   
   
@@ -1258,7 +1247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/intro/" class="md-nav__link">
+      <a href="../../../fp/intro/" class="md-nav__link">
         
   
   
@@ -1281,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/principle/" class="md-nav__link">
+      <a href="../../../fp/principle/" class="md-nav__link">
         
   
   
@@ -1304,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/definition/" class="md-nav__link">
+      <a href="../../../fp/definition/" class="md-nav__link">
         
   
   
@@ -1327,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fp/books/" class="md-nav__link">
+      <a href="../../../fp/books/" class="md-nav__link">
         
   
   
@@ -1398,7 +1387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/intro/" class="md-nav__link">
+      <a href="../../../js/intro/" class="md-nav__link">
         
   
   
@@ -1421,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/terminology/intro/" class="md-nav__link">
+      <a href="../../../js/terminology/intro/" class="md-nav__link">
         
   
   
@@ -1485,7 +1474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/definition/" class="md-nav__link">
+      <a href="../../../js/definition/definition/" class="md-nav__link">
         
   
   
@@ -1508,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/intro/" class="md-nav__link">
+      <a href="../../../js/definition/intro/" class="md-nav__link">
         
   
   
@@ -1531,7 +1520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/functional/" class="md-nav__link">
+      <a href="../../../js/definition/functional/" class="md-nav__link">
         
   
   
@@ -1554,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/memoization/" class="md-nav__link">
+      <a href="../../../js/definition/memoization/" class="md-nav__link">
         
   
   
@@ -1577,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/definition/best/" class="md-nav__link">
+      <a href="../../../js/definition/best/" class="md-nav__link">
         
   
   
@@ -1649,7 +1638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/prototype/" class="md-nav__link">
+      <a href="../../../js/essential/prototype/" class="md-nav__link">
         
   
   
@@ -1672,7 +1661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/object-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/object-prototype/" class="md-nav__link">
         
   
   
@@ -1695,7 +1684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/array-prototype/" class="md-nav__link">
+      <a href="../../../js/essential/array-prototype/" class="md-nav__link">
         
   
   
@@ -1718,7 +1707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/object/" class="md-nav__link">
+      <a href="../../../js/essential/object/" class="md-nav__link">
         
   
   
@@ -1741,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/array/" class="md-nav__link">
+      <a href="../../../js/essential/array/" class="md-nav__link">
         
   
   
@@ -1764,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/essential/object-object.prototype/" class="md-nav__link">
+      <a href="../../../js/essential/object-object.prototype/" class="md-nav__link">
         
   
   
@@ -1795,7 +1784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/hoisting/intro/" class="md-nav__link">
+      <a href="../../../js/hoisting/intro/" class="md-nav__link">
         
   
   
@@ -1859,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/intro/" class="md-nav__link">
+      <a href="../../../js/coercion/intro/" class="md-nav__link">
         
   
   
@@ -1882,7 +1871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/type-coercion/" class="md-nav__link">
+      <a href="../../../js/coercion/type-coercion/" class="md-nav__link">
         
   
   
@@ -1905,7 +1894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/how-does-it-really-works/" class="md-nav__link">
+      <a href="../../../js/coercion/how-does-it-really-works/" class="md-nav__link">
         
   
   
@@ -1928,7 +1917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/common-pitfalls/" class="md-nav__link">
+      <a href="../../../js/coercion/common-pitfalls/" class="md-nav__link">
         
   
   
@@ -1951,7 +1940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/coercion/rules/" class="md-nav__link">
+      <a href="../../../js/coercion/rules/" class="md-nav__link">
         
   
   
@@ -2023,7 +2012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/control-statement/" class="md-nav__link">
+      <a href="../../../js/core/control-statement/" class="md-nav__link">
         
   
   
@@ -2046,7 +2035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   
@@ -2069,7 +2058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/callback/" class="md-nav__link">
+      <a href="../../../js/core/callback/" class="md-nav__link">
         
   
   
@@ -2092,7 +2081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/closure/" class="md-nav__link">
+      <a href="../../../js/core/closure/" class="md-nav__link">
         
   
   
@@ -2115,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/high-order-function/" class="md-nav__link">
+      <a href="../../../js/core/high-order-function/" class="md-nav__link">
         
   
   
@@ -2138,7 +2127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   
@@ -2161,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/core/topic/" class="md-nav__link">
+      <a href="../../../js/core/topic/" class="md-nav__link">
         
   
   
@@ -2233,7 +2222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../js/advanced/this-in-js/" class="md-nav__link">
         
   
   
@@ -2256,7 +2245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/serialization/" class="md-nav__link">
+      <a href="../../../js/advanced/serialization/" class="md-nav__link">
         
   
   
@@ -2279,7 +2268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   
@@ -2302,7 +2291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/promise/" class="md-nav__link">
+      <a href="../../../js/advanced/promise/" class="md-nav__link">
         
   
   
@@ -2366,7 +2355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/reducer/intro/" class="md-nav__link">
+      <a href="../../../js/advanced/reducer/intro/" class="md-nav__link">
         
   
   
@@ -2389,7 +2378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/advanced/reducer/syntax/" class="md-nav__link">
+      <a href="../../../js/advanced/reducer/syntax/" class="md-nav__link">
         
   
   
@@ -2469,7 +2458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/datatypes/intro/" class="md-nav__link">
+      <a href="../../../js/datatypes/intro/" class="md-nav__link">
         
   
   
@@ -2492,7 +2481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/datatypes/data-types/" class="md-nav__link">
+      <a href="../../../js/datatypes/data-types/" class="md-nav__link">
         
   
   
@@ -2515,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/datatypes/stack-vs-heap/" class="md-nav__link">
+      <a href="../../../js/datatypes/stack-vs-heap/" class="md-nav__link">
         
   
   
@@ -2538,7 +2527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/datatypes/state-immutability/" class="md-nav__link">
+      <a href="../../../js/datatypes/state-immutability/" class="md-nav__link">
         
   
   
@@ -2610,7 +2599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/operator/overview/" class="md-nav__link">
+      <a href="../../../js/operator/overview/" class="md-nav__link">
         
   
   
@@ -2633,7 +2622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/operator/details/" class="md-nav__link">
+      <a href="../../../js/operator/details/" class="md-nav__link">
         
   
   
@@ -2705,7 +2694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/constructors/overview/" class="md-nav__link">
+      <a href="../../../js/constructors/overview/" class="md-nav__link">
         
   
   
@@ -2777,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/math/overview/" class="md-nav__link">
+      <a href="../../../js/math/overview/" class="md-nav__link">
         
   
   
@@ -2849,7 +2838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/intro/" class="md-nav__link">
+      <a href="../../../js/function/intro/" class="md-nav__link">
         
   
   
@@ -2872,7 +2861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/types/" class="md-nav__link">
+      <a href="../../../js/function/types/" class="md-nav__link">
         
   
   
@@ -2895,7 +2884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/defining-functions/" class="md-nav__link">
+      <a href="../../../js/function/defining-functions/" class="md-nav__link">
         
   
   
@@ -2918,7 +2907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/pure-and-impure/" class="md-nav__link">
+      <a href="../../../js/function/pure-and-impure/" class="md-nav__link">
         
   
   
@@ -2941,7 +2930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/implicit-explicit-return/" class="md-nav__link">
+      <a href="../../../js/function/implicit-explicit-return/" class="md-nav__link">
         
   
   
@@ -2964,7 +2953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/return-statement/" class="md-nav__link">
+      <a href="../../../js/function/return-statement/" class="md-nav__link">
         
   
   
@@ -3028,7 +3017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/arrow-function/" class="md-nav__link">
+      <a href="../../../js/function/arrow-function/" class="md-nav__link">
         
   
   
@@ -3051,7 +3040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/arrow-example/" class="md-nav__link">
+      <a href="../../../js/function/arrow-example/" class="md-nav__link">
         
   
   
@@ -3123,7 +3112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/hof/intro/" class="md-nav__link">
+      <a href="../../../js/function/hof/intro/" class="md-nav__link">
         
   
   
@@ -3146,7 +3135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/hof/map/" class="md-nav__link">
+      <a href="../../../js/function/hof/map/" class="md-nav__link">
         
   
   
@@ -3169,7 +3158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/hof/question-answer/" class="md-nav__link">
+      <a href="../../../js/function/hof/question-answer/" class="md-nav__link">
         
   
   
@@ -3241,7 +3230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/advanced/advanced-concept/" class="md-nav__link">
+      <a href="../../../js/function/advanced/advanced-concept/" class="md-nav__link">
         
   
   
@@ -3264,7 +3253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/function/advanced/function-categories/" class="md-nav__link">
+      <a href="../../../js/function/advanced/function-categories/" class="md-nav__link">
         
   
   
@@ -3344,7 +3333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/iterables/intro/" class="md-nav__link">
+      <a href="../../../js/iterables/intro/" class="md-nav__link">
         
   
   
@@ -3367,7 +3356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/iterables/types/" class="md-nav__link">
+      <a href="../../../js/iterables/types/" class="md-nav__link">
         
   
   
@@ -3439,7 +3428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/ecmascript/es6/" class="md-nav__link">
+      <a href="../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   
@@ -3462,7 +3451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   
@@ -3485,7 +3474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/ecmascript/defaultParameters/" class="md-nav__link">
+      <a href="../../../js/ecmascript/defaultParameters/" class="md-nav__link">
         
   
   
@@ -3557,7 +3546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/intro/" class="md-nav__link">
+      <a href="../../../js/httprequest/intro/" class="md-nav__link">
         
   
   
@@ -3580,7 +3569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
         
   
   
@@ -3644,7 +3633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/http/api/" class="md-nav__link">
+      <a href="../../../js/httprequest/http/api/" class="md-nav__link">
         
   
   
@@ -3667,7 +3656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/http/http-response/" class="md-nav__link">
+      <a href="../../../js/httprequest/http/http-response/" class="md-nav__link">
         
   
   
@@ -3690,7 +3679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/http/http-request/" class="md-nav__link">
+      <a href="../../../js/httprequest/http/http-request/" class="md-nav__link">
         
   
   
@@ -3762,7 +3751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/overview/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/overview/" class="md-nav__link">
         
   
   
@@ -3785,7 +3774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/api-response-object/" class="md-nav__link">
         
   
   
@@ -3808,7 +3797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
         
   
   
@@ -3831,7 +3820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/chaining/" class="md-nav__link">
         
   
   
@@ -3854,7 +3843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   
@@ -3877,7 +3866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/core/axios/" class="md-nav__link">
+      <a href="../../../js/httprequest/core/axios/" class="md-nav__link">
         
   
   
@@ -3949,7 +3938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/overview/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/overview/" class="md-nav__link">
         
   
   
@@ -3972,7 +3961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/useReducer/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/useReducer/" class="md-nav__link">
         
   
   
@@ -3995,7 +3984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   
@@ -4018,7 +4007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
         
   
   
@@ -4041,7 +4030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
         
   
   
@@ -4064,7 +4053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
+      <a href="../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
         
   
   
@@ -4144,7 +4133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/json/intro/" class="md-nav__link">
+      <a href="../../../js/json/intro/" class="md-nav__link">
         
   
   
@@ -4167,7 +4156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/json/json5/" class="md-nav__link">
+      <a href="../../../js/json/json5/" class="md-nav__link">
         
   
   
@@ -4239,7 +4228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-functions/" class="md-nav__link">
         
   
   
@@ -4262,7 +4251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-array/" class="md-nav__link">
         
   
   
@@ -4285,7 +4274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-objects/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-objects/" class="md-nav__link">
         
   
   
@@ -4308,7 +4297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+      <a href="../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
         
   
   
@@ -4331,7 +4320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+      <a href="../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
         
   
   
@@ -4403,7 +4392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/weird-parts/js-missing-parts/" class="md-nav__link">
+      <a href="../../../js/weird-parts/js-missing-parts/" class="md-nav__link">
         
   
   
@@ -4426,7 +4415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/weird-parts/bug-in-js/" class="md-nav__link">
+      <a href="../../../js/weird-parts/bug-in-js/" class="md-nav__link">
         
   
   
@@ -4498,7 +4487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/miscellaneous/guard-clause/" class="md-nav__link">
+      <a href="../../../js/miscellaneous/guard-clause/" class="md-nav__link">
         
   
   
@@ -4521,7 +4510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/miscellaneous/cognitive-skills/" class="md-nav__link">
+      <a href="../../../js/miscellaneous/cognitive-skills/" class="md-nav__link">
         
   
   
@@ -4544,7 +4533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../js/miscellaneous/books/" class="md-nav__link">
+      <a href="../../../js/miscellaneous/books/" class="md-nav__link">
         
   
   
@@ -4623,7 +4612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/intro/" class="md-nav__link">
+      <a href="../../../fundamental/intro/" class="md-nav__link">
         
   
   
@@ -4687,7 +4676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/this/overview/" class="md-nav__link">
+      <a href="../../../fundamental/this/overview/" class="md-nav__link">
         
   
   
@@ -4759,7 +4748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/array-methods/overview/" class="md-nav__link">
+      <a href="../../../fundamental/array-methods/overview/" class="md-nav__link">
         
   
   
@@ -4782,7 +4771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/array-methods/static/" class="md-nav__link">
+      <a href="../../../fundamental/array-methods/static/" class="md-nav__link">
         
   
   
@@ -4805,7 +4794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/array-methods/destructive/" class="md-nav__link">
+      <a href="../../../fundamental/array-methods/destructive/" class="md-nav__link">
         
   
   
@@ -4828,7 +4817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/array-methods/non-destructive/" class="md-nav__link">
+      <a href="../../../fundamental/array-methods/non-destructive/" class="md-nav__link">
         
   
   
@@ -4851,7 +4840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/array-methods/usage-patterns/" class="md-nav__link">
+      <a href="../../../fundamental/array-methods/usage-patterns/" class="md-nav__link">
         
   
   
@@ -4874,7 +4863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/array-methods/summary/" class="md-nav__link">
+      <a href="../../../fundamental/array-methods/summary/" class="md-nav__link">
         
   
   
@@ -4946,7 +4935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/object-methods/overview/" class="md-nav__link">
+      <a href="../../../fundamental/object-methods/overview/" class="md-nav__link">
         
   
   
@@ -4969,7 +4958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/object-methods/comparing-objects/" class="md-nav__link">
+      <a href="../../../fundamental/object-methods/comparing-objects/" class="md-nav__link">
         
   
   
@@ -5041,7 +5030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/two-dimensional-arrays/overview/" class="md-nav__link">
+      <a href="../../../fundamental/two-dimensional-arrays/overview/" class="md-nav__link">
         
   
   
@@ -5113,7 +5102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/closure/overview/" class="md-nav__link">
+      <a href="../../../fundamental/closure/overview/" class="md-nav__link">
         
   
   
@@ -5136,7 +5125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/closure/javascript-closures/" class="md-nav__link">
+      <a href="../../../fundamental/closure/javascript-closures/" class="md-nav__link">
         
   
   
@@ -5208,7 +5197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/js-async/overview/" class="md-nav__link">
+      <a href="../../../fundamental/js-async/overview/" class="md-nav__link">
         
   
   
@@ -5231,7 +5220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/js-async/promise/" class="md-nav__link">
+      <a href="../../../fundamental/js-async/promise/" class="md-nav__link">
         
   
   
@@ -5254,7 +5243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/js-async/promise-code/" class="md-nav__link">
+      <a href="../../../fundamental/js-async/promise-code/" class="md-nav__link">
         
   
   
@@ -5285,7 +5274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/function-return-promise-or-callback/" class="md-nav__link">
+      <a href="../../../fundamental/function-return-promise-or-callback/" class="md-nav__link">
         
   
   
@@ -5308,7 +5297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../fundamental/6-falsy-values-in-js/" class="md-nav__link">
+      <a href="../../../fundamental/6-falsy-values-in-js/" class="md-nav__link">
         
   
   
@@ -5379,7 +5368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/intro/" class="md-nav__link">
+      <a href="../../../advanced/intro/" class="md-nav__link">
         
   
   
@@ -5443,7 +5432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/async-keyword/overview/" class="md-nav__link">
+      <a href="../../../advanced/async-keyword/overview/" class="md-nav__link">
         
   
   
@@ -5466,7 +5455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/async-keyword/related/" class="md-nav__link">
+      <a href="../../../advanced/async-keyword/related/" class="md-nav__link">
         
   
   
@@ -5489,7 +5478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/async-keyword/return-values/" class="md-nav__link">
+      <a href="../../../advanced/async-keyword/return-values/" class="md-nav__link">
         
   
   
@@ -5512,7 +5501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/async-keyword/async-await-vs-then/" class="md-nav__link">
+      <a href="../../../advanced/async-keyword/async-await-vs-then/" class="md-nav__link">
         
   
   
@@ -5584,7 +5573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/scope/chatgpt/" class="md-nav__link">
+      <a href="../../../advanced/scope/chatgpt/" class="md-nav__link">
         
   
   
@@ -5607,7 +5596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/scope/deepseek/" class="md-nav__link">
+      <a href="../../../advanced/scope/deepseek/" class="md-nav__link">
         
   
   
@@ -5630,7 +5619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/scope/mkdocs-warning-solved/" class="md-nav__link">
+      <a href="../../../advanced/scope/mkdocs-warning-solved/" class="md-nav__link">
         
   
   
@@ -5702,7 +5691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/modules/overview/" class="md-nav__link">
+      <a href="../../../advanced/modules/overview/" class="md-nav__link">
         
   
   
@@ -5774,7 +5763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/class/intro/" class="md-nav__link">
+      <a href="../../../advanced/class/intro/" class="md-nav__link">
         
   
   
@@ -5797,7 +5786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/class/in-depth/" class="md-nav__link">
+      <a href="../../../advanced/class/in-depth/" class="md-nav__link">
         
   
   
@@ -5869,7 +5858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/memory-management/overview/" class="md-nav__link">
+      <a href="../../../advanced/memory-management/overview/" class="md-nav__link">
         
   
   
@@ -5892,7 +5881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/memory-management/serialization/" class="md-nav__link">
+      <a href="../../../advanced/memory-management/serialization/" class="md-nav__link">
         
   
   
@@ -5915,7 +5904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/memory-management/memory-types/" class="md-nav__link">
+      <a href="../../../advanced/memory-management/memory-types/" class="md-nav__link">
         
   
   
@@ -5987,7 +5976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/overview/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/overview/" class="md-nav__link">
         
   
   
@@ -6051,7 +6040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/creation/object-create/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/creation/object-create/" class="md-nav__link">
         
   
   
@@ -6074,7 +6063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/creation/object-assign/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/creation/object-assign/" class="md-nav__link">
         
   
   
@@ -6146,7 +6135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/access/object-keys/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/access/object-keys/" class="md-nav__link">
         
   
   
@@ -6169,7 +6158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/access/object-values/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/access/object-values/" class="md-nav__link">
         
   
   
@@ -6192,7 +6181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/access/object-entries/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/access/object-entries/" class="md-nav__link">
         
   
   
@@ -6264,7 +6253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/definition/object-defineproperty/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/definition/object-defineproperty/" class="md-nav__link">
         
   
   
@@ -6287,7 +6276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/definition/object-defineproperties/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/definition/object-defineproperties/" class="md-nav__link">
         
   
   
@@ -6310,7 +6299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/definition/direct-assignment/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/definition/direct-assignment/" class="md-nav__link">
         
   
   
@@ -6382,7 +6371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/inspection/object-getownpropertydescriptor/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/inspection/object-getownpropertydescriptor/" class="md-nav__link">
         
   
   
@@ -6405,7 +6394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/inspection/object-getownpropertydescriptors/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/inspection/object-getownpropertydescriptors/" class="md-nav__link">
         
   
   
@@ -6428,7 +6417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/inspection/object-getownpropertynames/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/inspection/object-getownpropertynames/" class="md-nav__link">
         
   
   
@@ -6451,7 +6440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/inspection/object-hasown/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/inspection/object-hasown/" class="md-nav__link">
         
   
   
@@ -6523,7 +6512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/mutation/object-freeze/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/mutation/object-freeze/" class="md-nav__link">
         
   
   
@@ -6546,7 +6535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/mutation/object-seal/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/mutation/object-seal/" class="md-nav__link">
         
   
   
@@ -6569,7 +6558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/mutation/object-preventextensions/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/mutation/object-preventextensions/" class="md-nav__link">
         
   
   
@@ -6641,7 +6630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/transformation/object-fromentries/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/transformation/object-fromentries/" class="md-nav__link">
         
   
   
@@ -6664,7 +6653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/transformation/object-groupby/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/transformation/object-groupby/" class="md-nav__link">
         
   
   
@@ -6736,7 +6725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/behavior/using-this/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/behavior/using-this/" class="md-nav__link">
         
   
   
@@ -6759,7 +6748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/object-in-depth/behavior/method-chaining/" class="md-nav__link">
+      <a href="../../../advanced/object-in-depth/behavior/method-chaining/" class="md-nav__link">
         
   
   
@@ -6839,7 +6828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/style-guide/intro/" class="md-nav__link">
+      <a href="../../../advanced/style-guide/intro/" class="md-nav__link">
         
   
   
@@ -6862,7 +6851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/style-guide/js-style-guide/" class="md-nav__link">
+      <a href="../../../advanced/style-guide/js-style-guide/" class="md-nav__link">
         
   
   
@@ -6885,7 +6874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/style-guide/naming-convention/" class="md-nav__link">
+      <a href="../../../advanced/style-guide/naming-convention/" class="md-nav__link">
         
   
   
@@ -6908,7 +6897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/style-guide/coercion/" class="md-nav__link">
+      <a href="../../../advanced/style-guide/coercion/" class="md-nav__link">
         
   
   
@@ -6931,7 +6920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/style-guide/js-constants/" class="md-nav__link">
+      <a href="../../../advanced/style-guide/js-constants/" class="md-nav__link">
         
   
   
@@ -6954,7 +6943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../advanced/style-guide/js-array/" class="md-nav__link">
+      <a href="../../../advanced/style-guide/js-array/" class="md-nav__link">
         
   
   
@@ -7033,7 +7022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../eventloop/intro/" class="md-nav__link">
+      <a href="../../../eventloop/intro/" class="md-nav__link">
         
   
   
@@ -7056,7 +7045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../eventloop/memory-management/" class="md-nav__link">
+      <a href="../../../eventloop/memory-management/" class="md-nav__link">
         
   
   
@@ -7079,7 +7068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../eventloop/shallow-copy/" class="md-nav__link">
+      <a href="../../../eventloop/shallow-copy/" class="md-nav__link">
         
   
   
@@ -7102,7 +7091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../eventloop/deep-copy/" class="md-nav__link">
+      <a href="../../../eventloop/deep-copy/" class="md-nav__link">
         
   
   
@@ -7125,7 +7114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../eventloop/queue/" class="md-nav__link">
+      <a href="../../../eventloop/queue/" class="md-nav__link">
         
   
   
@@ -7148,7 +7137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../eventloop/macrotasks/" class="md-nav__link">
+      <a href="../../../eventloop/macrotasks/" class="md-nav__link">
         
   
   
@@ -7171,7 +7160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../eventloop/microtasks/" class="md-nav__link">
+      <a href="../../../eventloop/microtasks/" class="md-nav__link">
         
   
   
@@ -7198,24 +7187,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -7228,7 +7222,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Design Pattern
@@ -7242,7 +7236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   
@@ -7265,7 +7259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/daily/" class="md-nav__link">
+      <a href="../../daily/" class="md-nav__link">
         
   
   
@@ -7288,7 +7282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/official/" class="md-nav__link">
+      <a href="../../official/" class="md-nav__link">
         
   
   
@@ -7311,7 +7305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/js/" class="md-nav__link">
+      <a href="../../js/" class="md-nav__link">
         
   
   
@@ -7334,7 +7328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/categories/" class="md-nav__link">
+      <a href="../../categories/" class="md-nav__link">
         
   
   
@@ -7357,7 +7351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/mnemonic/" class="md-nav__link">
+      <a href="../../mnemonic/" class="md-nav__link">
         
   
   
@@ -7421,7 +7415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/creational/factory/" class="md-nav__link">
+      <a href="../factory/" class="md-nav__link">
         
   
   
@@ -7493,7 +7487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/intro/" class="md-nav__link">
+      <a href="../../react/intro/" class="md-nav__link">
         
   
   
@@ -7516,7 +7510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/mostly-used/" class="md-nav__link">
+      <a href="../../react/mostly-used/" class="md-nav__link">
         
   
   
@@ -7539,7 +7533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/container-presentation/" class="md-nav__link">
+      <a href="../../react/container-presentation/" class="md-nav__link">
         
   
   
@@ -7562,7 +7556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/container-presentation-theory/" class="md-nav__link">
+      <a href="../../react/container-presentation-theory/" class="md-nav__link">
         
   
   
@@ -7585,7 +7579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/custom-component/" class="md-nav__link">
+      <a href="../../react/custom-component/" class="md-nav__link">
         
   
   
@@ -7608,7 +7602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/react/antd-resuable-component/" class="md-nav__link">
+      <a href="../../react/antd-resuable-component/" class="md-nav__link">
         
   
   
@@ -7680,7 +7674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/advanced/recall/" class="md-nav__link">
+      <a href="../../advanced/recall/" class="md-nav__link">
         
   
   
@@ -7711,7 +7705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../designpattern/creational/Singleton/" class="md-nav__link">
+      <a href="../Singleton/" class="md-nav__link">
         
   
   
@@ -7731,10 +7725,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../designpattern/creational/Singleton-practice/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Singleton Practice
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -7745,6 +7761,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-how-to-learn-singleton-pattern-better-deeper" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. How to Learn Singleton Pattern Better &amp; Deeper
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. How to Learn Singleton Pattern Better &amp; Deeper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#study-classic-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Study Classic Resources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explore-variations-implementation-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Explore Variations &amp; Implementation Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-mini-projects-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Build Mini Projects / Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-when-to-use-singleton-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. When to Use Singleton Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-when-not-to-use-singleton-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. When NOT to Use Singleton Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-best-practices-with-singleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Best Practices with Singleton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-resources-to-dive-deeper" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Resources to Dive Deeper
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -7765,8 +7879,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -7786,37 +7898,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prototype-constructor-methods" class="md-nav__link">
+  <a href="#1-how-to-learn-singleton-pattern-better-deeper" class="md-nav__link">
     <span class="md-ellipsis">
-      Prototype &amp; Constructor Methods
+      1. How to Learn Singleton Pattern Better &amp; Deeper
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Prototype &amp; Constructor Methods">
+    <nav class="md-nav" aria-label="1. How to Learn Singleton Pattern Better &amp; Deeper">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prototype-methods" class="md-nav__link">
+  <a href="#study-classic-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Prototype Methods
+      📚 Study Classic Resources
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#instance-specific-constructor-methods" class="md-nav__link">
+  <a href="#explore-variations-implementation-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Instance-Specific (Constructor) Methods
+      🔍 Explore Variations &amp; Implementation Details
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-differences" class="md-nav__link">
+  <a href="#build-mini-projects-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Differences
+      💻 Build Mini Projects / Examples
     </span>
   </a>
   
@@ -7828,51 +7940,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#terminology" class="md-nav__link">
+  <a href="#2-when-to-use-singleton-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      Terminology
+      2. When to Use Singleton Pattern
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Terminology">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#static-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Static Methods
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#constructor-methods-instance-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Constructor Methods (Instance Methods)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary-of-differences" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary of Differences
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#3-when-not-to-use-singleton-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference
+      3. When NOT to Use Singleton Pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-best-practices-with-singleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Best Practices with Singleton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-resources-to-dive-deeper" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Resources to Dive Deeper
     </span>
   </a>
   
@@ -7887,614 +7984,164 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../../../../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-                  <span class="md-ellipsis">
-                    Back to index
-                  </span>
-                </a>
-              </div>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="singleton-practice">Singleton Practice</h1>
+<p>You’ve got the singleton pattern basics down — now let’s talk about how to master it deeply and apply it wisely in real-world scenarios.</p>
+<hr>
+<h2 id="1-how-to-learn-singleton-pattern-better-deeper">1. How to Learn Singleton Pattern Better &amp; Deeper</h2>
+<h3 id="study-classic-resources">📚 Study Classic Resources</h3>
+<ul>
+<li>
+<p>Design Patterns book by Gamma et al. (“Gang of Four”) — the classic source on all patterns including Singleton.</p>
+</li>
+<li>
+<p>Online tutorials or videos focusing on singleton implementations in multiple languages (JS, Java, Python, C#) to see differences and nuances.</p>
+</li>
+</ul>
+<h3 id="explore-variations-implementation-details">🔍 Explore Variations &amp; Implementation Details</h3>
+<ul>
+<li>
+<p><strong>Eager vs Lazy Initialization:</strong></p>
+<ul>
+<li><strong>Eager</strong>: instance created when app starts</li>
+<li><strong>Lazy</strong>: instance created when first needed (on demand)</li>
+</ul>
+</li>
+<li>
+<p><strong>Thread safety</strong> (especially in multithreaded languages like Java/C#)</p>
+</li>
+<li>
+<p>How Singleton interacts with:</p>
+<ul>
+<li>Serialization/deserialization</li>
+<li>Cloning or copying</li>
+<li>Dependency Injection (DI) patterns</li>
+</ul>
+</li>
+</ul>
+<h3 id="build-mini-projects-examples">💻 Build Mini Projects / Examples</h3>
+<ul>
+<li>
+<p>Implement Singleton pattern yourself in vanilla JS:</p>
+<ul>
+<li>Using ESModules (import/export)</li>
+<li>Using closures and IIFEs</li>
+<li>Using classes with static instance members</li>
+</ul>
+</li>
+<li>
+<p>Observe and log instance creation behavior.</p>
+</li>
+<li>Try breaking Singleton accidentally (by forcing multiple instances) and fixing it.</li>
+</ul>
+<hr>
+<h2 id="2-when-to-use-singleton-pattern">2. When to Use Singleton Pattern</h2>
+<details class="success" open="open">
+<summary>Use Singleton When:</summary>
+<ul>
+<li>You need <mark>one, and only one, instance</mark> of a class or resource across the entire application.</li>
+<li>
+<p>The instance represents something globally shared, like:</p>
+<ul>
+<li>Database connection (e.g., your Supabase client)</li>
+<li>Logger or analytics tracker</li>
+<li>Configuration manager or environment settings</li>
+<li>Cache manager or thread pool</li>
+</ul>
+</li>
+<li>
+<p>You want to <mark>control access</mark> to a shared resource and coordinate usage.</p>
+</li>
+</ul>
+</details>
+<p><strong>Typical example</strong>:</p>
+<ul>
+<li>Frontend app API clients, where you want one client instance managing auth and requests globally.</li>
+<li>Backend services where you want a single DB connection pool.</li>
+</ul>
+<hr>
+<h2 id="3-when-not-to-use-singleton-pattern">3. When NOT to Use Singleton Pattern</h2>
+<details class="danger" open="open">
+<summary>❌ Avoid Singleton When</summary>
+<ul>
+<li>
+<p>You need <strong>multiple independent instances</strong> (e.g., multiple DB clients with different configs).</p>
+</li>
+<li>
+<p>Your application is <strong>multithreaded</strong> or distributed, and the singleton state would cause race conditions or inconsistencies.</p>
+</li>
+<li>
+<p>You want <strong>easy unit testing</strong> — singletons can introduce hidden global state, making tests harder to isolate.</p>
+</li>
+<li>
+<p>Your design calls for <mark>Dependency Injection</mark> (DI) or Inversion of Control (IoC), which encourages passing dependencies explicitly.</p>
+</li>
+<li>
+<p>You want to avoid <mark>global mutable state</mark>, which can lead to tight coupling and harder-to-maintain code.</p>
+</li>
+</ul>
+</details>
+<hr>
+<h2 id="4-best-practices-with-singleton">4. Best Practices with Singleton</h2>
+<ul>
+<li>
+<p><strong>Limit global state</strong>: Singleton often means global state — use with caution.</p>
+</li>
+<li>
+<p><strong>Use immutable config where possible.</strong></p>
+</li>
+<li>
+<p><strong>Lazy initialize</strong> singletons to avoid startup overhead.</p>
+</li>
+<li>
+<p><strong>Make sure singletons are thread-safe</strong> if applicable.</p>
+</li>
+<li>
+<p>Prefer <strong>module-level singletons</strong> in JS over classical OOP singletons, since modules do caching naturally.</p>
+</li>
+<li>
+<p>Consider combining with <strong>context providers</strong> in React to make singleton instances accessible with React state.</p>
+</li>
+</ul>
+<hr>
+<h2 id="5-resources-to-dive-deeper">5. Resources to Dive Deeper</h2>
+<ul>
+<li>
+<p><a href="#">Refactoring Guru — Singleton Pattern</a>
+  Very beginner-friendly with examples.</p>
+</li>
+<li>
+<p>MDN: JavaScript modules and caching</p>
+</li>
+<li>
+<p>YouTube: Look for “Singleton pattern deep dive” or language-specific implementations.</p>
+</li>
+<li>
+<p>Blog posts comparing <strong>Singleton vs Dependency Injection</strong>.</p>
+</li>
+</ul></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            
-              <div class="md-post__authors md-typeset">
-                
-                  <div class="md-profile md-post__profile">
-                    <span class="md-author md-author--long">
-                      <img src="https://avatars.githubusercontent.com/u/25550945" alt="Bishow Thapa">
-                    </span>
-                    <span class="md-profile__description">
-                      <strong>
-                        
-                          Bishow Thapa
-                        
-                      </strong>
-                      <br>
-                      Creator
-                    </span>
-                  </div>
-                
-              </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    Metadata
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2024-05-20 00:00:00+00:00" class="md-ellipsis">May 20, 2024</time>
-                      </div>
-                    </li>
-                    
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              7 min read
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-            
-          </nav>
           
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
-  
-
-
-  <nav class="md-tags" >
-    
-      
-      
-      
-        <span class="md-tag">js</span>
-      
-    
-  </nav>
-
-
-
-<div><h1 id="js-objects">JS objects</h1>
-<p>In JavaScript, every object inherits properties and methods from its prototype. The base object from which all other objects derive, <strong>Object.prototype</strong>, includes several built-in methods and properties that are fundamental to working with objects. Here are some of the most commonly used ones:</p>
-<!-- more -->
-
-<details class="tips" open="open">
-<summary>Built-ins</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Properties</label><label for="__tabbed_1_2">Methods</label><label for="__tabbed_1_3">Prototypal Methods</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li>
-<p>constructor</p>
-<ul>
-<li>Refers to the function that created the instance's prototype.</li>
-<li>Example: <code>obj.constructor</code></li>
-</ul>
-</li>
-<li>
-<p>proto</p>
-<ul>
-<li>Refers to the prototype of the object.</li>
-<li>Example: <code>obj.__proto__</code></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>
-<p>hasOwnProperty()</p>
-<ul>
-<li>Determines if an object has a property as its own (not inherited).</li>
-<li>Example: <code>obj.hasOwnProperty('propertyName')</code></li>
-</ul>
-</li>
-<li>
-<p>isPrototypeOf()</p>
-<ul>
-<li>Checks if an object exists in another object's prototype chain.</li>
-<li>Example: <code>prototypeObject.isPrototypeOf(obj)</code></li>
-</ul>
-</li>
-<li>
-<p>propertyIsEnumerable()</p>
-<ul>
-<li>Checks if a property is enumerable.</li>
-<li>Example: <code>obj.propertyIsEnumerable('propertyName')</code></li>
-</ul>
-</li>
-<li>
-<p>toString()</p>
-<ul>
-<li>Returns a string representation of the object.</li>
-<li>Example: <code>obj.toString()</code></li>
-</ul>
-</li>
-<li>
-<p>valueOf()</p>
-<ul>
-<li>Returns the primitive value of the specified object.</li>
-<li>Example: <code>obj.valueOf()</code></li>
-</ul>
-</li>
-<li>
-<p>toLocaleString()</p>
-<ul>
-<li>Returns a string representation of the object, localized according to the locale settings.</li>
-<li>Example: <code>obj.toLocaleString()</code></li>
-</ul>
-</li>
-</ol>
-<hr>
-<blockquote>
-<p>Static Methods</p>
-</blockquote>
-<ol>
-<li>
-<p>defineProperty() <mark>(added in ES5)</mark></p>
-<ul>
-<li>Defines a new property directly on an object, or modifies an existing property on an object, and returns the object.</li>
-<li>Example: <code>Object.defineProperty(obj, 'newProp', { value: 42 })</code></li>
-</ul>
-</li>
-<li>
-<p>defineProperties() <mark>(added in ES5)</mark></p>
-<ul>
-<li>Defines new or modifies existing properties directly on an object, returning the object.</li>
-<li>Example: <code>Object.defineProperties(obj, { 'prop1': { value: 42 }, 'prop2': { value: 43 } })</code></li>
-</ul>
-</li>
-<li>
-<p>getOwnPropertyDescriptor() <mark>(added in ES5)</mark></p>
-<ul>
-<li>Returns a property descriptor for a named property on an object.</li>
-<li>Example: <code>Object.getOwnPropertyDescriptor(obj, 'propertyName')</code></li>
-</ul>
-</li>
-<li>
-<p>getOwnPropertyNames() <mark>(added in ES5)</mark></p>
-<ul>
-<li>Returns an array of all properties (enumerable or not) found directly upon a given object.</li>
-<li>Example: <code>Object.getOwnPropertyNames(obj)</code></li>
-</ul>
-</li>
-<li>
-<p>keys() <mark>(added in ES5)</mark></p>
-<ul>
-<li>Returns an array of a given object's own enumerable property names.</li>
-<li>Example: <code>Object.keys(obj)</code></li>
-</ul>
-</li>
-<li>
-<p>entries() <mark>(added in ES8)</mark></p>
-<ul>
-<li>Returns an array of a given object's own enumerable string-keyed property [key, value] pairs.</li>
-<li>Example: <code>Object.entries(obj)</code></li>
-</ul>
-</li>
-<li>
-<p>values() <mark>(added in ES8)</mark></p>
-<ul>
-<li>Returns an array of a given object's own enumerable property values.</li>
-<li>Example: <code>Object.values(obj)</code></li>
-</ul>
-</li>
-<li>
-<p>fromEntries() <mark>(added in ES10)</mark></p>
-<ul>
-<li>Transforms a list of key-value pairs into an object.</li>
-<li>Example: <code>Object.fromEntries([['key1', 'value1'], ['key2', 'value2']])</code></li>
-</ul>
-</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<p>JavaScript objects can also inherit methods from their prototypes. For example, arrays <mark>inherit methods from</mark> <strong>Array.prototype</strong>, <mark>strings</mark> from <strong>String.prototype</strong>, etc.</p>
-<p>Here's an example with arrays:</p>
-<ol>
-<li>
-<p>push()</p>
-<ul>
-<li>Adds one or more elements to the end of an array and returns the new length of the array.</li>
-<li>Example: <code>arr.push(element)</code></li>
-</ul>
-</li>
-<li>
-<p>pop()</p>
-<ul>
-<li>Removes the last element from an array and returns that element.</li>
-<li>Example: <code>arr.pop()</code></li>
-</ul>
-</li>
-<li>
-<p>map()</p>
-<ul>
-<li>Creates a new array populated with the results of calling a provided function on every element in the calling array.</li>
-<li>Example: <code>arr.map(function(element) { return element * 2; })</code></li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<hr>
-<p>These are some of the <mark>core</mark> <code>methods</code> and <code>properties</code> that are built into JavaScript objects. The language also provides a robust set of methods and properties for <mark>specialized objects</mark> like <code>arrays</code>, <code>strings</code>, and <code>functions</code>.</p>
-</details>
-<hr>
-<h2 id="prototype-constructor-methods">Prototype &amp; Constructor Methods</h2>
-<h3 id="prototype-methods">Prototype Methods</h3>
-<p>Prototype methods are defined on the constructor's prototype. All instances of the object share the same method.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">// Shared method (prototype method)</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayHello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello, my name is '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">};</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="kd">let</span><span class="w"> </span><span class="nx">person1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="kd">let</span><span class="w"> </span><span class="nx">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Bob'</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nx">person1</span><span class="p">.</span><span class="nx">sayHello</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Hello, my name is Alice"</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nx">person2</span><span class="p">.</span><span class="nx">sayHello</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Hello, my name is Bob"</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c1">// Both instances share the same sayHello method</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">sayHello</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">person2</span><span class="p">.</span><span class="nx">sayHello</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span></code></pre></div>
-<p>In this example, <code>sayHello</code> is a <mark>prototype method</mark>, <mark>meaning <code>person1</code> and <code>person2</code> share the same <code>sayHello</code> method</mark>.</p>
-<h3 id="instance-specific-constructor-methods">Instance-Specific (Constructor) Methods</h3>
-<p>Instance-specific methods are defined inside the constructor function. Each instance of the object will have its own copy of these methods.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="c1">// Instance-specific method (constructor method)</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' is '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' years old.'</span><span class="p">);</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="p">};</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="kd">let</span><span class="w"> </span><span class="nx">person1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="kd">let</span><span class="w"> </span><span class="nx">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Bob'</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nx">person1</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Alice is 25 years old."</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nx">person2</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Bob is 30 years old."</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c1">// Each instance has its own copy of describe</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">person2</span><span class="p">.</span><span class="nx">describe</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
-</span></code></pre></div>
-<p>In this example, <code>describe</code> is a constructor method, meaning <code>person1</code> and <code>person2</code> each have their own copy of the describe method.</p>
-<h3 id="key-differences">Key Differences</h3>
-<ul>
-<li>
-<p>Memory Efficiency:</p>
-<ul>
-<li>Constructor Methods: Each instance gets its own copy of the method, which can consume more memory.</li>
-<li>Prototype Methods: All instances share the same method, which is more memory-efficient.</li>
-</ul>
-</li>
-<li>
-<p>Usage:</p>
-<ul>
-<li>Constructor Methods: Use when each instance needs its own unique version of the method, often because the method relies on instance-specific data or state.</li>
-<li>Prototype Methods: Use when the method's behavior should be the same across all instances, to save memory and maintain consistency.</li>
-</ul>
-</li>
-</ul>
-<details class="example">
-<summary>Example</summary>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="c1">// Instance-specific method (constructor method)</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' is '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' years old.'</span><span class="p">);</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p">};</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1">// Shared method (prototype method)</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sayHello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello, my name is '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">};</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="kd">let</span><span class="w"> </span><span class="nx">person1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="kd">let</span><span class="w"> </span><span class="nx">person2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Bob'</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="nx">person1</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Alice is 25 years old."</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="nx">person2</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Bob is 30 years old."</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="nx">person1</span><span class="p">.</span><span class="nx">sayHello</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Hello, my name is Alice"</span>
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="nx">person2</span><span class="p">.</span><span class="nx">sayHello</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Hello, my name is Bob"</span>
-</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="c1">// Each instance has its own copy of describe</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">person2</span><span class="p">.</span><span class="nx">describe</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
-</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="c1">// Both instances share the same sayHello method</span>
-</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person1</span><span class="p">.</span><span class="nx">sayHello</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">person2</span><span class="p">.</span><span class="nx">sayHello</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
-</span></code></pre></div>
-<blockquote>
-<p>In this example:</p>
-</blockquote>
-<ul>
-<li><code>describe</code> is a <mark>constructor method</mark>, so each instance (<code>person1</code> and <code>person2</code>) has its own copy.</li>
-<li><code>sayHello</code> is a <mark>prototype method</mark>, so <code>person1</code> and <code>person2</code> share the same method.</li>
-</ul>
-</details>
-<hr>
-<h2 id="terminology">Terminology</h2>
-<p>Static methods and constructor methods <mark>are not the same</mark> in JavaScript. Let's delve into their differences with clear examples.</p>
-<h3 id="static-methods">Static Methods</h3>
-<p>Static methods are methods defined on the constructor function itself. <mark>They are not available on instances of the constructor</mark>. Static methods are called directly on the constructor.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="c1">// Static method</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="nx">compareAge</span><span class="p">(</span><span class="nx">person1</span><span class="p">,</span><span class="w"> </span><span class="nx">person2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">person1</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">person2</span><span class="p">.</span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">}</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">alice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">bob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Bob'</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c1">// Calling the static method on the constructor</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">compareAge</span><span class="p">(</span><span class="nx">alice</span><span class="p">,</span><span class="w"> </span><span class="nx">bob</span><span class="p">));</span><span class="w"> </span><span class="c1">// -5</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1">// Static method is not available on instances</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">alice</span><span class="p">.</span><span class="nx">compareAge</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
-</span></code></pre></div>
-<p>In this example, <code>compareAge</code> is a static method defined on the <code>Person</code> constructor. It is <mark>called directly on</mark> <code>Person</code> and <mark>not on the instances</mark> (<code>alice</code> and <code>bob</code>).</p>
-<h3 id="constructor-methods-instance-methods">Constructor Methods (Instance Methods)</h3>
-<p>Constructor methods are methods defined inside the constructor function. Each instance of the object will have its own copy of these methods.</p>
-<blockquote>
-<p>Constructor methods are defined inside the constructor function using <strong>this</strong>. They are specific to each instance of the object and are accessed through instances of the constructor.</p>
-</blockquote>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="c1">// Constructor method (instance method)</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="si">}</span><span class="sb"> years old.`</span><span class="p">);</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="p">};</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">}</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">alice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">bob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Bob'</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c1">// Calling the constructor method on instances</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="nx">alice</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Alice is 25 years old."</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="nx">bob</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Bob is 30 years old."</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="c1">// Each instance has its own copy of describe</span>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">alice</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">bob</span><span class="p">.</span><span class="nx">describe</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
-</span></code></pre></div>
-<p>In this example, <code>describe</code> is a constructor method. Each instance (<code>alice</code> and <code>bob</code>) has its own copy of the <code>describe</code> method.</p>
-<h3 id="summary-of-differences">Summary of Differences</h3>
-<ol>
-<li>
-<p>Definition and Availability:</p>
-<ul>
-<li>Static Methods: Defined on the constructor function itself. Available on the constructor, not on instances.</li>
-<li>Constructor Methods: Defined inside the constructor function. Each instance gets its own copy of the method.</li>
-</ul>
-</li>
-<li>
-<p>Calling:</p>
-<ul>
-<li>Static Methods: Called on the constructor itself.</li>
-<li>Constructor Methods: Called on instances of the constructor.</li>
-</ul>
-</li>
-</ol>
-<details class="example">
-<summary>Example Combining Both</summary>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="c1">// Constructor method</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="si">}</span><span class="sb"> years old.`</span><span class="p">);</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">        </span><span class="p">};</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="c1">// Static method</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="nx">compareAge</span><span class="p">(</span><span class="nx">person1</span><span class="p">,</span><span class="w"> </span><span class="nx">person2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">person1</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">person2</span><span class="p">.</span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="p">}</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="kd">const</span><span class="w"> </span><span class="nx">alice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="kd">const</span><span class="w"> </span><span class="nx">bob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Bob'</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">);</span>
-</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
-</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="c1">// Calling the constructor method on instances</span>
-</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="nx">alice</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Alice is 25 years old."</span>
-</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="nx">bob</span><span class="p">.</span><span class="nx">describe</span><span class="p">();</span><span class="w"> </span><span class="c1">// "Bob is 30 years old."</span>
-</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
-</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="c1">// Calling the static method on the constructor</span>
-</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">compareAge</span><span class="p">(</span><span class="nx">alice</span><span class="p">,</span><span class="w"> </span><span class="nx">bob</span><span class="p">));</span><span class="w"> </span><span class="c1">// -5</span>
-</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>
-</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="c1">// Static method is not available on instances</span>
-</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">alice</span><span class="p">.</span><span class="nx">compareAge</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
-</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>
-</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="c1">// Each instance has its own copy of describe</span>
-</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">alice</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">bob</span><span class="p">.</span><span class="nx">describe</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
-</span></code></pre></div>
-<blockquote>
-<p>In this example:</p>
-</blockquote>
-<ul>
-<li><code>compareAge</code> is a <mark>static method</mark> and is <mark>called on</mark> the <strong>Person constructor</strong>.</li>
-<li><code>describe</code> is a <mark>constructor method</mark> and is <mark>called on</mark> <strong>instances of Person</strong>.</li>
-</ul>
-</details>
-<hr>
-<details class="question">
-<summary>how to know or check if it is contructor methods or static methods in javascript?</summary>
-<p>In JavaScript, whether a method is a constructor method (instance method) or a static method depends on where it is defined and how it is accessed. Here’s how you can identify and distinguish between them:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Constructor Methods (Instance Methods)</label><label for="__tabbed_2_2">Static Methods</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Constructor methods are defined inside the constructor function using <mark>this</mark>. They are specific to each instance of the object and are accessed through instances of the constructor.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">        </span><span class="c1">// Constructor method (instance method)</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">describe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="si">}</span><span class="sb"> years old.`</span><span class="p">);</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">        </span><span class="p">};</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">}</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">alice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="c1">// Check if describe is a constructor method</span>
-</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">alice</span><span class="p">.</span><span class="nx">describe</span><span class="p">);</span><span class="w"> </span><span class="c1">// function</span>
-</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
-</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="c1">// Verify it's not available on the constructor itself</span>
-</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">describe</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>Static methods are defined on the constructor function directly using the <mark>static</mark> keyword. They are called on the constructor function itself, not on instances of the constructor.</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="c1">// Static method</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="nx">compareAge</span><span class="p">(</span><span class="nx">person1</span><span class="p">,</span><span class="w"> </span><span class="nx">person2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">person1</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">person2</span><span class="p">.</span><span class="nx">age</span><span class="p">;</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">}</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">alice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Person</span><span class="p">(</span><span class="s1">'Alice'</span><span class="p">,</span><span class="w"> </span><span class="mf">25</span><span class="p">);</span>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
-</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="c1">// Check if compareAge is a static method</span>
-</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">compareAge</span><span class="p">);</span><span class="w"> </span><span class="c1">// function</span>
-</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
-</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="c1">// Verify it's not available on instances of the constructor</span>
-</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">alice</span><span class="p">.</span><span class="nx">compareAge</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<details class="abstract">
-<summary>How to Identify Them</summary>
-<ul>
-<li>
-<p>Location of Definition:</p>
-<ul>
-<li>Constructor Methods: Defined inside the constructor function using <strong>this</strong>.</li>
-<li>Static Methods: Defined outside the constructor, prefixed with the <strong>static</strong> keyword within the class.</li>
-</ul>
-</li>
-<li>
-<p>Access Method:</p>
-<ul>
-<li>Constructor Methods: Accessed through instances of the constructor (<code>instance.method()</code>).</li>
-<li>Static Methods: Accessed directly on the constructor function itself (<code>Constructor.method()</code>).</li>
-</ul>
-</li>
-<li>
-<p>Usage:</p>
-<ul>
-<li>Constructor Methods: Typically used when each instance needs its own copy of the method, often to operate on instance-specific data.</li>
-<li>Static Methods: Used when the method does not depend on instance-specific data and is more utility-like, applying broadly to the constructor itself or its class.</li>
-</ul>
-</li>
-</ul>
-</details>
-<details class="abstract">
-<summary>Checking in Practice</summary>
-<p>To check if a method is a constructor method or a static method in JavaScript:</p>
-<ol>
-<li>
-<p>Look at where the method is defined:</p>
-<ul>
-<li>Inside the constructor function (<code>this.method = function() {...}</code>): It’s a constructor method.</li>
-<li>Using static keyword (<code>static methodName() {...}</code>): It’s a static method.</li>
-</ul>
-</li>
-<li>
-<p>Verify how the method is accessed:</p>
-<ul>
-<li>Through instances (<code>instance.method()</code>): It’s likely a constructor method.</li>
-<li>On the constructor itself (<code>Constructor.method()</code>): It’s likely a static method.</li>
-</ul>
-</li>
-</ol>
-<p>By understanding these distinctions, you can effectively identify and differentiate between <mark>constructor methods</mark> and <mark>static methods</mark> in JavaScript classes.</p>
-</details>
-</details>
-<hr>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="https://swagger.io/docs/specification/describing-request-body/multipart-requests/">multipart requests</a></li>
-<li><a href="https://stackoverflow.com/questions/4526273/what-does-enctype-multipart-form-data-mean">What does enctype='multipart/form-data' mean?</a></li>
-<li><a href=""></a></li>
-</ul>
-<hr></div>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-      
-    </article>
-  </div>
-
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -8511,12 +8158,10 @@
   
     
       
-        
-      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../17/understanding-functional-state-updates-in-react-a-deep-dive-into-setselectedgroupdata/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Understanding Functional State Updates in React: A Deep Dive into setSelectedGroupData">
+          <a href="../Singleton/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Singleton">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -8526,27 +8171,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Understanding Functional State Updates in React: A Deep Dive into setSelectedGroupData
+                Singleton
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../../21/exploring-objectprototype-in-javascript/" class="md-footer__link md-footer__link--next" aria-label="Next: Exploring Object.prototype in JavaScript">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Exploring Object.prototype in JavaScript
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -8596,10 +8225,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
