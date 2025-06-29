@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://thejsexpert.github.io/js/json/json5/">
+        <link rel="canonical" href="https://thejsexpert.github.io/blog/2025/06/29/why-only-one-constructor-in-javascript-classes/">
       
       
-        <link rel="prev" href="../intro/">
+        <link rel="prev" href="../../../05/22/why-is-understanding-shallow-vs-deep-copy-important-for-array-manipulation/">
       
       
-        <link rel="next" href="../../mnemonic/js-functions/">
+        <link rel="next" href="../javascript-inheritance-chain-prototype-chain/">
       
       
-      <link rel="icon" href="../../../assets/logo/favicon.ico">
+      <link rel="icon" href="../../../../../assets/logo/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Json and .Json5 - JS Expert Docs</title>
+        <title>Why Only One Constructor in JavaScript Classes? - JS Expert Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#json-interesting-topic" class="md-skip">
+        <a href="#why-only-one-constructor-in-javascript-classes" class="md-skip">
           Skip to content
         </a>
       
@@ -101,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../../../../.." title="JS Expert Docs" class="md-header__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../assets/logo/js.png" alt="logo">
+  <img src="../../../../../assets/logo/js.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Json and .Json5
+              Why Only One Constructor in JavaScript Classes?
             
           </span>
         </div>
@@ -221,11 +221,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../blog/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
           
   
   
@@ -245,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../tools/overview/" class="md-tabs__link">
+        <a href="../../../../../tools/overview/" class="md-tabs__link">
           
   
   
@@ -265,7 +267,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../fp/intro/" class="md-tabs__link">
+        <a href="../../../../../fp/intro/" class="md-tabs__link">
           
   
   
@@ -281,13 +283,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../../js/intro/" class="md-tabs__link">
           
   
   
@@ -307,7 +307,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../fundamental/intro/" class="md-tabs__link">
+        <a href="../../../../../fundamental/intro/" class="md-tabs__link">
           
   
   
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../advanced/intro/" class="md-tabs__link">
+        <a href="../../../../../advanced/intro/" class="md-tabs__link">
           
   
   
@@ -347,7 +347,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../eventloop/intro/" class="md-tabs__link">
+        <a href="../../../../../eventloop/intro/" class="md-tabs__link">
           
   
   
@@ -367,7 +367,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../designpattern/intro/" class="md-tabs__link">
+        <a href="../../../../../designpattern/intro/" class="md-tabs__link">
           
   
   
@@ -387,7 +387,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../console/overview/" class="md-tabs__link">
+        <a href="../../../../../console/overview/" class="md-tabs__link">
           
   
   
@@ -416,7 +416,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -427,9 +429,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
+    <a href="../../../../.." title="JS Expert Docs" class="md-nav__button md-logo" aria-label="JS Expert Docs" data-md-component="logo">
       
-  <img src="../../../assets/logo/js.png" alt="logo">
+  <img src="../../../../../assets/logo/js.png" alt="logo">
 
     </a>
     JS Expert Docs
@@ -441,24 +443,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -471,7 +478,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -482,12 +489,14 @@
                 
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="../../../blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   
@@ -553,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/archive/2025/" class="md-nav__link">
+      <a href="../../../../archive/2025/" class="md-nav__link">
         
   
   
@@ -578,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   
@@ -657,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/overview/" class="md-nav__link">
+      <a href="../../../../../tools/overview/" class="md-nav__link">
         
   
   
@@ -680,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/node-version-manager/" class="md-nav__link">
+      <a href="../../../../../tools/node-version-manager/" class="md-nav__link">
         
   
   
@@ -744,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vite/intro/" class="md-nav__link">
+      <a href="../../../../../tools/vite/intro/" class="md-nav__link">
         
   
   
@@ -767,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vite/under-the-hood/" class="md-nav__link">
+      <a href="../../../../../tools/vite/under-the-hood/" class="md-nav__link">
         
   
   
@@ -790,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vite/mode/" class="md-nav__link">
+      <a href="../../../../../tools/vite/mode/" class="md-nav__link">
         
   
   
@@ -813,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vite/build/" class="md-nav__link">
+      <a href="../../../../../tools/vite/build/" class="md-nav__link">
         
   
   
@@ -836,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vite/example/" class="md-nav__link">
+      <a href="../../../../../tools/vite/example/" class="md-nav__link">
         
   
   
@@ -859,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/vite/proxy/" class="md-nav__link">
+      <a href="../../../../../tools/vite/proxy/" class="md-nav__link">
         
   
   
@@ -931,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/npm/intro/" class="md-nav__link">
+      <a href="../../../../../tools/npm/intro/" class="md-nav__link">
         
   
   
@@ -954,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/npm/alias/" class="md-nav__link">
+      <a href="../../../../../tools/npm/alias/" class="md-nav__link">
         
   
   
@@ -977,7 +986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/npm/example/" class="md-nav__link">
+      <a href="../../../../../tools/npm/example/" class="md-nav__link">
         
   
   
@@ -1049,7 +1058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/yarn/intro/" class="md-nav__link">
+      <a href="../../../../../tools/yarn/intro/" class="md-nav__link">
         
   
   
@@ -1121,7 +1130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/pnpm/intro/" class="md-nav__link">
+      <a href="../../../../../tools/pnpm/intro/" class="md-nav__link">
         
   
   
@@ -1144,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/pnpm/advanced/" class="md-nav__link">
+      <a href="../../../../../tools/pnpm/advanced/" class="md-nav__link">
         
   
   
@@ -1167,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/pnpm/create/" class="md-nav__link">
+      <a href="../../../../../tools/pnpm/create/" class="md-nav__link">
         
   
   
@@ -1190,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/pnpm/guide/" class="md-nav__link">
+      <a href="../../../../../tools/pnpm/guide/" class="md-nav__link">
         
   
   
@@ -1269,7 +1278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/intro/" class="md-nav__link">
+      <a href="../../../../../fp/intro/" class="md-nav__link">
         
   
   
@@ -1292,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/principle/" class="md-nav__link">
+      <a href="../../../../../fp/principle/" class="md-nav__link">
         
   
   
@@ -1315,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/definition/" class="md-nav__link">
+      <a href="../../../../../fp/definition/" class="md-nav__link">
         
   
   
@@ -1338,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fp/books/" class="md-nav__link">
+      <a href="../../../../../fp/books/" class="md-nav__link">
         
   
   
@@ -1365,29 +1374,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -1400,7 +1404,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             JS
@@ -1414,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../../../../js/intro/" class="md-nav__link">
         
   
   
@@ -1437,7 +1441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terminology/intro/" class="md-nav__link">
+      <a href="../../../../../js/terminology/intro/" class="md-nav__link">
         
   
   
@@ -1501,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../definition/definition/" class="md-nav__link">
+      <a href="../../../../../js/definition/definition/" class="md-nav__link">
         
   
   
@@ -1524,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../definition/intro/" class="md-nav__link">
+      <a href="../../../../../js/definition/intro/" class="md-nav__link">
         
   
   
@@ -1547,7 +1551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../definition/functional/" class="md-nav__link">
+      <a href="../../../../../js/definition/functional/" class="md-nav__link">
         
   
   
@@ -1570,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../definition/memoization/" class="md-nav__link">
+      <a href="../../../../../js/definition/memoization/" class="md-nav__link">
         
   
   
@@ -1593,7 +1597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../definition/best/" class="md-nav__link">
+      <a href="../../../../../js/definition/best/" class="md-nav__link">
         
   
   
@@ -1665,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/prototype/" class="md-nav__link">
+      <a href="../../../../../js/essential/prototype/" class="md-nav__link">
         
   
   
@@ -1688,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/object-prototype/" class="md-nav__link">
+      <a href="../../../../../js/essential/object-prototype/" class="md-nav__link">
         
   
   
@@ -1711,7 +1715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/array-prototype/" class="md-nav__link">
+      <a href="../../../../../js/essential/array-prototype/" class="md-nav__link">
         
   
   
@@ -1734,7 +1738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/object/" class="md-nav__link">
+      <a href="../../../../../js/essential/object/" class="md-nav__link">
         
   
   
@@ -1757,7 +1761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/array/" class="md-nav__link">
+      <a href="../../../../../js/essential/array/" class="md-nav__link">
         
   
   
@@ -1780,12 +1784,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essential/object-object.prototype/" class="md-nav__link">
+      <a href="../../../../../js/essential/object-object.prototype/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Object & Object.Prototype
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../js/essential/check-method/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Check Static or Instance Methods
     
   </span>
   
@@ -1811,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hoisting/intro/" class="md-nav__link">
+      <a href="../../../../../js/hoisting/intro/" class="md-nav__link">
         
   
   
@@ -1875,7 +1902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/intro/" class="md-nav__link">
+      <a href="../../../../../js/coercion/intro/" class="md-nav__link">
         
   
   
@@ -1898,7 +1925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/type-coercion/" class="md-nav__link">
+      <a href="../../../../../js/coercion/type-coercion/" class="md-nav__link">
         
   
   
@@ -1921,7 +1948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/how-does-it-really-works/" class="md-nav__link">
+      <a href="../../../../../js/coercion/how-does-it-really-works/" class="md-nav__link">
         
   
   
@@ -1944,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/common-pitfalls/" class="md-nav__link">
+      <a href="../../../../../js/coercion/common-pitfalls/" class="md-nav__link">
         
   
   
@@ -1967,7 +1994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coercion/rules/" class="md-nav__link">
+      <a href="../../../../../js/coercion/rules/" class="md-nav__link">
         
   
   
@@ -2039,7 +2066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/control-statement/" class="md-nav__link">
+      <a href="../../../../../js/core/control-statement/" class="md-nav__link">
         
   
   
@@ -2062,7 +2089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/instance-and-static-methods/" class="md-nav__link">
+      <a href="../../../../../js/core/instance-and-static-methods/" class="md-nav__link">
         
   
   
@@ -2085,7 +2112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/callback/" class="md-nav__link">
+      <a href="../../../../../js/core/callback/" class="md-nav__link">
         
   
   
@@ -2108,7 +2135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/closure/" class="md-nav__link">
+      <a href="../../../../../js/core/closure/" class="md-nav__link">
         
   
   
@@ -2131,7 +2158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/high-order-function/" class="md-nav__link">
+      <a href="../../../../../js/core/high-order-function/" class="md-nav__link">
         
   
   
@@ -2154,7 +2181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/js-exception-handling/" class="md-nav__link">
+      <a href="../../../../../js/core/js-exception-handling/" class="md-nav__link">
         
   
   
@@ -2177,7 +2204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core/topic/" class="md-nav__link">
+      <a href="../../../../../js/core/topic/" class="md-nav__link">
         
   
   
@@ -2249,7 +2276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/this-in-js/" class="md-nav__link">
+      <a href="../../../../../js/advanced/this-in-js/" class="md-nav__link">
         
   
   
@@ -2272,7 +2299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/serialization/" class="md-nav__link">
+      <a href="../../../../../js/advanced/serialization/" class="md-nav__link">
         
   
   
@@ -2295,7 +2322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/maps-and-sets/" class="md-nav__link">
+      <a href="../../../../../js/advanced/maps-and-sets/" class="md-nav__link">
         
   
   
@@ -2318,7 +2345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/promise/" class="md-nav__link">
+      <a href="../../../../../js/advanced/promise/" class="md-nav__link">
         
   
   
@@ -2382,7 +2409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/reducer/intro/" class="md-nav__link">
+      <a href="../../../../../js/advanced/reducer/intro/" class="md-nav__link">
         
   
   
@@ -2405,7 +2432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced/reducer/syntax/" class="md-nav__link">
+      <a href="../../../../../js/advanced/reducer/syntax/" class="md-nav__link">
         
   
   
@@ -2485,7 +2512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/intro/" class="md-nav__link">
+      <a href="../../../../../js/datatypes/intro/" class="md-nav__link">
         
   
   
@@ -2508,7 +2535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/data-types/" class="md-nav__link">
+      <a href="../../../../../js/datatypes/data-types/" class="md-nav__link">
         
   
   
@@ -2531,7 +2558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/stack-vs-heap/" class="md-nav__link">
+      <a href="../../../../../js/datatypes/stack-vs-heap/" class="md-nav__link">
         
   
   
@@ -2554,7 +2581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datatypes/state-immutability/" class="md-nav__link">
+      <a href="../../../../../js/datatypes/state-immutability/" class="md-nav__link">
         
   
   
@@ -2626,7 +2653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operator/overview/" class="md-nav__link">
+      <a href="../../../../../js/operator/overview/" class="md-nav__link">
         
   
   
@@ -2649,7 +2676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operator/details/" class="md-nav__link">
+      <a href="../../../../../js/operator/details/" class="md-nav__link">
         
   
   
@@ -2721,7 +2748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../constructors/overview/" class="md-nav__link">
+      <a href="../../../../../js/constructors/overview/" class="md-nav__link">
         
   
   
@@ -2793,7 +2820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/overview/" class="md-nav__link">
+      <a href="../../../../../js/math/overview/" class="md-nav__link">
         
   
   
@@ -2865,7 +2892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/intro/" class="md-nav__link">
+      <a href="../../../../../js/function/intro/" class="md-nav__link">
         
   
   
@@ -2888,7 +2915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/types/" class="md-nav__link">
+      <a href="../../../../../js/function/types/" class="md-nav__link">
         
   
   
@@ -2911,7 +2938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/defining-functions/" class="md-nav__link">
+      <a href="../../../../../js/function/defining-functions/" class="md-nav__link">
         
   
   
@@ -2934,7 +2961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/pure-and-impure/" class="md-nav__link">
+      <a href="../../../../../js/function/pure-and-impure/" class="md-nav__link">
         
   
   
@@ -2957,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/implicit-explicit-return/" class="md-nav__link">
+      <a href="../../../../../js/function/implicit-explicit-return/" class="md-nav__link">
         
   
   
@@ -2980,7 +3007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/return-statement/" class="md-nav__link">
+      <a href="../../../../../js/function/return-statement/" class="md-nav__link">
         
   
   
@@ -3044,7 +3071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/arrow-function/" class="md-nav__link">
+      <a href="../../../../../js/function/arrow-function/" class="md-nav__link">
         
   
   
@@ -3067,7 +3094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/arrow-example/" class="md-nav__link">
+      <a href="../../../../../js/function/arrow-example/" class="md-nav__link">
         
   
   
@@ -3139,7 +3166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/hof/intro/" class="md-nav__link">
+      <a href="../../../../../js/function/hof/intro/" class="md-nav__link">
         
   
   
@@ -3162,7 +3189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/hof/map/" class="md-nav__link">
+      <a href="../../../../../js/function/hof/map/" class="md-nav__link">
         
   
   
@@ -3185,7 +3212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/hof/question-answer/" class="md-nav__link">
+      <a href="../../../../../js/function/hof/question-answer/" class="md-nav__link">
         
   
   
@@ -3257,7 +3284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/advanced/advanced-concept/" class="md-nav__link">
+      <a href="../../../../../js/function/advanced/advanced-concept/" class="md-nav__link">
         
   
   
@@ -3280,7 +3307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../function/advanced/function-categories/" class="md-nav__link">
+      <a href="../../../../../js/function/advanced/function-categories/" class="md-nav__link">
         
   
   
@@ -3360,7 +3387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iterables/intro/" class="md-nav__link">
+      <a href="../../../../../js/iterables/intro/" class="md-nav__link">
         
   
   
@@ -3383,7 +3410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../iterables/types/" class="md-nav__link">
+      <a href="../../../../../js/iterables/types/" class="md-nav__link">
         
   
   
@@ -3455,7 +3482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/es6/" class="md-nav__link">
+      <a href="../../../../../js/ecmascript/es6/" class="md-nav__link">
         
   
   
@@ -3478,7 +3505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/spread-vs-rest-operator/" class="md-nav__link">
+      <a href="../../../../../js/ecmascript/spread-vs-rest-operator/" class="md-nav__link">
         
   
   
@@ -3501,7 +3528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ecmascript/defaultParameters/" class="md-nav__link">
+      <a href="../../../../../js/ecmascript/defaultParameters/" class="md-nav__link">
         
   
   
@@ -3573,7 +3600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/intro/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/intro/" class="md-nav__link">
         
   
   
@@ -3596,7 +3623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/cancellation-mechanisms/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/cancellation-mechanisms/" class="md-nav__link">
         
   
   
@@ -3660,7 +3687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/http/api/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/http/api/" class="md-nav__link">
         
   
   
@@ -3683,7 +3710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/http/http-response/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/http/http-response/" class="md-nav__link">
         
   
   
@@ -3706,7 +3733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/http/http-request/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/http/http-request/" class="md-nav__link">
         
   
   
@@ -3778,7 +3805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/core/overview/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/core/overview/" class="md-nav__link">
         
   
   
@@ -3801,7 +3828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/core/api-response-object/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/core/api-response-object/" class="md-nav__link">
         
   
   
@@ -3824,7 +3851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/core/then-and-asyncwait/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/core/then-and-asyncwait/" class="md-nav__link">
         
   
   
@@ -3847,7 +3874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/core/chaining/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/core/chaining/" class="md-nav__link">
         
   
   
@@ -3870,7 +3897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/core/fetch-api/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/core/fetch-api/" class="md-nav__link">
         
   
   
@@ -3893,7 +3920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/core/axios/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/core/axios/" class="md-nav__link">
         
   
   
@@ -3965,7 +3992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/example/overview/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/example/overview/" class="md-nav__link">
         
   
   
@@ -3988,7 +4015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/example/useReducer/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/example/useReducer/" class="md-nav__link">
         
   
   
@@ -4011,7 +4038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/example/fetch-api-example/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/example/fetch-api-example/" class="md-nav__link">
         
   
   
@@ -4034,7 +4061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/example/axios-api-example/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/example/axios-api-example/" class="md-nav__link">
         
   
   
@@ -4057,7 +4084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/example/cancel-fetch-api/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/example/cancel-fetch-api/" class="md-nav__link">
         
   
   
@@ -4080,7 +4107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../httprequest/example/cancel-axios-api/" class="md-nav__link">
+      <a href="../../../../../js/httprequest/example/cancel-axios-api/" class="md-nav__link">
         
   
   
@@ -4116,8 +4143,6 @@
                 
   
   
-    
-  
   
   
     
@@ -4128,11 +4153,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" >
         
           
           <label class="md-nav__link" for="__nav_4_17" id="__nav_4_17_label" tabindex="0">
@@ -4140,7 +4165,7 @@
   
   
   <span class="md-ellipsis">
-    JSON
+    Mnemonic
     
   </span>
   
@@ -4148,10 +4173,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_17">
             <span class="md-nav__icon md-icon"></span>
-            JSON
+            Mnemonic
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4162,12 +4187,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../../../../js/mnemonic/js-functions/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Intro
+    JS Function
     
   </span>
   
@@ -4182,85 +4207,89 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Json and .Json5
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../../js/mnemonic/js-array/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Json and .Json5
+    JS Array
     
   </span>
   
 
       </a>
-      
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+              
+            
+              
+                
   
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#json-interesting-topic" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON interesting topic
-    </span>
-  </a>
+    <li class="md-nav__item">
+      <a href="../../../../../js/mnemonic/js-objects/" class="md-nav__link">
+        
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#js-topic" class="md-nav__link">
-    <span class="md-ellipsis">
-      JS Topic
-    </span>
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connecting-django-to-mysql" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connecting Django to MySQL
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    JS Object
+    
+  </span>
   
-</li>
-      
-    </ul>
+
+      </a>
+    </li>
   
-</nav>
-      
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../js/mnemonic/object-array-iteration-methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Iterating Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../js/mnemonic/js-object-iterating-method/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Object Iterating Method
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -4300,7 +4329,7 @@
   
   
   <span class="md-ellipsis">
-    Mnemonic
+    Weird Part
     
   </span>
   
@@ -4311,7 +4340,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_18_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_18">
             <span class="md-nav__icon md-icon"></span>
-            Mnemonic
+            Weird Part
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4322,12 +4351,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-functions/" class="md-nav__link">
+      <a href="../../../../../js/weird-parts/js-missing-parts/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    JS Function
+    JS Missing Part
     
   </span>
   
@@ -4345,81 +4374,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mnemonic/js-array/" class="md-nav__link">
+      <a href="../../../../../js/weird-parts/bug-in-js/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    JS Array
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/js-objects/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    JS Object
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/object-array-iteration-methods/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Iterating Method
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mnemonic/js-object-iterating-method/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Object Iterating Method
+    Bug in JS
     
   </span>
   
@@ -4464,7 +4424,7 @@
   
   
   <span class="md-ellipsis">
-    Weird Part
+    Miscellaneous
     
   </span>
   
@@ -4474,101 +4434,6 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_19_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_19">
-            <span class="md-nav__icon md-icon"></span>
-            Weird Part
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../weird-parts/js-missing-parts/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    JS Missing Part
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../weird-parts/bug-in-js/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Bug in JS
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_20" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_20" id="__nav_4_20_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Miscellaneous
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_20_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_20">
             <span class="md-nav__icon md-icon"></span>
             Miscellaneous
           </label>
@@ -4581,7 +4446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/guard-clause/" class="md-nav__link">
+      <a href="../../../../../js/miscellaneous/guard-clause/" class="md-nav__link">
         
   
   
@@ -4604,7 +4469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/cognitive-skills/" class="md-nav__link">
+      <a href="../../../../../js/miscellaneous/cognitive-skills/" class="md-nav__link">
         
   
   
@@ -4627,7 +4492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../miscellaneous/books/" class="md-nav__link">
+      <a href="../../../../../js/miscellaneous/books/" class="md-nav__link">
         
   
   
@@ -4706,7 +4571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/intro/" class="md-nav__link">
+      <a href="../../../../../fundamental/intro/" class="md-nav__link">
         
   
   
@@ -4770,7 +4635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/this/overview/" class="md-nav__link">
+      <a href="../../../../../fundamental/this/overview/" class="md-nav__link">
         
   
   
@@ -4842,7 +4707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/array-methods/overview/" class="md-nav__link">
+      <a href="../../../../../fundamental/array-methods/overview/" class="md-nav__link">
         
   
   
@@ -4865,7 +4730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/array-methods/static/" class="md-nav__link">
+      <a href="../../../../../fundamental/array-methods/static/" class="md-nav__link">
         
   
   
@@ -4888,7 +4753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/array-methods/destructive/" class="md-nav__link">
+      <a href="../../../../../fundamental/array-methods/destructive/" class="md-nav__link">
         
   
   
@@ -4911,7 +4776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/array-methods/non-destructive/" class="md-nav__link">
+      <a href="../../../../../fundamental/array-methods/non-destructive/" class="md-nav__link">
         
   
   
@@ -4934,7 +4799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/array-methods/usage-patterns/" class="md-nav__link">
+      <a href="../../../../../fundamental/array-methods/usage-patterns/" class="md-nav__link">
         
   
   
@@ -4957,7 +4822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/array-methods/summary/" class="md-nav__link">
+      <a href="../../../../../fundamental/array-methods/summary/" class="md-nav__link">
         
   
   
@@ -5029,7 +4894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/object-methods/overview/" class="md-nav__link">
+      <a href="../../../../../fundamental/object-methods/overview/" class="md-nav__link">
         
   
   
@@ -5052,7 +4917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/object-methods/comparing-objects/" class="md-nav__link">
+      <a href="../../../../../fundamental/object-methods/comparing-objects/" class="md-nav__link">
         
   
   
@@ -5124,7 +4989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/two-dimensional-arrays/overview/" class="md-nav__link">
+      <a href="../../../../../fundamental/two-dimensional-arrays/overview/" class="md-nav__link">
         
   
   
@@ -5196,7 +5061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/closure/overview/" class="md-nav__link">
+      <a href="../../../../../fundamental/closure/overview/" class="md-nav__link">
         
   
   
@@ -5219,7 +5084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/closure/javascript-closures/" class="md-nav__link">
+      <a href="../../../../../fundamental/closure/javascript-closures/" class="md-nav__link">
         
   
   
@@ -5291,7 +5156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/js-async/overview/" class="md-nav__link">
+      <a href="../../../../../fundamental/js-async/overview/" class="md-nav__link">
         
   
   
@@ -5314,7 +5179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/js-async/promise/" class="md-nav__link">
+      <a href="../../../../../fundamental/js-async/promise/" class="md-nav__link">
         
   
   
@@ -5337,7 +5202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/js-async/promise-code/" class="md-nav__link">
+      <a href="../../../../../fundamental/js-async/promise-code/" class="md-nav__link">
         
   
   
@@ -5368,7 +5233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/function-return-promise-or-callback/" class="md-nav__link">
+      <a href="../../../../../fundamental/function-return-promise-or-callback/" class="md-nav__link">
         
   
   
@@ -5391,7 +5256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../fundamental/6-falsy-values-in-js/" class="md-nav__link">
+      <a href="../../../../../fundamental/6-falsy-values-in-js/" class="md-nav__link">
         
   
   
@@ -5462,7 +5327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/intro/" class="md-nav__link">
+      <a href="../../../../../advanced/intro/" class="md-nav__link">
         
   
   
@@ -5526,7 +5391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/async-keyword/overview/" class="md-nav__link">
+      <a href="../../../../../advanced/async-keyword/overview/" class="md-nav__link">
         
   
   
@@ -5549,7 +5414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/async-keyword/related/" class="md-nav__link">
+      <a href="../../../../../advanced/async-keyword/related/" class="md-nav__link">
         
   
   
@@ -5572,7 +5437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/async-keyword/return-values/" class="md-nav__link">
+      <a href="../../../../../advanced/async-keyword/return-values/" class="md-nav__link">
         
   
   
@@ -5595,7 +5460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/async-keyword/async-await-vs-then/" class="md-nav__link">
+      <a href="../../../../../advanced/async-keyword/async-await-vs-then/" class="md-nav__link">
         
   
   
@@ -5667,7 +5532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/scope/chatgpt/" class="md-nav__link">
+      <a href="../../../../../advanced/scope/chatgpt/" class="md-nav__link">
         
   
   
@@ -5690,7 +5555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/scope/deepseek/" class="md-nav__link">
+      <a href="../../../../../advanced/scope/deepseek/" class="md-nav__link">
         
   
   
@@ -5713,7 +5578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/scope/mkdocs-warning-solved/" class="md-nav__link">
+      <a href="../../../../../advanced/scope/mkdocs-warning-solved/" class="md-nav__link">
         
   
   
@@ -5763,7 +5628,7 @@
   
   
   <span class="md-ellipsis">
-    Modules
+    JSON
     
   </span>
   
@@ -5774,7 +5639,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_4">
             <span class="md-nav__icon md-icon"></span>
-            Modules
+            JSON
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5785,12 +5650,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/modules/overview/" class="md-nav__link">
+      <a href="../../../../../advanced/json/intro/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Overview
+    Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../advanced/json/json5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Json and .Json5
     
   </span>
   
@@ -5835,7 +5723,7 @@
   
   
   <span class="md-ellipsis">
-    Class
+    Modules
     
   </span>
   
@@ -5846,7 +5734,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
-            Class
+            Modules
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5857,35 +5745,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/class/intro/" class="md-nav__link">
+      <a href="../../../../../advanced/modules/overview/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced/class/in-depth/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    In Depth
     
   </span>
   
@@ -5930,7 +5795,7 @@
   
   
   <span class="md-ellipsis">
-    Memory Management
+    Class
     
   </span>
   
@@ -5941,7 +5806,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_6">
             <span class="md-nav__icon md-icon"></span>
-            Memory Management
+            Class
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5952,7 +5817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/memory-management/overview/" class="md-nav__link">
+      <a href="../../../../../advanced/class/intro/" class="md-nav__link">
         
   
   
@@ -5975,35 +5840,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/memory-management/serialization/" class="md-nav__link">
+      <a href="../../../../../advanced/class/in-depth/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Serialization
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced/memory-management/memory-types/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Memory Types
+    In Depth
     
   </span>
   
@@ -6048,7 +5890,7 @@
   
   
   <span class="md-ellipsis">
-    Object in Depth
+    Memory Management
     
   </span>
   
@@ -6058,6 +5900,124 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            Memory Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../advanced/memory-management/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../advanced/memory-management/serialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Serialization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../advanced/memory-management/memory-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Memory Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_8" id="__nav_6_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Object in Depth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8">
             <span class="md-nav__icon md-icon"></span>
             Object in Depth
           </label>
@@ -6070,7 +6030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/overview/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/overview/" class="md-nav__link">
         
   
   
@@ -6104,10 +6064,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_2" >
         
           
-          <label class="md-nav__link" for="__nav_6_7_2" id="__nav_6_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_8_2" id="__nav_6_8_2_label" tabindex="0">
             
   
   
@@ -6120,8 +6080,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_2">
             <span class="md-nav__icon md-icon"></span>
             Creation and Initialization
           </label>
@@ -6134,7 +6094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/creation/object-create/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/creation/object-create/" class="md-nav__link">
         
   
   
@@ -6157,7 +6117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/creation/object-assign/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/creation/object-assign/" class="md-nav__link">
         
   
   
@@ -6199,10 +6159,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_3" >
         
           
-          <label class="md-nav__link" for="__nav_6_7_3" id="__nav_6_7_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_8_3" id="__nav_6_8_3_label" tabindex="0">
             
   
   
@@ -6215,8 +6175,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_3">
             <span class="md-nav__icon md-icon"></span>
             Property Access and Enumeration
           </label>
@@ -6229,7 +6189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/access/object-keys/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/access/object-keys/" class="md-nav__link">
         
   
   
@@ -6252,7 +6212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/access/object-values/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/access/object-values/" class="md-nav__link">
         
   
   
@@ -6275,7 +6235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/access/object-entries/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/access/object-entries/" class="md-nav__link">
         
   
   
@@ -6317,10 +6277,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_4" >
         
           
-          <label class="md-nav__link" for="__nav_6_7_4" id="__nav_6_7_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_8_4" id="__nav_6_8_4_label" tabindex="0">
             
   
   
@@ -6333,8 +6293,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_7_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_4">
             <span class="md-nav__icon md-icon"></span>
             Property Definition and Modification
           </label>
@@ -6347,7 +6307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/definition/object-defineproperty/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/definition/object-defineproperty/" class="md-nav__link">
         
   
   
@@ -6370,7 +6330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/definition/object-defineproperties/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/definition/object-defineproperties/" class="md-nav__link">
         
   
   
@@ -6393,7 +6353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/definition/direct-assignment/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/definition/direct-assignment/" class="md-nav__link">
         
   
   
@@ -6435,10 +6395,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_5" >
         
           
-          <label class="md-nav__link" for="__nav_6_7_5" id="__nav_6_7_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_8_5" id="__nav_6_8_5_label" tabindex="0">
             
   
   
@@ -6451,8 +6411,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_7_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_5">
             <span class="md-nav__icon md-icon"></span>
             Property and Object Inspection
           </label>
@@ -6465,7 +6425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/inspection/object-getownpropertydescriptor/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/inspection/object-getownpropertydescriptor/" class="md-nav__link">
         
   
   
@@ -6488,7 +6448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/inspection/object-getownpropertydescriptors/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/inspection/object-getownpropertydescriptors/" class="md-nav__link">
         
   
   
@@ -6511,7 +6471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/inspection/object-getownpropertynames/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/inspection/object-getownpropertynames/" class="md-nav__link">
         
   
   
@@ -6534,7 +6494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/inspection/object-hasown/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/inspection/object-hasown/" class="md-nav__link">
         
   
   
@@ -6576,10 +6536,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_6" >
         
           
-          <label class="md-nav__link" for="__nav_6_7_6" id="__nav_6_7_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_8_6" id="__nav_6_8_6_label" tabindex="0">
             
   
   
@@ -6592,8 +6552,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_7_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_6">
             <span class="md-nav__icon md-icon"></span>
             Object Mutation Control
           </label>
@@ -6606,7 +6566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/mutation/object-freeze/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/mutation/object-freeze/" class="md-nav__link">
         
   
   
@@ -6629,7 +6589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/mutation/object-seal/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/mutation/object-seal/" class="md-nav__link">
         
   
   
@@ -6652,7 +6612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/mutation/object-preventextensions/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/mutation/object-preventextensions/" class="md-nav__link">
         
   
   
@@ -6694,10 +6654,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_7" >
         
           
-          <label class="md-nav__link" for="__nav_6_7_7" id="__nav_6_7_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_8_7" id="__nav_6_8_7_label" tabindex="0">
             
   
   
@@ -6710,8 +6670,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_7_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_7">
             <span class="md-nav__icon md-icon"></span>
             Transformation and Creation from Data
           </label>
@@ -6724,7 +6684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/transformation/object-fromentries/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/transformation/object-fromentries/" class="md-nav__link">
         
   
   
@@ -6747,7 +6707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/transformation/object-groupby/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/transformation/object-groupby/" class="md-nav__link">
         
   
   
@@ -6789,10 +6749,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8_8" >
         
           
-          <label class="md-nav__link" for="__nav_6_7_8" id="__nav_6_7_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_8_8" id="__nav_6_8_8_label" tabindex="0">
             
   
   
@@ -6805,8 +6765,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_7_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_7_8">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_8_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8_8">
             <span class="md-nav__icon md-icon"></span>
             Methods as Object Behavior
           </label>
@@ -6819,7 +6779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/behavior/using-this/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/behavior/using-this/" class="md-nav__link">
         
   
   
@@ -6842,7 +6802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/object-in-depth/behavior/method-chaining/" class="md-nav__link">
+      <a href="../../../../../advanced/object-in-depth/behavior/method-chaining/" class="md-nav__link">
         
   
   
@@ -6892,10 +6852,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" >
         
           
-          <label class="md-nav__link" for="__nav_6_8" id="__nav_6_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
             
   
   
@@ -6908,8 +6868,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_9">
             <span class="md-nav__icon md-icon"></span>
             Style Guide
           </label>
@@ -6922,7 +6882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/style-guide/intro/" class="md-nav__link">
+      <a href="../../../../../advanced/style-guide/intro/" class="md-nav__link">
         
   
   
@@ -6945,7 +6905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/style-guide/js-style-guide/" class="md-nav__link">
+      <a href="../../../../../advanced/style-guide/js-style-guide/" class="md-nav__link">
         
   
   
@@ -6968,7 +6928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/style-guide/naming-convention/" class="md-nav__link">
+      <a href="../../../../../advanced/style-guide/naming-convention/" class="md-nav__link">
         
   
   
@@ -6991,7 +6951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/style-guide/coercion/" class="md-nav__link">
+      <a href="../../../../../advanced/style-guide/coercion/" class="md-nav__link">
         
   
   
@@ -7014,7 +6974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/style-guide/js-constants/" class="md-nav__link">
+      <a href="../../../../../advanced/style-guide/js-constants/" class="md-nav__link">
         
   
   
@@ -7037,7 +6997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced/style-guide/js-array/" class="md-nav__link">
+      <a href="../../../../../advanced/style-guide/js-array/" class="md-nav__link">
         
   
   
@@ -7116,7 +7076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/intro/" class="md-nav__link">
+      <a href="../../../../../eventloop/intro/" class="md-nav__link">
         
   
   
@@ -7139,7 +7099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/memory-management/" class="md-nav__link">
+      <a href="../../../../../eventloop/memory-management/" class="md-nav__link">
         
   
   
@@ -7162,7 +7122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/shallow-copy/" class="md-nav__link">
+      <a href="../../../../../eventloop/shallow-copy/" class="md-nav__link">
         
   
   
@@ -7185,7 +7145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/deep-copy/" class="md-nav__link">
+      <a href="../../../../../eventloop/deep-copy/" class="md-nav__link">
         
   
   
@@ -7208,7 +7168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/queue/" class="md-nav__link">
+      <a href="../../../../../eventloop/queue/" class="md-nav__link">
         
   
   
@@ -7231,7 +7191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/macrotasks/" class="md-nav__link">
+      <a href="../../../../../eventloop/macrotasks/" class="md-nav__link">
         
   
   
@@ -7254,7 +7214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../eventloop/microtasks/" class="md-nav__link">
+      <a href="../../../../../eventloop/microtasks/" class="md-nav__link">
         
   
   
@@ -7325,7 +7285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/intro/" class="md-nav__link">
+      <a href="../../../../../designpattern/intro/" class="md-nav__link">
         
   
   
@@ -7348,7 +7308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/daily/" class="md-nav__link">
+      <a href="../../../../../designpattern/daily/" class="md-nav__link">
         
   
   
@@ -7371,7 +7331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/official/" class="md-nav__link">
+      <a href="../../../../../designpattern/official/" class="md-nav__link">
         
   
   
@@ -7394,7 +7354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/js/" class="md-nav__link">
+      <a href="../../../../../designpattern/js/" class="md-nav__link">
         
   
   
@@ -7417,7 +7377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/categories/" class="md-nav__link">
+      <a href="../../../../../designpattern/categories/" class="md-nav__link">
         
   
   
@@ -7440,7 +7400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/mnemonic/" class="md-nav__link">
+      <a href="../../../../../designpattern/mnemonic/" class="md-nav__link">
         
   
   
@@ -7504,7 +7464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/creational/factory/" class="md-nav__link">
+      <a href="../../../../../designpattern/creational/factory/" class="md-nav__link">
         
   
   
@@ -7576,7 +7536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/intro/" class="md-nav__link">
+      <a href="../../../../../designpattern/react/intro/" class="md-nav__link">
         
   
   
@@ -7599,7 +7559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/mostly-used/" class="md-nav__link">
+      <a href="../../../../../designpattern/react/mostly-used/" class="md-nav__link">
         
   
   
@@ -7622,7 +7582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/container-presentation/" class="md-nav__link">
+      <a href="../../../../../designpattern/react/container-presentation/" class="md-nav__link">
         
   
   
@@ -7645,7 +7605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/container-presentation-theory/" class="md-nav__link">
+      <a href="../../../../../designpattern/react/container-presentation-theory/" class="md-nav__link">
         
   
   
@@ -7668,7 +7628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/custom-component/" class="md-nav__link">
+      <a href="../../../../../designpattern/react/custom-component/" class="md-nav__link">
         
   
   
@@ -7691,7 +7651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/react/antd-resuable-component/" class="md-nav__link">
+      <a href="../../../../../designpattern/react/antd-resuable-component/" class="md-nav__link">
         
   
   
@@ -7763,7 +7723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/advanced/recall/" class="md-nav__link">
+      <a href="../../../../../designpattern/advanced/recall/" class="md-nav__link">
         
   
   
@@ -7794,7 +7754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/creational/Singleton/" class="md-nav__link">
+      <a href="../../../../../designpattern/creational/Singleton/" class="md-nav__link">
         
   
   
@@ -7817,7 +7777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../designpattern/creational/Singleton-practice/" class="md-nav__link">
+      <a href="../../../../../designpattern/creational/Singleton-practice/" class="md-nav__link">
         
   
   
@@ -7888,7 +7848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/overview/" class="md-nav__link">
+      <a href="../../../../../console/overview/" class="md-nav__link">
         
   
   
@@ -7911,7 +7871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/categories/" class="md-nav__link">
+      <a href="../../../../../console/categories/" class="md-nav__link">
         
   
   
@@ -7934,7 +7894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/window/" class="md-nav__link">
+      <a href="../../../../../console/window/" class="md-nav__link">
         
   
   
@@ -7957,7 +7917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/cheatsheet/" class="md-nav__link">
+      <a href="../../../../../console/cheatsheet/" class="md-nav__link">
         
   
   
@@ -7980,7 +7940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/js-var-let-const-cheat-sheet/" class="md-nav__link">
+      <a href="../../../../../console/js-var-let-const-cheat-sheet/" class="md-nav__link">
         
   
   
@@ -8003,7 +7963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/question/" class="md-nav__link">
+      <a href="../../../../../console/question/" class="md-nav__link">
         
   
   
@@ -8026,7 +7986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../console/deeper/" class="md-nav__link">
+      <a href="../../../../../console/deeper/" class="md-nav__link">
         
   
   
@@ -8057,6 +8017,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -8066,41 +8028,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#json-interesting-topic" class="md-nav__link">
-    <span class="md-ellipsis">
-      JSON interesting topic
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#js-topic" class="md-nav__link">
-    <span class="md-ellipsis">
-      JS Topic
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connecting-django-to-mysql" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connecting Django to MySQL
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -8109,466 +8038,179 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-
-  <h1>Json and .Json5</h1>
-
-<div><p>The main difference between <code>.json</code> and <code>.json5</code> lies in their syntax and flexibility:</p>
-<ol>
-<li>
-<p>JSON (<code>.json</code>):</p>
-<ul>
-<li>Stands for <strong>JavaScript Object Notation</strong>.</li>
-<li>It is a strict, lightweight data-interchange format.</li>
-<li>Syntax rules are rigid, requiring:<ul>
-<li>Double quotes around property names.</li>
-<li>No trailing commas.</li>
-<li>No comments allowed.</li>
-<li>Only strings, numbers, arrays, booleans, null, and objects are valid.</li>
-</ul>
-</li>
-</ul>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">"isStudent"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>JSON5 (<code>.json5</code>):</p>
-<ul>
-<li>Stands for <strong>JSON for Humans</strong>, an extension of JSON.</li>
-<li>It is more flexible and user-friendly, allowing:<ul>
-<li>Single quotes for strings.</li>
-<li>Trailing commas.</li>
-<li>Unquoted property names if valid identifiers.</li>
-<li>Comments (both single-line <code>//</code> and multi-line <code>/* */</code>).</li>
-<li>Support for additional data types like <code>Infinity</code>, <code>NaN</code>, and hexadecimal numbers.</li>
-</ul>
-</li>
-</ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    name: 'John',  // Unquoted property names, single quotes
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    age: 30,       // Trailing commas allowed
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    isStudent: false,  // Comments allowed
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>}
-</span></code></pre></div>
-</li>
-</ol>
-<p><mark>In summary</mark>, JSON5 relaxes some of the strict rules of JSON, making it more human-friendly for editing, while <code>.json</code> is more standardized and widely supported.</p>
-<hr>
-<h2 id="json-interesting-topic">JSON interesting topic</h2>
-<p>Here are some interesting aspects of JSON and how you can maximize its usage:</p>
-<ol>
-<li>
-<p><strong>JSON Schema Validation</strong></p>
-<ul>
-<li>What it is: JSON Schema is a powerful tool for validating the structure of JSON data.</li>
-<li>Why it's interesting: It ensures that your JSON data conforms to a specific format, making it easier to validate inputs and outputs in APIs.</li>
-<li>How to use it: You can define a schema and use libraries like <code>Ajv</code> (in JavaScript) to validate your data.</li>
-</ul>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"name"</span><span class="p">,</span><span class="w"> </span><span class="s2">"age"</span><span class="p">]</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>JSON Web Tokens (JWT)</strong></p>
-<ul>
-<li>What it is: JWT is a compact, URL-safe means of representing claims to be transferred between two parties.</li>
-<li>Why it's interesting: JWTs are widely used for authentication and authorization in web applications.</li>
-<li>How to use it: You can encode and decode JWTs using libraries like <code>jsonwebtoken</code> in Node.js, sending tokens in HTTP headers to secure APIs.</li>
-</ul>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">"alg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HS256"</span><span class="p">,</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">"typ"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JWT"</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">{</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nt">"sub"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567890"</span><span class="p">,</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">"iat"</span><span class="p">:</span><span class="w"> </span><span class="mi">1516239022</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>JSON with Local Storage</strong></p>
-<ul>
-<li>What it is: Storing data in a browser's localStorage or sessionStorage.</li>
-<li>Why it's interesting: You can persist JSON data locally, making it useful for offline applications or user preferences.</li>
-<li>
-<p>How to use it:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// Storing</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s1">'user'</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">user</span><span class="p">));</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1">// Retrieving</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">storedUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">'user'</span><span class="p">));</span>
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>JSON with IndexedDB</strong></p>
-<ul>
-<li>What it is: A client-side database that stores complex data (like JSON objects).</li>
-<li>Why it's interesting: IndexedDB allows you to store and retrieve large amounts of structured data, which is more powerful than localStorage.</li>
-<li>How to use it: You can store complex data like objects and arrays natively.</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">dbRequest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">indexedDB</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"MyDatabase"</span><span class="p">);</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">dbRequest</span><span class="p">.</span><span class="nx">onsuccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">db</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">transaction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">transaction</span><span class="p">(</span><span class="s2">"myStore"</span><span class="p">,</span><span class="w"> </span><span class="s2">"readwrite"</span><span class="p">);</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">transaction</span><span class="p">.</span><span class="nx">objectStore</span><span class="p">(</span><span class="s2">"myStore"</span><span class="p">);</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="nx">store</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">});</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">};</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>JSON Patch (RFC 6902)</strong></p>
-<ul>
-<li>What it is: JSON Patch is a format for expressing a list of operations to apply to a JSON document.</li>
-<li>Why it's interesting: It’s used for efficient partial updates, especially in scenarios where you only want to update specific fields.</li>
-<li>How to use it: Using libraries like <code>fast-json-patch</code> in JavaScript to apply patches.</li>
-</ul>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">[</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"replace"</span><span class="p">,</span><span class="w"> </span><span class="nt">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/name"</span><span class="p">,</span><span class="w"> </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"remove"</span><span class="p">,</span><span class="w"> </span><span class="nt">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/age"</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">]</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>JSON Streaming</strong></p>
-<ul>
-<li>What it is: JSON Streaming allows large JSON datasets to be processed in chunks rather than loading the entire document at once.</li>
-<li>Why it's interesting: It's useful for handling big data without crashing the browser or server due to memory overload.</li>
-<li>How to use it: Tools like <code>stream-json</code> in Node.js can parse large JSON datasets in chunks.</li>
-</ul>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">parser</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">'stream-json'</span><span class="p">);</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s1">'large-file.json'</span><span class="p">).</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">parser</span><span class="p">()).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">chunk</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">chunk</span><span class="p">);</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">});</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>JSON with GraphQL</strong></p>
-<ul>
-<li>What it is: JSON is the default format for sending and receiving data in GraphQL APIs.</li>
-<li>Why it's interesting: GraphQL APIs allow clients to request specific data in JSON format, reducing over-fetching common in REST APIs.</li>
-<li>How to use it: You define queries in GraphQL, and responses are returned as JSON.</li>
-</ul>
-<div class="language-graphql highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">query</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="n">user</span><span class="p">(</span><span class="n">id</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">        </span><span class="n">name</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">        </span><span class="n">age</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-json highlight"><span class="filename">JSON Response:</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">        </span><span class="nt">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">        </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">}</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>JSONPath for Querying JSON</strong></p>
-<ul>
-<li>What it is: JSONPath is a query language for extracting values from JSON documents (similar to XPath for XML).</li>
-<li>Why it's interesting: JSONPath allows for complex querying of deeply nested JSON objects.</li>
-<li>How to use it: Using libraries like <code>jsonpath</code> in JavaScript.</li>
-</ul>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">{</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="nt">"store"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">        </span><span class="nt">"book"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fiction"</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Great Gatsby"</span><span class="w"> </span><span class="p">},</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nt">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"drama"</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hamlet"</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">        </span><span class="p">]</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-js highlight"><span class="filename">Query:</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">jsonpath</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="s1">'$.store.book[?(@.category=="fiction")]'</span><span class="p">);</span>
-</span></code></pre></div>
-</li>
-<li>
-<p><strong>JSON Serialization and Deserialization</strong></p>
-<ul>
-<li>What it is: Converting objects to JSON format (serialization) and parsing JSON back into objects (deserialization).</li>
-<li>Why it's interesting: Most web APIs rely on this mechanism for data interchange.</li>
-<li>
-<p>How to use it:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">jsonStr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span><span class="w">  </span><span class="c1">// Serialize</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">parsedObj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsonStr</span><span class="p">);</span><span class="w">  </span><span class="c1">// Deserialize</span>
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>JSON Transformations with Lodash</strong></p>
-<ul>
-<li>What it is: Using utility libraries like Lodash to manipulate JSON objects efficiently.</li>
-<li>Why it's interesting: Lodash offers powerful tools for querying, filtering, and transforming JSON data.</li>
-<li>
-<p>How to use it:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'John'</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'Jane'</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="w"> </span><span class="p">}];</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">adults</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">user</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">user</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">);</span>
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>JSON for Configuration Files</strong></p>
-<ul>
-<li>What it is: JSON is often used as a format for configuration files, especially in web development (<code>package.json</code>, <code>.babelrc</code>).</li>
-<li>Why it's interesting: Storing settings and configurations in JSON is easy to read, write, and manipulate programmatically.</li>
-<li>How to use it: You can use JSON in Node.js or other backends to dynamically load and parse configuration settings.</li>
-</ul>
-</li>
-<li>
-<p><strong>JSON with REST APIs</strong></p>
-<ul>
-<li>What it is: JSON is the most common data format used for sending and receiving data via REST APIs.</li>
-<li>Why it's interesting: Knowing how to effectively work with JSON in REST APIs ensures you build scalable, maintainable systems.</li>
-<li>
-<p>How to use it:  </p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nx">fetch</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-</ol>
-<p>By learning these techniques, you can leverage the full potential of JSON in various real-world applications, from API development to efficient data management and beyond.</p>
-<hr>
-<h2 id="js-topic">JS Topic</h2>
-<p>Here are some interesting topics you might want to explore as you continue deepening your knowledge, especially considering your focus on becoming a top-tier developer:</p>
-<ol>
-<li>
-<p><strong>Advanced JavaScript Concepts</strong></p>
-<ul>
-<li>Closures and Currying: Understanding these will help you write more efficient and readable code.</li>
-<li>Event Loop and Async/Await: Mastering how JavaScript handles asynchronous operations can enhance performance in complex applications.</li>
-<li>Prototypes and Inheritance: Dig deeper into object-oriented principles in JavaScript.</li>
-<li>Functional Programming: Concepts like immutability, pure functions, and higher-order functions can transform how you approach problems.</li>
-</ul>
-</li>
-<li>
-<p><strong>React Ecosystem</strong></p>
-<ul>
-<li>React Performance Optimization: Learn techniques such as memoization (useMemo, useCallback), lazy loading, and code splitting.</li>
-<li>React Hooks: Mastering custom hooks and using built-in hooks like useReducer for complex state management.</li>
-<li>React Suspense and Concurrent Mode: These will shape the future of React apps, enabling better UX with async data fetching.</li>
-<li>Server-Side Rendering (SSR) with Next.js: Explore Next.js for building SEO-friendly React apps.</li>
-</ul>
-</li>
-<li>
-<p><strong>State Management (Advanced Redux)</strong></p>
-<ul>
-<li>Redux Toolkit: Learn the modern way to manage state with Redux's streamlined syntax and enhanced development experience.</li>
-<li>Context API: It’s lightweight compared to Redux but excellent for certain types of global state management.</li>
-<li>Middleware in Redux: Thunk, Saga, and custom middleware for managing side effects.</li>
-</ul>
-</li>
-<li>
-<p><strong>TypeScript</strong></p>
-<ul>
-<li>Type Inference &amp; Generics: Learn how to leverage TypeScript's static typing for cleaner, more maintainable code.</li>
-<li>TypeScript in React and Node.js: Understanding how to use TypeScript in both frontend and backend can be a game changer.</li>
-</ul>
-</li>
-<li>
-<p><strong>Advanced APIs &amp; Web Technologies</strong></p>
-<ul>
-<li>GraphQL: A flexible, efficient alternative to REST APIs. Learn about querying and mutations with GraphQL.</li>
-<li>WebSockets: Real-time communication for applications like chats, notifications, or live updates.</li>
-<li>Service Workers: Understanding how to implement Progressive Web Apps (PWAs) with offline capabilities.</li>
-</ul>
-</li>
-<li>
-<p><strong>Full-Stack Development</strong></p>
-<ul>
-<li>Django with React/Next.js: Explore integrating frontend frameworks with powerful backends like Django.</li>
-<li>Microservices Architecture: Learn how to split large applications into smaller, independent services for scalability and maintainability.</li>
-<li>API Design Principles: RESTful APIs, versioning, and security considerations like JWT (JSON Web Token).</li>
-</ul>
-</li>
-<li>
-<p><strong>Databases and Data Management</strong></p>
-<ul>
-<li>NoSQL vs. SQL: Learn the differences and when to use MongoDB vs PostgreSQL/MySQL.</li>
-<li>Database Indexing and Optimization: Mastering these techniques will enhance database performance.</li>
-<li>Graph Databases: Explore databases like Neo4j for relationship-heavy data (e.g., for your dating app).</li>
-</ul>
-</li>
-<li>
-<p><strong>Advanced DevOps and CI/CD</strong></p>
-<ul>
-<li>Containerization with Docker: Packaging applications into containers for easier deployment.</li>
-<li>Kubernetes: Managing containerized applications at scale using Kubernetes clusters.</li>
-<li>CI/CD Pipelines: Automate testing, integration, and deployment with tools like GitLab CI, Jenkins, or GitHub Actions.</li>
-</ul>
-</li>
-<li>
-<p><strong>Cloud and Serverless Computing</strong></p>
-<ul>
-<li>AWS, Google Cloud, or Azure: Master cloud platforms to deploy, manage, and scale applications.</li>
-<li>Serverless Functions (AWS Lambda, Firebase Functions): Writing and deploying code without managing servers.</li>
-<li>Cloud Databases and Storage: Using cloud services for data persistence and management.</li>
-</ul>
-</li>
-<li>
-<p><strong>Software Architecture &amp; Design Patterns</strong></p>
-<ul>
-<li>SOLID Principles: These principles will help in writing scalable and maintainable code.</li>
-<li>Design Patterns: Explore patterns like Singleton, Factory, Observer, etc.</li>
-<li>Monolithic vs Microservices: Understand when to use each approach.</li>
-</ul>
-</li>
-<li>
-<p><strong>Security Best Practices</strong></p>
-<ul>
-<li>OWASP Top 10: Understanding the most common security vulnerabilities in web applications.</li>
-<li>Encryption and Authentication: JWT, OAuth2, and bcrypt for hashing passwords.</li>
-<li>Security in APIs: Preventing XSS, CSRF, and implementing secure HTTP headers.</li>
-</ul>
-</li>
-<li>
-<p><strong>Mobile App Development</strong></p>
-<ul>
-<li>React Native: Since you are already working on a dating app, mastering React Native will help build cross-platform mobile applications.</li>
-<li>Mobile Optimization: Techniques for performance and UX improvements on mobile devices.</li>
-<li>Firebase or Traditional Database for Mobile: Integrating real-time databases and authentication in mobile apps.</li>
-</ul>
-</li>
-<li>
-<p><strong>Machine Learning Basics for Web Developers</strong></p>
-<ul>
-<li>TensorFlow.js: Learn how to run machine learning models in the browser.</li>
-<li>Basic Data Science Concepts: Learn about linear regression, decision trees, and clustering algorithms.</li>
-<li>Recommendation Systems: Especially useful for personalized applications like a dating app.</li>
-</ul>
-</li>
-<li>
-<p><strong>GraphQL with Apollo Client</strong></p>
-<ul>
-<li>Advanced Querying: Learn about fragments, inline arguments, and directives.</li>
-<li>Cache Management: Understanding Apollo Client's caching strategies.</li>
-</ul>
-</li>
-<li>
-<p><strong>Testing and Quality Assurance</strong></p>
-<ul>
-<li>Unit, Integration, and E2E Testing: Master tools like Jest, Mocha, Cypress, and React Testing Library.</li>
-<li>TDD and BDD: Learn Test-Driven Development and Behavior-Driven Development to write better, bug-free code.</li>
-</ul>
-</li>
-<li>
-<p><strong>Code Management and Collaboration</strong></p>
-<ul>
-<li>Git Workflows: Learn about different Git workflows like GitFlow, feature branching, and rebasing.</li>
-<li>Monorepos: How large companies use tools like Lerna and Nx to manage multiple projects in a single repository.</li>
-</ul>
-</li>
-</ol>
-<p>These topics can significantly boost your understanding and skillset across modern development paradigms. You can explore them based on your interests and project needs!</p>
-<hr>
-<details class="question">
-<summary>what is difference between conntecting mysql and postgress. in ubuntu in need to install to connect django with mysql what i need to do in postgress</summary>
-</details>
-<p>When setting up Django with MySQL versus PostgreSQL on Ubuntu, the installation and configuration processes differ slightly due to the differences in the database systems.</p>
-<p>Here’s a breakdown of what you need to do for each:</p>
-<h2 id="connecting-django-to-mysql">Connecting Django to MySQL</h2>
-<ol>
-<li>
-<p><strong>Install MySQL Server</strong>:</p>
-<ul>
-<li>
-<p>Open a terminal and install MySQL server with the following command:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mysql-server
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Install MySQL Client Libraries</strong>:</p>
-<ul>
-<li>
-<p>You need the MySQL client libraries to interface with MySQL from Python. Install them with:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>libmysqlclient-dev
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Install Django MySQL Adapter</strong>:</p>
-<ul>
-<li>
-<p>You need the <code>mysqlclient</code> package for Django to connect to MySQL. Install it using pip:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mysqlclient
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Configure Django Settings</strong>:</p>
-<ul>
-<li>
-<p>In your <code>settings.py</code>, configure the database settings for <code>MySQL</code>:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>    <span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>        <span class="s1">'default'</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>            <span class="s1">'ENGINE'</span><span class="p">:</span> <span class="s1">'django.db.backends.mysql'</span><span class="p">,</span>
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>            <span class="s1">'NAME'</span><span class="p">:</span> <span class="s1">'your_database_name'</span><span class="p">,</span>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>            <span class="s1">'USER'</span><span class="p">:</span> <span class="s1">'your_username'</span><span class="p">,</span>
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>            <span class="s1">'PASSWORD'</span><span class="p">:</span> <span class="s1">'your_password'</span><span class="p">,</span>
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>            <span class="s1">'HOST'</span><span class="p">:</span> <span class="s1">'localhost'</span><span class="p">,</span>
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>            <span class="s1">'PORT'</span><span class="p">:</span> <span class="s1">'3306'</span><span class="p">,</span>
-</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>        <span class="p">}</span>
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>    <span class="p">}</span>
-</span></code></pre></div>
-</li>
-</ul>
-</li>
-</ol>
-<blockquote>
-<p>Summary</p>
-</blockquote>
-<ul>
-<li>MySQL: You need to install <code>mysql-server</code>, <code>libmysqlclient-dev</code>, and <code>mysqlclient</code>.</li>
-</ul>
-<p>In both cases, after setting up the database server and installing the required Python packages, you'll configure your <code>settings.py</code> file in Django to connect to the database you have chosen.</p></div>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/25550945" alt="Bishow Thapa">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Bishow Thapa
+                        
+                      </strong>
+                      <br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-06-29 00:00:00+00:00" class="md-ellipsis">June 29, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <span class="md-tag">Constructor</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">JavaScript</span>
+      
+    
+  </nav>
+
+
+
+<div><h1 id="why-only-one-constructor-in-javascript-classes">Why Only One Constructor in JavaScript Classes?</h1>
+<p>The reason JavaScript classes can only have one constructor boils down to how the language’s <strong>class syntax</strong> and <strong>object instantiation</strong> model were designed.</p>
+<!-- more -->
+
+<ol>
+<li>
+<p><strong>JavaScript Class Syntax Is Syntactic Sugar Over Prototypes</strong></p>
+<p>JavaScript classes are mostly just a cleaner syntax over the old prototype-based system. The constructor method is the <em>special method</em> that runs when you create an instance with <code>new</code>.</p>
+</li>
+<li>
+<p><strong>Single Entry Point for Object Initialization</strong></p>
+<p>The constructor defines <em>how an object of that class gets initialized</em>. Allowing multiple constructors would complicate how the engine decides which one to run — unlike languages with method overloading, JavaScript doesn’t support multiple functions with the same name but different parameter lists.</p>
+</li>
+<li>
+<p><strong>No Function Overloading in JavaScript</strong></p>
+<p>JavaScript functions (and methods) don’t support overloading by parameter signature like Java or C#. If you define multiple functions with the same name, the last one wins — it replaces the previous.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Example</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Constructor with 1 arg'</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Constructor with 2 args'</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// This overrides the first</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">// SyntaxError: A class may only have one constructor</span>
+</span></code></pre></div>
+<p>The language enforces only one <code>constructor</code> method per class.</p>
+</li>
+<li>
+<p><strong>Flexible Parameter Handling</strong></p>
+<p>Instead of multiple constructors, JavaScript encourages using:</p>
+<ul>
+<li>Default parameters</li>
+<li>Rest parameters</li>
+<li>Conditional logic inside a single constructor</li>
+</ul>
+<p>to handle different initialization scenarios.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Example</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">b</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">undefined</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"One argument constructor"</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">);</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Two arguments constructor"</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
+</span></code></pre></div>
+</li>
+</ol>
+<hr>
+<p>Summary</p>
+<ul>
+<li>JavaScript classes only allow one constructor method by design.</li>
+<li>The language doesn’t support function overloading, so multiple constructors would clash.</li>
+<li>You can use default values and logic inside the single constructor to mimic multiple behaviors.</li>
+</ul></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -8585,10 +8227,12 @@
   
     
       
+        
+      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro">
+          <a href="../../../05/22/why-is-understanding-shallow-vs-deep-copy-important-for-array-manipulation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Why is understanding shallow vs deep copy important for array manipulation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -8598,20 +8242,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Intro
+                Why is understanding shallow vs deep copy important for array manipulation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../mnemonic/js-functions/" class="md-footer__link md-footer__link--next" aria-label="Next: JS Function">
+          <a href="../javascript-inheritance-chain-prototype-chain/" class="md-footer__link md-footer__link--next" aria-label="Next: JavaScript Inheritance Chain (Prototype Chain)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                JS Function
+                JavaScript Inheritance Chain (Prototype Chain)
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -8668,10 +8312,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select", "content.tooltips"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
